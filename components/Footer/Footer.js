@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 import { FooterStyle } from "./FooterStyle";
-import Paragraph from "../../styles/fontsStyles/paragraph";
+import ParagraphMedium from "../../styles/fontsStyles/paragraphMedium";
 
 
 
@@ -23,22 +23,22 @@ const Footer = props => {
         <FooterStyle >
             <div className="footer">
                 <div className="option">
-                    <a href={`mailto:${email}`}><Paragraph size="13px" >{t("email")}</Paragraph></a>
-                    <a href={`tel:${phone}`}><Paragraph size="13px" >{t("phone")}</Paragraph></a>
-                    <a href="/"><Paragraph size="13px" >{t("termsConditions")}</Paragraph></a>
-                    <a href="/"><Paragraph size="13px" >{t("privacyPolicy")}</Paragraph></a>
+                    <a href={`mailto:${email}`}><ParagraphMedium size="13px" >{t("email")}</ParagraphMedium></a>
+                    <a href={`tel:${phone}`}><ParagraphMedium size="13px" >{t("phone")}</ParagraphMedium></a>
+                    <a href="/"><ParagraphMedium size="13px" >{t("termsConditions")}</ParagraphMedium></a>
+                    <a href="/"><ParagraphMedium size="13px" >{t("privacyPolicy")}</ParagraphMedium></a>
                 </div>
                 <div className="len">
-                    <Paragraph size="13px" decoration={language === 'es' ? "underline" : ""} cursor onClick={() => changeLanguage('es', setLangauge)}>Español</Paragraph>
-                    <Paragraph size="13px" >/</Paragraph>
-                    <Paragraph size="13px" decoration={language === 'en' ? "underline" : ""} cursor onClick={() => changeLanguage('en', setLangauge)}>English</Paragraph>
+                    <ParagraphMedium size="13px" decoration={language === 'es' ? "underline" : ""} cursor onClick={() => changeLanguage('es', setLangauge)}>Español</ParagraphMedium>
+                    <ParagraphMedium size="13px" >/</ParagraphMedium>
+                    <ParagraphMedium size="13px" decoration={language === 'en' ? "underline" : ""} cursor onClick={() => changeLanguage('en', setLangauge)}>English</ParagraphMedium>
                 </div>
             </div>
             <div className="copy">
-                <Paragraph size="10px" spacing="0,5px" lineheight="13px">
+                <ParagraphMedium size="10px" spacing="0,5px" lineheight="13px">
                     Copyright © by ––––––––, 2019. All rights reserved. All materials
                     on this website are intellectual property of ––––––––.
-                </Paragraph>
+                </ParagraphMedium>
             </div>
 
         </FooterStyle>

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 import { NavStyle } from "./NavStyle";
-import Paragraph from "../../styles/fontsStyles/paragraph";
+import ParagraphMedium from "../../styles/fontsStyles/paragraphMedium";
+import ParagraphMediumMobile from "../../styles/fontsStyles/paragraphMediumMobile";
 
 
 
@@ -19,39 +20,39 @@ const Nav = props => {
     const [language, setLangauge] = useState(i18n.language)
     return (
         <NavStyle >
-
             <header className="mobile">
                 <div className="symbol">
                     <Link href="/index"><img src="/static/svg/symbolMapaAyuda.svg" /></Link>
-                    <Link href="/index"><img src="/static/svg/openMenu.svg" /></Link>
+                    <Link href="/"><img src="/static/svg/openMenu.svg" /></Link>
 
                 </div>
-                <nav className="navMobile">
-                    <div>
-                        <Link href="/index"><img src="/static/svg/closeMenu.svg" /></Link>
-                    </div>
-                    <div>
-                        <Link href="/about"><Paragraph size="13px" >{t("nav1")}</Paragraph></Link>
-                        <Link href="/about"><Paragraph size="13px" >{t("nav2")}</Paragraph></Link>
-                        <Link href="/about"><Paragraph size="13px" >{t("nav5")}</Paragraph></Link>
-                        <div>
-                        <Paragraph size="13px" >{t("nav2")}</Paragraph>
-                        <Link href="/about"><Paragraph size="13px" >{t("nav6")}</Paragraph></Link>
+                <nav>
+                    <div className="navColor"></div>
+                    <div className="navMobile">
+                            <Link href=""><img src="/static/svg/closeMenu.svg" /></Link>
                         </div>
-                    </div>
+                        <div>
+                            <Link href=""><ParagraphMediumMobile >{t("nav1")}</ParagraphMediumMobile></Link>
+                            <Link href=""><ParagraphMediumMobile >{t("nav2")}</ParagraphMediumMobile></Link>
+                            <Link href=""><button>{t("nav5")}</button></Link>
+                            <div>
+                                <ParagraphMediumMobile >{t("nav2")}</ParagraphMediumMobile>
+                                <Link href=""><ParagraphMediumMobile >{t("nav6")}</ParagraphMediumMobile></Link>
+                            </div>
+                        </div>
                 </nav>
             </header>
-            
+
             <header className="desktop">
                 <div className="logo">
                     <Link href="/index"><img src="/static/svg/logoMapaAyuda.svg" /></Link>
                 </div>
                 <nav>
-                    <Link href="/about"><Paragraph size="13px" >{t("nav1")}</Paragraph></Link>
-                    <Link href="/about"><Paragraph size="13px" >{t("nav2")}</Paragraph></Link>
-                    <Link href="/about"><Paragraph size="13px" >{t("nav3")}</Paragraph></Link>
-                    <Link href="/about"><Paragraph size="13px" >{t("nav4")}</Paragraph></Link>
-                    <Link href="/about"><Paragraph size="13px" >{t("nav5")}</Paragraph></Link>
+                    <Link href="/about"><ParagraphMedium >{t("nav1")}</ParagraphMedium></Link>
+                    <Link href="/about"><ParagraphMedium >{t("nav2")}</ParagraphMedium></Link>
+                    <Link href="/about"><ParagraphMedium color="#F1A409" >{t("nav3")}</ParagraphMedium></Link>
+                    <Link href="/about"><ParagraphMedium color="#76991E">{t("nav4")}</ParagraphMedium></Link>
+                    <Link href="/about"><button>{t("nav5")}</button></Link>
                 </nav>
             </header>
 
