@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 
 const paragraph = styled.p`
-    font-family: "Pressura";
-    color: black;
+    font-family: "GT–Medium";
+    color: ${props => (props.color ? props.color : '#333333')};
+    font-style: normal;
+    font-weight: 500;
     font-size: ${props => (props.size ? props.size : '16px')};
-    letter-spacing: ${props => (props.spacing ? props.spacing : '0.3px')};;
-    line-height:${props => (props.lineheight ? props.lineheight : '30px')};;
+    line-height: 24px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
+
     
 
     @media only screen and (min-width:415px) and (max-width:768px){

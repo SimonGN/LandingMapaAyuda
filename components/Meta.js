@@ -6,7 +6,7 @@ const Meta = () => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <meta name="description" content="Validere, validación educativa"/>
+        <meta name="description" content="MapaAyuda"/>
         
         <link rel="apple-touch-icon" sizes="57x57" href="./static/img/favicon/apple-icon-57x57.png"/>
         <link rel="apple-touch-icon" sizes="60x60" href="./static/img/favicon/apple-icon-60x60.png"/>
@@ -23,18 +23,18 @@ const Meta = () => {
         <link rel="icon" type="image/png" sizes="16x16" href="./static/img/favicon/favicon-16x16.png"/>
 
         
-        <title>Validere</title>
+        <title>MapaAyuda</title>
       </Head>
       <style jsx global>{`
         @font-face {
-          font-family: "Pressura";
-          src: url(/static/fonts/GT-Pressura-Pro-Mono-Regular.ttf) format("truetype");
+          font-family: "GT–Medium";
+          src: url(/static/fonts/GT-Walsheim-Pro-Medium.woff2) format("woff2");
           font-weight: normal;
           font-style: normal;
         }
         @font-face {
-          font-family: "Panama";
-          src: url(/static/fonts/PanamaRegular.ttf) format("truetype");
+          font-family: "PanaGT–Regular";
+          src: url(GT-Walsheim-Pro-Regular.woff2) format("woff2");
           font-weight: normal;
           font-style: normal;
         }

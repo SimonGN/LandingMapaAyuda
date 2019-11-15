@@ -19,12 +19,41 @@ const Nav = props => {
     const [language, setLangauge] = useState(i18n.language)
     return (
         <NavStyle >
-            <div>
-                <Link href="/about"><Paragraph size="13px" >{t("nav1")}</Paragraph></Link>
-                <Link href="/index"><img className="simbolo" src="/static/svg/simboloValidere.svg" /></Link>
-                <Link href="/index"><img className="logo" src="/static/svg/logoValidere.svg" /></Link>
-                <a href={t("mailto")}> <Paragraph size="13px" >{t("nav2")}</Paragraph> </a>
-            </div>
+
+            <header className="mobile">
+                <div className="symbol">
+                    <Link href="/index"><img src="/static/svg/symbolMapaAyuda.svg" /></Link>
+                    <Link href="/index"><img src="/static/svg/openMenu.svg" /></Link>
+
+                </div>
+                <nav className="navMobile">
+                    <div>
+                        <Link href="/index"><img src="/static/svg/closeMenu.svg" /></Link>
+                    </div>
+                    <div>
+                        <Link href="/about"><Paragraph size="13px" >{t("nav1")}</Paragraph></Link>
+                        <Link href="/about"><Paragraph size="13px" >{t("nav2")}</Paragraph></Link>
+                        <Link href="/about"><Paragraph size="13px" >{t("nav5")}</Paragraph></Link>
+                        <div>
+                        <Paragraph size="13px" >{t("nav2")}</Paragraph>
+                        <Link href="/about"><Paragraph size="13px" >{t("nav6")}</Paragraph></Link>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            
+            <header className="desktop">
+                <div className="logo">
+                    <Link href="/index"><img src="/static/svg/logoMapaAyuda.svg" /></Link>
+                </div>
+                <nav>
+                    <Link href="/about"><Paragraph size="13px" >{t("nav1")}</Paragraph></Link>
+                    <Link href="/about"><Paragraph size="13px" >{t("nav2")}</Paragraph></Link>
+                    <Link href="/about"><Paragraph size="13px" >{t("nav3")}</Paragraph></Link>
+                    <Link href="/about"><Paragraph size="13px" >{t("nav4")}</Paragraph></Link>
+                    <Link href="/about"><Paragraph size="13px" >{t("nav5")}</Paragraph></Link>
+                </nav>
+            </header>
 
         </NavStyle>
     );

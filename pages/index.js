@@ -64,7 +64,7 @@ class Home extends React.Component {
       <React.Fragment>
         <Meta />
         <Nav />
-        <Footer />
+        {/* <Footer /> */}
         
       </React.Fragment>
     );
