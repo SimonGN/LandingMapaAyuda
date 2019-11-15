@@ -29,17 +29,21 @@ const Nav = props => {
                 <nav>
                     <div className="navColor"></div>
                     <div className="navMobile">
-                            <Link href=""><img src="/static/svg/closeMenu.svg" /></Link>
-                        </div>
-                        <div>
-                            <Link href=""><ParagraphMediumMobile >{t("nav1")}</ParagraphMediumMobile></Link>
-                            <Link href=""><ParagraphMediumMobile >{t("nav2")}</ParagraphMediumMobile></Link>
-                            <Link href=""><button>{t("nav5")}</button></Link>
-                            <div>
-                                <ParagraphMediumMobile >{t("nav2")}</ParagraphMediumMobile>
-                                <Link href=""><ParagraphMediumMobile >{t("nav6")}</ParagraphMediumMobile></Link>
+                        <div className="navMenuMobile">
+                            <div className="navMenu1">
+                                <Link href=""><ParagraphMediumMobile >{t("nav1")}</ParagraphMediumMobile></Link>
+                                <Link href=""><ParagraphMediumMobile >{t("nav2")}</ParagraphMediumMobile></Link>
+                            </div>
+                            <div className="navMenu2">
+                                <Link href=""><button>{t("nav5")}</button></Link>
+                                <div>
+                                    <ParagraphMediumMobile size="16px"color="#76991E">{t("text")}</ParagraphMediumMobile>
+                                    <Link href=""><ParagraphMediumMobile size="16px" color="#76991E" >{t("nav6")}</ParagraphMediumMobile></Link>
+                                </div>
+                                <img src="/static/svg/logoMapaAyuda.svg" />
                             </div>
                         </div>
+                    </div>
                 </nav>
             </header>
 
