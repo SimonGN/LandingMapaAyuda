@@ -6,8 +6,6 @@ const NavStyle = styled.div`
     .desktop{
         display:none;
     }
-    /* background-color:white;
-    height:5%; */
     header{
         
         display:flex;
@@ -25,7 +23,7 @@ const NavStyle = styled.div`
         display:flex;
         width:100vw;
         height:100vh;
-        display:none;
+        display: ${props => props.view ? 'block' : 'none'};
     }
     .navColor{
         position:absolute;
@@ -98,31 +96,79 @@ const NavStyle = styled.div`
     
     
     @media only screen and (min-width:415px) and (max-width:768px){
-        .mobile{
-            display:none;
-        }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         .mobile{
             display:none;
         }
         .desktop{
-            display:block;
+            width:95%;
+            margin:2% auto;
+            display:flex;
+            justify-content:space-between;
+            margin-top:1%;
+            margin-bottom:1%;
+            align-items: center;
+        }
+        logo{
+            width:20%;
+        }
+        nav{
+            cursor: pointer;
+            position:relative;
+            width: 57%;
+            height:15%;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            Link:last-child{
+                width:20%;
+            }
+        }
+        button{
+            padding: 2.5% 4%;
+            font-size:16px;
         }
     }
+
+    
     @media only screen and (min-width:1025px) and (max-width:1440px){
         .mobile{
             display:none;
         }
         .desktop{
-            display:block;
+            width:95%;
+            margin:2% auto;
+            display:flex;
+            justify-content:space-between;
+
+            align-items: center;
+        }
+        logo{
+            width:20%;
+        }
+        nav{
+            cursor: pointer;
+            position:relative;
+            width: 57%;
+            height:15%;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            Link:last-child{
+                width:20%;
+            }
+        }
+        button{
+            padding: 2.5% 4%;
+            font-size:16px;
         }
     }
     @media only screen and (min-width:1441px){
         .mobile{
             display:none;
         }
-        header{
+        .desktop{
             width:95%;
             margin:0 auto;
             display:flex;
@@ -148,6 +194,7 @@ const NavStyle = styled.div`
         }
         button{
             padding: 2.5% 4%;
+            font-size:16px;
         }
     }
 

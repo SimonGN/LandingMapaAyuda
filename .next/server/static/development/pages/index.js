@@ -366,7 +366,19 @@ var Nav = function Nav(props) {
       language = _useState2[0],
       setLangauge = _useState2[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_NavStyle__WEBPACK_IMPORTED_MODULE_3__["NavStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+      view = _useState4[0],
+      setView = _useState4[1];
+
+  var handleOpen = function handleOpen() {
+    var value = !view;
+    setView(value);
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_NavStyle__WEBPACK_IMPORTED_MODULE_3__["NavStyle"], {
+    view: view
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
     className: "mobile"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "symbol"
@@ -374,15 +386,19 @@ var Nav = function Nav(props) {
     href: "/index"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     src: "/static/svg/symbolMapaAyuda.svg"
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    onClick: handleOpen,
+    cursor: "true",
     src: "/static/svg/openMenu.svg"
-  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "navColor"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "navMobile"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    cursor: "true",
+    onClick: handleOpen,
+    src: "/static/svg/closeMenu.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "navMenuMobile"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "navMenu1"
@@ -449,7 +465,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    overflow:hidden;\n    .desktop{\n        display:none;\n    }\n    /* background-color:white;\n    height:5%; */\n    header{\n        \n        display:flex;\n        justify-content: space-between;\n    }\n    .symbol{\n        width:90%;\n        margin:5% auto;\n        display:flex;\n        justify-content: space-between;\n    }\n    nav{\n        overflow: hidden;\n        position:absolute;\n        display:flex;\n        width:100vw;\n        height:100vh;\n        display:none;\n    }\n    .navColor{\n        position:absolute;\n        z-index: 1;\n        width:100vw;\n        height:100vh;\n        width:100vw;\n        background-color: #00000090;\n    }\n    .navMobile{\n        position:absolute;\n        left:15%;\n        z-index: 2;\n        padding-top: 10%;\n        padding-left:10%;\n        background-color:white;\n        border-top-left-radius: 40px;\n        border-bottom-left-radius: 40px;\n        width:80%;\n        height:95%;\n        display:flex;\n        justify-content:space-between;\n        align-items:flex-start;\n        /* display:none */\n    }\n    .navMenuMobile{\n        width:70%;\n        height: 85%;\n        display:flex;\n        flex-flow:column;\n        align-items:flex-end;\n        padding-right: 15%;\n        justify-content: space-between;\n    }\n    .navMenu1, .navMenu2{\n        display: flex;\n        flex-flow:column;\n        align-items:flex-end;\n        justify-content: space-between;\n        \n    }\n    .navMenu1{\n        height:10vh;\n        margin-top: 40%;\n    }\n    .navMenu2{\n        height:20vh;\n        div{\n            width:103%;\n            display:flex;\n            justify-content: space-between;\n            padding-top:10%;\n            padding-bottom: 40%;\n\n        }\n    }\n    button{\n        text-decoration:none;\n        cursor: pointer;\n        border: 0;\n        border-color:none;\n        padding: 10% 28%;\n        background-color:#76991E40;\n        color: #76991E;\n        border-radius:8px;\n        font-family: \"GT\u2013Medium\";\n        font-size:20px;\n    }\n    \n    \n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        .mobile{\n            display:none;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            display:block;\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            display:block;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        .mobile{\n            display:none;\n        }\n        header{\n            width:95%;\n            margin:0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width:38%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n        }\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    overflow:hidden;\n    .desktop{\n        display:none;\n    }\n    header{\n        \n        display:flex;\n        justify-content: space-between;\n    }\n    .symbol{\n        width:90%;\n        margin:5% auto;\n        display:flex;\n        justify-content: space-between;\n    }\n    nav{\n        overflow: hidden;\n        position:absolute;\n        display:flex;\n        width:100vw;\n        height:100vh;\n        display: ", ";\n    }\n    .navColor{\n        position:absolute;\n        z-index: 1;\n        width:100vw;\n        height:100vh;\n        width:100vw;\n        background-color: #00000090;\n    }\n    .navMobile{\n        position:absolute;\n        left:15%;\n        z-index: 2;\n        padding-top: 10%;\n        padding-left:10%;\n        background-color:white;\n        border-top-left-radius: 40px;\n        border-bottom-left-radius: 40px;\n        width:80%;\n        height:95%;\n        display:flex;\n        justify-content:space-between;\n        align-items:flex-start;\n        /* display:none */\n    }\n    .navMenuMobile{\n        width:70%;\n        height: 85%;\n        display:flex;\n        flex-flow:column;\n        align-items:flex-end;\n        padding-right: 15%;\n        justify-content: space-between;\n    }\n    .navMenu1, .navMenu2{\n        display: flex;\n        flex-flow:column;\n        align-items:flex-end;\n        justify-content: space-between;\n        \n    }\n    .navMenu1{\n        height:10vh;\n        margin-top: 40%;\n    }\n    .navMenu2{\n        height:20vh;\n        div{\n            width:103%;\n            display:flex;\n            justify-content: space-between;\n            padding-top:10%;\n            padding-bottom: 40%;\n\n        }\n    }\n    button{\n        text-decoration:none;\n        cursor: pointer;\n        border: 0;\n        border-color:none;\n        padding: 10% 28%;\n        background-color:#76991E40;\n        color: #76991E;\n        border-radius:8px;\n        font-family: \"GT\u2013Medium\";\n        font-size:20px;\n    }\n    \n    \n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n    \n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width:38%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -459,7 +475,9 @@ function _templateObject() {
 }
 
 
-var NavStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject());
+var NavStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject(), function (props) {
+  return props.view ? 'block' : 'none';
+});
 
 
 /***/ }),

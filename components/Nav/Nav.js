@@ -18,17 +18,24 @@ const changeLanguage = (language, setLangauge) => {
 const Nav = props => {
     const { t } = props;
     const [language, setLangauge] = useState(i18n.language)
+    const [ view, setView ] = useState(false);
+    const handleOpen = () => {
+        const value = !view;
+        setView(value);
+      };
     return (
-        <NavStyle >
+        <NavStyle view={view}>
             <header className="mobile">
                 <div className="symbol">
                     <Link href="/index"><img src="/static/svg/symbolMapaAyuda.svg" /></Link>
-                    <Link href="/"><img src="/static/svg/openMenu.svg" /></Link>
+                    <img  onClick={handleOpen} cursor={"true"} src="/static/svg/openMenu.svg" />
 
                 </div>
                 <nav>
                     <div className="navColor"></div>
                     <div className="navMobile">
+                        <img  cursor={"true"} onClick={handleOpen} src="/static/svg/closeMenu.svg" />
+
                         <div className="navMenuMobile">
                             <div className="navMenu1">
                                 <Link href=""><ParagraphMediumMobile >{t("nav1")}</ParagraphMediumMobile></Link>
