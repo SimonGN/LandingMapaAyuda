@@ -37,7 +37,7 @@ const NavStyle = styled.div`
         position:absolute;
         left:15%;
         z-index: 2;
-        padding-top: 10%;
+        padding-top: 6%;
         padding-left:10%;
         background-color:white;
         border-top-left-radius: 40px;
@@ -51,7 +51,7 @@ const NavStyle = styled.div`
     }
     .navMenuMobile{
         width:70%;
-        height: 85%;
+        height: 90%;
         display:flex;
         flex-flow:column;
         align-items:flex-end;

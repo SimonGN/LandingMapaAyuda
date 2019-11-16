@@ -158,6 +158,71 @@ var ButtonStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_
 
 /***/ }),
 
+/***/ "./components/CardExperience/CardExperience.js":
+/*!*****************************************************!*\
+  !*** ./components/CardExperience/CardExperience.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _CardExperienceStyle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CardExperienceStyle */ "./components/CardExperience/CardExperienceStyle.js");
+/* harmony import */ var _styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMedium */ "./styles/fontsStyles/paragraphMedium.js");
+
+
+
+
+
+var CardExperience = function CardExperience(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardExperienceStyle__WEBPACK_IMPORTED_MODULE_2__["CardExperienceStyle"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "img"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "imgFondo"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "imgPeople"
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CardExperience);
+
+/***/ }),
+
+/***/ "./components/CardExperience/CardExperienceStyle.js":
+/*!**********************************************************!*\
+  !*** ./components/CardExperience/CardExperienceStyle.js ***!
+  \**********************************************************/
+/*! exports provided: CardExperienceStyle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardExperienceStyle", function() { return CardExperienceStyle; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 0px 2px 12px #00000020;\n    width:204px;\n        height:260px;\n    .img{\n        padding-top:7px;\n        margin: 0 auto;\n        position: relative;\n    }\n    .imgFondo{\n        \n        background-image: url(\"/static/img/map.jpg\");\n        width:188px;\n        height:112px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position: absolute;\n        background-image: url(\"/static/img/map.jpg\");\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 130px;\n        top: 95px;\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var CardExperienceStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject());
+
+
+/***/ }),
+
 /***/ "./components/Footer/Footer.js":
 /*!*************************************!*\
   !*** ./components/Footer/Footer.js ***!
@@ -296,10 +361,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _HeaderStyle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HeaderStyle */ "./components/Header/HeaderStyle.js");
 /* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Button/Button */ "./components/Button/Button.js");
-/* harmony import */ var _styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMedium */ "./styles/fontsStyles/paragraphMedium.js");
-/* harmony import */ var _styles_fontsStyles_paragraphMediumMobile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMediumMobile */ "./styles/fontsStyles/paragraphMediumMobile.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _CardExperience_CardExperience__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../CardExperience/CardExperience */ "./components/CardExperience/CardExperience.js");
+/* harmony import */ var _styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMedium */ "./styles/fontsStyles/paragraphMedium.js");
+/* harmony import */ var _styles_fontsStyles_paragraphMediumMobile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMediumMobile */ "./styles/fontsStyles/paragraphMediumMobile.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
@@ -310,25 +377,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var changeLanguage = function changeLanguage(language, setLangauge) {
-  _i18n__WEBPACK_IMPORTED_MODULE_7__["i18n"].changeLanguage(language);
+  _i18n__WEBPACK_IMPORTED_MODULE_8__["i18n"].changeLanguage(language);
   setLangauge(language);
 };
 
 var Header = function Header(props) {
   var t = props.t;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(_i18n__WEBPACK_IMPORTED_MODULE_7__["i18n"].language),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(_i18n__WEBPACK_IMPORTED_MODULE_8__["i18n"].language),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
       language = _useState2[0],
       setLangauge = _useState2[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HeaderStyle__WEBPACK_IMPORTED_MODULE_3__["HeaderStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_5__["default"], null, t("intro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HeaderStyle__WEBPACK_IMPORTED_MODULE_3__["HeaderStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_6__["default"], null, t("intro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     content: t("button"),
     color: "white"
-  })));
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperience_CardExperience__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_7__["withTranslation"])("home")(Header));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_8__["withTranslation"])("home")(Header));
 
 /***/ }),
 
@@ -613,7 +680,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    overflow:hidden;\n    .desktop{\n        display:none;\n    }\n    header{\n        \n        display:flex;\n        justify-content: space-between;\n    }\n    .symbol{\n        width:90%;\n        margin:5% auto;\n        display:flex;\n        justify-content: space-between;\n    }\n    nav{\n        overflow: hidden;\n        position:absolute;\n        display:flex;\n        width:100vw;\n        height:100vh;\n        display: ", ";\n    }\n    .navColor{\n        position:absolute;\n        z-index: 1;\n        width:100vw;\n        height:100vh;\n        width:100vw;\n        background-color: #00000090;\n    }\n    .navMobile{\n        position:absolute;\n        left:15%;\n        z-index: 2;\n        padding-top: 10%;\n        padding-left:10%;\n        background-color:white;\n        border-top-left-radius: 40px;\n        border-bottom-left-radius: 40px;\n        width:80%;\n        height:95%;\n        display:flex;\n        justify-content:space-between;\n        align-items:flex-start;\n        /* display:none */\n    }\n    .navMenuMobile{\n        width:70%;\n        height: 85%;\n        display:flex;\n        flex-flow:column;\n        align-items:flex-end;\n        padding-right: 15%;\n        justify-content: space-between;\n    }\n    .navMenu1, .navMenu2{\n        display: flex;\n        flex-flow:column;\n        align-items:flex-end;\n        justify-content: space-between;\n        \n    }\n    .navMenu1{\n        height:10vh;\n        margin-top: 40%;\n    }\n    .navMenu2{\n        height:20vh;\n        div{\n            width:103%;\n            display:flex;\n            justify-content: space-between;\n            padding-top:10%;\n            padding-bottom: 40%;\n\n        }\n    }\n    button{\n        text-decoration:none;\n        cursor: pointer;\n        border: 0;\n        border-color:none;\n        padding: 10% 28%;\n        background-color:#76991E40;\n        color: #76991E;\n        border-radius:8px;\n        font-family: \"GT\u2013Medium\";\n        font-size:20px;\n    }\n    \n    \n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n    \n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width:38%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    overflow:hidden;\n    .desktop{\n        display:none;\n    }\n    header{\n        \n        display:flex;\n        justify-content: space-between;\n    }\n    .symbol{\n        width:90%;\n        margin:5% auto;\n        display:flex;\n        justify-content: space-between;\n    }\n    nav{\n        overflow: hidden;\n        position:absolute;\n        display:flex;\n        width:100vw;\n        height:100vh;\n        display: ", ";\n    }\n    .navColor{\n        position:absolute;\n        z-index: 1;\n        width:100vw;\n        height:100vh;\n        width:100vw;\n        background-color: #00000090;\n    }\n    .navMobile{\n        position:absolute;\n        left:15%;\n        z-index: 2;\n        padding-top: 6%;\n        padding-left:10%;\n        background-color:white;\n        border-top-left-radius: 40px;\n        border-bottom-left-radius: 40px;\n        width:80%;\n        height:95%;\n        display:flex;\n        justify-content:space-between;\n        align-items:flex-start;\n        /* display:none */\n    }\n    .navMenuMobile{\n        width:70%;\n        height: 90%;\n        display:flex;\n        flex-flow:column;\n        align-items:flex-end;\n        padding-right: 15%;\n        justify-content: space-between;\n    }\n    .navMenu1, .navMenu2{\n        display: flex;\n        flex-flow:column;\n        align-items:flex-end;\n        justify-content: space-between;\n        \n    }\n    .navMenu1{\n        height:10vh;\n        margin-top: 40%;\n    }\n    .navMenu2{\n        height:20vh;\n        div{\n            width:103%;\n            display:flex;\n            justify-content: space-between;\n            padding-top:10%;\n            padding-bottom: 40%;\n\n        }\n    }\n    button{\n        text-decoration:none;\n        cursor: pointer;\n        border: 0;\n        border-color:none;\n        padding: 10% 28%;\n        background-color:#76991E40;\n        color: #76991E;\n        border-radius:8px;\n        font-family: \"GT\u2013Medium\";\n        font-size:20px;\n    }\n    \n    \n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n    \n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width:38%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;

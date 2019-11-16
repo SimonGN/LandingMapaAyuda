@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { HeaderStyle } from "./HeaderStyle";
 import Button from "../Button/Button";
+import CardExperience from "../CardExperience/CardExperience"
 
 
 import ParagraphMedium from "../../styles/fontsStyles/paragraphMedium";
@@ -27,7 +28,7 @@ const Header = props => {
             <main>
                 <ParagraphMedium>{t("intro")}</ParagraphMedium>
                 <Button content={t("button")} color="white"/>
-                
+                <CardExperience />
             </main>
             
 
