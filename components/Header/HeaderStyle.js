@@ -13,22 +13,31 @@ const HeaderStyle = styled.div`
         text-align:center;
         display: flex;
         flex-flow: column;
-        /* justify-content: center; */
         align-items: center;
+        position:relative
     }
     h2{
         padding-top:20%;
         padding-bottom:5%;
     }
+    .card{
+        position: absolute;
+        top: 42%;
+        padding-left: 10%;
+    }
     .icon{
+        
+        overflow: hidden;
+        position: absolute;
+        top: 40%;
+        left:5%;
         margin: 0 auto;
-        margin-top: 20%;
-        position: relative;
-        width: 106%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         z-index: 1;
     }
+
     .icon1, .icon3, .icon4{
     }
     .icon2, .icon5{
@@ -41,7 +50,7 @@ const HeaderStyle = styled.div`
     }
     .icon4{
         width: 50px;
-        margin-bottom: -15%;
+        margin-bottom: -35%;
     }
     
     @media only screen and (min-width:415px) and (max-width:768px){

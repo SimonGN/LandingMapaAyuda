@@ -117,21 +117,21 @@ var CardExperience = function CardExperience(props) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "cardStyle"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "card-experience",
-        key: i
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "img"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "imgFondo"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "imgPeople"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        className: "country",
+        color: "#999999"
+      }, conutry), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "text"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        color: "#999999"
-      }, conutry), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], null, description))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "description"
+      }, description), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "button"
-      }, t("button1")));
+      }, t("button1"))));
     });
   };
 
@@ -157,7 +157,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    \n    height: 40%;\n    display: flex;\n    /* width: 30em; */\n    overflow-y: hidden;\n    overflow-x: auto;\n    margin-left: 73%;\n    position: absolute;\n    top: 45%;\n    div:first-child{\n        margin-left:10%;\n    }\n    .cardStyle{\n        width: 330px;\n        height: 295px;\n        margin-right: 1.5%;\n        background-color: white;\n        border-radius: 16px;\n        box-shadow: 0px 2px 12px #00000020;\n        \n    }\n    .img{\n        padding-top:7px;\n        margin: 0 auto;\n        position: relative;\n    }\n    .imgFondo{\n        background-image: url(\"photo\");\n        width:90%;\n        height:112px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position: absolute;\n        background-image: url(\"people\");\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 143px;\n        top: 95px;\n    }\n    .place{\n        display:flex;\n    }\n    .text{\n        padding: 5% 7%;\n        p:first-child{\n            margin-bottom:3%;\n\n        }\n    }\n    .button{\n        padding:14px 15px;\n        display: inline-block;  \n        color: #F1A409;  \n        background-color: #FCEDCE;\n        border-radius: 8px;\n        font-family: \"GT\u2013Medium\";\n        line-height: 24px;\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: -webkit-fill-available;\n    overflow-y: hidden;\n    overflow-x: auto;\n    overflow: hidden;\n    display:flex;\n    box-shadow: 0px 2px 12px #00000020;\n    .cardStyle{\n        position: relative;\n        margin-right: 1%;\n        width: 230px;\n        height: 290px;\n        padding: 15px;\n        background-color: white;\n        border-radius: 16px;\n        box-shadow: 0px 2px 12px #00000020;\n    }\n    .imgFondo{\n        margin-top: 2%;\n        background-image: url(\"photo\");\n        background-color:blue;\n        width:100%;\n        height:140px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position: absolute;\n        background-image: url(\"people\");\n        background-color:red;\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 65%;\n        top: 40%;\n    }\n    .button{\n        padding:14px 15px;\n        display: inline-block;  \n        color: #F1A409;  \n        background-color: #FCEDCE;\n        border-radius: 8px;\n        font-family: \"GT\u2013Medium\";\n        line-height: 24px;\n        cursor: pointer;\n    }\n    .country{\n        padding:5% 0 3%;\n    }\n    .text{\n        display: flex;\n        flex-flow: column;\n        justify-content: center;\n        align-items: center;\n    }\n    .description{\n        padding:0 0 5%;\n    }\n\n    \n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -298,7 +298,9 @@ var Header = function Header(props) {
   }, t("intro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     content: t("button"),
     color: "white"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperience_CardExperience__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "card"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperience_CardExperience__WEBPACK_IMPORTED_MODULE_5__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "icon"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     className: "icon1",
@@ -315,7 +317,7 @@ var Header = function Header(props) {
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     className: "icon5",
     src: "/static/svg/iconHomeGalery4.svg"
-  }))));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_8__["withTranslation"])("home")(Header));
@@ -337,7 +339,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        background-size:cover;\n        background-position:center;\n        border-radius: 16px;\n        width:90vw;\n        height: 75vh;\n        margin: 0 auto;\n        text-align:center;\n        display: flex;\n        flex-flow: column;\n        /* justify-content: center; */\n        align-items: center;\n    }\n    h2{\n        padding-top:20%;\n        padding-bottom:5%;\n    }\n    .icon{\n        margin: 0 auto;\n        margin-top: 20%;\n        position: relative;\n        width: 106%;\n        display: flex;\n        justify-content: space-between;\n        z-index: 1;\n    }\n    .icon1, .icon3, .icon4{\n    }\n    .icon2, .icon5{\n        display:none;\n    }\n    .icon3{\n        margin-bottom: 70%;\n        margin-left:10%;\n        width: 60px;\n    }\n    .icon4{\n        width: 50px;\n        margin-bottom: -15%;\n    }\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        main{\n            height: 67vh;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n        \n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        background-size:cover;\n        background-position:center;\n        border-radius: 16px;\n        width:90vw;\n        height: 75vh;\n        margin: 0 auto;\n        text-align:center;\n        display: flex;\n        flex-flow: column;\n        align-items: center;\n        position:relative\n    }\n    h2{\n        padding-top:20%;\n        padding-bottom:5%;\n    }\n    .card{\n        position: absolute;\n        top: 42%;\n        padding-left: 10%;\n    }\n    .icon{\n        \n        overflow: hidden;\n        position: absolute;\n        top: 40%;\n        left:5%;\n        margin: 0 auto;\n        width: 100%;\n        display: flex;\n        justify-content: space-between;\n        z-index: 1;\n    }\n\n    .icon1, .icon3, .icon4{\n    }\n    .icon2, .icon5{\n        display:none;\n    }\n    .icon3{\n        margin-bottom: 70%;\n        margin-left:10%;\n        width: 60px;\n    }\n    .icon4{\n        width: 50px;\n        margin-bottom: -35%;\n    }\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        main{\n            height: 67vh;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n        \n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -28014,6 +28016,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // import CardAll from "../components/CardExperience/CardAll"
 
 
 
