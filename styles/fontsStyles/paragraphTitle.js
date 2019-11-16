@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 
-const titleh3 = styled.h2`
-    font-family: "Panama";
-    color: black;
-    font-size: 40px;
-    letter-spacing: 0px;
-    line-height:45px;
+const ParagraphTitle = styled.h2`
+    font-family: "GT–Medium";
+    color: ${props => (props.color ? props.color : 'black')};
+    font-style: normal;
+    font-weight: 500;
+    font-size: ${props => (props.size ? props.size : '35px')};
+    line-height: 40px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
 
     @media only screen and (min-width:415px) and (max-width:768px){
@@ -23,4 +24,4 @@ const titleh3 = styled.h2`
     }
 `;
 
-export default titleh3;
+export default ParagraphTitle;

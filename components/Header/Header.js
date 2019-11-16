@@ -6,9 +6,8 @@ import Button from "../Button/Button";
 import CardExperience from "../CardExperience/CardExperience"
 
 
-import ParagraphMedium from "../../styles/fontsStyles/paragraphMedium";
-import ParagraphMediumMobile from "../../styles/fontsStyles/paragraphMediumMobile";
-
+import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
+import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
 
 
 import { i18n, withTranslation } from '../../i18n'
@@ -26,8 +25,8 @@ const Header = props => {
     return (
         <HeaderStyle>
             <main>
-                <ParagraphMedium>{t("intro")}</ParagraphMedium>
-                <Button content={t("button")} color="white"/>
+                <ParagraphTitle align="center">{t("intro")}</ParagraphTitle>
+                <Button content={t("button")} color="white" />
                 <CardExperience />
             </main>
             

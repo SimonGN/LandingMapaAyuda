@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _ButtonStyle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ButtonStyle */ "./components/Button/ButtonStyle.js");
-/* harmony import */ var _styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMedium */ "./styles/fontsStyles/paragraphMedium.js");
+/* harmony import */ var _styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBody */ "./styles/fontsStyles/paragraphBody.js");
 
 
 
@@ -116,8 +116,9 @@ __webpack_require__.r(__webpack_exports__);
 var Button = function Button(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ButtonStyle__WEBPACK_IMPORTED_MODULE_2__["ButtonStyle"], {
     backgroundColor: props.backgroundColor
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: props.color
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    color: props.color,
+    size: props.size
   }, " ", props.content));
 };
 
@@ -167,28 +168,56 @@ var ButtonStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _CardExperienceStyle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CardExperienceStyle */ "./components/CardExperience/CardExperienceStyle.js");
-/* harmony import */ var _styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMedium */ "./styles/fontsStyles/paragraphMedium.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _CardExperienceStyle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CardExperienceStyle */ "./components/CardExperience/CardExperienceStyle.js");
+/* harmony import */ var _styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBody */ "./styles/fontsStyles/paragraphBody.js");
+/* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Button/Button */ "./components/Button/Button.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
 
+
+
+
+
+var changeLanguage = function changeLanguage(language, setLangauge) {
+  _i18n__WEBPACK_IMPORTED_MODULE_6__["i18n"].changeLanguage(language);
+  setLangauge(language);
+};
 
 var CardExperience = function CardExperience(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardExperienceStyle__WEBPACK_IMPORTED_MODULE_2__["CardExperienceStyle"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  var t = props.t;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(_i18n__WEBPACK_IMPORTED_MODULE_6__["i18n"].language),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      language = _useState2[0],
+      setLangauge = _useState2[1];
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperienceStyle__WEBPACK_IMPORTED_MODULE_3__["CardExperienceStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "img"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "imgFondo"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "imgPeople"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "text"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    color: "#999999"
+  }, "Lima, Per\xFA"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], null, "La maravillosa gente que conoc\xED en Sidney")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    content: t("button1"),
+    color: "#F1A409",
+    backgroundColor: "#FCEDCE",
+    size: "14px"
   })));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (CardExperience);
+/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_6__["withTranslation"])("home")(CardExperience));
 
 /***/ }),
 
@@ -208,7 +237,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 0px 2px 12px #00000020;\n    width:204px;\n        height:260px;\n    .img{\n        padding-top:7px;\n        margin: 0 auto;\n        position: relative;\n    }\n    .imgFondo{\n        \n        background-image: url(\"/static/img/map.jpg\");\n        width:188px;\n        height:112px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position: absolute;\n        background-image: url(\"/static/img/map.jpg\");\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 130px;\n        top: 95px;\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 0px 2px 12px #00000020;\n    width: 65%;\n    height: 50%;\n    .img{\n        padding-top:7px;\n        margin: 0 auto;\n        position: relative;\n    }\n    .imgFondo{\n        background-image: url(\"/static/img/map.jpg\");\n        width:90%;\n        height:112px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position: absolute;\n        background-image: url(\"/static/img/map.jpg\");\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 143px;\n        top: 95px;\n    }\n    .place{\n        display:flex;\n    }\n    .text{\n        padding: 5% 7%;\n        p:first-child{\n            margin-bottom:3%;\n\n        }\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -238,7 +267,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _FooterStyle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./FooterStyle */ "./components/Footer/FooterStyle.js");
-/* harmony import */ var _styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMedium */ "./styles/fontsStyles/paragraphMedium.js");
+/* harmony import */ var _styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBody */ "./styles/fontsStyles/paragraphBody.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_5__);
 
@@ -263,51 +292,7 @@ var Footer = function Footer(props) {
 
   var email = t("email");
   var phone = t("phone");
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_FooterStyle__WEBPACK_IMPORTED_MODULE_3__["FooterStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "footer"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "option"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "mailto:".concat(email)
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: "13px"
-  }, t("email"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "tel:".concat(phone)
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: "13px"
-  }, t("phone"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: "13px"
-  }, t("termsConditions"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: "13px"
-  }, t("privacyPolicy")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "len"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: "13px",
-    decoration: language === 'es' ? "underline" : "",
-    cursor: true,
-    onClick: function onClick() {
-      return changeLanguage('es', setLangauge);
-    }
-  }, "Espa\xF1ol"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: "13px"
-  }, "/"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: "13px",
-    decoration: language === 'en' ? "underline" : "",
-    cursor: true,
-    onClick: function onClick() {
-      return changeLanguage('en', setLangauge);
-    }
-  }, "English"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "copy"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    size: "10px",
-    spacing: "0,5px",
-    lineheight: "13px"
-  }, "Copyright \xA9 by \u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013, 2019. All rights reserved. All materials on this website are intellectual property of \u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013.")));
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_FooterStyle__WEBPACK_IMPORTED_MODULE_3__["FooterStyle"], null);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_5__["withTranslation"])("footer")(Footer));
@@ -362,8 +347,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HeaderStyle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HeaderStyle */ "./components/Header/HeaderStyle.js");
 /* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Button/Button */ "./components/Button/Button.js");
 /* harmony import */ var _CardExperience_CardExperience__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../CardExperience/CardExperience */ "./components/CardExperience/CardExperience.js");
-/* harmony import */ var _styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMedium */ "./styles/fontsStyles/paragraphMedium.js");
-/* harmony import */ var _styles_fontsStyles_paragraphMediumMobile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMediumMobile */ "./styles/fontsStyles/paragraphMediumMobile.js");
+/* harmony import */ var _styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBody */ "./styles/fontsStyles/paragraphBody.js");
+/* harmony import */ var _styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphTitle */ "./styles/fontsStyles/paragraphTitle.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_8__);
 
@@ -389,7 +374,9 @@ var Header = function Header(props) {
       language = _useState2[0],
       setLangauge = _useState2[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HeaderStyle__WEBPACK_IMPORTED_MODULE_3__["HeaderStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_6__["default"], null, t("intro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HeaderStyle__WEBPACK_IMPORTED_MODULE_3__["HeaderStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    align: "center"
+  }, t("intro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     content: t("button"),
     color: "white"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperience_CardExperience__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
@@ -556,8 +543,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _NavStyle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavStyle */ "./components/Nav/NavStyle.js");
-/* harmony import */ var _styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMedium */ "./styles/fontsStyles/paragraphMedium.js");
-/* harmony import */ var _styles_fontsStyles_paragraphMediumMobile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphMediumMobile */ "./styles/fontsStyles/paragraphMediumMobile.js");
+/* harmony import */ var _styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBody */ "./styles/fontsStyles/paragraphBody.js");
+/* harmony import */ var _styles_fontsStyles_paragraphHeader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphHeader */ "./styles/fontsStyles/paragraphHeader.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_6__);
 
@@ -619,18 +606,18 @@ var Nav = function Nav(props) {
     className: "navMenu1"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMediumMobile__WEBPACK_IMPORTED_MODULE_5__["default"], null, t("nav1"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphHeader__WEBPACK_IMPORTED_MODULE_5__["default"], null, t("nav1"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMediumMobile__WEBPACK_IMPORTED_MODULE_5__["default"], null, t("nav2")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphHeader__WEBPACK_IMPORTED_MODULE_5__["default"], null, t("nav2")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "navMenu2"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", null, t("nav5"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMediumMobile__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", null, t("nav5"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphHeader__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: "16px",
     color: "#76991E"
   }, t("text")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: ""
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMediumMobile__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphHeader__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: "16px",
     color: "#76991E"
   }, t("nav6")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
@@ -645,15 +632,15 @@ var Nav = function Nav(props) {
     src: "/static/svg/logoMapaAyuda.svg"
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], null, t("nav1"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], null, t("nav1"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], null, t("nav2"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], null, t("nav2"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], {
     color: "#F1A409"
   }, t("nav3"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], {
     color: "#76991E"
   }, t("nav4"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about"
@@ -8789,10 +8776,10 @@ Home.propTypes = {
 
 /***/ }),
 
-/***/ "./styles/fontsStyles/paragraphMedium.js":
-/*!***********************************************!*\
-  !*** ./styles/fontsStyles/paragraphMedium.js ***!
-  \***********************************************/
+/***/ "./styles/fontsStyles/paragraphBody.js":
+/*!*********************************************!*\
+  !*** ./styles/fontsStyles/paragraphBody.js ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8804,7 +8791,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 24px;\n    text-align: ", ";\n    \n    \n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 24px;\n    text-align: ", ";\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -8814,21 +8801,21 @@ function _templateObject() {
 }
 
 
-var ParagraphMedium = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.p(_templateObject(), function (props) {
+var ParagraphBody = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.p(_templateObject(), function (props) {
   return props.color ? props.color : '#333333';
 }, function (props) {
   return props.size ? props.size : '16px';
 }, function (props) {
   return props.align === 'center' ? 'center' : 'left';
 });
-/* harmony default export */ __webpack_exports__["default"] = (ParagraphMedium);
+/* harmony default export */ __webpack_exports__["default"] = (ParagraphBody);
 
 /***/ }),
 
-/***/ "./styles/fontsStyles/paragraphMediumMobile.js":
-/*!*****************************************************!*\
-  !*** ./styles/fontsStyles/paragraphMediumMobile.js ***!
-  \*****************************************************/
+/***/ "./styles/fontsStyles/paragraphHeader.js":
+/*!***********************************************!*\
+  !*** ./styles/fontsStyles/paragraphHeader.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8850,14 +8837,50 @@ function _templateObject() {
 }
 
 
-var ParagraphMediumMobile = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.p(_templateObject(), function (props) {
-  return props.color ? props.color : '#333333';
+var paragraphHeader = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.p(_templateObject(), function (props) {
+  return props.color ? props.color : '#000000';
 }, function (props) {
   return props.size ? props.size : '20px';
 }, function (props) {
   return props.align === 'center' ? 'center' : 'left';
 });
-/* harmony default export */ __webpack_exports__["default"] = (ParagraphMediumMobile);
+/* harmony default export */ __webpack_exports__["default"] = (paragraphHeader);
+
+/***/ }),
+
+/***/ "./styles/fontsStyles/paragraphTitle.js":
+/*!**********************************************!*\
+  !*** ./styles/fontsStyles/paragraphTitle.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 40px;\n    text-align: ", ";\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var ParagraphTitle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h2(_templateObject(), function (props) {
+  return props.color ? props.color : 'black';
+}, function (props) {
+  return props.size ? props.size : '35px';
+}, function (props) {
+  return props.align === 'center' ? 'center' : 'left';
+});
+/* harmony default export */ __webpack_exports__["default"] = (ParagraphTitle);
 
 /***/ }),
 
