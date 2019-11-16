@@ -114,7 +114,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Button = function Button(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ButtonStyle__WEBPACK_IMPORTED_MODULE_2__["ButtonStyle"], null, props.content);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ButtonStyle__WEBPACK_IMPORTED_MODULE_2__["ButtonStyle"], {
+    backgroundColor: props.backgroundColor
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    color: props.color
+  }, " ", props.content));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Button);
@@ -137,7 +141,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    \n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding:14px 15px;\n    display: inline-block;    \n    background-color: ", ";\n    border-radius: 8px;\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -147,7 +151,9 @@ function _templateObject() {
 }
 
 
-var ButtonStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject());
+var ButtonStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject(), function (props) {
+  return props.backgroundColor ? props.backgroundColor : "#1C76E3";
+});
 
 
 /***/ }),
@@ -316,7 +322,10 @@ var Header = function Header(props) {
       language = _useState2[0],
       setLangauge = _useState2[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HeaderStyle__WEBPACK_IMPORTED_MODULE_3__["HeaderStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_5__["default"], null, t("intro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HeaderStyle__WEBPACK_IMPORTED_MODULE_3__["HeaderStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphMedium__WEBPACK_IMPORTED_MODULE_5__["default"], null, t("intro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    content: t("button"),
+    color: "white"
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_7__["withTranslation"])("home")(Header));
@@ -339,7 +348,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        width:100vw;\n        height:100vh;\n    }\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n        \n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        background-size:cover;\n        background-position:center;\n        border-radius: 16px;\n        width:90vw;\n        height: 70vh;\n        margin: 0 auto;\n        text-align:center;\n        display: flex;\n        flex-flow: column;\n        justify-content: center;\n        align-items: center;\n\n    }\n    /* overflow-x */\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n        \n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -8728,7 +8737,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 24px;\n    text-align: ", ";\n\n    \n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 24px;\n    text-align: ", ";\n    \n    \n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

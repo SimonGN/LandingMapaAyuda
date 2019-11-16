@@ -26,7 +26,8 @@ const Header = props => {
         <HeaderStyle>
             <main>
                 <ParagraphMedium>{t("intro")}</ParagraphMedium>
-                <Button/>
+                <Button content={t("button")} color="white"/>
+                
             </main>
             
 

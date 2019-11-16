@@ -8,8 +8,11 @@ const Button = props => {
 
 
     return (
-        <ButtonStyle >
-          {props.content}
+        <ButtonStyle 
+        backgroundColor={props.backgroundColor}
+         >
+            <ParagraphMedium color={props.color}> {props.content}</ParagraphMedium>
+          
         </ButtonStyle>
     );
 };

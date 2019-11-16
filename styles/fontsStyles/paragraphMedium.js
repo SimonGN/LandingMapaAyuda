@@ -9,7 +9,7 @@ const ParagraphMedium = styled.p`
     font-size: ${props => (props.size ? props.size : '16px')};
     line-height: 24px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
-
+    
     
 
     @media only screen and (min-width:415px) and (max-width:768px){
