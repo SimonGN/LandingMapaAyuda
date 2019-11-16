@@ -1,12 +1,8 @@
 import styled from 'styled-components';
 
 
-const HeaderStyle = styled.div`
-    main{
-        background-image: url("/static/img/map.jpg");
-        width:100vw;
-        height:100vh;
-    }
+const ButtonStyle = styled.div`
+    
     
     @media only screen and (min-width:415px) and (max-width:768px){
         
@@ -18,9 +14,9 @@ const HeaderStyle = styled.div`
         
     }
     @media only screen and (min-width:1441px){
-        
+
     }
 
 `;
 
-export { HeaderStyle };
+export { ButtonStyle };

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 import { HeaderStyle } from "./HeaderStyle";
+import Button from "../Button/Button";
+
+
 import ParagraphMedium from "../../styles/fontsStyles/paragraphMedium";
 import ParagraphMediumMobile from "../../styles/fontsStyles/paragraphMediumMobile";
 
@@ -15,15 +18,16 @@ const changeLanguage = (language, setLangauge) => {
 }
 
 
-const Nav = props => {
+const Header = props => {
     const { t } = props;
     const [language, setLangauge] = useState(i18n.language)
 
     return (
         <HeaderStyle>
-            <div>
-                <ParagraphMedium>{t("")}</ParagraphMedium>
-            </div>
+            <main>
+                <ParagraphMedium>{t("intro")}</ParagraphMedium>
+                <Button/>
+            </main>
             
 
         </HeaderStyle>
