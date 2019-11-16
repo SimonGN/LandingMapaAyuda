@@ -82,8 +82,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CardExperienceStyle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CardExperienceStyle */ "./components/CardExperience/CardExperienceStyle.js");
 /* harmony import */ var _styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBody */ "./styles/fontsStyles/paragraphBody.js");
 /* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Button/Button */ "./components/Button/Button.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _content_card_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../content/card.json */ "./content/card.json");
+var _content_card_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../content/card.json */ "./content/card.json", 1);
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
@@ -93,37 +96,49 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var changeLanguage = function changeLanguage(language, setLangauge) {
-  _i18n__WEBPACK_IMPORTED_MODULE_6__["i18n"].changeLanguage(language);
+  _i18n__WEBPACK_IMPORTED_MODULE_7__["i18n"].changeLanguage(language);
   setLangauge(language);
 };
 
 var CardExperience = function CardExperience(props) {
   var t = props.t;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(_i18n__WEBPACK_IMPORTED_MODULE_6__["i18n"].language),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(_i18n__WEBPACK_IMPORTED_MODULE_7__["i18n"].language),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
       language = _useState2[0],
       setLangauge = _useState2[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperienceStyle__WEBPACK_IMPORTED_MODULE_3__["CardExperienceStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "img"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "imgFondo"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "imgPeople"
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "text"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    color: "#999999"
-  }, "Lima, Per\xFA"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], null, "La maravillosa gente que conoc\xED en Sidney")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    content: t("button1"),
-    color: "#F1A409",
-    backgroundColor: "#FCEDCE",
-    size: "14px"
-  })));
+  var card = function card() {
+    return _content_card_json__WEBPACK_IMPORTED_MODULE_6__.map(function (member, i) {
+      var description = member.description,
+          conutry = member.conutry,
+          photo = member.photo,
+          people = member.people;
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cardStyle"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "card-experience",
+        key: i
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "imgFondo"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "imgPeople"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "text"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        color: "#999999"
+      }, conutry), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], null, description))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "button"
+      }, t("button1")));
+    });
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperienceStyle__WEBPACK_IMPORTED_MODULE_3__["CardExperienceStyle"], null, card());
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_6__["withTranslation"])("home")(CardExperience));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_7__["withTranslation"])("home")(CardExperience));
 
 /***/ }),
 
@@ -142,7 +157,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 0px 2px 12px #00000020;\n    width: 65%;\n    height: 50%;\n    .img{\n        padding-top:7px;\n        margin: 0 auto;\n        position: relative;\n    }\n    .imgFondo{\n        background-image: url(\"/static/img/map.jpg\");\n        width:90%;\n        height:112px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position: absolute;\n        background-image: url(\"/static/img/map.jpg\");\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 143px;\n        top: 95px;\n    }\n    .place{\n        display:flex;\n    }\n    .text{\n        padding: 5% 7%;\n        p:first-child{\n            margin-bottom:3%;\n\n        }\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    \n    height: 40%;\n    display: flex;\n    /* width: 30em; */\n    overflow-y: hidden;\n    overflow-x: auto;\n    margin-left: 73%;\n    position: absolute;\n    top: 45%;\n    div:first-child{\n        margin-left:10%;\n    }\n    .cardStyle{\n        width: 330px;\n        height: 295px;\n        margin-right: 1.5%;\n        background-color: white;\n        border-radius: 16px;\n        box-shadow: 0px 2px 12px #00000020;\n        \n    }\n    .img{\n        padding-top:7px;\n        margin: 0 auto;\n        position: relative;\n    }\n    .imgFondo{\n        background-image: url(\"photo\");\n        width:90%;\n        height:112px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position: absolute;\n        background-image: url(\"people\");\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 143px;\n        top: 95px;\n    }\n    .place{\n        display:flex;\n    }\n    .text{\n        padding: 5% 7%;\n        p:first-child{\n            margin-bottom:3%;\n\n        }\n    }\n    .button{\n        padding:14px 15px;\n        display: inline-block;  \n        color: #F1A409;  \n        background-color: #FCEDCE;\n        border-radius: 8px;\n        font-family: \"GT\u2013Medium\";\n        line-height: 24px;\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -283,7 +298,24 @@ var Header = function Header(props) {
   }, t("intro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     content: t("button"),
     color: "white"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperience_CardExperience__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperience_CardExperience__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "icon"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    className: "icon1",
+    src: "/static/svg/iconHomeGalery0.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    className: "icon2",
+    src: "/static/svg/iconHomeGalery1.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    className: "icon3",
+    src: "/static/svg/iconHomeGalery2.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    className: "icon4",
+    src: "/static/svg/iconHomeGalery3.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    className: "icon5",
+    src: "/static/svg/iconHomeGalery4.svg"
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_8__["withTranslation"])("home")(Header));
@@ -305,7 +337,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        background-size:cover;\n        background-position:center;\n        border-radius: 16px;\n        width:90vw;\n        height: 70vh;\n        margin: 0 auto;\n        text-align:center;\n        display: flex;\n        flex-flow: column;\n        justify-content: center;\n        align-items: center;\n\n    }\n    /* overflow-x */\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n        \n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        background-size:cover;\n        background-position:center;\n        border-radius: 16px;\n        width:90vw;\n        height: 75vh;\n        margin: 0 auto;\n        text-align:center;\n        display: flex;\n        flex-flow: column;\n        /* justify-content: center; */\n        align-items: center;\n    }\n    h2{\n        padding-top:20%;\n        padding-bottom:5%;\n    }\n    .icon{\n        margin: 0 auto;\n        margin-top: 20%;\n        position: relative;\n        width: 106%;\n        display: flex;\n        justify-content: space-between;\n        z-index: 1;\n    }\n    .icon1, .icon3, .icon4{\n    }\n    .icon2, .icon5{\n        display:none;\n    }\n    .icon3{\n        margin-bottom: 70%;\n        margin-left:10%;\n        width: 60px;\n    }\n    .icon4{\n        width: 50px;\n        margin-bottom: -15%;\n    }\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        main{\n            height: 67vh;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n        \n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -583,6 +615,17 @@ var NavStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_te
   return props.view ? 'block' : 'none';
 });
 
+
+/***/ }),
+
+/***/ "./content/card.json":
+/*!***************************!*\
+  !*** ./content/card.json ***!
+  \***************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, default */
+/***/ (function(module) {
+
+module.exports = [{"photo":"/static/img/photo1.jpg","people":"/static/img/map.jpg","conutry":"Burgos, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo2.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo3.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo1.jpg","people":"/static/img/map.jpg","conutry":"Burgos, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo2.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo3.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"}];
 
 /***/ }),
 

@@ -28,6 +28,13 @@ const Header = props => {
                 <ParagraphTitle align="center">{t("intro")}</ParagraphTitle>
                 <Button content={t("button")} color="white" />
                 <CardExperience />
+                <div className="icon">
+                    <img className="icon1" src="/static/svg/iconHomeGalery0.svg" />
+                    <img className="icon2" src="/static/svg/iconHomeGalery1.svg" />
+                    <img className="icon3" src="/static/svg/iconHomeGalery2.svg" />
+                    <img className="icon4" src="/static/svg/iconHomeGalery3.svg" />
+                    <img className="icon5" src="/static/svg/iconHomeGalery4.svg" />
+                </div>
             </main>
             
 

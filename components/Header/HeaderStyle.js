@@ -8,19 +8,46 @@ const HeaderStyle = styled.div`
         background-position:center;
         border-radius: 16px;
         width:90vw;
-        height: 70vh;
+        height: 75vh;
         margin: 0 auto;
         text-align:center;
         display: flex;
         flex-flow: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
-
     }
-    /* overflow-x */
+    h2{
+        padding-top:20%;
+        padding-bottom:5%;
+    }
+    .icon{
+        margin: 0 auto;
+        margin-top: 20%;
+        position: relative;
+        width: 106%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    .icon1, .icon3, .icon4{
+    }
+    .icon2, .icon5{
+        display:none;
+    }
+    .icon3{
+        margin-bottom: 70%;
+        margin-left:10%;
+        width: 60px;
+    }
+    .icon4{
+        width: 50px;
+        margin-bottom: -15%;
+    }
     
     @media only screen and (min-width:415px) and (max-width:768px){
-        
+        main{
+            height: 67vh;
+        }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         

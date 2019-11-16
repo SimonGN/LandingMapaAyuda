@@ -1,0 +1,38 @@
+[
+    {
+        "photo":"/static/img/photo1.jpg",
+        "people":"/static/img/map.jpg",
+        "conutry": "Burgos, España",
+        "description":"La maravillosa gente que conocí en Sidney"
+    },
+    {
+        "photo":"/static/img/photo2.jpg",
+        "people":"/static/img/map.jpg",
+        "conutry": "Madrid, España",
+        "description":"La maravillosa gente que conocí en Sidney"
+    },    
+    {
+        "photo":"/static/img/photo3.jpg",
+        "people":"/static/img/map.jpg",
+        "conutry": "Madrid, España",
+        "description":"La maravillosa gente que conocí en Sidney"
+    },
+    {
+        "photo":"/static/img/photo1.jpg",
+        "people":"/static/img/map.jpg",
+        "conutry": "Burgos, España",
+        "description":"La maravillosa gente que conocí en Sidney"
+    },
+    {
+        "photo":"/static/img/photo2.jpg",
+        "people":"/static/img/map.jpg",
+        "conutry": "Madrid, España",
+        "description":"La maravillosa gente que conocí en Sidney"
+    },    
+    {
+        "photo":"/static/img/photo3.jpg",
+        "people":"/static/img/map.jpg",
+        "conutry": "Madrid, España",
+        "description":"La maravillosa gente que conocí en Sidney"
+    }
+]
