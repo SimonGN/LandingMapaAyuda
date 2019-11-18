@@ -48,6 +48,11 @@ const Meta = () => {
         .* {
           box-sizing: border-box;
         }
+
+        body, html {
+          overflow: hidden;
+          max-width: 100vw;
+        }
       `}</style>
     </React.Fragment>
   );

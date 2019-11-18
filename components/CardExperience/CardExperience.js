@@ -20,7 +20,7 @@ const CardExperience = props => {
     const { t } = props;
     const [language, setLangauge] = useState(i18n.language)
 
-    const card = () => {
+    const displayCards = () => {
         return (
             cardExperience.map((member, i) => {
                 const { description, conutry, photo, people } = member;
@@ -37,7 +37,7 @@ const CardExperience = props => {
                         <ParagraphBody className="country" color="#999999">{conutry}</ParagraphBody>
                         <div className="text">
                             <ParagraphBody className="description">{description}</ParagraphBody>
-                            <div className="button">{t("button1")}</div>
+                            <Button content={t("button1")} color="#F1A409" backgroundColor="#FCEDCE"/>
                         </div>
                     </div>
                     
@@ -48,9 +48,7 @@ const CardExperience = props => {
     }
     return (
         <CardExperienceStyle>
-            {card(
-                
-            )}
+            {displayCards()}
         </CardExperienceStyle>
     );
 };

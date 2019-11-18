@@ -2,25 +2,28 @@ import styled from 'styled-components';
 
 
 const CardExperienceStyle = styled.div`
-    width: -webkit-fill-available;
-    overflow-y: hidden;
-    overflow-x: auto;
-    overflow: hidden;
+  
+    overflow-x: scroll;
     display:flex;
-    box-shadow: 0px 2px 12px #00000020;
+    padding-bottom: 2%;
     .cardStyle{
         position: relative;
-        margin-right: 1%;
+        margin-right: 5%;
         width: 230px;
         height: 290px;
         padding: 15px;
         background-color: white;
         border-radius: 16px;
         box-shadow: 0px 2px 12px #00000020;
+        flex-grow:1;
+        flex: none;
+    }
+    .img{
+        position:relative;
     }
     .imgFondo{
         margin-top: 2%;
-        background-image: url("photo");
+        background-image: url("prop.photo");
         background-color:blue;
         width:100%;
         height:140px;
@@ -28,26 +31,17 @@ const CardExperienceStyle = styled.div`
         border-radius: 12px;
     }
     .imgPeople{
-        position: absolute;
+        position:absolute;
         background-image: url("people");
         background-color:red;
         width:40px;
         height:40px;
         border-radius: 12px;
         border: 5px solid white;
-        left: 65%;
-        top: 40%;
+        left: 70%;
+        top: 85%;
     }
-    .button{
-        padding:14px 15px;
-        display: inline-block;  
-        color: #F1A409;  
-        background-color: #FCEDCE;
-        border-radius: 8px;
-        font-family: "GT–Medium";
-        line-height: 24px;
-        cursor: pointer;
-    }
+
     .country{
         padding:5% 0 3%;
     }

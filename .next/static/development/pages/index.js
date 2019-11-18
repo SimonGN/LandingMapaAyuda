@@ -65,6 +65,83 @@ var ButtonStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(
 
 /***/ }),
 
+/***/ "./components/CardExperience/CardAll.js":
+/*!**********************************************!*\
+  !*** ./components/CardExperience/CardAll.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _CardAllStyle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CardAllStyle */ "./components/CardExperience/CardAllStyle.js");
+/* harmony import */ var _CardExperience__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CardExperience */ "./components/CardExperience/CardExperience.js");
+
+
+
+
+
+var CardAll = function CardAll(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardAllStyle__WEBPACK_IMPORTED_MODULE_2__["CardAllStyle"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardExperience__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "icon1",
+    src: "/static/svg/iconHomeGalery0.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "icon2",
+    src: "/static/svg/iconHomeGalery1.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "icon3",
+    src: "/static/svg/iconHomeGalery2.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "icon4",
+    src: "/static/svg/iconHomeGalery3.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "icon5",
+    src: "/static/svg/iconHomeGalery4.svg"
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CardAll);
+
+/***/ }),
+
+/***/ "./components/CardExperience/CardAllStyle.js":
+/*!***************************************************!*\
+  !*** ./components/CardExperience/CardAllStyle.js ***!
+  \***************************************************/
+/*! exports provided: CardAllStyle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardAllStyle", function() { return CardAllStyle; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-top: 70%;\n    .card{\n\n    }\n\n\n    .icon{\n        position: absolute;\n        top: 40%;\n        left:5%;\n        margin: 0 auto;\n        display: flex;\n        justify-content: space-between;\n        z-index: 3;\n    }\n\n    .icon1, .icon3, .icon4, .icon5{\n        position: absolute;\n    }\n    .icon1{\n        margin-top:130%;\n    }\n    .icon2, .icon5{\n        display:none;\n    }\n    .icon3{\n        margin-bottom: 70%;\n        margin-left:90%;\n        \n    }\n    .icon4{\n        \n        margin-left:50%;\n        margin-bottom: -35%;\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n        margin-top: 45%; \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        margin-top: 30%; \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        margin-top: 30%; \n        .icon2, .icon5{\n            display:block;\n        }\n        .icon1{\n            order:3;\n            width:100px;\n        }\n        .icon2{\n            order:1;\n            width:30px;\n            margin-top:74%;\n            margin-left:10%;\n        }\n        .icon3{\n            order:2;\n            width:60px;\n            margin-bottom: -35%;\n            margin-left: 60%;\n            \n        }\n        .icon4{\n            order: 4;\n        }\n        .icon5{\n            order: 5;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        margin-top: 25%; \n        .icon2, .icon5{\n            display:block;\n        }\n    }\n\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var CardAllStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+
+
+/***/ }),
+
 /***/ "./components/CardExperience/CardExperience.js":
 /*!*****************************************************!*\
   !*** ./components/CardExperience/CardExperience.js ***!
@@ -108,7 +185,7 @@ var CardExperience = function CardExperience(props) {
       language = _useState2[0],
       setLangauge = _useState2[1];
 
-  var card = function card() {
+  var displayCards = function displayCards() {
     return _content_card_json__WEBPACK_IMPORTED_MODULE_6__.map(function (member, i) {
       var description = member.description,
           conutry = member.conutry,
@@ -129,13 +206,15 @@ var CardExperience = function CardExperience(props) {
         className: "text"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], {
         className: "description"
-      }, description), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "button"
-      }, t("button1"))));
+      }, description), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        content: t("button1"),
+        color: "#F1A409",
+        backgroundColor: "#FCEDCE"
+      })));
     });
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperienceStyle__WEBPACK_IMPORTED_MODULE_3__["CardExperienceStyle"], null, card());
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperienceStyle__WEBPACK_IMPORTED_MODULE_3__["CardExperienceStyle"], null, displayCards());
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_7__["withTranslation"])("home")(CardExperience));
@@ -157,7 +236,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: -webkit-fill-available;\n    overflow-y: hidden;\n    overflow-x: auto;\n    overflow: hidden;\n    display:flex;\n    box-shadow: 0px 2px 12px #00000020;\n    .cardStyle{\n        position: relative;\n        margin-right: 1%;\n        width: 230px;\n        height: 290px;\n        padding: 15px;\n        background-color: white;\n        border-radius: 16px;\n        box-shadow: 0px 2px 12px #00000020;\n    }\n    .imgFondo{\n        margin-top: 2%;\n        background-image: url(\"photo\");\n        background-color:blue;\n        width:100%;\n        height:140px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position: absolute;\n        background-image: url(\"people\");\n        background-color:red;\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 65%;\n        top: 40%;\n    }\n    .button{\n        padding:14px 15px;\n        display: inline-block;  \n        color: #F1A409;  \n        background-color: #FCEDCE;\n        border-radius: 8px;\n        font-family: \"GT\u2013Medium\";\n        line-height: 24px;\n        cursor: pointer;\n    }\n    .country{\n        padding:5% 0 3%;\n    }\n    .text{\n        display: flex;\n        flex-flow: column;\n        justify-content: center;\n        align-items: center;\n    }\n    .description{\n        padding:0 0 5%;\n    }\n\n    \n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  \n    overflow-x: scroll;\n    display:flex;\n    padding-bottom: 2%;\n    .cardStyle{\n        position: relative;\n        margin-right: 5%;\n        width: 230px;\n        height: 290px;\n        padding: 15px;\n        background-color: white;\n        border-radius: 16px;\n        box-shadow: 0px 2px 12px #00000020;\n        flex-grow:1;\n        flex: none;\n    }\n    .img{\n        position:relative;\n    }\n    .imgFondo{\n        margin-top: 2%;\n        background-image: url(\"prop.photo\");\n        background-color:blue;\n        width:100%;\n        height:140px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position:absolute;\n        background-image: url(\"people\");\n        background-color:red;\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 70%;\n        top: 85%;\n    }\n\n    .country{\n        padding:5% 0 3%;\n    }\n    .text{\n        display: flex;\n        flex-flow: column;\n        justify-content: center;\n        align-items: center;\n    }\n    .description{\n        padding:0 0 5%;\n    }\n\n    \n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -298,25 +377,6 @@ var Header = function Header(props) {
   }, t("intro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     content: t("button"),
     color: "white"
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "card"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperience_CardExperience__WEBPACK_IMPORTED_MODULE_5__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "icon"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    className: "icon1",
-    src: "/static/svg/iconHomeGalery0.svg"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    className: "icon2",
-    src: "/static/svg/iconHomeGalery1.svg"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    className: "icon3",
-    src: "/static/svg/iconHomeGalery2.svg"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    className: "icon4",
-    src: "/static/svg/iconHomeGalery3.svg"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    className: "icon5",
-    src: "/static/svg/iconHomeGalery4.svg"
   })));
 };
 
@@ -339,7 +399,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        background-size:cover;\n        background-position:center;\n        border-radius: 16px;\n        width:90vw;\n        height: 75vh;\n        margin: 0 auto;\n        text-align:center;\n        display: flex;\n        flex-flow: column;\n        align-items: center;\n        position:relative\n    }\n    h2{\n        padding-top:20%;\n        padding-bottom:5%;\n    }\n    .card{\n        position: absolute;\n        top: 42%;\n        padding-left: 10%;\n    }\n    .icon{\n        \n        overflow: hidden;\n        position: absolute;\n        top: 40%;\n        left:5%;\n        margin: 0 auto;\n        width: 100%;\n        display: flex;\n        justify-content: space-between;\n        z-index: 1;\n    }\n\n    .icon1, .icon3, .icon4{\n    }\n    .icon2, .icon5{\n        display:none;\n    }\n    .icon3{\n        margin-bottom: 70%;\n        margin-left:10%;\n        width: 60px;\n    }\n    .icon4{\n        width: 50px;\n        margin-bottom: -35%;\n    }\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        main{\n            height: 67vh;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        \n    }\n    @media only screen and (min-width:1441px){\n        \n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position:absolute;\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        background-size:cover;\n        background-position:center;\n        border-radius: 16px;\n        width:90vw;\n        height: 75vh;\n        text-align:center;\n        display: flex;\n        flex-flow: column;\n        align-items: center;\n        margin-left: 6%;\n    }\n    h2{\n        padding-top:20%;\n        padding-bottom:5%;\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n        main{\n            height: 67vh;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        main{\n            width:94.5vw;\n            max-height: 550px;\n            margin-left: 3%;\n        }\n        h2{\n            padding-top:10%;\n            padding-bottom:2%;\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        main{\n            width:94.5vw;\n            max-height: 650px;\n            margin-left: 3%;\n        }\n        h2{\n            padding-top:10%;\n            padding-bottom:2%;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        main{\n            width:94.5vw;\n            max-height: 750px;\n            margin-left: 3%;\n        }\n        h2{\n            padding-top:10%;\n            padding-bottom:2%;\n        }\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -377,88 +437,88 @@ var Meta = function Meta() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     charSet: "utf-8",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     name: "description",
     content: "MapaAyuda",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "apple-touch-icon",
     sizes: "57x57",
     href: "./static/img/favicon/apple-icon-57x57.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "apple-touch-icon",
     sizes: "60x60",
     href: "./static/img/favicon/apple-icon-60x60.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "apple-touch-icon",
     sizes: "72x72",
     href: "./static/img/favicon/apple-icon-72x72.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "apple-touch-icon",
     sizes: "76x76",
     href: "./static/img/favicon/apple-icon-76x76.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "apple-touch-icon",
     sizes: "114x114",
     href: "./static/img/favicon/apple-icon-114x114.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "apple-touch-icon",
     sizes: "120x120",
     href: "./static/img/favicon/apple-icon-120x120.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "apple-touch-icon",
     sizes: "144x144",
     href: "./static/img/favicon/apple-icon-144x144.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "apple-touch-icon",
     sizes: "152x152",
     href: "./static/img/favicon/apple-icon-152x152.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "apple-touch-icon",
     sizes: "180x180",
     href: "./static/img/favicon/apple-icon-180x180.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "icon",
     type: "image/png",
     sizes: "192x192",
     href: "./static/img/favicon/android-icon-192x192.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "icon",
     type: "image/png",
     sizes: "32x32",
     href: "./static/img/favicon/favicon-32x32.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "icon",
     type: "image/png",
     sizes: "96x96",
     href: "./static/img/favicon/favicon-96x96.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "icon",
     type: "image/png",
     sizes: "16x16",
     href: "./static/img/favicon/favicon-16x16.png",
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
-    className: "jsx-3885682447"
+    className: "jsx-4016712292"
   }, "MapaAyuda")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3885682447"
-  }, "@font-face{font-family:\"GT\u2013Medium\";src:url(/static/fonts/GT-Walsheim-Pro-Medium.woff2) format(\"woff2\");font-weight:normal;font-style:normal;}@font-face{font-family:\"PanaGT\u2013Regular\";src:url(GT-Walsheim-Pro-Regular.woff2) format(\"woff2\");font-weight:normal;font-style:normal;}body,p,h1,h2,h3{margin:0;padding:0;max-width:100%;}.*{box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zaW1vbmduZWdyZXRlL0Rlc2t0b3AvVGFpbG9yL01hcGFBeXVkYS9jb21wb25lbnRzL01ldGEuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBMkJ5QixBQUdtQyxBQU1LLEFBT3BCLEFBTWEsU0FMWixVQUNLLEdBS2pCLEVBbkJzRSxLQU1iLEtBU3pELGtEQVJxQixRQU5BLFdBT0QsUUFOQSxVQU9wQixRQU5BIiwiZmlsZSI6Ii9Vc2Vycy9zaW1vbmduZWdyZXRlL0Rlc2t0b3AvVGFpbG9yL01hcGFBeXVkYS9jb21wb25lbnRzL01ldGEuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5cbmNvbnN0IE1ldGEgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MVwiIC8+XG4gICAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJkZXNjcmlwdGlvblwiIGNvbnRlbnQ9XCJNYXBhQXl1ZGFcIi8+XG4gICAgICAgIFxuICAgICAgICA8bGluayByZWw9XCJhcHBsZS10b3VjaC1pY29uXCIgc2l6ZXM9XCI1N3g1N1wiIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9hcHBsZS1pY29uLTU3eDU3LnBuZ1wiLz5cbiAgICAgICAgPGxpbmsgcmVsPVwiYXBwbGUtdG91Y2gtaWNvblwiIHNpemVzPVwiNjB4NjBcIiBocmVmPVwiLi9zdGF0aWMvaW1nL2Zhdmljb24vYXBwbGUtaWNvbi02MHg2MC5wbmdcIi8+XG4gICAgICAgIDxsaW5rIHJlbD1cImFwcGxlLXRvdWNoLWljb25cIiBzaXplcz1cIjcyeDcyXCIgaHJlZj1cIi4vc3RhdGljL2ltZy9mYXZpY29uL2FwcGxlLWljb24tNzJ4NzIucG5nXCIvPlxuICAgICAgICA8bGluayByZWw9XCJhcHBsZS10b3VjaC1pY29uXCIgc2l6ZXM9XCI3Nng3NlwiIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9hcHBsZS1pY29uLTc2eDc2LnBuZ1wiLz5cbiAgICAgICAgPGxpbmsgcmVsPVwiYXBwbGUtdG91Y2gtaWNvblwiIHNpemVzPVwiMTE0eDExNFwiIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9hcHBsZS1pY29uLTExNHgxMTQucG5nXCIvPlxuICAgICAgICA8bGluayByZWw9XCJhcHBsZS10b3VjaC1pY29uXCIgc2l6ZXM9XCIxMjB4MTIwXCIgaHJlZj1cIi4vc3RhdGljL2ltZy9mYXZpY29uL2FwcGxlLWljb24tMTIweDEyMC5wbmdcIi8+XG4gICAgICAgIDxsaW5rIHJlbD1cImFwcGxlLXRvdWNoLWljb25cIiBzaXplcz1cIjE0NHgxNDRcIiBocmVmPVwiLi9zdGF0aWMvaW1nL2Zhdmljb24vYXBwbGUtaWNvbi0xNDR4MTQ0LnBuZ1wiLz5cbiAgICAgICAgPGxpbmsgcmVsPVwiYXBwbGUtdG91Y2gtaWNvblwiIHNpemVzPVwiMTUyeDE1MlwiIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9hcHBsZS1pY29uLTE1MngxNTIucG5nXCIvPlxuICAgICAgICA8bGluayByZWw9XCJhcHBsZS10b3VjaC1pY29uXCIgc2l6ZXM9XCIxODB4MTgwXCIgaHJlZj1cIi4vc3RhdGljL2ltZy9mYXZpY29uL2FwcGxlLWljb24tMTgweDE4MC5wbmdcIi8+XG4gICAgICAgIDxsaW5rIHJlbD1cImljb25cIiB0eXBlPVwiaW1hZ2UvcG5nXCIgc2l6ZXM9XCIxOTJ4MTkyXCIgIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9hbmRyb2lkLWljb24tMTkyeDE5Mi5wbmdcIi8+XG4gICAgICAgIDxsaW5rIHJlbD1cImljb25cIiB0eXBlPVwiaW1hZ2UvcG5nXCIgc2l6ZXM9XCIzMngzMlwiIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9mYXZpY29uLTMyeDMyLnBuZ1wiLz5cbiAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIHR5cGU9XCJpbWFnZS9wbmdcIiBzaXplcz1cIjk2eDk2XCIgaHJlZj1cIi4vc3RhdGljL2ltZy9mYXZpY29uL2Zhdmljb24tOTZ4OTYucG5nXCIvPlxuICAgICAgICA8bGluayByZWw9XCJpY29uXCIgdHlwZT1cImltYWdlL3BuZ1wiIHNpemVzPVwiMTZ4MTZcIiBocmVmPVwiLi9zdGF0aWMvaW1nL2Zhdmljb24vZmF2aWNvbi0xNngxNi5wbmdcIi8+XG5cbiAgICAgICAgXG4gICAgICAgIDx0aXRsZT5NYXBhQXl1ZGE8L3RpdGxlPlxuICAgICAgPC9IZWFkPlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiR1TigJNNZWRpdW1cIjtcbiAgICAgICAgICBzcmM6IHVybCgvc3RhdGljL2ZvbnRzL0dULVdhbHNoZWltLVByby1NZWRpdW0ud29mZjIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgICB9XG4gICAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIlBhbmFHVOKAk1JlZ3VsYXJcIjtcbiAgICAgICAgICBzcmM6IHVybChHVC1XYWxzaGVpbS1Qcm8tUmVndWxhci53b2ZmMikgZm9ybWF0KFwid29mZjJcIik7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICAgIH1cblxuICAgICAgICBib2R5LCBwLCBoMSwgaDIsIGgzIHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgICAgIH1cblxuICAgICAgICAuKiB7XG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvUmVhY3QuRnJhZ21lbnQ+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBNZXRhO1xuIl19 */\n/*@ sourceURL=/Users/simongnegrete/Desktop/Tailor/MapaAyuda/components/Meta.js */"));
+    id: "4016712292"
+  }, "@font-face{font-family:\"GT\u2013Medium\";src:url(/static/fonts/GT-Walsheim-Pro-Medium.woff2) format(\"woff2\");font-weight:normal;font-style:normal;}@font-face{font-family:\"PanaGT\u2013Regular\";src:url(GT-Walsheim-Pro-Regular.woff2) format(\"woff2\");font-weight:normal;font-style:normal;}body,p,h1,h2,h3{margin:0;padding:0;max-width:100%;}.*{box-sizing:border-box;}body,html{overflow:hidden;max-width:100vw;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zaW1vbi9EZXNrdG9wL1RhaWxvci9NYXBhQXl1ZGEvY29tcG9uZW50cy9NZXRhLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTJCeUIsQUFHbUMsQUFNSyxBQU9wQixBQU1hLEFBSU4sU0FUTixPQVVNLEdBVEQsR0FLakIsRUFuQnNFLEtBTWIsR0FrQnpELEVBVEEsa0RBUnFCLFFBTkEsV0FPRCxRQU5BLFVBT3BCLFFBTkEiLCJmaWxlIjoiL1VzZXJzL3NpbW9uL0Rlc2t0b3AvVGFpbG9yL01hcGFBeXVkYS9jb21wb25lbnRzL01ldGEuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5cbmNvbnN0IE1ldGEgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MVwiIC8+XG4gICAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJkZXNjcmlwdGlvblwiIGNvbnRlbnQ9XCJNYXBhQXl1ZGFcIi8+XG4gICAgICAgIFxuICAgICAgICA8bGluayByZWw9XCJhcHBsZS10b3VjaC1pY29uXCIgc2l6ZXM9XCI1N3g1N1wiIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9hcHBsZS1pY29uLTU3eDU3LnBuZ1wiLz5cbiAgICAgICAgPGxpbmsgcmVsPVwiYXBwbGUtdG91Y2gtaWNvblwiIHNpemVzPVwiNjB4NjBcIiBocmVmPVwiLi9zdGF0aWMvaW1nL2Zhdmljb24vYXBwbGUtaWNvbi02MHg2MC5wbmdcIi8+XG4gICAgICAgIDxsaW5rIHJlbD1cImFwcGxlLXRvdWNoLWljb25cIiBzaXplcz1cIjcyeDcyXCIgaHJlZj1cIi4vc3RhdGljL2ltZy9mYXZpY29uL2FwcGxlLWljb24tNzJ4NzIucG5nXCIvPlxuICAgICAgICA8bGluayByZWw9XCJhcHBsZS10b3VjaC1pY29uXCIgc2l6ZXM9XCI3Nng3NlwiIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9hcHBsZS1pY29uLTc2eDc2LnBuZ1wiLz5cbiAgICAgICAgPGxpbmsgcmVsPVwiYXBwbGUtdG91Y2gtaWNvblwiIHNpemVzPVwiMTE0eDExNFwiIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9hcHBsZS1pY29uLTExNHgxMTQucG5nXCIvPlxuICAgICAgICA8bGluayByZWw9XCJhcHBsZS10b3VjaC1pY29uXCIgc2l6ZXM9XCIxMjB4MTIwXCIgaHJlZj1cIi4vc3RhdGljL2ltZy9mYXZpY29uL2FwcGxlLWljb24tMTIweDEyMC5wbmdcIi8+XG4gICAgICAgIDxsaW5rIHJlbD1cImFwcGxlLXRvdWNoLWljb25cIiBzaXplcz1cIjE0NHgxNDRcIiBocmVmPVwiLi9zdGF0aWMvaW1nL2Zhdmljb24vYXBwbGUtaWNvbi0xNDR4MTQ0LnBuZ1wiLz5cbiAgICAgICAgPGxpbmsgcmVsPVwiYXBwbGUtdG91Y2gtaWNvblwiIHNpemVzPVwiMTUyeDE1MlwiIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9hcHBsZS1pY29uLTE1MngxNTIucG5nXCIvPlxuICAgICAgICA8bGluayByZWw9XCJhcHBsZS10b3VjaC1pY29uXCIgc2l6ZXM9XCIxODB4MTgwXCIgaHJlZj1cIi4vc3RhdGljL2ltZy9mYXZpY29uL2FwcGxlLWljb24tMTgweDE4MC5wbmdcIi8+XG4gICAgICAgIDxsaW5rIHJlbD1cImljb25cIiB0eXBlPVwiaW1hZ2UvcG5nXCIgc2l6ZXM9XCIxOTJ4MTkyXCIgIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9hbmRyb2lkLWljb24tMTkyeDE5Mi5wbmdcIi8+XG4gICAgICAgIDxsaW5rIHJlbD1cImljb25cIiB0eXBlPVwiaW1hZ2UvcG5nXCIgc2l6ZXM9XCIzMngzMlwiIGhyZWY9XCIuL3N0YXRpYy9pbWcvZmF2aWNvbi9mYXZpY29uLTMyeDMyLnBuZ1wiLz5cbiAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIHR5cGU9XCJpbWFnZS9wbmdcIiBzaXplcz1cIjk2eDk2XCIgaHJlZj1cIi4vc3RhdGljL2ltZy9mYXZpY29uL2Zhdmljb24tOTZ4OTYucG5nXCIvPlxuICAgICAgICA8bGluayByZWw9XCJpY29uXCIgdHlwZT1cImltYWdlL3BuZ1wiIHNpemVzPVwiMTZ4MTZcIiBocmVmPVwiLi9zdGF0aWMvaW1nL2Zhdmljb24vZmF2aWNvbi0xNngxNi5wbmdcIi8+XG5cbiAgICAgICAgXG4gICAgICAgIDx0aXRsZT5NYXBhQXl1ZGE8L3RpdGxlPlxuICAgICAgPC9IZWFkPlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiR1TigJNNZWRpdW1cIjtcbiAgICAgICAgICBzcmM6IHVybCgvc3RhdGljL2ZvbnRzL0dULVdhbHNoZWltLVByby1NZWRpdW0ud29mZjIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgICB9XG4gICAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIlBhbmFHVOKAk1JlZ3VsYXJcIjtcbiAgICAgICAgICBzcmM6IHVybChHVC1XYWxzaGVpbS1Qcm8tUmVndWxhci53b2ZmMikgZm9ybWF0KFwid29mZjJcIik7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICAgIH1cblxuICAgICAgICBib2R5LCBwLCBoMSwgaDIsIGgzIHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgICAgIH1cblxuICAgICAgICAuKiB7XG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgfVxuXG4gICAgICAgIGJvZHksIGh0bWwge1xuICAgICAgICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgICAgICAgbWF4LXdpZHRoOiAxMDB2dztcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvUmVhY3QuRnJhZ21lbnQ+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBNZXRhO1xuIl19 */\n/*@ sourceURL=/Users/simon/Desktop/Tailor/MapaAyuda/components/Meta.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Meta);
@@ -624,10 +684,10 @@ var NavStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_te
 /*!***************************!*\
   !*** ./content/card.json ***!
   \***************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, default */
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, default */
 /***/ (function(module) {
 
-module.exports = [{"photo":"/static/img/photo1.jpg","people":"/static/img/map.jpg","conutry":"Burgos, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo2.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo3.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo1.jpg","people":"/static/img/map.jpg","conutry":"Burgos, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo2.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo3.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"}];
+module.exports = [{"photo":"/static/img/photo1.jpg","people":"/static/img/map.jpg","conutry":"Burgos, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo2.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo3.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo1.jpg","people":"/static/img/map.jpg","conutry":"Burgos, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo2.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo3.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo3.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo1.jpg","people":"/static/img/map.jpg","conutry":"Burgos, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo2.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo3.jpg","people":"/static/img/map.jpg","conutry":"Madrid, España","description":"La maravillosa gente que conocí en Sidney"}];
 
 /***/ }),
 
@@ -17814,10 +17874,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js!./":
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js ***!
-  \***************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fsimon%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js!./":
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fsimon%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js ***!
+  \*******************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18901,12 +18961,12 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_ce09b81a5474d7c74821 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_62fa7c362524a580fdb5 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce09b81a5474d7c74821 */ "dll-reference dll_ce09b81a5474d7c74821"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_62fa7c362524a580fdb5 */ "dll-reference dll_62fa7c362524a580fdb5"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -19888,12 +19948,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_ce09b81a5474d7c74821 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_62fa7c362524a580fdb5 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce09b81a5474d7c74821 */ "dll-reference dll_ce09b81a5474d7c74821"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_62fa7c362524a580fdb5 */ "dll-reference dll_62fa7c362524a580fdb5"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -20501,12 +20561,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_ce09b81a5474d7c74821 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_62fa7c362524a580fdb5 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce09b81a5474d7c74821 */ "dll-reference dll_ce09b81a5474d7c74821"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_62fa7c362524a580fdb5 */ "dll-reference dll_62fa7c362524a580fdb5"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -22201,12 +22261,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_ce09b81a5474d7c74821 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_62fa7c362524a580fdb5 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce09b81a5474d7c74821 */ "dll-reference dll_ce09b81a5474d7c74821"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_62fa7c362524a580fdb5 */ "dll-reference dll_62fa7c362524a580fdb5"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -28002,6 +28062,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_17__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _components_CardExperience_CardAll__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/CardExperience/CardAll */ "./components/CardExperience/CardAll.js");
 
 
 
@@ -28016,7 +28077,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import CardAll from "../components/CardExperience/CardAll"
+
 
 
 
@@ -28085,7 +28146,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_10___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Nav_Nav__WEBPACK_IMPORTED_MODULE_13__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_14__["default"], null));
+      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_10___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Nav_Nav__WEBPACK_IMPORTED_MODULE_13__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_14__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_CardExperience_CardAll__WEBPACK_IMPORTED_MODULE_19__["default"], null));
     }
   }]);
 
@@ -28203,7 +28264,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 40px;\n    text-align: ", ";\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 40px;\n    text-align: ", ";\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        font-size: ", ";\n        line-height: 68px;\n        letter-spacing: -0.01em;\n    }\n    @media only screen and (min-width:1441px){\n        font-size: ", ";\n        line-height: 68px;\n        letter-spacing: -0.01em;\n\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -28219,33 +28280,37 @@ var ParagraphTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h
   return props.size ? props.size : '35px';
 }, function (props) {
   return props.align === 'center' ? 'center' : 'left';
+}, function (props) {
+  return props.size ? props.size : '64px';
+}, function (props) {
+  return props.size ? props.size : '64px';
 });
 /* harmony default export */ __webpack_exports__["default"] = (ParagraphTitle);
 
 /***/ }),
 
-/***/ 1:
-/*!*******************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js ***!
-  \*******************************************************************************************************************************************/
+/***/ 0:
+/*!***********************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fsimon%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fsimon%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fsimon%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_ce09b81a5474d7c74821":
+/***/ "dll-reference dll_62fa7c362524a580fdb5":
 /*!*******************************************!*\
-  !*** external "dll_ce09b81a5474d7c74821" ***!
+  !*** external "dll_62fa7c362524a580fdb5" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_ce09b81a5474d7c74821;
+module.exports = dll_62fa7c362524a580fdb5;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

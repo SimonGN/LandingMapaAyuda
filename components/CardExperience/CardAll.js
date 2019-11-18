@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-import CardAllStyle from "../CardExperience/CardAllStyle"
+import {CardAllStyle} from "./CardAllStyle"
 
-import CardExperience from "../CardExperience/CardExperience"
+import CardExperience from "./CardExperience"
 
 const CardAll = props => {
 
 
     return (
         <CardAllStyle >
-            <CardExperience />
+            <div className="card">
+                <CardExperience />
+            </div>
+            
             <div className="icon">
                 <img className="icon1" src="/static/svg/iconHomeGalery0.svg" />
                 <img className="icon2" src="/static/svg/iconHomeGalery1.svg" />

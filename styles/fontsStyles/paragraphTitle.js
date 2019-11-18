@@ -17,9 +17,14 @@ const ParagraphTitle = styled.h2`
 
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
-
+        font-size: ${props => (props.size ? props.size : '64px')};
+        line-height: 68px;
+        letter-spacing: -0.01em;
     }
     @media only screen and (min-width:1441px){
+        font-size: ${props => (props.size ? props.size : '64px')};
+        line-height: 68px;
+        letter-spacing: -0.01em;
 
     }
 `;
