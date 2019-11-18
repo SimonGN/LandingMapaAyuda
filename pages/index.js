@@ -7,6 +7,9 @@ import PropTypes from "prop-types";
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 import Header from "../components/Header/Header"
+import Search from "../components/Search/Search";
+
+import CardAll from "../components/CardExperience/CardAll";
 
 
 import AOS from "aos";
@@ -15,7 +18,8 @@ import "aos/dist/aos.css";
 import { withTranslation } from "../i18n";
 
 import router from 'next/router'
-import CardAll from "../components/CardExperience/CardAll";
+
+
 
 
 class Home extends React.Component {
@@ -69,7 +73,7 @@ class Home extends React.Component {
         <Nav />
         <Header />
         <CardAll />
-        
+        <Search />
         {/* <Footer /> */}
         
       </React.Fragment>

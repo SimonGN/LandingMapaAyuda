@@ -6,6 +6,8 @@ const ButtonStyle = styled.div`
     display: inline-block;    
     background-color: ${props => props.backgroundColor ? props.backgroundColor : "#1C76E3"};
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
     @media only screen and (min-width:415px) and (max-width:768px){
         
     }

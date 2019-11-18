@@ -34,7 +34,7 @@ const Meta = () => {
         }
         @font-face {
           font-family: "PanaGT–Regular";
-          src: url(GT-Walsheim-Pro-Regular.woff2) format("woff2");
+          src: url(/static/fonts/GT-Walsheim-Pro-Regular.woff2) format("woff2");
           font-weight: normal;
           font-style: normal;
         }
@@ -50,7 +50,7 @@ const Meta = () => {
         }
 
         body, html {
-          overflow: hidden;
+          overflow-x: hidden;
           max-width: 100vw;
         }
       `}</style>
