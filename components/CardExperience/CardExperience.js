@@ -22,15 +22,15 @@ const CardExperience = props => {
 
     const displayCards = () => {
         return (
-            cardExperience.map((member, i) => {
-                const { description, conutry, photo, people } = member;
+            cardExperience.map((card, i) => {
+                const { description, conutry, photo, people } = card;
                 return (
                     <div className="cardStyle">
                         <div className="img">
                             <div className="imgFondo">
                                 {/* <img src={photo}></img> */}
                             </div>
-                            <div className="imgPeople">
+                            <div className="imgPeople" >
                                 {/* <img src={people}></img> */}
                             </div>
                         </div>

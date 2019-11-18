@@ -23,8 +23,8 @@ const CardExperienceStyle = styled.div`
     }
     .imgFondo{
         margin-top: 2%;
-        background-image: url("prop.photo");
-        background-color:blue;
+        background-image:${props => props.background ? `url(${props.background})` : "photo"};
+        /* background-color:blue; */
         width:100%;
         height:140px;
         margin: 0 auto;
@@ -32,8 +32,8 @@ const CardExperienceStyle = styled.div`
     }
     .imgPeople{
         position:absolute;
-        background-image: url("people");
-        background-color:red;
+        background-image: url("${props => props.people ? props.people : "people"}");
+        /* background-color:red; */
         width:40px;
         height:40px;
         border-radius: 12px;
