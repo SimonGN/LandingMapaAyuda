@@ -6,6 +6,7 @@ width:90%;
 margin: 35% auto;
 display: flex;
 flex-flow:column;
+align-items: center;
 
     .img{
         width:100%;
@@ -37,9 +38,7 @@ flex-flow:column;
     .text{
         width:100%;
         text-align: left;
-        display:flex;
-        flex-flow:column;
-        justify-content:center
+
     }
     .title, .subTitle{
         margin-bottom:4%;
@@ -100,7 +99,7 @@ flex-flow:column;
         }
     }
     @media only screen and (min-width:1441px){
-        margin: 10% auto;  
+        margin: 6% auto;  
         width:60%;
         flex-flow:row;
         .img{ 

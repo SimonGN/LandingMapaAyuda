@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 
 const CardStyle = styled.div`
+margin-left: 8%;
     .cardStyle{
         position: relative;
-        margin-right: 5%;
+        
         width: 230px;
         height: 290px;
         padding: 15px;
@@ -19,8 +20,8 @@ const CardStyle = styled.div`
     }
     .imgFondo{
         margin-top: 2%;
-        background-image:${props => props.background ? `url(${props.background})` : "photo"};
-        background-color:blue;
+        background-image:${props => props.photo ? `url(${props.photo})` : "photo"};
+
         width:100%;
         height:140px;
         margin: 0 auto;
@@ -29,7 +30,7 @@ const CardStyle = styled.div`
     .imgPeople{
         position:absolute;
         background-image: url("${props => props.people ? props.people : "people"}");
-        background-color:red;
+
         width:40px;
         height:40px;
         border-radius: 12px;
@@ -49,6 +50,18 @@ const CardStyle = styled.div`
     }
     .description{
         padding:0 0 5%;
+    }
+    @media only screen and (min-width:415px) and (max-width:768px){
+        margin-left: 4%;
+    }
+    @media only screen and (min-width:769px) and (max-width:1024px){
+        margin-left: 2%;
+    }
+    @media only screen and (min-width:1025px) and (max-width:1440px){
+        margin-left: 1.25%;
+    }
+    @media only screen and (min-width:1441px){
+        margin-left: 1.25%;
     }
 `;
 

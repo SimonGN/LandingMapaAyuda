@@ -2,16 +2,26 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 import {CardAllStyle} from "./CardAllStyle"
+import Card from "./Card";
+import cardExperience from "../../content/card.json";
 
-import CardExperience from "./CardExperience"
+
 
 const CardAll = props => {
-
-
+    const displayCards = () => {
+        return (
+            cardExperience.map((card, i) => {
+                const { description, conutry, photo, people, buttonContent } = card;
+                return (
+                    <Card description={description} country={conutry} buttonContent={buttonContent} photo={photo} people={people}/>
+                )
+            })
+        )
+    }
     return (
         <CardAllStyle >
             <div className="card">
-                <CardExperience />
+                {displayCards()}
             </div>
             
             <div className="icon">
@@ -25,4 +35,4 @@ const CardAll = props => {
     );
 };
 
-export default CardAll;
+export default (CardAll);

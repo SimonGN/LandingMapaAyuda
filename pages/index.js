@@ -9,8 +9,6 @@ import Nav from "../components/Nav/Nav";
 import Header from "../components/Header/Header"
 import Search from "../components/Search/Search";
 
-import CardAll from "../components/CardExperience/CardAll";
-
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -72,7 +70,6 @@ class Home extends React.Component {
         <Meta />
         <Nav />
         <Header />
-        <CardAll />
         <Search />
         {/* <Footer /> */}
         

@@ -2,16 +2,16 @@ import styled from 'styled-components';
 
 
 const CardAllStyle = styled.div`
-    margin-top: 70%;
-    .card{
 
+    .card{
+        overflow-x: scroll;
+        display:flex;
+        padding-bottom: 2%;
     }
 
 
     .icon{
-        position: absolute;
-        top: 40%;
-        left:5%;
+       /* position:relative;  */
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -22,60 +22,126 @@ const CardAllStyle = styled.div`
         position: absolute;
     }
     .icon1{
-        margin-top:130%;
+        width: 10%;
+        top: 70%;
     }
     .icon2, .icon5{
         display:none;
     }
     .icon3{
-        margin-bottom: 70%;
-        margin-left:90%;
+        top: -3%;
+        left: 55%;
+        width: 15%;
         
     }
     .icon4{
-        
-        margin-left:50%;
-        margin-bottom: -35%;
+        top: 50%;
+        left: 88%;
+        width: 12%;
     }
     @media only screen and (min-width:415px) and (max-width:768px){
-        margin-top: 45%; 
+       .icon1{
+        width: 7%;
+        top: 33%;
+       }
+       .icon3{
+        top: -7%;
+        width: 7%;
+       }
+       .icon4{
+        top: 55%;
+        left: 94%;
+        width: 6%;
+       }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-        margin-top: 30%; 
-    }
-    @media only screen and (min-width:1025px) and (max-width:1440px){
-        margin-top: 30%; 
         .icon2, .icon5{
             display:block;
+            position: absolute;
         }
         .icon1{
-            order:3;
-            width:100px;
+            width: 5%;
+            top: -3%;
+            left: 47%;
         }
         .icon2{
-            order:1;
-            width:30px;
-            margin-top:74%;
-            margin-left:10%;
+            top: 39%;
+            left: 4%;
+            width: 3%;
         }
-        .icon3{
-            order:2;
-            width:60px;
-            margin-bottom: -35%;
-            margin-left: 60%;
-            
+        .icon3 {
+            top: 28%;
+            left: 23%;
+            width: 7%;
         }
-        .icon4{
-            order: 4;
+        .icon4 {
+            top: 43%;
+            left: 57%;
+            width: 5%;
         }
         .icon5{
-            order: 5;
+            top: 7%;
+            left: 92%;
+        }
+    }
+    @media only screen and (min-width:1025px) and (max-width:1440px){    
+        .icon2, .icon5{
+            display:block;
+            position: absolute;
+        }
+        .icon1{
+            width: 5%;
+            top: -3%;
+            left: 47%;
+        }
+        .icon2{
+            top: 39%;
+            left: 4%;
+            width: 3%;
+        }
+        .icon3 {
+            top: 28%;
+            left: 23%;
+            width: 7%;
+        }
+        .icon4 {
+            top: 43%;
+            left: 57%;
+            width: 5%;
+        }
+        .icon5{
+            top: 7%;
+            left: 92%;
         }
     }
     @media only screen and (min-width:1441px){
-        margin-top: 25%; 
         .icon2, .icon5{
             display:block;
+            position: absolute;
+        }
+        .icon1{
+            width: 4%;
+            top: -7%;
+            left: 49%;
+        }
+        .icon2{
+            top: 35%;
+            left: 4%;
+            width: 2%;
+        }
+        .icon3 {
+            top: 8%;
+            left: 33%;
+            width: 4%;
+        }
+        .icon4 {
+            top: 39%;
+            left: 67%;
+            width: 3%;
+        }
+        .icon5{
+            top: 7%;
+            left: 92%;
         }
     }
 
