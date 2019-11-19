@@ -1,8 +1,11 @@
 {
-    "email": "email@validere.es",
-    "phone": "+34 600 000 000",
+    "title": "Únete a la comunidad",
+    "subTitle": "Vive la experiencia y sé  parte de la historia",
 
-    "termsConditions":"Términos y Condiciones",
-    "privacyPolicy":"Política de privacidad"
+    "button1":"¡Quiero registrarme!",
+    "language":"idioma",
+    "cc":"© 2019 mapayuda",
+    "link1":"Pólitica de privacidad",
+    "link2":"Términos y condiciones"
     
    }
