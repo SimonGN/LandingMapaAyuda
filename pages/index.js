@@ -71,7 +71,7 @@ class Home extends React.Component {
         <Nav />
         <Header />
         <Search />
-        <Footer />
+        <Footer display="flex"/>
         
       </React.Fragment>
     );

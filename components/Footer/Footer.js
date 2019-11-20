@@ -24,7 +24,7 @@ const Footer = props => {
     const { t } = props;
     const [language, setLangauge] = useState(i18n.language)
     return (
-        <FooterStyle display="flex">
+        <FooterStyle display={props.display}>
             <div className="green">
                 <div className="icon">
                     <img className="iconMap" src="/static/svg/iconMapa.svg" />
@@ -39,22 +39,36 @@ const Footer = props => {
 
             </div>
             <div className="greenOpacity">
-                <div className="iconWord" >
-                    <img  src="/static/svg/iconMapaAyuda.svg" />
-                </div>
                 <div className="textGreenOpacity">
-                    <ParagraphBodySmall align="center">{t("cc")}</ParagraphBodySmall>
+                    <div className="nameText">
+                        <div className="iconWord" >
+                            <img src="/static/svg/iconMapaAyuda.svg" />
+                        </div>
+                        <div className="cc">
+                            <ParagraphBodySmall align="center">{t("cc")}</ParagraphBodySmall>
+                        </div>
 
-                    <div className="idioms">
-                        <ParagraphBodySmall className="animate" decoration={language === 'es' ? "underline" : ""} cursor onClick={() => changeLanguage('es', setLangauge)}>Español</ParagraphBodySmall>
-                        <ParagraphBodySmall> / </ParagraphBodySmall>
-                        <ParagraphBodySmall className="animate" decoration={language === 'en' ? "underline" : ""} cursor onClick={() => changeLanguage('en', setLangauge)}>English</ParagraphBodySmall>
+                        <div className="idioms">
+                            <ParagraphBodySmall className="animate" decoration={language === 'es' ? "underline" : ""} cursor onClick={() => changeLanguage('es', setLangauge)}>Español</ParagraphBodySmall>
+                            <ParagraphBodySmall> / </ParagraphBodySmall>
+                            <ParagraphBodySmall className="animate" decoration={language === 'en' ? "underline" : ""} cursor onClick={() => changeLanguage('en', setLangauge)}>English</ParagraphBodySmall>
+                        </div>
                     </div>
 
-                    <div className="legal">
-                        <Link href="/about"><ParagraphBodySmall >{t("link1")}</ParagraphBodySmall></Link>
-                        <Link href="/about"><ParagraphBodySmall >{t("link2")}</ParagraphBodySmall></Link>
+                    <div className="navLegal">
+                        <nav>
+                            <Link href="/"><ParagraphBody >{t("nav1")}</ParagraphBody></Link>
+                            <Link href="/"><ParagraphBody >{t("nav2")}</ParagraphBody></Link>
+                            <Link href="/"><ParagraphBody color="#F1A409" >{t("nav3")}</ParagraphBody></Link>
+                            <Link href="/"><ParagraphBody color="#76991E">{t("nav4")}</ParagraphBody></Link>
+                            <Link href="/"><button>{t("nav5")}</button></Link>
+                        </nav>
+                        <div className="legal">
+                            <Link href="/about"><ParagraphBodySmall >{t("link1")}</ParagraphBodySmall></Link>
+                            <Link href="/about"><ParagraphBodySmall >{t("link2")}</ParagraphBodySmall></Link>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
@@ -63,4 +77,4 @@ const Footer = props => {
     );
 };
 
-export default withTranslation("footer")(Footer);
+export default withTranslation(["footer","nav"])(Footer);
