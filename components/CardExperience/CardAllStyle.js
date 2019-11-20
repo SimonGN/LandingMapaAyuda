@@ -7,6 +7,14 @@ const CardAllStyle = styled.div`
         overflow-x: scroll;
         display:flex;
         padding-bottom: 2%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
 

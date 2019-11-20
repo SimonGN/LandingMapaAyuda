@@ -11,9 +11,9 @@ const CardAll = props => {
     const displayCards = () => {
         return (
             cardExperience.map((card, i) => {
-                const { description, conutry, photo, people, buttonContent } = card;
+                const { description, country, photo, people, buttonContent } = card;
                 return (
-                    <Card description={description} country={conutry} buttonContent={buttonContent} photo={photo} people={people}/>
+                    <Card description={description} country={country} buttonContent={buttonContent} photo={photo} people={people}/>
                 )
             })
         )
