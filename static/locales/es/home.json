@@ -3,7 +3,7 @@
     "intro": "Inspiración para el cambio",
     "button": "Descubre historias de voluntarios",
 
-    "button1": "Descubre nuestras experiencias",
+    "button1": "Descubre su experiencias",
 
 
     "intro1": "¡Lánzate al voluntariado!",
@@ -16,9 +16,10 @@
     
 
     "intro3": "Descubre las últimas experiencias de voluntarios",
-    "description3": "Sumérgete en este emocionante viaje alrededor del mundo.",
-    "button3": "Ver todas las experiencias",
+    "description3": "Sumérgete en este emocionante viaje alrededor del mundo",
+    "button4": "Ver todas las experiencias",
 
-    "intro4": "¡Preséntate al mundo!",
-    "description4": "Tu experiencia, nuestras expectativas. ¡Cuéntalo!"
+    "intro4": "¡Cuenta tu experiencia al mundo!",
+    "description4": "Tu experiencia, nuestras expectativas. ¡Cuéntalo!",
+    "button5":"Comparte tu experiencia"
    }
