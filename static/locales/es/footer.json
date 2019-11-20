@@ -6,6 +6,14 @@
     "language":"idioma",
     "cc":"© 2019 mapayuda",
     "link1":"Pólitica de privacidad",
-    "link2":"Términos y condiciones"
+    "link2":"Términos y condiciones",
+
+    "nav1": "Experiencias",
+    "nav2": "Blog",
+    "nav3": "Comparte experiencia",
+    "nav4": "Entrar",
+    "nav5": "Regístrate",
+    "text":"¿Ya tienes cuenta?",
+    "nav6":"Entra"
     
    }

@@ -77,4 +77,4 @@ const Footer = props => {
     );
 };
 
-export default withTranslation(["footer","nav"])(Footer);
+export default withTranslation("footer")(Footer);
