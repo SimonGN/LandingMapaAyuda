@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 import { FooterStyle } from "./FooterStyle";
+
 import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
+import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
+import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
+
 
 
 
@@ -21,8 +25,8 @@ const Footer = props => {
     return (
         <FooterStyle >
             <div className="green">
-                <ParagraphTitle align="center">{t("intro")}</ParagraphTitle>
-                <ParagraphTitle align="center">{t("intro")}</ParagraphTitle>
+                <ParagraphTitle align="center">{t("title")}</ParagraphTitle>
+                <ParagraphBodyRegular color="#000000"align="center">{t("subTitle")}</ParagraphBodyRegular>
                 <Button/>
             </div>
             <div className="greenOpacity">
