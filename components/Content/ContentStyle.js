@@ -148,7 +148,8 @@ const ContentStyle = styled.div`
             img{
                 display:block;
                 position:absolute;
-                top: -16%;
+                top: -10%;
+                left: 30%;
             }
             h2{
                 padding-top:13%;

@@ -226,15 +226,20 @@ padding-bottom:5%;
         }
         .green{
             position:relative;
-            height:312px;
+            height:500px;
             text-align:center;
         }
+        .textGreen{
+            p{
+            margin-top:3%;
+            margin-bottom:5%;
+        }}
         .icon{
             display:block;
             position:absolute;
             text-align: center;
             left: 82%;
-            top: -15%;
+            top: -9%;
             img{
                 width:60%;
             }
@@ -294,7 +299,7 @@ padding-bottom:5%;
         width:94%;
         .green{
             position:relative;
-            height:512px;
+            height:550px;
             text-align:center;
         }
         .icon{ 
