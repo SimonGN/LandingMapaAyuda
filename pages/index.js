@@ -8,6 +8,7 @@ import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 import Header from "../components/Header/Header"
 import Search from "../components/Search/Search";
+import Content from "../components/Content/Content";
 
 
 import AOS from "aos";
@@ -16,6 +17,7 @@ import "aos/dist/aos.css";
 import { withTranslation } from "../i18n";
 
 import router from 'next/router'
+
 
 
 
@@ -71,6 +73,7 @@ class Home extends React.Component {
         <Nav />
         <Header />
         <Search />
+        <Content />
         <Footer display="flex"/>
         
       </React.Fragment>

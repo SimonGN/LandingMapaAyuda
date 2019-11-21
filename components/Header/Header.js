@@ -11,10 +11,6 @@ import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
 import { i18n, withTranslation } from '../../i18n'
 import CardAll from "../CardExperience/CardAll";
 
-const changeLanguage = (language, setLangauge) => {
-    i18n.changeLanguage(language)
-    setLangauge(language)
-}
 
 
 const Header = props => {
