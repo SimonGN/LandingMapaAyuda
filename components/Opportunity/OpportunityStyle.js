@@ -28,6 +28,9 @@ const OpportunityStyle = styled.div`
             margin-bottom: 4%;
         }
     }
+    .filter{
+        display:flex;
+    }
     @media only screen and (min-width:415px) and (max-width:768px){
         
     }

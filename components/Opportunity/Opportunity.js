@@ -8,9 +8,13 @@ import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
 
 
 import Button from "../Button/Button";
-import CardCountry from "../CardCountry/CardCountry"
-import cardCountry from "../../content/cardCountry.json"
+import CardCountry from "../CardCountry/CardCountry";
+
+import cardCountry from "../../content/cardCountry.json";
+import countrys from "../../content/countrys.json"
+
 import { i18n, withTranslation } from '../../i18n'
+import Dropdown from 'react-dropdown'
 
 
 const Opportunity = ({ country, photo, t }) => {
@@ -24,6 +28,14 @@ const Opportunity = ({ country, photo, t }) => {
             })
         )
     }
+    const optionCountry =() =>{
+        return(
+            countrys.map((country) =>{
+                return (country.name)
+            })
+        )
+    }
+
     
     return (
         <OpportunityStyle photo={photo} country={country}>
@@ -33,7 +45,10 @@ const Opportunity = ({ country, photo, t }) => {
                     <ParagraphBodyRegular>{t("description3")}</ParagraphBodyRegular>
                 </div>
                 <div className="filter">
-                    <ParagraphBodySmall>{t("desplegable")}</ParagraphBodySmall> 
+                    <ParagraphBodySmall size="16px">{t("desplegable")}</ParagraphBodySmall>
+                    <div>
+                    <ParagraphBodySmall size="16px"color="#54C39F"><Dropdown options={optionCountry()}  placeholder={t("description3")} /></ParagraphBodySmall>
+                    </div> 
                 </div>
             </div>
             <div className="card">
