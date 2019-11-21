@@ -13,12 +13,6 @@ import ParagraphHeader from "../../styles/fontsStyles/paragraphHeader"
 
 import { i18n, withTranslation } from '../../i18n'
 
-const changeLanguage = (language, setLangauge) => {
-    i18n.changeLanguage(language)
-    setLangauge(language)
-}
-
-
 const Search = props => {
     const { t } = props;
     const [language, setLangauge] = useState(i18n.language)

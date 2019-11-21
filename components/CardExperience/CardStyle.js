@@ -21,7 +21,7 @@ margin-left: 8%;
     .imgFondo{
         margin-top: 2%;
         background-image:${props => props.photo ? `url(${props.photo})` : "photo"};
-
+        background-color: ${props => (props.photo ? '' : '#fffff')};
         width:100%;
         height:140px;
         margin: 0 auto;
@@ -30,7 +30,7 @@ margin-left: 8%;
     .imgPeople{
         position:absolute;
         background-image: url("${props => props.people ? props.people : "people"}");
-
+        background-color: ${props => (props.photo ? '' : '#fffff')};
         width:40px;
         height:40px;
         border-radius: 12px;

@@ -9,6 +9,7 @@ import Nav from "../components/Nav/Nav";
 import Header from "../components/Header/Header"
 import Search from "../components/Search/Search";
 import Content from "../components/Content/Content";
+import Opportunity from "../components/Opportunity/Opportunity"
 
 
 import AOS from "aos";
@@ -73,6 +74,7 @@ class Home extends React.Component {
         <Nav />
         <Header />
         <Search />
+        <Opportunity />
         <Content />
         <Footer display="flex"/>
         

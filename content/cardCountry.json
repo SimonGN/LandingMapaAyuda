@@ -1,0 +1,18 @@
+[
+    {
+        "photo":"/static/img/photo1.jpg",
+        "country": "España"
+    },
+    {
+        "photo":"/static/img/photo2.jpg",
+        "country": "República Dominicana"
+    },
+    {
+        "photo":"/static/img/photo3.jpg",
+        "country": "Guinea del Norte"
+    },
+    {
+        "photo":"/static/img/photo2.jpg",
+        "country": "Argentina"
+    }
+]

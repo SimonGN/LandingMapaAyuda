@@ -4,12 +4,13 @@ import styled from 'styled-components';
 const ContentStyle = styled.div`
     width:90%;
     margin:0 auto;
+    margin-bottom:135%;
     position: relative;
     h2{
         width:70%;
         padding-left:10%;
         padding-top: 15%;
-        padding-bottom: 15%;
+        padding-bottom: 10%;
     }
     .yellow, .opacityYellow{
         width:100%;
@@ -27,7 +28,7 @@ const ContentStyle = styled.div`
         background-color:#FDF6D7;
         position:absolute;
         margin-bottom:20%;
-        z-index:-1;
+        z-index:1;
     }
     .icons{
         position: absolute;
@@ -43,7 +44,7 @@ const ContentStyle = styled.div`
     }
     .button{
         padding-left:10%;
-        padding-bottom: 15%;
+        padding-bottom: 10%;
         width:70%;
     }
     
@@ -107,6 +108,7 @@ const ContentStyle = styled.div`
             justify-content:center;
             align-items:center;
             text-align:left;
+            z-index:-1;
             h2{
                 width: 85%;
                 padding:0;
@@ -149,7 +151,7 @@ const ContentStyle = styled.div`
                 display:block;
                 position:absolute;
                 top: -10%;
-                left: 30%;
+        left: 30%;
             }
             h2{
                 padding-top:13%;
@@ -175,6 +177,8 @@ const ContentStyle = styled.div`
             justify-content:center;
             align-items:center;
             text-align:left;
+            z-index:-1;
+
             h2{
                 width: 60%;
                 padding:0;
@@ -249,6 +253,8 @@ const ContentStyle = styled.div`
             justify-content:center;
             align-items:center;
             text-align:left;
+            z-index:-1;
+
             h2{
                 width: 60%;
                 padding:0;
