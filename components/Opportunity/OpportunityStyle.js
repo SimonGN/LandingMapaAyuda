@@ -31,6 +31,26 @@ const OpportunityStyle = styled.div`
     .filter{
         display:flex;
     }
+    .dropDown{
+        padding-left:2%;
+        margin-bottom:6%;
+        
+    }
+    .Dropdown-menu{
+        background-color: white;
+        padding: 4% 2.5% 0% 2.5%;
+        box-shadow: 0px 2px 12px #00000020;
+        position: absolute;
+        padding-bottom:15px;
+        border-bottom-left-radius:16px;
+        border-bottom-right-radius:16px;
+        max-height:150px;
+        overflow-y:scroll;
+        div{
+
+            padding-bottom:18px;
+        }
+    }
     @media only screen and (min-width:415px) and (max-width:768px){
         
     }

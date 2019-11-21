@@ -45,9 +45,9 @@ const Opportunity = ({ country, photo, t }) => {
                     <ParagraphBodyRegular>{t("description3")}</ParagraphBodyRegular>
                 </div>
                 <div className="filter">
-                    <ParagraphBodySmall size="16px">{t("desplegable")}</ParagraphBodySmall>
-                    <div>
-                    <ParagraphBodySmall size="16px"color="#54C39F"><Dropdown options={optionCountry()}  placeholder={t("description3")} /></ParagraphBodySmall>
+                    <ParagraphBodySmall size="16px" color="#999999">{t("desplegable")}</ParagraphBodySmall>
+                    <div className="dropDown">
+                    <ParagraphBodySmall size="16px"color="#54C39F"><Dropdown options={optionCountry()}  placeholder={t("desplegable2")} /></ParagraphBodySmall>
                     </div> 
                 </div>
             </div>
