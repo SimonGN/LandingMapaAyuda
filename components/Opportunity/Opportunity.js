@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 
 import { OpportunityStyle } from "./OpportunityStyle";
@@ -16,14 +17,13 @@ import countrys from "../../content/countrys.json"
 import { i18n, withTranslation } from '../../i18n'
 import Dropdown from 'react-dropdown'
 
-
 const Opportunity = ({ country, photo, t }) => {
     const displayCardCountry =() => {
         return(
             cardCountry.map((card, i) => {
                 const { country, photo} = card;
                 return(
-                    <CardCountry photo={photo} country={country}/>
+                    <Link href=""><CardCountry photo={photo} country={country}/></Link>
                 )
             })
         )
@@ -47,15 +47,15 @@ const Opportunity = ({ country, photo, t }) => {
                 <div className="filter">
                     <ParagraphBodySmall size="16px" color="#999999">{t("desplegable")}</ParagraphBodySmall>
                     <div className="dropDown">
-                    <ParagraphBodySmall size="16px"color="#54C39F"><Dropdown options={optionCountry()}  placeholder={t("desplegable2")} /></ParagraphBodySmall>
+                        <ParagraphBodySmall size="16px"color="#54C39F"><Dropdown options={optionCountry()}  placeholder={t("desplegable2")} /> <img src="/static/svg/iconDropDown.svg" /></ParagraphBodySmall>
                     </div> 
                 </div>
             </div>
             <div className="card">
-                {displayCardCountry()}
+            {displayCardCountry()}
             </div>
             <div className="button">
-                <Button content={t("button4")} backgroundColor="#D2E4F9" color="#1C76E3" />
+                <Link href=""><Button content={t("button4")} backgroundColor="#D2E4F9" color="#1C76E3" /></Link>
             </div>
 
 

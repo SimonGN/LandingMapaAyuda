@@ -34,8 +34,24 @@ const OpportunityStyle = styled.div`
     .dropDown{
         padding-left:2%;
         margin-bottom:6%;
-        
+        width: 50%;
+        cursor: pointer;
+        p{
+            display: flex;
+            img{
+                margin-left:5%;
+            }
+        }
     }
+    .dropDown{
+            margin-bottom: 7%;
+            width: 35%;
+            display:flex;
+            justify-content: space-between;
+            div{
+                width: max-content;
+            }
+        }
     .Dropdown-menu{
         background-color: white;
         padding: 4% 2.5% 0% 2.5%;
@@ -52,16 +68,142 @@ const OpportunityStyle = styled.div`
         }
     }
     @media only screen and (min-width:415px) and (max-width:768px){
+        .text{
+            width:60%;
+            margin:0 auto;
+        }
         
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-
+        .text{
+            width:50%;
+            h2, p{
+                margin-bottom: 4%;
+            }
+        }
+        .card, .textAll, .button{
+            width: 94%; 
+        }
+        .card{
+            overflow-x: hidden;
+            margin: 0 auto;
+            display:flex;
+            justify-content:space-between;
+        }
+        .textAll{
+            display:flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom:0.5%;
+        }
+        .filter{
+            width: 30%;
+            margin-right:-6%;
+        }
+        .Dropdown-menu{
+            position: absolute;
+            left: 74%;
+            white-space:nowrap;
+        }
+        .dropDown{
+            margin-bottom: 7%;
+            width: 35%;
+            display:flex;
+            justify-content: space-between;
+            div{
+                width: max-content;
+            }
+        }
+        
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
-  
+        .text{
+            width: 70%;
+            h2, p{
+                margin-bottom: 4%;
+            }
+        }
+        .card, .textAll, .button{
+            width: 94%; 
+        }
+        .card{
+            overflow-x: hidden;
+            margin: 0 auto;
+            display:flex;
+            justify-content:space-between;
+        }
+        .textAll{
+            display:flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom:0.5%;
+        }
+        .filter{
+            width: 30%;
+            margin-right:0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .Dropdown-menu{
+            position: absolute;
+            left: 74%;
+            white-space:nowrap;
+        }
+        .dropDown{
+            margin-bottom: 7%;
+            width: 35%;
+            display:flex;
+            justify-content: space-between;
+            div{
+                width: max-content;
+            }
+        }
+        
     }
+      
     @media only screen and (min-width:1441px){
-     
+        .text{
+            width: 50%;
+            h2, p{
+                margin-bottom: 4%;
+            }
+        }
+        .card, .textAll, .button{
+            width: 93%; 
+        }
+        .card{
+            overflow-x: hidden;            
+            margin: 0 auto;
+            display:flex;
+            justify-content:space-between;
+        }
+        .textAll{
+            display:flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom:0.5%;
+        }
+        .filter{
+            width: 30%;
+            margin-right:0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .Dropdown-menu{
+            position: absolute;
+            left: 82%;
+            white-space:nowrap;
+        }
+        .dropDown{
+            margin-bottom: 7%;
+            width: 35%;
+            display:flex;
+            justify-content: space-between;
+            div{
+                width: max-content;
+            }
+        }
+        
     }
 
 `;
