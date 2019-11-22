@@ -196,7 +196,7 @@ const OpportunityStyle = styled.div`
         }
         .dropDown{
             margin-bottom: 7%;
-            width: 35%;
+            width: 25%;
             display:flex;
             justify-content: space-between;
             div{
