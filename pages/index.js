@@ -6,11 +6,12 @@ import PropTypes from "prop-types";
 
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
-import Header from "../components/Header/Header"
-import Search from "../components/Search/Search";
+import Header from "../components/Header/Header";
+import We from "../components/We/We";
 import Content from "../components/Content/Content";
-import Opportunity from "../components/Opportunity/Opportunity"
-import TypeVol from "../components/TypesVol/TypeVol"
+import Opportunity from "../components/Opportunity/Opportunity";
+import TypeVol from "../components/TypesVol/TypeVol";
+import Galery from "../components/Galery/Galery";
 
 
 import AOS from "aos";
@@ -18,7 +19,7 @@ import "aos/dist/aos.css";
 
 import { withTranslation } from "../i18n";
 
-import router from 'next/router'
+import router from 'next/router';
 
 
 
@@ -74,7 +75,8 @@ class Home extends React.Component {
         <Meta />
         <Nav />
         <Header />
-        <Search />
+        <We />
+        <Galery />
         <TypeVol />
         <Opportunity />
         <Content />

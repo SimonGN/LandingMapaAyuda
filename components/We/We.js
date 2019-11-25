@@ -18,7 +18,7 @@ const We = props => {
     const [language, setLangauge] = useState(i18n.language)
 
     return (
-        <SearchStyle>
+        <WeStyle>
             <div className="img">
                 <div className="icon">
                     <img className="iconWord" src="/static/svg/iconWord.svg" />
@@ -35,7 +35,7 @@ const We = props => {
                 <Button content={t("button2")} backgroundColor="#D2E4F9" color="#1C76E3"/>
             </div>
 
-        </SearchStyle>
+        </WeStyle>
     );
 };
 

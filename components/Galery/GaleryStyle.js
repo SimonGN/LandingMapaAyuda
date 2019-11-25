@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const CardCountryStyle = styled.div`
+const GaleryStyle = styled.div`
 
 
     @media only screen and (min-width:415px) and (max-width:768px){
@@ -19,4 +19,4 @@ const CardCountryStyle = styled.div`
 
 `;
 
-export { CardCountryStyle };
+export { GaleryStyle };
