@@ -1,0 +1,47 @@
+[
+    {
+        "photo":"/static/img/photo1.jpg",
+        "type": "Alimentación y Nutrición",
+        "id":""
+    },
+    {
+        "photo":"/static/img/photo2.jpg",
+        "type": "Educación y Sensibilización",
+        "id":""
+    },
+    {
+        "photo":"/static/img/photo3.jpg",
+        "type": "Conservación Animal y Medio Ambiente",
+        "id":""
+    },
+    {
+        "photo":"/static/img/photo2.jpg",
+        "type": "Desarrollo de Comunidades",
+        "id":""
+    }
+    // ,{
+    //     "photo":"/static/img/photo2.jpg",
+    //     "type": "Educación y Sensibilización",
+    //     "id":""
+    // },
+    // {
+    //     "photo":"/static/img/photo2.jpg",
+    //     "type": "Financiación y Gestión",
+    //     "id":""
+    // },
+    // {
+    //     "photo":"/static/img/photo2.jpg",
+    //     "type": "Infancia y Orfanatos",
+    //     "id":""
+    // },
+    // {
+    //     "photo":"/static/img/photo2.jpg",
+    //     "type": "Medicina y Salud",
+    //     "id":""
+    // },
+    // {
+    //     "photo":"/static/img/photo2.jpg",
+    //     "type": "Refugiados y Desplazados",
+    //     "id":""
+    // }
+]

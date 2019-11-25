@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const OpportunityStyle = styled.div`
+const TypeVolStyle = styled.div`
     width:100%;
     margin:0 auto;
     .textAll, .button{
@@ -223,4 +223,4 @@ const OpportunityStyle = styled.div`
 
 `;
 
-export { OpportunityStyle };
+export { TypeVolStyle };
