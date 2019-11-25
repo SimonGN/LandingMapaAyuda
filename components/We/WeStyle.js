@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const SearchStyle = styled.div`
+const WeStyle = styled.div`
 width:90%;
 margin: 35% auto;
 display: flex;
@@ -127,4 +127,4 @@ align-items: center;
 
 `;
 
-export { SearchStyle };
+export { WeStyle };

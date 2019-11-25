@@ -11,42 +11,33 @@ import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
 import Button from "../Button/Button";
 import CardCountry from "../CardCountry/CardCountry";
 
-import cardCountry from "../../content/cardCountry.json";
-import countrys from "../../content/countrys.json"
+import typeVol from "../../content/typeVol.json";
 
-import { i18n, withTranslation } from '../../i18n'
-import Dropdown from 'react-dropdown'
+import { withTranslation } from '../../i18n'
 
-const TypeVol = ({ country, photo, t }) => {
-    const displayCardCountry =() => {
+const TypeVol = ({t}) => {
+    const displayCardType =() => {
         return(
-            cardCountry.map((card, i) => {
-                const { country, photo} = card;
+            typeVol.map((card, i) => {
+                const { type, photo} = card;
                 return(
-                    <Link href=""><CardCountry photo={photo} country={country}/></Link>
+                    <Link href=""><CardCountry type={type} photo={photo}/></Link>
                 )
-            })
-        )
-    }
-    const optionCountry =() =>{
-        return(
-            countrys.map((country) =>{
-                return (country.name)
             })
         )
     }
 
     
     return (
-        <TypeVolStyle photo={photo} country={country}>
+        <TypeVolStyle >
             <div className="textAll">
                 <div className="text">
                     <ParagraphTitle>{t("intro2")}</ParagraphTitle>
-                    {/* <ParagraphBodyRegular>{t("description3")}</ParagraphBodyRegular> */}
+                    <ParagraphBodyRegular>{t("description3")}</ParagraphBodyRegular>
                 </div>
             </div>
             <div className="card">
-            {displayCardCountry()}
+                {displayCardType()}
             </div>
             <div className="button">
                 <Link href=""><Button content={t("button4")} backgroundColor="#D2E4F9" color="#1C76E3" /></Link>

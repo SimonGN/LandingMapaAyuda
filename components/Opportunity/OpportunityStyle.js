@@ -24,7 +24,7 @@ const OpportunityStyle = styled.div`
         margin-bottom: 20%;
     }
     .text{
-        h2, p{
+        p{
             margin-bottom: 4%;
         }
     }
@@ -70,17 +70,13 @@ const OpportunityStyle = styled.div`
     }
     @media only screen and (min-width:415px) and (max-width:768px){
         .text{
-            width:60%;
-            margin:0 auto;
+            width:70%;
         }
         
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         .text{
             width:50%;
-            h2{
-                margin-bottom: 4%;
-            }
             p{
                 margin-bottom:0;
             }
@@ -124,9 +120,6 @@ const OpportunityStyle = styled.div`
     @media only screen and (min-width:1025px) and (max-width:1440px){
         .text{
             width: 70%;
-            h2{
-                margin-bottom: 4%;
-            }
             p{
                 margin-bottom: 0%;
             }
@@ -187,10 +180,6 @@ const OpportunityStyle = styled.div`
             p{
                 margin-bottom:0;
             }
-            h2{
-                margin-bottom: 4%;
-
-            }
         }
         .textAll{
             display:flex;
@@ -217,6 +206,9 @@ const OpportunityStyle = styled.div`
             div{
                 width: max-content;
             }
+        }
+        .button{
+            margin-bottom:10%;
         }
         
     }

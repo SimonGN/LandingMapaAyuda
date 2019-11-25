@@ -11,7 +11,7 @@ const paragraphHeader = styled.p`
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
     letter-spacing: -0.01em;
     
-
+    margin-bottom:15px;
     @media only screen and (min-width:415px) and (max-width:768px){
 
     }

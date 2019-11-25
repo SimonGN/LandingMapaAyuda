@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-import { SearchStyle } from "./SearchStyle";
+import { WeStyle } from "./WeStyle";
 import Button from "../Button/Button";
 
 
@@ -13,7 +13,7 @@ import ParagraphHeader from "../../styles/fontsStyles/paragraphHeader"
 
 import { i18n, withTranslation } from '../../i18n'
 
-const Search = props => {
+const We = props => {
     const { t } = props;
     const [language, setLangauge] = useState(i18n.language)
 
@@ -39,4 +39,4 @@ const Search = props => {
     );
 };
 
-export default withTranslation("home")(Search);
+export default withTranslation("home")(We);

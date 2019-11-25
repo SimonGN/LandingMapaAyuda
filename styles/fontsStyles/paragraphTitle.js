@@ -10,6 +10,7 @@ const ParagraphTitle = styled.h2`
     line-height: 40px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
 
+    margin-bottom:20px;
     @media only screen and (min-width:415px) and (max-width:768px){
 
     }

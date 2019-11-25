@@ -5,7 +5,6 @@ const CardStyle = styled.div`
 margin-left: 8%;
     .cardStyle{
         position: relative;
-        
         width: 230px;
         height: 290px;
         padding: 15px;

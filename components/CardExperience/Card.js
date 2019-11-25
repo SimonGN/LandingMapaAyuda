@@ -11,7 +11,7 @@ import { i18n, withTranslation } from '../../i18n'
 
 
 
-const Card = ({country, description, photo, people, t}) => {
+const Card = ({country, description, photo, people,t}) => {
     
     return (
         <CardStyle photo={photo} people={people}>

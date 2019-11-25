@@ -8,6 +8,8 @@ const ParagraphBodyRegular = styled.p`
     line-height: 20px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
 
+    
+
     @media only screen and (min-width:415px) and (max-width:768px){
 
     }

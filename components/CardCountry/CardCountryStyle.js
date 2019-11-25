@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 const CardCountryStyle = styled.div`
-    margin-bottom:10%;
+    margin-bottom:5%;
     flex: none;
     width:62%;
     margin-left:5%;
@@ -13,7 +13,7 @@ const CardCountryStyle = styled.div`
         width: 100%;
     }
     .text{
-        white-space: nowrap;
+        white-space: normal;
         width:100%;
         padding-left:5%;
         padding-top:1%;
@@ -21,6 +21,7 @@ const CardCountryStyle = styled.div`
 
     @media only screen and (min-width:415px) and (max-width:768px){
         width: 33%;
+
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         width: 22.5%;
@@ -29,8 +30,12 @@ const CardCountryStyle = styled.div`
         margin-left:0%;
         .text{
             width:100%;
+            white-space: normal;
             padding-left:5%;
             padding-top:1%;
+        }
+        .button{
+            margin-bottom: 15%;
         }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){

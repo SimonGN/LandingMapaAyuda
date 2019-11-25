@@ -24,62 +24,24 @@ const TypeVolStyle = styled.div`
         margin-bottom: 20%;
     }
     .text{
-        h2, p{
+        p{
             margin-bottom: 4%;
         }
     }
-    .filter{
-        display:flex;
-        white-space:nowrap;
-    }
-    .dropDown{
-        padding-left:2%;
-        margin-bottom:6%;
-        width: 50%;
-        cursor: pointer;
-        p{
-            display: flex;
-            img{
-                margin-left:5%;
-            }
-        }
-    }
-    .dropDown{
-            margin-bottom: 7%;
-            width: 35%;
-            display:flex;
-            justify-content: space-between;
-            div{
-                width: max-content;
-            }
-        }
-    .Dropdown-menu{
-        background-color: white;
-        padding: 4% 2.5% 0% 2.5%;
-        box-shadow: 0px 2px 12px #00000020;
-        position: absolute;
-        padding-bottom:15px;
-        border-bottom-left-radius:16px;
-        border-bottom-right-radius:16px;
-        max-height:150px;
-        overflow-y:scroll;
-        white-space:nowrap;
-        div{
-            padding-bottom:18px;
-        }
-    }
+
     @media only screen and (min-width:415px) and (max-width:768px){
         .text{
-            width:60%;
-            margin:0 auto;
+            width:100%;
         }
-        
+        .button{
+            margin-bottom: 15%;
+        }       
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         .text{
-            width:50%;
+            width:100%;
             h2{
-                margin-bottom: 4%;
+                width:50%
             }
             p{
                 margin-bottom:0;
@@ -119,13 +81,16 @@ const TypeVolStyle = styled.div`
                 width: max-content;
             }
         }
+        .button{
+            margin-bottom: 11%;
+        }  
         
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
         .text{
-            width: 70%;
+            width: 90%;
             h2{
-                margin-bottom: 4%;
+                width:60%;
             }
             p{
                 margin-bottom: 0%;
@@ -167,6 +132,9 @@ const TypeVolStyle = styled.div`
                 width: max-content;
             }
         }
+        .button{
+            margin-bottom: 14%;
+        }  
         
     }
       
@@ -184,12 +152,11 @@ const TypeVolStyle = styled.div`
         }
         .text{
             width:70%;
+            h2{
+                width:80%;
+            }
             p{
                 margin-bottom:0;
-            }
-            h2{
-                margin-bottom: 4%;
-
             }
         }
         .textAll{
@@ -218,7 +185,9 @@ const TypeVolStyle = styled.div`
                 width: max-content;
             }
         }
-        
+        .button{
+            margin-bottom:10%;
+        }
     }
 
 `;

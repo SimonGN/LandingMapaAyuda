@@ -8,6 +8,7 @@ const ButtonStyle = styled.div`
     border-radius: 8px;
     display:flex;
     justify-content: center;
+    cursor:pointer;
     @media only screen and (min-width:415px) and (max-width:768px){
         
     }
