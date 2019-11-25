@@ -28224,7 +28224,7 @@ var ParagraphTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!*******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FMapaAyuda%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************************/
@@ -28247,5 +28247,5 @@ module.exports = dll_ce09b81a5474d7c74821;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
