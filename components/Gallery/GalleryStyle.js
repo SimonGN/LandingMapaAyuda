@@ -10,6 +10,10 @@ const GalleryStyle = styled.div`
         width:100%;
         height: 255px;
         background-color: ${props => (props.photo ? '' : 'red')};
+        background-image: ${props => (props.photo ? `url(${props.photo})` : '')};
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         border-radius:16px;
         margin-bottom:10%;
         img{
@@ -37,6 +41,9 @@ const GalleryStyle = styled.div`
             background-color:red;
             border-radius:50px;
             cursor:pointer;
+        }
+        div.active {
+            background-color:blue;
         }
     }
 

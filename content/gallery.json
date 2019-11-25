@@ -1,0 +1,22 @@
+[
+  {
+    "photo":"/static/img/photo1.jpg",
+    "title":"Amazing Experience 1",
+    "description":"La maravillosa gente que conocí en Sidney"
+  },  
+  {
+    "photo":"/static/img/photo2.jpg",
+    "title":"Amazing Experience 2",
+    "description":"La maravillosa gente que conocí en Barcelona"
+  },
+  {
+    "photo":"/static/img/photo3.jpg",
+    "title":"Amazing Experience 3",
+    "description":"La maravillosa gente que conocí en Madrid"
+  },
+  {
+    "photo":"/static/img/photo3.jpg",
+    "title":"Amazing Experience 4",
+    "description":"La maravillosa gente que conocí en Sevilla"
+  }
+]
