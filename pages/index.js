@@ -11,7 +11,7 @@ import We from "../components/We/We";
 import Content from "../components/Content/Content";
 import Opportunity from "../components/Opportunity/Opportunity";
 import TypeVol from "../components/TypesVol/TypeVol";
-import Galery from "../components/Galery/Galery";
+import Gallery from "../components/Gallery/Gallery";
 
 
 import AOS from "aos";
@@ -76,7 +76,7 @@ class Home extends React.Component {
         <Nav />
         <Header />
         <We />
-        <Galery />
+        <Gallery />
         <TypeVol />
         <Opportunity />
         <Content />
