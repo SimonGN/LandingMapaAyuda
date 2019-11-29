@@ -3,16 +3,18 @@ import styled from 'styled-components';
 
 const CardStyle = styled.div`
 margin-left: 8%;
+width: 230px;
+flex-grow:1;
+flex: none;
     .cardStyle{
         position: relative;
-        width: 230px;
+
         height: 290px;
         padding: 15px;
         background-color: white;
         border-radius: 16px;
         box-shadow: 0px 2px 12px #00000020;
-        flex-grow:1;
-        flex: none;
+
     }
     .img{
         position:relative;
@@ -55,6 +57,32 @@ margin-left: 8%;
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         margin-left: 2%;
+        /* .img{
+            display:block;
+        }
+        .cardStyle{display:none;}
+        &:hover{
+            .cardStyle{
+                display:block
+            }
+        } */
+        .cardStyle{
+            padding:0;
+            height: auto;
+        }
+        .text{
+            display:none;
+        }
+
+        &:hover {
+             .cardStyle{
+                height: 290px;
+                padding: 15px;
+            }
+        .text{
+            display:block;
+        }
+        }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
         margin-left: 1.25%;

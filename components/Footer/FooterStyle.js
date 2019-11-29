@@ -198,6 +198,7 @@ padding-bottom:5%;
     
     @media only screen and (min-width:1025px) and (max-width:1440px){
         width:94%;
+        padding-bottom: 3%;
         nav{
             cursor: pointer;
             position:absolute;
@@ -297,6 +298,7 @@ padding-bottom:5%;
     
     @media only screen and (min-width:1441px){
         width:94%;
+        padding-bottom: 3%;
         .green{
             position:relative;
             height:550px;

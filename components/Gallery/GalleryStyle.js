@@ -52,7 +52,8 @@ const GalleryStyle = styled.div`
     .textImg{
         h2{
             text-align:left;
-            line-height: 40px;
+            font-size: 20px;
+            line-height: 24px;
         }
     }
 
@@ -96,6 +97,9 @@ const GalleryStyle = styled.div`
             height: 340px;
             margin-bottom:0;
         }
+        .nextBack{
+            margin-top:20%;
+        }
         .textImg{
             width: 40%;
             padding: 10%;
@@ -103,6 +107,12 @@ const GalleryStyle = styled.div`
         .buttonDiv{
             div{
                 width: 75px;
+            }
+        }
+        .textImg{
+            h2{
+                text-align:left;
+                line-height: 40px;
             }
         }
     }
@@ -123,6 +133,9 @@ const GalleryStyle = styled.div`
             height: 400px;
             margin-bottom:0;
         }
+        .nextBack{
+            margin-top:20%;
+        }
         .textImg{
             width: 40%;
             padding: 8%;
@@ -130,6 +143,12 @@ const GalleryStyle = styled.div`
         .buttonDiv{
             div{
                 width: 75px;
+            }
+        }
+        .textImg{
+            h2{
+                text-align:left;
+                line-height: 40px;
             }
         }
     }
@@ -147,8 +166,11 @@ const GalleryStyle = styled.div`
         }
         .galleryImg{
             width:50%;
-            height: 450px;
+            height: 400px;
             margin-bottom:0;
+        }
+        .nextBack{
+            margin-top:20%;
         }
         .textImg{
             width: 35%;
@@ -157,6 +179,12 @@ const GalleryStyle = styled.div`
         .buttonDiv{
             div{
                 width: 75px;
+            }
+        }
+        .textImg{
+            h2{
+                text-align:left;
+                line-height: 40px;
             }
         }
     }
