@@ -6,6 +6,10 @@ const NavStyle = styled.div`
     .desktop{
         display:none;
     }
+    @keyframes moveNav{
+        0%{transform: translate3d(319px, 0, 0)}
+        100%{transform: translate3d(0px, 0, 0)}
+    }
     header{
         
         display:flex;
@@ -19,7 +23,8 @@ const NavStyle = styled.div`
     }
     nav{
         overflow: hidden;
-        position:absolute;
+        position:fixed;
+        z-index:3;
         display:flex;
         width:100vw;
         height:100vh;
@@ -47,6 +52,7 @@ const NavStyle = styled.div`
         display:flex;
         justify-content:space-between;
         align-items:flex-start;
+        animation: moveNav 2s;
         /* display:none */
     }
     .navMenuMobile{
@@ -57,6 +63,7 @@ const NavStyle = styled.div`
         align-items:flex-end;
         padding-right: 15%;
         justify-content: space-between;
+        
     }
     .navMenu1, .navMenu2{
         display: flex;

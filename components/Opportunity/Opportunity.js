@@ -23,7 +23,7 @@ const Opportunity = ({ country, photo, t }) => {
             cardCountry.map((card, i) => {
                 const { country, photo} = card;
                 return(
-                    <Link href=""><CardCountry photo={photo} country={country}/></Link>
+                    <Link href=""key={i}><CardCountry photo={photo} country={country} /></Link>
                 )
             })
         )

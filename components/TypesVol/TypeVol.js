@@ -21,7 +21,7 @@ const TypeVol = ({t}) => {
             typeVol.map((card, i) => {
                 const { type, photo} = card;
                 return(
-                    <Link href=""><CardCountry type={type} photo={photo}/></Link>
+                    <Link href=""key={i}><CardCountry type={type} photo={photo}/></Link>
                 )
             })
         )

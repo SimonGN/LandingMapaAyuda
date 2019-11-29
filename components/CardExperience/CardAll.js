@@ -10,10 +10,10 @@ import cardExperience from "../../content/card.json";
 const CardAll = props => {
     const displayCards = () => {
         return (
-            cardExperience.map((card, i) => {
+            cardExperience.map((card, i ) => {
                 const { description, country, photo, people, buttonContent } = card;
                 return (
-                    <Card description={description} country={country} buttonContent={buttonContent} photo={photo} people={people}/>
+                    <Card description={description} country={country} buttonContent={buttonContent} photo={photo} people={people} key={i}/>
                 )
             })
         )

@@ -1,22 +1,22 @@
 [
   {
     "photo":"/static/img/photo1.jpg",
-    "title":"Amazing Experience 1",
-    "description":"La maravillosa gente que conocí en Sidney"
+    "title":"El camino, me cambio la vida.",
+    "description":"Por Laura Rodriguez"
   },  
   {
     "photo":"/static/img/photo2.jpg",
-    "title":"Amazing Experience 2",
-    "description":"La maravillosa gente que conocí en Barcelona"
+    "title":"Enseñando a coser en El Salvador, ¡mi mejor aventura!",
+    "description":"Por Juanjo Jimenez"
   },
   {
     "photo":"/static/img/photo3.jpg",
-    "title":"Amazing Experience 3",
-    "description":"La maravillosa gente que conocí en Madrid"
+    "title":"Contruir sin recursos.",
+    "description":"Por Federica Sanchez"
   },
   {
     "photo":"/static/img/photo3.jpg",
-    "title":"Amazing Experience 4",
-    "description":"La maravillosa gente que conocí en Sevilla"
+    "title":"Encontre el camino de mis estudios, gracias.",
+    "description":"Por Roma González"
   }
 ]
