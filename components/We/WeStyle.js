@@ -49,7 +49,7 @@ align-items: center;
 
 
     @media only screen and (min-width:415px) and (max-width:768px){
-        margin: 20% auto;  
+        margin: 15% auto;  
         flex-flow:row;
         .img{ 
             width:45%;
@@ -62,7 +62,7 @@ align-items: center;
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-        margin: 10% auto;  
+        margin: 0 auto;  
         flex-flow:row;
         .img{ 
             width:45%;
@@ -75,7 +75,7 @@ align-items: center;
         }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
-        margin: 10% auto;  
+        margin: 0 auto;  
         width:80%;
         flex-flow:row;
         .img{ 
@@ -99,7 +99,7 @@ align-items: center;
         }
     }
     @media only screen and (min-width:1441px){
-        margin: 6% auto;  
+        margin: 0 auto;  
         width:60%;
         flex-flow:row;
         .img{ 

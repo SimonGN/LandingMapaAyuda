@@ -11,10 +11,10 @@ import { i18n, withTranslation } from '../../i18n'
 
 
 
-const Card = ({ country, description, photo, people, t }) => {
+const Card = ({ country, description, photo, people, number, t }) => {
 
     return (
-        <CardStyle photo={photo} people={people}>
+        <CardStyle photo={photo} people={people} number={number%2}>
 
             <div className="cardStyle" >
                 <div className="img">
@@ -23,9 +23,8 @@ const Card = ({ country, description, photo, people, t }) => {
                 </div>
                 <div className="text">
                 <ParagraphBodySmall className="country" color="#999999">{country}</ParagraphBodySmall>
-
                     <ParagraphBody className="description">{description}</ParagraphBody>
-                    <Button content={t("button1")} color="#F1A409" backgroundColor="#FCEDCE" />
+                    <Button className="readmore" content={t("button1")} color="#F1A409" backgroundColor="#FCEDCE" />
                 </div>
             </div>
         </CardStyle>
