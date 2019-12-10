@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const GalleryStyle = styled.div`
     margin: 0 auto;
     width:90vw;
-    margin-bottom:20%;
+    margin-bottom:25%;
     .galleryImg{
         position:relative;
         width:100%;
@@ -60,7 +60,7 @@ const GalleryStyle = styled.div`
 
 
     @media only screen and (min-width:415px) and (max-width:768px){
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         h2{
             text-align:center;
         }
