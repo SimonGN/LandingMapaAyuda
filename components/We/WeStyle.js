@@ -89,7 +89,7 @@ align-items: center;
             margin: 0 auto;
         }
         .icon{
-            left: 35%;
+            left: 38%;
             top: 33%;
         }
         .iconWord{
@@ -101,7 +101,7 @@ align-items: center;
     }
     @media only screen and (min-width:1441px){
         margin: 0 auto; 
-        margin-bottom: 10%;  
+        margin-bottom: 9.8%; 
         width:60%;
         flex-flow:row;
         .img{ 
@@ -114,7 +114,7 @@ align-items: center;
             margin: 0 auto;
         }
         .icon{
-            left: 40%;
+            left: 35%;
             top: 33%;
         }
         .iconWord{

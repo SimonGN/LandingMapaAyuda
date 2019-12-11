@@ -13,12 +13,12 @@ class Cookies extends React.Component {
   }
 
   componentDidMount() {
-    const display = localStorage.getItem('displayVasalto')
+    const display = localStorage.getItem('displayMapaAyuda')
     this.setState({ ... this.state, display })
   }
   changeDisplay = () => {
-    localStorage.setItem('displayVasalto', 'none')
-    const display = localStorage.getItem('displayVasalto')
+    localStorage.setItem('displayMapaAyuda', 'none')
+    const display = localStorage.getItem('displayMapaAyuda')
     this.setState({ ... this.state, display })
   };
   render() {
@@ -31,7 +31,7 @@ class Cookies extends React.Component {
             <ParagraphBody size="20px"> Pólitica de cookies</ParagraphBody>
           </div>
           <div className="paragraph">
-            <ParagraphBodySmall size="16px" height="24px" color="#999999">Este sitio utiliza cookies técnicas y de rendimiento. Pulse el enlace <a href="/static/documents/ProteccionDeDatos.pdf" target="_blank">Preferencias de privacidad</a> para acceder a información detallada  sobre nuestras cookies.{" "}</ParagraphBodySmall>
+            <ParagraphBodySmall size="16px" height="24px" color="#999999">Este sitio utiliza cookies técnicas y de rendimiento. Pulse el enlace <a href="" target="_blank">Preferencias de privacidad</a> para acceder a información detallada  sobre nuestras cookies.{" "}</ParagraphBodySmall>
           </div>
           <Button className="readmore" content="¡Estoy de acuerdo!" color="#46BDD2" backgroundColor="#D6F0F5" onClick={() => this.changeDisplay()} />
 

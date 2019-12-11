@@ -38,16 +38,16 @@ const Gallery = props => {
                    <img src={"/static/svg/iconFavo.svg"} />
                 </div>
                 <div className="textImg"> 
-                    <ParagraphTitle size="32px"color="#F1A409">{title}</ParagraphTitle>
+                    <ParagraphTitle color="#F1A409">{title}</ParagraphTitle>
                     <ParagraphBodyRegular >{description}</ParagraphBodyRegular>
                     <div className="button">
                         <Link href="/"><Button content={t("button1")} backgroundColor="#FCEDCE" color="#F1A409" /></Link>
                     </div>
                     <div className="nextBack">
                         <div className="buttonNextBack">
-                            <ParagraphBodyRegular onClick={() => changeTab(tab-1)}>Atrás</ParagraphBodyRegular>
-                            <ParagraphBodyRegular>·</ParagraphBodyRegular>
-                            <ParagraphBodyRegular onClick={() => changeTab(tab+1)}>Siguiente</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color="#00000050" onClick={() => changeTab(tab-1)}>Atrás</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color="#00000050">·</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color="#00000050" onClick={() => changeTab(tab+1)}>Siguiente</ParagraphBodyRegular>
                         </div>
                         <div className="buttonDiv">
                             <div className={`${tab===0 && 'active' }`} onClick={() => changeTab(0)}></div>

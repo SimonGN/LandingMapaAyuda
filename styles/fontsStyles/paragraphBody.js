@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 
 const ParagraphBody = styled.p`
-    font-family: "GT–Medium";
+    font-family: "PanaGT–Regular";
     color: ${props => (props.color ? props.color : '#333333')};
     font-style: normal;
-    font-weight: 500;
     font-size: ${props => (props.size ? props.size : '16px')};
-    line-height: 23px;
+    line-height: 24px;
+    letter-spacing:0.2px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
 
     @media only screen and (min-width:415px) and (max-width:768px){

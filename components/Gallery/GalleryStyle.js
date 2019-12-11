@@ -113,6 +113,7 @@ const GalleryStyle = styled.div`
             h2{
                 text-align:left;
                 line-height: 40px;
+                font-size: 32px;
             }
         }
     }
@@ -149,6 +150,7 @@ const GalleryStyle = styled.div`
             h2{
                 text-align:left;
                 line-height: 40px;
+                font-size: 32px;
             }
         }
     }
@@ -185,6 +187,7 @@ const GalleryStyle = styled.div`
             h2{
                 text-align:left;
                 line-height: 40px;
+                font-size: 32px;
             }
         }
     }

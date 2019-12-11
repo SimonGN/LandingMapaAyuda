@@ -97,6 +97,9 @@ const OpportunityStyle = styled.div`
             align-items: flex-end;
             margin-bottom:3%;
         }
+        .ptext{
+            font-size:20px;
+        }
         .filter{
             width: auto;
             margin-right:0%;
@@ -139,6 +142,9 @@ const OpportunityStyle = styled.div`
             align-items: flex-end;
             margin-bottom:3%;
         }
+        .ptext{
+            font-size:20px;
+        }
         .filter{
             width: auto;
             margin-right:0;
@@ -176,7 +182,7 @@ const OpportunityStyle = styled.div`
             justify-content:space-between;
         }
         .text{
-            width:70%;
+            width:65%;
             p{
                 margin-bottom:0;
             }
@@ -186,6 +192,9 @@ const OpportunityStyle = styled.div`
             justify-content: space-between;
             align-items: flex-end;
             margin-bottom:2.5%;
+        }
+        .ptext{
+            font-size:20px;
         }
         .filter{
             width: auto;

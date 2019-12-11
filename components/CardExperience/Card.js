@@ -22,7 +22,7 @@ const Card = ({ country, description, photo, people, number, t }) => {
                     <div className="imgPeople" ></div>
                 </div>
                 <div className="text">
-                <ParagraphBodySmall className="country" color="#999999">{country}</ParagraphBodySmall>
+                    <ParagraphBodySmall className="country" color="#999999">{country}</ParagraphBodySmall>
                     <ParagraphBody className="description">{description}</ParagraphBody>
                     <Button className="readmore" content={t("button1")} color="#F1A409" backgroundColor="#FCEDCE" />
                 </div>

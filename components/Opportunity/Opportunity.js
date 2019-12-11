@@ -42,7 +42,7 @@ const Opportunity = ({ country, photo, t }) => {
             <div className="textAll">
                 <div className="text">
                     <ParagraphTitle>{t("intro3")}</ParagraphTitle>
-                    <ParagraphBodyRegular>{t("description3")}</ParagraphBodyRegular>
+                    <ParagraphBodyRegular className="ptext">{t("description3")}</ParagraphBodyRegular>
                 </div>
                 <div className="filter">
                     <ParagraphBodySmall size="16px" color="#999999">{t("desplegable")}</ParagraphBodySmall>

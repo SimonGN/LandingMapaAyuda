@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const CookiesStyles = styled.div`
   position: fixed;
-  width: 300px;
-  height: 276px;
+  width: 330px;
+  height: 290px;
   left: 2%;
   bottom: 2%;
+  display: ${props => (props.display ? props.display : "flex")};
   background-color: white;
   border-radius:18px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -25,7 +26,6 @@ export const CookiesStyles = styled.div`
   .paragraph{
     margin-bottom:7%;
   }
-  
   a {
     color: ${props => (props.color ? props.color : "#46BDD2")};
   }

@@ -33,7 +33,7 @@ const TypeVol = ({t}) => {
             <div className="textAll">
                 <div className="text">
                     <ParagraphTitle>{t("intro2")}</ParagraphTitle>
-                    <ParagraphBodyRegular>{t("description3")}</ParagraphBodyRegular>
+                    <ParagraphBodyRegular className="ptext">{t("description3")}</ParagraphBodyRegular>
                 </div>
             </div>
             <div className="card">
