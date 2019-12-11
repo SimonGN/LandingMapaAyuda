@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const FooterStyle = styled.div`
 margin: 0 auto;
-width:90vw;
+width:95vw;
 padding-bottom:5%;
     nav{
         display:none;
@@ -15,7 +15,7 @@ padding-bottom:5%;
         background-color:#8ED7BF;
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
-        height:312px;
+        height:370px;
         flex-flow:column;
         justify-content:center;
         display: ${props => (props.display ? props.display : 'none')};
@@ -29,369 +29,317 @@ padding-bottom:5%;
         }
     }
     .button{
+        margin: 0 auto;
         margin-left: 7%;
         margin-right: 7%;
+       
     }
     .greenOpacity{
         background-color:#8ED7BF40;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
-        width:90vw;
-        height:216px;
+        width:95vw;
+        height:auto;
         margin: 0 auto;
         position:relative;
     }
     .iconWord{
-        position:absolute;
-        width: 90%;
+        position: absolute;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
-        top: -20%;
-        left: 7%;
+        top: -9%;
+        left: -40%;
         img{
-            width:30%;
+            width:50%;
             margin: 0 auto; 
         }
     }
     .textGreenOpacity{
         width:90%;
-        padding-top:25%;
+        padding-top:15%;
         margin: 0 auto;
         display:flex;
         flex-flow:column;
-        align-items: center;
         justify-content: space-evenly;
 
     }
     .nameText{
-        width: 40%;
+        width: 100%;
     }
-    .cc{
-        margin-bottom:30%;
+    .navSeo{
+        width:80%;
+        margin:0 auto;
     }
-    .navLegal{
-        width:95%;
-    }
-    .idioms, .legal{ 
+    .idioms, .idiomsMovil{
+        order: 1;
         display:flex;
+        width:50%;
+        margin: 0 auto;
+        justify-content: space-between; 
+        margin-bottom:20%;
     }
     .idioms{
-        justify-content: space-between; 
-        margin-bottom:30%;
+        display:none;
+    }
+    Link{
+        text-align:center;
     }
     .legal{
-        justify-content: space-between;
+        width:95%;
+        margin:0 auto;
+        margin-bottom:10%;
+        & > p{
+            text-align:center;
+            margin-bottom:5%;
+        }
+    }
+    .sectionLegal{
+        width:100%;
+        display:flex;
+        justify-content: space-between; 
+    }
+    
+    .navegation, .voluntary, .moreInfo{
+        margin-bottom:20%;
+        & > p{
+            margin-bottom: 12px;
+        } 
     }
 
     
     @media only screen and (min-width:415px) and (max-width:768px){
-        .textGreenOpacity{
-            height:75%;
-            padding-top:7%;
-        }
-        .cc{
-            margin-bottom: 15%;
+        .green{
+            height:460px;
         }
         .iconWord{
-            width: 39%;
-            left: 31%;
+            top: -5%;
+            left: 0;
+                img{
+                    width:10%;
+            }
         }
-        .idioms{
-            width: 60%;
-            margin:0 auto;
-            margin-bottom:10%;
+        .navSeo{
+            width:85%;
+        }
+        .idiomsMovil{
+            width:30%;
+        }
+        .iconWord{
+            img{
+                width:18%;
+            }
+        }
+        .textGreenOpacity{
+            padding-top: 18%;
+        }
+        .legal{
+            margin-bottom:5%;
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-        width:94%;
-        nav{
-            cursor: pointer;
-            position:absolute;
-            width:60%;
-            height:15%;
-            display:flex;
-            justify-content:space-between;
-            align-items: center;
-            right: 5%;
-            top: 22%; 
-            Link:last-child{
-                width:20%;
-            }
-        }
-        button{
-            text-decoration:none;
-            cursor: pointer;
-            border: 0;
-            border-color:none;
-            background-color:#76991E40;
-            color: #76991E;
-            border-radius:8px;
-            font-family: "GT–Medium";
-            padding: 2.5% 4%;
-            font-size:16px;
-        }
+        padding-bottom: 3%;
         .green{
-            position:relative;
-            height:312px;
-            text-align:center;
+            height: 450px;
         }
-        .icon{
-            display:block;
-            position:absolute;
-            text-align: center;
-            left: 82%;
-            top: -15%;
-            img{
-                width:60%;
+       .button{
+            margin: 0 auto;
+       }
+       .iconWord{
+            top: -13%;
+            left: -40%;
+                img{
+                    width:10%;
             }
-        }
-        .iconWord{   
-            top: -40%;
-            right: 0;
-            left: -79%;
-            img{
-                width:10%;
-                margin: 0 auto; 
-            }
-        }
-        .greenOpacity{
-            width:100%;
-            height:100%;
         }
         .textGreenOpacity{
-            padding-top:7%;
-            padding-bottom:3%;
+            padding-top: 100px;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: row-reverse;
         }
-        .nameText{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .cc{
-            order:3;
-            margin-bottom: 0;
-            
+        .idiomsMovil{
+            display:none;
         }
         .idioms{
-            margin: 0 auto;
-            order:2;
-            margin-bottom: 10%;
-            width: 100%;
+            display:block;
         }
-
-        .navLegal{
-            order:4;
-            text-align: -webkit-right;
-            width: 60%;
+        .navSeo{
+            display:flex;
+            justify-content:space-between;
+            width:75%; 
         }
         .nameText{
-            width:13%;
+            width:25%;
+            flex-direction: column;
         }
-
+        .idioms{
+            display:flex;
+            width:70%;
+            margin: 0;
+            margin-bottom: 28%;
+            margin-top: 3%;
+        }
         .legal{
-            width: 63%;
+            margin:0;
+            & > p{
+                text-align:left;
+                margin-bottom: 16%;
+            }
+        }
+        .sectionLegal{
+            display:flex;
+            flex-direction:column;
+            & >p{
+                margin-bottom: 15px;
+            }
+
+        }
+        .navegation{
+            margin-bottom: 10%;
+            & >p{
+                margin-bottom: 12px;
+            }
+        }
+        .navegation, .voluntary, .moreInfo{
+            margin-bottom: 10%;
         }
     }
     
     @media only screen and (min-width:1025px) and (max-width:1440px){
-        width:94%;
-        padding-bottom: 3%;
-        nav{
-            cursor: pointer;
-            position:absolute;
-            width:60%;
-            height:15%;
-            display:flex;
-            justify-content:space-between;
-            align-items: center;
-            right: 5%;
-            top: 22%;
-            Link:last-child{
-                width:20%;
-            }
-        }
-        button{
-            text-decoration:none;
-            cursor: pointer;
-            border: 0;
-            border-color:none;
-            background-color:#76991E40;
-            color: #76991E;
-            border-radius:8px;
-            font-family: "GT–Medium";
-            padding: 2.5% 4%;
-            font-size:16px;
-        }
+        padding-bottom: 2%;
         .green{
-            position:relative;
-            height:500px;
-            text-align:center;
+            height: 480px;
         }
-        .textGreen{
-            p{
-            margin-top:3%;
-            margin-bottom:5%;
-        }}
-        .icon{
-            display:block;
-            position:absolute;
-            text-align: center;
-            left: 82%;
-            top: -9%;
-            img{
-                width:60%;
-            }
+        .button{
+            margin: 0 auto;
         }
-        .iconWord{   
-            top: -40%;
-            right: 0;
-            left: -79%;
-            img{
-                width:10%;
-                margin: 0 auto; 
-            }
-        }
-        .greenOpacity{
-            width:100%;
-            height:100%;
+       .iconWord{
+            top: -19%;
+            left: -33%;
+                img{
+                    width:10%;
+                }
         }
         .textGreenOpacity{
-            padding-top:7%;
-            padding-bottom:3%;
+            width: 75%;
+            padding-top: 100px;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+        .idiomsMovil{
+            display:none;
+        }
+        .navSeo{
+            display:flex;
+            justify-content:space-between;
+            width:75%; 
         }
         .nameText{
-            display: flex;
+            width:25%;
             flex-direction: column;
         }
-
-        .cc{
-            order:3;
-            margin-bottom: 0;
-            
-        }
         .idioms{
-            margin: 0 auto;
-            order:2;
-            margin-bottom: 10%;
-            width: 100%;
+            display:flex;
+            width:70%;
+            margin: 0;
+            margin-bottom: 24%;
+            margin-top: 3%;
         }
-
-        .navLegal{
-            order:4;
-            text-align: -webkit-right;
-            width: 60%;
-        }
-        .nameText{
-            width:13%;
-        }
-
         .legal{
-            width: 63%;
+            margin:0;
+            & > p{
+                text-align:left;
+                margin-bottom: 16%;
+            }
+        }
+        .sectionLegal{
+            display:flex;
+            flex-direction:column;
+            & >p{
+                margin-bottom: 15px;
+            }
+
+        }
+        .navegation{
+            margin-bottom: 10%;
+            & >p{
+                margin-bottom: 12px;
+            }
+        }
+        .navegation, .voluntary, .moreInfo{
+            margin-bottom: 10%;
         }
     }
     
     @media only screen and (min-width:1441px){
-        width:94%;
-        padding-bottom: 3%;
+        padding-bottom: 2%;
         .green{
-            position:relative;
-            height:550px;
-            text-align:center;
+            height: 480px;
         }
-        .icon{ 
-            display:block;
-            position:absolute;
-            text-align: center;
-            left: 83%;
-            top: -15%;
-            img{
-                width:90%;
-            }
+        .button{
+            margin: 0 auto;
+        }
+       .iconWord{
+            top: -16%;
+            left: -34%;
+                img{
+                    width:7%;
+                }
+        }
+        .textGreenOpacity{
+            width: 75%;
+            padding-top: 100px;
+            display: flex;
+            flex-direction: row-reverse;
         }
         .textGreen{
             p{
-                margin-top: 2%;
-                margin-bottom: 4%;
+                margin-top: 5%;
+                margin-bottom: 5%;
             }
         }
-        nav{
-            cursor: pointer;
-            position:absolute;
-            width:35%;
-            height:15%;
+        .idiomsMovil{
+            display:none;
+        }
+        .navSeo{
             display:flex;
             justify-content:space-between;
-            align-items: center;
-            right: 10%;
-            top: 22%;
-            Link:last-child{
-                width:20%;
-            }
-        }
-        button{
-            text-decoration:none;
-            cursor: pointer;
-            border: 0;
-            border-color:none;
-            background-color:#76991E40;
-            color: #76991E;
-            border-radius:8px;
-            font-family: "GT–Medium";
-            padding: 2.5% 4%;
-            font-size:16px;
-        }
-        .textGreenOpacity{
-            width: 80%;
-            padding-top: 7%;
-            padding-bottom:0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            width:75%; 
         }
         .nameText{
-            display: flex;
+            width:25%;
             flex-direction: column;
         }
-        .iconWord{
-            position: absolute;
-            width: 30%;
-            margin: 0 auto;
-            text-align: center;
-            top: -38%;
-            left: -1%;
-        }
-        .cc{
-            order:3;
-            margin-bottom: 0;
-            
-        }
         .idioms{
-            margin: 0 auto;
-            order:2;
-            margin-bottom: 30%;
-
-            width: 100%;
+            display:flex;
+            width:40%;
+            margin: 0;
+            margin-bottom: 17%;
+            margin-top: 3%;
         }
-        .navLegal{
-            order:4;
-            text-align: -webkit-right;
-            width: 60%;
-        }
-        .nameText{
-            width:10%;
-        }
-
         .legal{
-            width: 35%;
+            margin:0;
+            & > p{
+                text-align:left;
+                margin-bottom: 12%;
+            }
         }
-        .greenOpacity{
-            width:100%;
+        .sectionLegal{
+            display:flex;
+            flex-direction:column;
+            & >p{
+                margin-bottom: 15px;
+            }
+
+        }
+        .navegation{
+            margin-bottom: 10%;
+            & >p{
+                margin-bottom: 12px;
+            }
+        }
+        .navegation, .voluntary, .moreInfo{
+            margin-bottom: 10%;
         }
     }
     

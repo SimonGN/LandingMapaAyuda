@@ -112,26 +112,26 @@ const HeaderStyle = styled.div`
         }
         .icon1{
             width: 4%;
-            top: 32%;
+            top: 54%;
             left: 44%;
         }
         .icon2{
-            top: 40%;
-            left: 5%;
+            top: 67%;
+            left: 4%;
             width: 3%;
         }
         .icon3 {
-            top: 38%;
-            left: 25%;
+            top: 67%;
+            left: 22%;
             width: 6%;
         }
         .icon4 {
-            top: 40%;
+            top: 80%;
             left: 68%;
             width: 5%;
         }
         .icon5{
-            top: 30%;
+            top: 56%;
             left: 90%;
             width: 5%;
         }

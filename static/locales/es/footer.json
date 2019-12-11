@@ -8,12 +8,20 @@
     "link1":"Pólitica de privacidad",
     "link2":"Términos y condiciones",
 
-    "nav1": "Experiencias",
-    "nav2": "Blog",
-    "nav3": "Comparte experiencia",
-    "nav4": "Entrar",
-    "nav5": "Regístrate",
-    "text":"¿Ya tienes cuenta?",
-    "nav6":"Entra"
-    
+    "nav1": "Navegación",
+    "nav1info1": "Historias",
+    "nav1info2": "Noticias",
+    "nav1info3": "Agregar historia",
+    "nav1info4": "Entrar/Registro",
+    "nav2": "Voluntariados",
+    "nav2info1": "Voluntariados en Asia",
+    "nav2info2": "Voluntariados semanales",
+    "nav2info3": "Voluntariados de un mes",
+    "nav2info4": "Únete a nuestra Newsletter",
+    "nav3": "Más información",
+    "nav3info1": "Logos y pósters",
+    "nav3info2": "¿Quieres ser embajador?",
+    "nav3info3": "¿Quieres donar?",
+    "nav3info4": "Contacto"
+
    }
