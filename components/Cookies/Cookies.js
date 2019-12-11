@@ -1,10 +1,12 @@
 import React from "react";
 
 import Button from "../Button/Button";
-import { CookiesStyles } from "./CookiesStyle";
+import { CookieWrapper } from "./CookiesStyle";
 
 import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
 import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
+
+
 
 class Cookies extends React.Component {
   constructor({ backgroundColor, color }) {
@@ -14,6 +16,7 @@ class Cookies extends React.Component {
 
   componentDidMount() {
     const display = localStorage.getItem('displayMapaAyuda')
+    console.log(display)
     this.setState({ ... this.state, display })
   }
   changeDisplay = () => {
@@ -22,9 +25,13 @@ class Cookies extends React.Component {
     this.setState({ ... this.state, display })
   };
   render() {
-    const { } = this.props;
+    const { backgroundColor, color } = this.props;
     return (
-      <CookiesStyles display={this.state.display}>
+      <CookieWrapper
+        backgroundColor={backgroundColor}
+        color={color}
+        display={this.state.display}
+      >
         <div className="text">
           <div className="title">
             <ParagraphBody size="30px">🍪 </ParagraphBody>
@@ -33,12 +40,14 @@ class Cookies extends React.Component {
           <div className="paragraph">
             <ParagraphBodySmall size="16px" height="24px" color="#999999">Este sitio utiliza cookies técnicas y de rendimiento. Pulse el enlace <a href="" target="_blank">Preferencias de privacidad</a> para acceder a información detallada  sobre nuestras cookies.{" "}</ParagraphBodySmall>
           </div>
-          <Button className="readmore" content="¡Estoy de acuerdo!" color="#46BDD2" backgroundColor="#D6F0F5" onClick={() => this.changeDisplay()} />
+          <Button className="readmore" content="¡Estoy de acuerdo!" color="#46BDD2" backgroundColor="#D6F0F5" method={() => this.changeDisplay()} />
 
         </div>
-      </CookiesStyles>
+      </CookieWrapper>
     );
   }
 }
 
 export default Cookies;
+
+
