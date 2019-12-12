@@ -69,6 +69,13 @@ const HeaderStyle = styled.div`
             display: none;
         }
     }
+
+    @media only screen and (max-width: 380px) {
+        .cardContainer{
+            position:relative;
+            margin-top:-40%;
+        }
+    }
     @media only screen and (min-width:415px) and (max-width:768px){
         main{
             height: 67vh;

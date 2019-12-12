@@ -59,7 +59,6 @@ flex: none;
         display: flex;
         flex-flow: column;
         justify-content: center;
-        align-items: center;
     }
     .description{
         padding:3% 0 6%;

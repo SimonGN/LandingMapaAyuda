@@ -77,7 +77,6 @@ const NavStyle = styled.div`
         margin-top: 40%;
     }
     .navMenu2{
-        height:20vh;
         div{
             width:103%;
             display:flex;
@@ -92,7 +91,7 @@ const NavStyle = styled.div`
         cursor: pointer;
         border: 0;
         border-color:none;
-        padding: 10% 28%;
+        padding: 18px 38px;
         background-color:#76991E40;
         color: #76991E;
         border-radius:8px;
