@@ -117,7 +117,7 @@ const HeaderStyle = styled.div`
         }
         .icon2{
             top: 67%;
-            left: 4%;
+            2left: 4%;
             width: 3%;
         }
         .icon3 {

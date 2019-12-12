@@ -1,14 +1,14 @@
 [
   {
+    "photo":"/static/img/photo2.jpg",
+    "title":"Enseñando a coser en El Salvador, ¡mi mejor aventura!",
+    "description":"Por Laura Serrano"
+  },
+  {
     "photo":"/static/img/photo1.jpg",
     "title":"El camino, me cambio la vida.",
     "description":"Por Laura Rodriguez"
   },  
-  {
-    "photo":"/static/img/photo2.jpg",
-    "title":"Enseñando a coser en El Salvador, ¡mi mejor aventura!",
-    "description":"Por Juanjo Jimenez"
-  },
   {
     "photo":"/static/img/photo3.jpg",
     "title":"Contruir sin recursos.",

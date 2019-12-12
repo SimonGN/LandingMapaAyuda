@@ -1,12 +1,12 @@
 {
 
     "intro": "Inspiración para el cambio",
-    "button": "Descubre historias de voluntarios",
+    "button": "Descubre experiencias de voluntarios",
 
-    "button1": "Leer más",
+    "button1": "Descubre su experiencia",
 
 
-    "intro1": "¡Lánzate al voluntariado!",
+    "intro1": "Tírate a la piscina",
     "subTitle1":"Inspírate, experimenta y comparte",
     "description1": "Mapayuda es la comunidad de voluntarios que comparten sus experiencias como motor de inspiración  para el cambio.",
     "button2": "Conoce más sobre nosotros",
@@ -19,11 +19,12 @@
     "intro3": "Descubre las últimas experiencias de voluntarios",
     "description3": "Sumérgete en este emocionante viaje alrededor del mundo",
     "button4": "Ver todas las experiencias",
+
     "desplegable":"Historias en:",
     "desplegable2":"Todo el mundo",
     "card":"historias en este país",
 
-    "intro4": "¡Cuenta tu experiencia al mundo!",
+    "intro4": "¡Preséntate al mundo!",
     "description4": "Tu experiencia, nuestras expectativas. ¡Cuéntalo!",
     "button5":"Comparte tu experiencia"
    }
