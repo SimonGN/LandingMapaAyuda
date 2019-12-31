@@ -2,116 +2,397 @@ import styled from 'styled-components';
 
 
 const FooterStyle = styled.div`
-    padding-bottom:0.5%;
-    a{
-        text-decoration:none;
+margin: 0 auto;
+width:90vw;
+padding-bottom:5%;
+    nav{
+        display:none;
     }
-    border-top: 1px solid black;
-    margin:0 auto;
-    display:flex;
-    flex-flow: column;
-    width:94%;
-    
-    
-    .footer{
-        width:95%;
-        margin:0 auto;
+    .icon{
+        display:none;
+    }
+    .green{
+        background-color:#8ED7BF;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        height:312px;
+        flex-flow:column;
+        justify-content:center;
+        display: ${props => (props.display ? props.display : 'none')};
+    }
+    .textGreen{
+        margin:0 20%;
+        text-align:center;
+        p{
+            margin-top:8%;
+            margin-bottom:8%;
+        }
+    }
+    .button{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .greenOpacity{
+        background-color:#8ED7BF40;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        width:90vw;
+        height:216px;
+        margin: 0 auto;
+        position:relative;
+    }
+    .iconWord{
+        position:absolute;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        top: -20%;
+        left: 7%;
+        img{
+            width:30%;
+            margin: 0 auto; 
+        }
+    }
+    .textGreenOpacity{
+        width:90%;
+        padding-top:25%;
+        margin: 0 auto;
         display:flex;
         flex-flow:column;
-        justify-content:space-between;
-        padding-top: 9%;
+        align-items: center;
+        justify-content: space-evenly;
+
     }
-    .option{
-        
-        display:flex;
-        flex-flow:column;
-        justify-content:space-between;
-        width:65%;
+    .nameText{
+        width: 40%;
     }
-    .len{
-        display:flex;
-        justify-content:space-between;
-        width:40%;
-        cursor: pointer;
+    .cc{
+        margin-bottom:30%;
     }
-    .copy{
-        padding-top: 9%;
+    .navLegal{
         width:95%;
-        margin:0 auto;
     }
+    .idioms, .legal{ 
+        display:flex;
+    }
+    .idioms{
+        justify-content: space-between; 
+        margin-bottom:30%;
+    }
+    .legal{
+        justify-content: space-between;
+    }
+
     
     @media only screen and (min-width:415px) and (max-width:768px){
-        padding-bottom:0.5%;
-        .footer{
-            flex-flow:row;
-            padding-top: 5%;
+        .textGreenOpacity{
+            height:75%;
+            padding-top:7%;
         }
-        .option{
-            width:70%;
+        .cc{
+            margin-bottom: 15%;
         }
-        .len{
-            width:20%;
+        .iconWord{
+            width: 39%;
+            left: 31%;
         }
-        .copy{
-            padding-top: 5%;
+        .idioms{
+            width: 60%;
+            margin:0 auto;
+            margin-bottom:10%;
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-        padding-bottom:1%;
-        .footer, .option{
-            flex-flow:row;
-        }       
-        .footer{
-            padding-top: 5%;
+        width:94%;
+        nav{
+            cursor: pointer;
+            position:absolute;
+            width:60%;
+            height:15%;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            right: 5%;
+            top: 22%; 
+            Link:last-child{
+                width:20%;
+            }
         }
-        .option{
-            width:80%;
+        button{
+            text-decoration:none;
+            cursor: pointer;
+            border: 0;
+            border-color:none;
+            background-color:#76991E40;
+            color: #76991E;
+            border-radius:8px;
+            font-family: "GT–Medium";
+            padding: 2.5% 4%;
+            font-size:16px;
         }
-        .len{
-            width:14%;
+        .green{
+            position:relative;
+            height:312px;
+            text-align:center;
         }
-        .copy{
-            padding-top: 5%;
+        .icon{
+            display:block;
+            position:absolute;
+            text-align: center;
+            left: 82%;
+            top: -15%;
+            img{
+                width:60%;
+            }
+        }
+        .iconWord{   
+            top: -40%;
+            right: 0;
+            left: -79%;
+            img{
+                width:10%;
+                margin: 0 auto; 
+            }
+        }
+        .greenOpacity{
+            width:100%;
+            height:100%;
+        }
+        .textGreenOpacity{
+            padding-top:7%;
+            padding-bottom:3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .nameText{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cc{
+            order:3;
+            margin-bottom: 0;
+            
+        }
+        .idioms{
+            margin: 0 auto;
+            order:2;
+            margin-bottom: 10%;
+            width: 100%;
+        }
+
+        .navLegal{
+            order:4;
+            text-align: -webkit-right;
+            width: 60%;
+        }
+        .nameText{
+            width:13%;
+        }
+
+        .legal{
+            width: 63%;
         }
     }
+    
     @media only screen and (min-width:1025px) and (max-width:1440px){
-        width:85%;
-        padding-bottom:1%;
-        .footer, .option{
-            flex-flow:row;
-        }       
-        .footer{
-            padding-top: 3%;
+        width:94%;
+        nav{
+            cursor: pointer;
+            position:absolute;
+            width:60%;
+            height:15%;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            right: 5%;
+            top: 22%;
+            Link:last-child{
+                width:20%;
+            }
         }
-        .option{
-            width:80%;
+        button{
+            text-decoration:none;
+            cursor: pointer;
+            border: 0;
+            border-color:none;
+            background-color:#76991E40;
+            color: #76991E;
+            border-radius:8px;
+            font-family: "GT–Medium";
+            padding: 2.5% 4%;
+            font-size:16px;
         }
-        .len{
-            width:12%;
+        .green{
+            position:relative;
+            height:500px;
+            text-align:center;
         }
-        .copy{
-            padding-top: 3%;
+        .textGreen{
+            p{
+            margin-top:3%;
+            margin-bottom:5%;
+        }}
+        .icon{
+            display:block;
+            position:absolute;
+            text-align: center;
+            left: 82%;
+            top: -9%;
+            img{
+                width:60%;
+            }
+        }
+        .iconWord{   
+            top: -40%;
+            right: 0;
+            left: -79%;
+            img{
+                width:10%;
+                margin: 0 auto; 
+            }
+        }
+        .greenOpacity{
+            width:100%;
+            height:100%;
+        }
+        .textGreenOpacity{
+            padding-top:7%;
+            padding-bottom:3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .nameText{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cc{
+            order:3;
+            margin-bottom: 0;
+            
+        }
+        .idioms{
+            margin: 0 auto;
+            order:2;
+            margin-bottom: 10%;
+            width: 100%;
+        }
+
+        .navLegal{
+            order:4;
+            text-align: -webkit-right;
+            width: 60%;
+        }
+        .nameText{
+            width:13%;
+        }
+
+        .legal{
+            width: 63%;
         }
     }
+    
     @media only screen and (min-width:1441px){
-        width:82%;
-        padding-bottom:1%;
-        .footer, .option{
-            flex-flow:row;
-        }       
-        .footer{
-            padding-top: 2%;
+        width:94%;
+        .green{
+            position:relative;
+            height:550px;
+            text-align:center;
         }
-        .option{
-            width:80%;
+        .icon{ 
+            display:block;
+            position:absolute;
+            text-align: center;
+            left: 83%;
+            top: -15%;
+            img{
+                width:90%;
+            }
         }
-        .len{
+        .textGreen{
+            p{
+                margin-top: 2%;
+                margin-bottom: 4%;
+            }
+        }
+        nav{
+            cursor: pointer;
+            position:absolute;
+            width:35%;
+            height:15%;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            right: 10%;
+            top: 22%;
+            Link:last-child{
+                width:20%;
+            }
+        }
+        button{
+            text-decoration:none;
+            cursor: pointer;
+            border: 0;
+            border-color:none;
+            background-color:#76991E40;
+            color: #76991E;
+            border-radius:8px;
+            font-family: "GT–Medium";
+            padding: 2.5% 4%;
+            font-size:16px;
+        }
+        .textGreenOpacity{
+            width: 80%;
+            padding-top: 7%;
+            padding-bottom:0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .nameText{
+            display: flex;
+            flex-direction: column;
+        }
+        .iconWord{
+            position: absolute;
+            width: 30%;
+            margin: 0 auto;
+            text-align: center;
+            top: -38%;
+            left: -1%;
+        }
+        .cc{
+            order:3;
+            margin-bottom: 0;
+            
+        }
+        .idioms{
+            margin: 0 auto;
+            order:2;
+            margin-bottom: 30%;
+
+            width: 100%;
+        }
+        .navLegal{
+            order:4;
+            text-align: -webkit-right;
+            width: 60%;
+        }
+        .nameText{
             width:10%;
         }
-        .copy{
-            padding-top: 2%;
+
+        .legal{
+            width: 35%;
+        }
+        .greenOpacity{
+            width:100%;
         }
     }
+    
 
 `;
 

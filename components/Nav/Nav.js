@@ -10,6 +10,7 @@ import ParagraphHeader from "../../styles/fontsStyles/paragraphHeader";
 
 import { i18n, withTranslation } from '../../i18n'
 
+
 const changeLanguage = (language, setLangauge) => {
     i18n.changeLanguage(language)
     setLangauge(language)
@@ -60,11 +61,11 @@ const Nav = props => {
                     <Link href="/index"><img src="/static/svg/logoMapaAyuda.svg" /></Link>
                 </div>
                 <nav>
-                    <Link href="/about"><ParagraphBody >{t("nav1")}</ParagraphBody></Link>
-                    <Link href="/about"><ParagraphBody >{t("nav2")}</ParagraphBody></Link>
-                    <Link href="/about"><ParagraphBody color="#F1A409" >{t("nav3")}</ParagraphBody></Link>
-                    <Link href="/about"><ParagraphBody color="#76991E">{t("nav4")}</ParagraphBody></Link>
-                    <Link href="/about"><button>{t("nav5")}</button></Link>
+                    <Link href="/"><ParagraphBody >{t("nav1")}</ParagraphBody></Link>
+                    <Link href="/"><ParagraphBody >{t("nav2")}</ParagraphBody></Link>
+                    <Link href="/"><ParagraphBody color="#F1A409" >{t("nav3")}</ParagraphBody></Link>
+                    <Link href="/"><ParagraphBody color="#76991E">{t("nav4")}</ParagraphBody></Link>
+                    <Link href="/"><button>{t("nav5")}</button></Link>
                 </nav>
             </header>
 

@@ -7,7 +7,7 @@ const ParagraphBody = styled.p`
     font-style: normal;
     font-weight: 500;
     font-size: ${props => (props.size ? props.size : '16px')};
-    line-height: 24px;
+    line-height: 23px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
 
     @media only screen and (min-width:415px) and (max-width:768px){

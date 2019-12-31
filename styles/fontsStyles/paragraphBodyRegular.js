@@ -1,17 +1,15 @@
 import styled from 'styled-components';
 
 
-const paragraphHeader = styled.p`
-    font-family: "GT–Medium";
-    color: ${props => (props.color ? props.color : '#000000')};
-    font-style: normal;
-    font-weight: 500;
-    font-size: ${props => (props.size ? props.size : '20px')};
-    line-height: 24px;
+const ParagraphBodyRegular = styled.p`
+    font-family: "PanaGT–Regular";
+    color: ${props => (props.color ? props.color : '#999999')};
+    font-size: ${props => (props.size ? props.size : '16px')};
+    line-height: 20px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
-    letter-spacing: -0.01em;
+
     
-    margin-bottom:15px;
+
     @media only screen and (min-width:415px) and (max-width:768px){
 
     }
@@ -26,4 +24,4 @@ const paragraphHeader = styled.p`
     }
 `;
 
-export default paragraphHeader;
+export default ParagraphBodyRegular;

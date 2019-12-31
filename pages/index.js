@@ -6,15 +6,23 @@ import PropTypes from "prop-types";
 
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
-import Header from "../components/Header/Header"
-// import CardAll from "../components/CardExperience/CardAll"
+import Header from "../components/Header/Header";
+import We from "../components/We/We";
+import Content from "../components/Content/Content";
+import Opportunity from "../components/Opportunity/Opportunity";
+import TypeVol from "../components/TypesVol/TypeVol";
+import Gallery from "../components/Gallery/Gallery";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { withTranslation } from "../i18n";
 
-import router from 'next/router'
+import router from 'next/router';
+
+
+
 
 
 class Home extends React.Component {
@@ -67,9 +75,12 @@ class Home extends React.Component {
         <Meta />
         <Nav />
         <Header />
-        {/* <CardAll /> */}
-        
-        {/* <Footer /> */}
+        <We />
+        <Gallery />
+        <TypeVol />
+        <Opportunity />
+        <Content />
+        <Footer display="flex"/>
         
       </React.Fragment>
     );

@@ -2,37 +2,60 @@
     {
         "photo":"/static/img/photo1.jpg",
         "people":"/static/img/map.jpg",
-        "conutry": "Burgos, España",
+        "country": "Burgos, España",
         "description":"La maravillosa gente que conocí en Sidney"
     },
     {
         "photo":"/static/img/photo2.jpg",
         "people":"/static/img/map.jpg",
-        "conutry": "Madrid, España",
+        "country": "Madrid, España",
         "description":"La maravillosa gente que conocí en Sidney"
     },    
     {
         "photo":"/static/img/photo3.jpg",
         "people":"/static/img/map.jpg",
-        "conutry": "Madrid, España",
+        "country": "Madrid, España",
         "description":"La maravillosa gente que conocí en Sidney"
     },
     {
         "photo":"/static/img/photo1.jpg",
         "people":"/static/img/map.jpg",
-        "conutry": "Burgos, España",
+        "country": "Burgos, España",
         "description":"La maravillosa gente que conocí en Sidney"
     },
     {
         "photo":"/static/img/photo2.jpg",
         "people":"/static/img/map.jpg",
-        "conutry": "Madrid, España",
+        "country": "Madrid, España",
         "description":"La maravillosa gente que conocí en Sidney"
     },    
     {
         "photo":"/static/img/photo3.jpg",
         "people":"/static/img/map.jpg",
-        "conutry": "Madrid, España",
+        "country": "Madrid, España",
+        "description":"La maravillosa gente que conocí en Sidney"
+    },    {
+        "photo":"/static/img/photo3.jpg",
+        "people":"/static/img/map.jpg",
+        "country": "Madrid, España",
+        "description":"La maravillosa gente que conocí en Sidney"
+    },
+    {
+        "photo":"/static/img/photo1.jpg",
+        "people":"/static/img/map.jpg",
+        "country": "Burgos, España",
+        "description":"La maravillosa gente que conocí en Sidney"
+    },
+    {
+        "photo":"/static/img/photo2.jpg",
+        "people":"/static/img/map.jpg",
+        "country": "Madrid, España",
+        "description":"La maravillosa gente que conocí en Sidney"
+    },    
+    {
+        "photo":"/static/img/photo3.jpg",
+        "people":"/static/img/map.jpg",
+        "country": "Madrid, España",
         "description":"La maravillosa gente que conocí en Sidney"
     }
 ]

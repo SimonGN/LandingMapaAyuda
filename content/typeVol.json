@@ -1,0 +1,22 @@
+[
+    {
+        "photo":"/static/img/photo1.jpg",
+        "type": "Alimentación y Nutrición",
+        "id":""
+    },
+    {
+        "photo":"/static/img/photo2.jpg",
+        "type": "Educación y Sensibilización",
+        "id":""
+    },
+    {
+        "photo":"/static/img/photo3.jpg",
+        "type": "Conservación Animal y Medio Ambiente",
+        "id":""
+    },
+    {
+        "photo":"/static/img/photo2.jpg",
+        "type": "Desarrollo de Comunidades",
+        "id":""
+    }
+]
