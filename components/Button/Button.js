@@ -10,6 +10,8 @@ const Button = props => {
     return (
         <ButtonStyle 
         backgroundColor={props.backgroundColor}
+        className="readmore"
+        onClick={props.method ? props.method : ''}
          >
             <ParagraphBody color={props.color} size={props.size}> {props.content}</ParagraphBody>
           

@@ -16,7 +16,7 @@ const CardCountry = ({ country, photo, type, t }) => {
                 <img src={photo}/>
             </div>      
             <div className="text">
-                <ParagraphBody className="description">{country || type}</ParagraphBody>
+                <ParagraphBody size="20px"className="description">{country || type}</ParagraphBody>
                 {!type && <ParagraphBodySmall className="country" color="#1C76E3"> XX {t("card")}</ParagraphBodySmall>}
             </div>
         </CardCountryStyle>

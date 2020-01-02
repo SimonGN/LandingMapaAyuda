@@ -8,7 +8,6 @@ import Button from "../Button/Button";
 
 import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
 import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
-import ParagraphHeader from "../../styles/fontsStyles/paragraphHeader"
 import galleryItems from '../../content/gallery.json';
 
 import { i18n, withTranslation } from '../../i18n'
@@ -34,23 +33,21 @@ const Gallery = props => {
     return (
         <GalleryStyle photo={photo}>
             <ParagraphTitle className="description">{t("galeryIntro")}</ParagraphTitle>
-            <div>
+            <div className="component">
                 <div className="galleryImg">
                    <img src={"/static/svg/iconFavo.svg"} />
-
                 </div>
-                <div>
-                    <ParagraphHeader color="#F1A409">{title}</ParagraphHeader>
-                    <ParagraphBodyRegular>{description}</ParagraphBodyRegular>
-                    {/* <ParagraphBodyRegular>{t("description3")}</ParagraphBodyRegular> */}
+                <div className="textImg"> 
+                    <ParagraphTitle color="#F1A409">{title}</ParagraphTitle>
+                    <ParagraphBodyRegular >{description}</ParagraphBodyRegular>
                     <div className="button">
                         <Link href="/"><Button content={t("button1")} backgroundColor="#FCEDCE" color="#F1A409" /></Link>
                     </div>
                     <div className="nextBack">
                         <div className="buttonNextBack">
-                            <ParagraphBodyRegular onClick={() => changeTab(tab-1)}>Atrás</ParagraphBodyRegular>
-                            <ParagraphBodyRegular>·</ParagraphBodyRegular>
-                            <ParagraphBodyRegular onClick={() => changeTab(tab+1)}>Siguiente</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color="#00000050" onClick={() => changeTab(tab-1)}>Atrás</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color="#00000050">·</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color="#00000050" onClick={() => changeTab(tab+1)}>Siguiente</ParagraphBodyRegular>
                         </div>
                         <div className="buttonDiv">
                             <div className={`${tab===0 && 'active' }`} onClick={() => changeTab(0)}></div>

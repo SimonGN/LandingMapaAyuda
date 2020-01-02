@@ -22,7 +22,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var Button = function Button(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ButtonStyle__WEBPACK_IMPORTED_MODULE_2__["ButtonStyle"], {
-    backgroundColor: props.backgroundColor
+    backgroundColor: props.backgroundColor,
+    className: "readmore",
+    onClick: props.method ? props.method : ''
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_3__["default"], {
     color: props.color,
     size: props.size
@@ -105,6 +107,7 @@ var CardCountry = function CardCountry(_ref) {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    size: "20px",
     className: "description"
   }, country || type), !type && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "country",
@@ -131,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-bottom:5%;\n    flex: none;\n    width:62%;\n    margin-left:5%;\n    cursor: pointer;\n    img{\n        background-color: ", ";\n        border-radius:16px;\n        width: 100%;\n    }\n    .text{\n        white-space: normal;\n        width:100%;\n        padding-left:5%;\n        padding-top:1%;\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        width: 33%;\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        width: 22.5%;\n        margin-left:0%;\n        margin-bottom:2.5%;\n        margin-left:0%;\n        .text{\n            width:100%;\n            white-space: normal;\n            padding-left:5%;\n            padding-top:1%;\n        }\n        .button{\n            margin-bottom: 15%;\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        width: 23%;\n        margin-left:0%;\n        margin-bottom:2%;\n        margin-left:0%;\n        .text{\n            width:100%;\n            padding-left:5%;\n            padding-top:1%;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        width: 23%;\n        margin-left:0%;\n        margin-bottom:2%;\n        margin-left:0%;\n        .text{\n            width:100%;\n            padding-left:5%;\n            padding-top:1%;\n        }\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-bottom:5%;\n    flex: none;\n    width:62%;\n    margin-left:5%;\n    cursor: pointer;\n    img{\n        background-color: ", ";\n        border-radius:16px;\n        width: 100%;\n    }\n    .text{\n        white-space: normal;\n        width:100%;\n        padding-left:1%;\n        padding-top:2%;\n    }\n    .country{\n        margin-top:8px;\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        width: 33%;\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        width: 22.5%;\n        margin-left:0%;\n        margin-bottom:2.5%;\n        margin-left:0%;\n        .button{\n            margin-bottom: 15%;\n        }\n    }\n    @media only screen and (min-width:1025px){\n        width: 23%;\n        margin-left:0%;\n        margin-bottom:2%;\n        margin-left:0%;\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -180,10 +183,12 @@ var Card = function Card(_ref) {
       description = _ref.description,
       photo = _ref.photo,
       people = _ref.people,
+      number = _ref.number,
       t = _ref.t;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardStyle__WEBPACK_IMPORTED_MODULE_2__["CardStyle"], {
     photo: photo,
-    people: people
+    people: people,
+    number: number % 2
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cardStyle"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -192,14 +197,15 @@ var Card = function Card(_ref) {
     className: "imgFondo"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "imgPeople"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "country",
     color: "#999999"
-  }, country), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, country), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "description"
   }, description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    className: "readmore",
     content: t("button1"),
     color: "#F1A409",
     backgroundColor: "#FCEDCE"
@@ -207,103 +213,6 @@ var Card = function Card(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_6__["withTranslation"])("home")(Card));
-
-/***/ }),
-
-/***/ "./components/CardExperience/CardAll.js":
-/*!**********************************************!*\
-  !*** ./components/CardExperience/CardAll.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _CardAllStyle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CardAllStyle */ "./components/CardExperience/CardAllStyle.js");
-/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Card */ "./components/CardExperience/Card.js");
-/* harmony import */ var _content_card_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../content/card.json */ "./content/card.json");
-var _content_card_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../content/card.json */ "./content/card.json", 1);
-
-
-
-
-
-
-var CardAll = function CardAll(props) {
-  var displayCards = function displayCards() {
-    return _content_card_json__WEBPACK_IMPORTED_MODULE_4__.map(function (card, i) {
-      var description = card.description,
-          country = card.country,
-          photo = card.photo,
-          people = card.people,
-          buttonContent = card.buttonContent;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        description: description,
-        country: country,
-        buttonContent: buttonContent,
-        photo: photo,
-        people: people
-      });
-    });
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardAllStyle__WEBPACK_IMPORTED_MODULE_2__["CardAllStyle"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card"
-  }, displayCards()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "icon"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "icon1",
-    src: "/static/svg/iconHomeGalery0.svg"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "icon2",
-    src: "/static/svg/iconHomeGalery1.svg"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "icon3",
-    src: "/static/svg/iconHomeGalery2.svg"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "icon4",
-    src: "/static/svg/iconHomeGalery3.svg"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "icon5",
-    src: "/static/svg/iconHomeGalery4.svg"
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (CardAll);
-
-/***/ }),
-
-/***/ "./components/CardExperience/CardAllStyle.js":
-/*!***************************************************!*\
-  !*** ./components/CardExperience/CardAllStyle.js ***!
-  \***************************************************/
-/*! exports provided: CardAllStyle */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardAllStyle", function() { return CardAllStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n    .card{\n        overflow-x: scroll;\n        display:flex;\n        padding-bottom: 2%;\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n\n\n    .icon{\n       /* position:relative;  */\n        margin: 0 auto;\n        display: flex;\n        justify-content: space-between;\n        z-index: 3;\n    }\n\n    .icon1, .icon3, .icon4, .icon5{\n        position: absolute;\n    }\n    .icon1{\n        width: 10%;\n        top: 70%;\n    }\n    .icon2, .icon5{\n        display:none;\n    }\n    .icon3{\n        top: -3%;\n        left: 55%;\n        width: 15%;\n        \n    }\n    .icon4{\n        top: 50%;\n        left: 88%;\n        width: 12%;\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n       .icon1{\n        width: 7%;\n        top: 33%;\n       }\n       .icon3{\n        top: -7%;\n        width: 7%;\n       }\n       .icon4{\n        top: 55%;\n        left: 94%;\n        width: 6%;\n       }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .icon2, .icon5{\n            display:block;\n            position: absolute;\n        }\n        .icon1{\n            width: 5%;\n            top: -3%;\n            left: 47%;\n        }\n        .icon2{\n            top: 39%;\n            left: 4%;\n            width: 3%;\n        }\n        .icon3 {\n            top: 28%;\n            left: 23%;\n            width: 7%;\n        }\n        .icon4 {\n            top: 43%;\n            left: 57%;\n            width: 5%;\n        }\n        .icon5{\n            top: 7%;\n            left: 92%;\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){    \n        .icon2, .icon5{\n            display:block;\n            position: absolute;\n        }\n        .icon1{\n            width: 5%;\n            top: -3%;\n            left: 47%;\n        }\n        .icon2{\n            top: 39%;\n            left: 4%;\n            width: 3%;\n        }\n        .icon3 {\n            top: 28%;\n            left: 23%;\n            width: 7%;\n        }\n        .icon4 {\n            top: 43%;\n            left: 57%;\n            width: 5%;\n        }\n        .icon5{\n            top: 7%;\n            left: 92%;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        .icon2, .icon5{\n            display:block;\n            position: absolute;\n        }\n        .icon1{\n            width: 4%;\n            top: -7%;\n            left: 49%;\n        }\n        .icon2{\n            top: 35%;\n            left: 4%;\n            width: 2%;\n        }\n        .icon3 {\n            top: 8%;\n            left: 33%;\n            width: 4%;\n        }\n        .icon4 {\n            top: 39%;\n            left: 67%;\n            width: 3%;\n        }\n        .icon5{\n            top: 7%;\n            left: 92%;\n        }\n    }\n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var CardAllStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
-
 
 /***/ }),
 
@@ -322,7 +231,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin-left: 8%;\n    .cardStyle{\n        position: relative;\n        width: 230px;\n        height: 290px;\n        padding: 15px;\n        background-color: white;\n        border-radius: 16px;\n        box-shadow: 0px 2px 12px #00000020;\n        flex-grow:1;\n        flex: none;\n    }\n    .img{\n        position:relative;\n    }\n    .imgFondo{\n        margin-top: 2%;\n        background-image:", ";\n        background-color: ", ";\n        width:100%;\n        height:140px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position:absolute;\n        background-image: url(\"", "\");\n        background-color: ", ";\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 70%;\n        top: 85%;\n    }\n\n    .country{\n        padding:5% 0 3%;\n    }\n    .text{\n        display: flex;\n        flex-flow: column;\n        justify-content: center;\n        align-items: center;\n    }\n    .description{\n        padding:0 0 5%;\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n        margin-left: 4%;\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        margin-left: 2%;\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        margin-left: 1.25%;\n    }\n    @media only screen and (min-width:1441px){\n        margin-left: 1.25%;\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n@keyframes translate {\n  from {\n      right:0;\n  }\n\n  to {\n    right:30000px;\n  }\n}\n@keyframes opacityCard {\n    0%{\n        opacity:0;\n    }\n    100%{\n        opacity:1;\n    }\n}\n\nmargin-left: 5%;\nwidth: 230px;\nflex-grow:1;\nflex: none;\n    .cardStyle{\n        position: relative;\n        height: 322px;\n        padding: 15px;\n        background-color: white;\n        border-radius: 16px;\n        box-shadow: 0px 2px 12px #00000020;\n        animation-duration: 1000s;\nanimation-name: translate;\n    }\n    .readmore{\n        width: 73%;\n        p{\n            text-align:center;\n        }\n    }\n    .img{\n        position:relative;\n    }\n    .imgFondo{\n        margin-top: 2%;\n        background-image:", ";\n        background-color: ", ";\n        width:100%;\n        height:170px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position:absolute;\n        background-image: url(\"", "\");\n        background-color: ", ";\n        width:40px;\n        height:40px;\n        border-radius: 12px;\n        border: 5px solid white;\n        left: 70%;\n        top: 85%;\n    }\n\n    .country{\n        padding: 5% 10% 3% 0;\n    }\n    .text{\n        display: flex;\n        flex-flow: column;\n        justify-content: center;\n    }\n    .description{\n        padding:3% 0 6%;\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n        margin-left: 3%;\n        .description{\n            padding:4% 0 7%;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        margin-top: ", ";\n        margin-left: 2%;\n        height:100px;\n        .cardStyle{\n            padding:0;\n            height: auto;\n            \n        }\n        .text{\n            display:none;\n            opacity:0;\n        }\n        .imgPeople{\n            display:none;\n        }\n\n        &:hover {\n            \n             .cardStyle{\n                height: 300px;\n                padding: 15px;\n            }\n            .text{\n                display:block;\n                opacity:1;\n                animation: opacityCard 1s;\n            }\n            .imgPeople{\n                display:block;\n            }\n            .imgFondo{\n                height:150px;\n\n            }\n        }\n        .description{\n            padding: 3% 0 4%;\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        margin-top: ", ";\n        margin-left: 2.2%;\n        height:100px;\n        .cardStyle{\n            padding:0;\n            height: auto;\n        }\n        .text{\n            display:none;\n        }\n        .imgPeople{\n            display:none;\n        }\n\n        &:hover {\n             .cardStyle{\n                height: 300px;\n                padding: 15px;\n            }\n            .text{\n                display:block;\n                opacity:1;\n                animation: opacityCard 1s;\n            }\n            .imgPeople{\n                display:block;\n            }\n            .imgFondo{\n                height:150px;\n            }\n        }\n        .description{\n            padding: 2% 0 6%;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        margin-top: ", ";\n        margin-left: 1.25%;\n        height:100px;\n        .cardStyle{\n            padding:0;\n            height: auto;\n        }\n        .text{\n            display:none;\n        }\n        .imgPeople{\n            display:none;\n        }\n        .description{\n            padding: 6% 0 9%;\n        }\n\n        &:hover {\n             .cardStyle{\n                height:300px;\n                padding: 15px;\n            }\n            .text{\n                display:block;\n                opacity:1;\n                animation: opacityCard 1s;\n            }\n            .imgPeople{\n                display:block;\n            }\n            .imgFondo{\n                height:130px;\n            }\n        }\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -340,6 +249,12 @@ var CardStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_t
   return props.people ? props.people : "people";
 }, function (props) {
   return props.photo ? '' : '#fffff';
+}, function (props) {
+  return props.number ? props.number : "4%";
+}, function (props) {
+  return props.number ? props.number : "4%";
+}, function (props) {
+  return props.number ? props.number : "4%";
 });
 
 
@@ -447,6 +362,172 @@ var ContentStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div
 
 /***/ }),
 
+/***/ "./components/Cookies/Cookies.js":
+/*!***************************************!*\
+  !*** ./components/Cookies/Cookies.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Button/Button */ "./components/Button/Button.js");
+/* harmony import */ var _CookiesStyle__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./CookiesStyle */ "./components/Cookies/CookiesStyle.js");
+/* harmony import */ var _styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBodySmall */ "./styles/fontsStyles/paragraphBodySmall.js");
+/* harmony import */ var _styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBody */ "./styles/fontsStyles/paragraphBody.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var Cookies =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Cookies, _React$Component);
+
+  function Cookies(_ref) {
+    var _this;
+
+    var backgroundColor = _ref.backgroundColor,
+        color = _ref.color;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Cookies);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Cookies).call(this, {
+      backgroundColor: backgroundColor,
+      color: color
+    }));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "changeDisplay", function () {
+      localStorage.setItem('displayMapaAyuda', 'none');
+      var display = localStorage.getItem('displayMapaAyuda');
+
+      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _this.state, {
+        display: display
+      }));
+    });
+
+    _this.state = {
+      display: "flex"
+    };
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Cookies, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var display = localStorage.getItem('displayMapaAyuda');
+      console.log(display);
+      this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.state, {
+        display: display
+      }));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props = this.props,
+          backgroundColor = _this$props.backgroundColor,
+          color = _this$props.color;
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_CookiesStyle__WEBPACK_IMPORTED_MODULE_10__["CookieWrapper"], {
+        backgroundColor: backgroundColor,
+        color: color,
+        display: this.state.display
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "text"
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "title"
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        size: "30px"
+      }, "\uD83C\uDF6A "), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        size: "20px"
+      }, " P\xF3litica de cookies")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "paragraph"
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        size: "16px",
+        height: "24px",
+        color: "#999999"
+      }, "Este sitio utiliza cookies t\xE9cnicas y de rendimiento. Pulse el enlace ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "",
+        target: "_blank"
+      }, "Preferencias de privacidad"), " para acceder a informaci\xF3n detallada  sobre nuestras cookies.", " ")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        className: "readmore",
+        content: "\xA1Estoy de acuerdo!",
+        color: "#46BDD2",
+        backgroundColor: "#D6F0F5",
+        method: function method() {
+          return _this2.changeDisplay();
+        }
+      })));
+    }
+  }]);
+
+  return Cookies;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Cookies);
+
+/***/ }),
+
+/***/ "./components/Cookies/CookiesStyle.js":
+/*!********************************************!*\
+  !*** ./components/Cookies/CookiesStyle.js ***!
+  \********************************************/
+/*! exports provided: CookieWrapper */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CookieWrapper", function() { return CookieWrapper; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: fixed;\n  width: 330px;\n  height: 290px;\n  left: 2%;\n  bottom: 2%;\n  background-color: ", ";\n  color: ", ";\n  display: ", ";\n\n  border-radius:18px;\n  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);\n  transition: all 1s ease 0s;\n  z-index: 3;\n  .text{\n    margin: 0 auto;\n    width:80%;\n  }\n  .title{\n    display:flex;\n    margin:12% 0 7%;\n    p:first-child{\n      margin-right:5%;\n    }\n  }\n  .paragraph{\n    margin-bottom:7%;\n  }\n  a {\n    color: ", ";\n  }\n  a:visited {\n    color: ", ";\n  }\n  .cookies-content {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    width: 80%;\n  }\n\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var CookieWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), function (props) {
+  return props.backgroundColor ? props.backgroundColor : "white";
+}, function (props) {
+  return props.color ? props.color : "black";
+}, function (props) {
+  return props.display ? props.display : "flex";
+}, function (props) {
+  return props.color ? props.color : "#46BDD2";
+}, function (props) {
+  return props.color ? props.color : "#46BDD2";
+});
+
+/***/ }),
+
 /***/ "./components/Footer/Footer.js":
 /*!*************************************!*\
   !*** ./components/Footer/Footer.js ***!
@@ -520,16 +601,66 @@ var Footer = function Footer(props) {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "textGreenOpacity"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "nameText"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "iconWord"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     src: "/static/svg/iconMapaAyuda.svg"
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "cc"
+    className: "navSeo"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "idiomsMovil"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    align: "center"
-  }, t("cc"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "animate",
+    decoration: language === 'es' ? "underline" : "",
+    cursor: true,
+    onClick: function onClick() {
+      return changeLanguage('es', setLangauge);
+    }
+  }, "Espa\xF1ol"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_7__["default"], null, " / "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "animate",
+    decoration: language === 'en' ? "underline" : "",
+    cursor: true,
+    onClick: function onClick() {
+      return changeLanguage('en', setLangauge);
+    }
+  }, "English")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "navegation"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#000000"
+  }, t("nav1")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#666666"
+  }, t("nav1info1")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#666666"
+  }, t("nav1info2")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#F1A409"
+  }, t("nav1info3")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#76991E"
+  }, t("nav1info4"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "voluntary"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#000000"
+  }, t("nav2")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#666666"
+  }, t("nav2info1")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#666666"
+  }, t("nav2info2")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#666666"
+  }, t("nav2info3")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#666666"
+  }, t("nav2info4"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "moreInfo"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#000000"
+  }, t("nav3")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#666666"
+  }, t("nav3info1")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#666666"
+  }, t("nav3info2")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#666666"
+  }, t("nav3info3")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#666666"
+  }, t("nav3info4")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "nameText"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "idioms"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_7__["default"], {
     className: "animate",
@@ -545,29 +676,21 @@ var Footer = function Footer(props) {
     onClick: function onClick() {
       return changeLanguage('en', setLangauge);
     }
-  }, "English"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "navLegal"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], null, t("nav1"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], null, t("nav2"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    color: "#F1A409"
-  }, t("nav3"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    color: "#76991E"
-  }, t("nav4"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", null, t("nav5")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, "English")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "legal"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    size: "12px"
+  }, t("cc")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "sectionLegal"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_7__["default"], null, t("link1"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    size: "12px"
+  }, t("link1"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_7__["default"], null, t("link2"))))))));
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    size: "12px"
+  }, t("link2")))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_8__["withTranslation"])("footer")(Footer));
@@ -589,7 +712,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin: 0 auto;\nwidth:90vw;\npadding-bottom:5%;\n    nav{\n        display:none;\n    }\n    .icon{\n        display:none;\n    }\n    .green{\n        background-color:#8ED7BF;\n        border-top-left-radius: 16px;\n        border-top-right-radius: 16px;\n        height:312px;\n        flex-flow:column;\n        justify-content:center;\n        display: ", ";\n    }\n    .textGreen{\n        margin:0 20%;\n        text-align:center;\n        p{\n            margin-top:8%;\n            margin-bottom:8%;\n        }\n    }\n    .button{\n        margin-left: 7%;\n        margin-right: 7%;\n    }\n    .greenOpacity{\n        background-color:#8ED7BF40;\n        border-bottom-left-radius: 16px;\n        border-bottom-right-radius: 16px;\n        width:90vw;\n        height:216px;\n        margin: 0 auto;\n        position:relative;\n    }\n    .iconWord{\n        position:absolute;\n        width: 90%;\n        margin: 0 auto;\n        text-align: center;\n        top: -20%;\n        left: 7%;\n        img{\n            width:30%;\n            margin: 0 auto; \n        }\n    }\n    .textGreenOpacity{\n        width:90%;\n        padding-top:25%;\n        margin: 0 auto;\n        display:flex;\n        flex-flow:column;\n        align-items: center;\n        justify-content: space-evenly;\n\n    }\n    .nameText{\n        width: 40%;\n    }\n    .cc{\n        margin-bottom:30%;\n    }\n    .navLegal{\n        width:95%;\n    }\n    .idioms, .legal{ \n        display:flex;\n    }\n    .idioms{\n        justify-content: space-between; \n        margin-bottom:30%;\n    }\n    .legal{\n        justify-content: space-between;\n    }\n\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        .textGreenOpacity{\n            height:75%;\n            padding-top:7%;\n        }\n        .cc{\n            margin-bottom: 15%;\n        }\n        .iconWord{\n            width: 39%;\n            left: 31%;\n        }\n        .idioms{\n            width: 60%;\n            margin:0 auto;\n            margin-bottom:10%;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        width:94%;\n        nav{\n            cursor: pointer;\n            position:absolute;\n            width:60%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            right: 5%;\n            top: 22%; \n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            text-decoration:none;\n            cursor: pointer;\n            border: 0;\n            border-color:none;\n            background-color:#76991E40;\n            color: #76991E;\n            border-radius:8px;\n            font-family: \"GT\u2013Medium\";\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n        .green{\n            position:relative;\n            height:312px;\n            text-align:center;\n        }\n        .icon{\n            display:block;\n            position:absolute;\n            text-align: center;\n            left: 82%;\n            top: -15%;\n            img{\n                width:60%;\n            }\n        }\n        .iconWord{   \n            top: -40%;\n            right: 0;\n            left: -79%;\n            img{\n                width:10%;\n                margin: 0 auto; \n            }\n        }\n        .greenOpacity{\n            width:100%;\n            height:100%;\n        }\n        .textGreenOpacity{\n            padding-top:7%;\n            padding-bottom:3%;\n            display: flex;\n            flex-direction: row;\n            justify-content: space-between;\n        }\n        .nameText{\n            display: flex;\n            flex-direction: column;\n        }\n\n        .cc{\n            order:3;\n            margin-bottom: 0;\n            \n        }\n        .idioms{\n            margin: 0 auto;\n            order:2;\n            margin-bottom: 10%;\n            width: 100%;\n        }\n\n        .navLegal{\n            order:4;\n            text-align: -webkit-right;\n            width: 60%;\n        }\n        .nameText{\n            width:13%;\n        }\n\n        .legal{\n            width: 63%;\n        }\n    }\n    \n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        width:94%;\n        nav{\n            cursor: pointer;\n            position:absolute;\n            width:60%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            right: 5%;\n            top: 22%;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            text-decoration:none;\n            cursor: pointer;\n            border: 0;\n            border-color:none;\n            background-color:#76991E40;\n            color: #76991E;\n            border-radius:8px;\n            font-family: \"GT\u2013Medium\";\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n        .green{\n            position:relative;\n            height:500px;\n            text-align:center;\n        }\n        .textGreen{\n            p{\n            margin-top:3%;\n            margin-bottom:5%;\n        }}\n        .icon{\n            display:block;\n            position:absolute;\n            text-align: center;\n            left: 82%;\n            top: -9%;\n            img{\n                width:60%;\n            }\n        }\n        .iconWord{   \n            top: -40%;\n            right: 0;\n            left: -79%;\n            img{\n                width:10%;\n                margin: 0 auto; \n            }\n        }\n        .greenOpacity{\n            width:100%;\n            height:100%;\n        }\n        .textGreenOpacity{\n            padding-top:7%;\n            padding-bottom:3%;\n            display: flex;\n            flex-direction: row;\n            justify-content: space-between;\n        }\n        .nameText{\n            display: flex;\n            flex-direction: column;\n        }\n\n        .cc{\n            order:3;\n            margin-bottom: 0;\n            \n        }\n        .idioms{\n            margin: 0 auto;\n            order:2;\n            margin-bottom: 10%;\n            width: 100%;\n        }\n\n        .navLegal{\n            order:4;\n            text-align: -webkit-right;\n            width: 60%;\n        }\n        .nameText{\n            width:13%;\n        }\n\n        .legal{\n            width: 63%;\n        }\n    }\n    \n    @media only screen and (min-width:1441px){\n        width:94%;\n        .green{\n            position:relative;\n            height:550px;\n            text-align:center;\n        }\n        .icon{ \n            display:block;\n            position:absolute;\n            text-align: center;\n            left: 83%;\n            top: -15%;\n            img{\n                width:90%;\n            }\n        }\n        .textGreen{\n            p{\n                margin-top: 2%;\n                margin-bottom: 4%;\n            }\n        }\n        nav{\n            cursor: pointer;\n            position:absolute;\n            width:35%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            right: 10%;\n            top: 22%;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            text-decoration:none;\n            cursor: pointer;\n            border: 0;\n            border-color:none;\n            background-color:#76991E40;\n            color: #76991E;\n            border-radius:8px;\n            font-family: \"GT\u2013Medium\";\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n        .textGreenOpacity{\n            width: 80%;\n            padding-top: 7%;\n            padding-bottom:0;\n            display: flex;\n            flex-direction: row;\n            justify-content: space-between;\n        }\n        .nameText{\n            display: flex;\n            flex-direction: column;\n        }\n        .iconWord{\n            position: absolute;\n            width: 30%;\n            margin: 0 auto;\n            text-align: center;\n            top: -38%;\n            left: -1%;\n        }\n        .cc{\n            order:3;\n            margin-bottom: 0;\n            \n        }\n        .idioms{\n            margin: 0 auto;\n            order:2;\n            margin-bottom: 30%;\n\n            width: 100%;\n        }\n        .navLegal{\n            order:4;\n            text-align: -webkit-right;\n            width: 60%;\n        }\n        .nameText{\n            width:10%;\n        }\n\n        .legal{\n            width: 35%;\n        }\n        .greenOpacity{\n            width:100%;\n        }\n    }\n    \n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin: 0 auto;\nwidth:90vw;\npadding-bottom:5%;\n    nav{\n        display:none;\n    }\n    .icon{\n        display:none;\n    }\n    .green{\n        background-color:#8ED7BF;\n        border-top-left-radius: 16px;\n        border-top-right-radius: 16px;\n        height:370px;\n        flex-flow:column;\n        justify-content:center;\n        display: ", ";\n    }\n    .textGreen{\n        margin:0 20%;\n        text-align:center;\n        p{\n            margin-top:8%;\n            margin-bottom:8%;\n        }\n    }\n    .button{\n        margin: 0 auto;\n        margin-left: 7%;\n        margin-right: 7%;\n       \n    }\n    .greenOpacity{\n        background-color:#8ED7BF40;\n        border-bottom-left-radius: 16px;\n        border-bottom-right-radius: 16px;\n        width:90vw;\n        height:auto;\n        margin: 0 auto;\n        position:relative;\n    }\n    .iconWord{\n        position: absolute;\n        width: 30%;\n        margin: 0 auto;\n        text-align: center;\n        top: -3%;\n        left: 35%;\n        img{\n            width:100%;\n            margin: 0 auto; \n        }\n    }\n    .textGreenOpacity{\n        width:90%;\n        padding-top: 35%;\n        margin: 0 auto;\n        display:flex;\n        flex-flow:column;\n        justify-content: space-evenly;\n\n    }\n    .nameText{\n        width: 100%;\n    }\n    .navSeo{\n        width:80%;\n        margin:0 auto;\n    }\n    .idioms, .idiomsMovil{\n        order: 1;\n        display:flex;\n        width:50%;\n        margin: 0 auto;\n        justify-content: space-between; \n        margin-bottom:20%;\n    }\n    .idioms{\n        display:none;\n    }\n    Link{\n        text-align:center;\n    }\n    .legal{\n        width:95%;\n        margin:0 auto;\n        margin-bottom:10%;\n        & > p{\n            text-align:center;\n            margin-bottom:5%;\n        }\n    }\n    .sectionLegal{\n        width:100%;\n        display:flex;\n        justify-content: space-between; \n    }\n    \n    .navegation, .voluntary, .moreInfo{\n        margin-bottom:20%;\n        & > p{\n            margin-bottom: 12px;\n        } \n    }\n\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        .green{\n            height:460px;\n        }\n        .iconWord{\n            top: -4%;\n            left: 41%;\n            width: 18%;\n        }\n        .navSeo{\n            width:85%;\n        }\n        .idiomsMovil{\n            width:30%;\n        }\n        .textGreenOpacity{\n            padding-top: 18%;\n        }\n        .legal{\n            margin-bottom:5%;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        padding-bottom: 3%;\n        .green{\n            height: 450px;\n        }\n       .button{\n            margin: 0 auto;\n       }\n       .iconWord{\n            top: -13%;\n            left: -40%;\n                img{\n                    width:10%;\n            }\n        }\n        .textGreenOpacity{\n            padding-top: 100px;\n            display: flex;\n            flex-direction: row-reverse;\n        }\n        .idiomsMovil{\n            display:none;\n        }\n        .idioms{\n            display:block;\n        }\n        .navSeo{\n            display:flex;\n            justify-content:space-between;\n            width:75%; \n        }\n        .nameText{\n            width:25%;\n            flex-direction: column;\n        }\n        .idioms{\n            display:flex;\n            width:70%;\n            margin: 0;\n            margin-bottom: 28%;\n            margin-top: 3%;\n        }\n        .legal{\n            margin:0;\n            & > p{\n                text-align:left;\n                margin-bottom: 16%;\n            }\n        }\n        .sectionLegal{\n            display:flex;\n            flex-direction:column;\n            & >p{\n                margin-bottom: 15px;\n            }\n\n        }\n        .navegation{\n            margin-bottom: 10%;\n            & >p{\n                margin-bottom: 12px;\n            }\n        }\n        .navegation, .voluntary, .moreInfo{\n            margin-bottom: 10%;\n        }\n    }\n    \n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        padding-bottom: 2%;\n        .green{\n            height: 480px;\n        }\n        .button{\n            margin: 0 auto;\n        }\n       .iconWord{\n            top: -19%;\n            left: -33%;\n                img{\n                    width:10%;\n                }\n        }\n        .textGreenOpacity{\n            width: 75%;\n            padding-top: 100px;\n            display: flex;\n            flex-direction: row-reverse;\n        }\n        .idiomsMovil{\n            display:none;\n        }\n        .navSeo{\n            display:flex;\n            justify-content:space-between;\n            width:75%; \n        }\n        .nameText{\n            width:25%;\n            flex-direction: column;\n        }\n        .idioms{\n            display:flex;\n            width:70%;\n            margin: 0;\n            margin-bottom: 24%;\n            margin-top: 3%;\n        }\n        .legal{\n            margin:0;\n            & > p{\n                text-align:left;\n                margin-bottom: 16%;\n            }\n        }\n        .sectionLegal{\n            display:flex;\n            flex-direction:column;\n            & >p{\n                margin-bottom: 15px;\n            }\n\n        }\n        .navegation{\n            margin-bottom: 10%;\n            & >p{\n                margin-bottom: 12px;\n            }\n        }\n        .navegation, .voluntary, .moreInfo{\n            margin-bottom: 10%;\n        }\n    }\n    \n    @media only screen and (min-width:1441px){\n        padding-bottom: 2%;\n        .green{\n            height: 480px;\n        }\n        .button{\n            margin: 0 auto;\n        }\n       .iconWord{\n            top: -16%;\n            left: -34%;\n                img{\n                    width:7%;\n                }\n        }\n        .textGreenOpacity{\n            width: 75%;\n            padding-top: 100px;\n            display: flex;\n            flex-direction: row-reverse;\n        }\n        .textGreen{\n            p{\n                margin-top: 5%;\n                margin-bottom: 5%;\n            }\n        }\n        .idiomsMovil{\n            display:none;\n        }\n        .navSeo{\n            display:flex;\n            justify-content:space-between;\n            width:75%; \n        }\n        .nameText{\n            width:25%;\n            flex-direction: column;\n        }\n        .idioms{\n            display:flex;\n            width:40%;\n            margin: 0;\n            margin-bottom: 17%;\n            margin-top: 3%;\n        }\n        .legal{\n            margin:0;\n            & > p{\n                text-align:left;\n                margin-bottom: 12%;\n            }\n        }\n        .sectionLegal{\n            display:flex;\n            flex-direction:column;\n            & >p{\n                margin-bottom: 15px;\n            }\n\n        }\n        .navegation{\n            margin-bottom: 10%;\n            & >p{\n                margin-bottom: 12px;\n            }\n        }\n        .navegation, .voluntary, .moreInfo{\n            margin-bottom: 10%;\n        }\n    }\n    \n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -624,12 +747,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Button/Button */ "./components/Button/Button.js");
 /* harmony import */ var _styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBodyRegular */ "./styles/fontsStyles/paragraphBodyRegular.js");
 /* harmony import */ var _styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphTitle */ "./styles/fontsStyles/paragraphTitle.js");
-/* harmony import */ var _styles_fontsStyles_paragraphHeader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphHeader */ "./styles/fontsStyles/paragraphHeader.js");
-/* harmony import */ var _content_gallery_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../content/gallery.json */ "./content/gallery.json");
-var _content_gallery_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../content/gallery.json */ "./content/gallery.json", 1);
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_9__);
-
+/* harmony import */ var _content_gallery_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../content/gallery.json */ "./content/gallery.json");
+var _content_gallery_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../content/gallery.json */ "./content/gallery.json", 1);
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
@@ -648,13 +769,13 @@ var Gallery = function Gallery(props) {
       tab = _useState2[0],
       setTab = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(_content_gallery_json__WEBPACK_IMPORTED_MODULE_8__[0]),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(_content_gallery_json__WEBPACK_IMPORTED_MODULE_7__[0]),
       _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
       galleryItem = _useState4[0],
       setGalleryItem = _useState4[1];
 
   var changeItem = function changeItem(number) {
-    setGalleryItem(_content_gallery_json__WEBPACK_IMPORTED_MODULE_8__[number]);
+    setGalleryItem(_content_gallery_json__WEBPACK_IMPORTED_MODULE_7__[number]);
   };
 
   var changeTab = function changeTab(number) {
@@ -671,11 +792,15 @@ var Gallery = function Gallery(props) {
     photo: photo
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: "description"
-  }, t("galeryIntro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, t("galeryIntro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "component"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "galleryImg"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     src: "/static/svg/iconFavo.svg"
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphHeader__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "textImg"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_6__["default"], {
     color: "#F1A409"
   }, title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_5__["default"], null, description), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "button"
@@ -690,10 +815,14 @@ var Gallery = function Gallery(props) {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "buttonNextBack"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    color: "#00000050",
     onClick: function onClick() {
       return changeTab(tab - 1);
     }
-  }, "Atr\xE1s"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_5__["default"], null, "\xB7"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Atr\xE1s"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    color: "#00000050"
+  }, "\xB7"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    color: "#00000050",
     onClick: function onClick() {
       return changeTab(tab + 1);
     }
@@ -722,7 +851,7 @@ var Gallery = function Gallery(props) {
   }))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_9__["withTranslation"])("home")(Gallery));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_8__["withTranslation"])("home")(Gallery));
 
 /***/ }),
 
@@ -741,7 +870,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin: 0 auto;\n    width:90vw;\n    margin-bottom:20%;\n    .galleryImg{\n        position:relative;\n        width:100%;\n        height: 255px;\n        background-color: ", ";\n        background-image: ", ";\n        background-repeat: no-repeat;\n        background-size: cover;\n        background-position: center;\n        border-radius:16px;\n        margin-bottom:10%;\n        img{\n            position:absolute;\n            left:80%;\n        }\n    }\n    .nextBack{\n        margin-top:10%;\n    }\n    .buttonNextBack{\n        display:flex;\n        justify-content: space-between;\n        width:40%;\n        margin-top:10px;\n        margin-bottom:10px;\n        cursor:pointer;\n    }\n    .buttonDiv{\n        display:flex;\n        justify-content: space-between;\n        div{\n            width: 75px;\n            height: 4px;\n            background-color:red;\n            border-radius:50px;\n            cursor:pointer;\n        }\n        div.active {\n            background-color:blue;\n        }\n    }\n\n\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n    \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n    \n    }\n    @media only screen and (min-width:1441px){\n\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin: 0 auto;\n    width:90vw;\n    margin-bottom:25%;\n    .galleryImg{\n        position:relative;\n        width:100%;\n        height: 255px;\n        background-color: ", ";\n        background-image: ", ";\n        background-repeat: no-repeat;\n        background-size: cover;\n        background-position: center;\n        border-radius:16px;\n        margin-bottom:10%;\n        img{\n            position:absolute;\n            left:80%;\n        }\n    }\n    .nextBack{\n        margin-top:10%;\n    }\n    .button{\n        padding-top:10%;\n    }\n    .buttonNextBack{\n        display:flex;\n        justify-content: space-between;\n        width:40%;\n        margin-top:10px;\n        margin-bottom:10px;\n        cursor:pointer;\n    }\n    .buttonDiv{\n        display:flex;\n        justify-content: space-between;\n        div{\n            width: 75px;\n            height: 4px;\n            background-color:#F2F2F2;\n            border-radius:50px;\n            cursor:pointer;\n        }\n        div.active {\n            background-color:#F1A409;\n        }\n    }\n    .textImg{\n        h2{\n            text-align:left;\n            font-size: 20px;\n            line-height: 24px;\n        }\n    }\n\n\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        margin-bottom: 15%;\n        h2{\n            text-align:center;\n        }\n        .component{\n            display:flex;\n            justify-content: space-between;\n            align-items:center;\n        }\n        .galleryImg{\n            width:50%;\n            margin-bottom:0;\n        }\n        .textImg{\n            width: 40%;\n        }\n        .buttonDiv{\n            div{\n                width: 60px;\n            }\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        margin-bottom: 10%;\n        h2{\n            text-align:center;\n        }\n        .component{\n            display:flex;\n            justify-content: space-between;\n            align-items:center;\n        }\n        .galleryImg{\n            width:50%;\n            height: 340px;\n            margin-bottom:0;\n        }\n        .nextBack{\n            margin-top:20%;\n        }\n        .textImg{\n            width: 40%;\n            padding: 10%;\n        }\n        .buttonDiv{\n            div{\n                width: 75px;\n            }\n        }\n        .textImg{\n            h2{\n                text-align:left;\n                line-height: 40px;\n                font-size: 32px;\n            }\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        width:80vw;\n        margin-bottom: 10%;\n        h2{\n            text-align:center;\n            margin-bottom: 2.5%;\n        }\n        .component{\n            display:flex;\n            justify-content: space-between;\n            align-items:center;\n        }\n        .galleryImg{\n            width:50%;\n            height: 400px;\n            margin-bottom:0;\n        }\n        .nextBack{\n            margin-top:20%;\n        }\n        .textImg{\n            width: 40%;\n            padding: 8%;\n        }\n        .buttonDiv{\n            div{\n                width: 95px;\n            }\n        }\n        .textImg{\n            h2{\n                text-align:left;\n                line-height: 40px;\n                font-size: 32px;\n            }\n        }\n    }\n    @media only screen and (min-width:1441px){\n        width:75vw;\n        margin-bottom: 10%;\n        h2{\n            text-align:center;\n            margin-bottom: 2.5%;\n        }\n        .component{\n            display:flex;\n            justify-content: space-between;\n            align-items:center;\n        }\n        .galleryImg{\n            width:50%;\n            height: 400px;\n            margin-bottom:0;\n        }\n        .nextBack{\n            margin-top:20%;\n        }\n        .textImg{\n            width: 35%;\n            margin: 0 15%;\n        }\n        .buttonDiv{\n            div{\n                width: 95px;\n            }\n        }\n        .textImg{\n            h2{\n                text-align:left;\n                line-height: 40px;\n                font-size: 32px;\n            }\n        }\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -779,7 +908,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphTitle */ "./styles/fontsStyles/paragraphTitle.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _CardExperience_CardAll__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../CardExperience/CardAll */ "./components/CardExperience/CardAll.js");
+/* harmony import */ var _CardExperience_Card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../CardExperience/Card */ "./components/CardExperience/Card.js");
+/* harmony import */ var _content_card_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../content/card.json */ "./content/card.json");
+var _content_card_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../content/card.json */ "./content/card.json", 1);
+
 
 
 
@@ -797,14 +929,50 @@ var Header = function Header(props) {
       language = _useState2[0],
       setLangauge = _useState2[1];
 
+  var displayCards = function displayCards() {
+    return _content_card_json__WEBPACK_IMPORTED_MODULE_8__.map(function (card, i) {
+      var description = card.description,
+          country = card.country,
+          photo = card.photo,
+          people = card.people,
+          buttonContent = card.buttonContent;
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperience_Card__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        description: description,
+        country: country,
+        buttonContent: buttonContent,
+        photo: photo,
+        people: people,
+        key: i,
+        number: i
+      });
+    });
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HeaderStyle__WEBPACK_IMPORTED_MODULE_3__["HeaderStyle"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_5__["default"], {
     align: "center"
   }, t("intro")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     content: t("button"),
     color: "white"
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "card"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CardExperience_CardAll__WEBPACK_IMPORTED_MODULE_7__["default"], null)));
+    className: "cardContainer"
+  }, displayCards()), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "icon"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    className: "icon1",
+    src: "/static/svg/iconHomeGalery0.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    className: "icon2",
+    src: "/static/svg/iconHomeGalery1.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    className: "icon3",
+    src: "/static/svg/iconHomeGalery2.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    className: "icon4",
+    src: "/static/svg/iconHomeGalery3.svg"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    className: "icon5",
+    src: "/static/svg/iconHomeGalery4.svg"
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_6__["withTranslation"])("home")(Header));
@@ -826,7 +994,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n    width:100vw;\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        background-size:cover;\n        background-position:center;\n        border-radius: 16px;\n        width:90vw;\n        height: 75vh;\n        margin:0 auto;\n        text-align:center;\n        display: flex;\n        flex-flow: column;\n        align-items: center;\n        /* margin-left: 6%; */\n    }\n    h2{\n        padding-top:20%;\n        padding-bottom:5%;\n    }\n    .card{\n        position:relative;\n        margin-top:-73%;\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n        main{\n            height: 67vh;\n        }\n        .card{\n            margin-top:-33%;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        main{\n            width:94.5vw;\n            max-height: 550px;\n\n        }\n        h2{\n            padding-top:10%;\n            padding-bottom:2%;\n        }\n        .card{\n            margin-top: -21%;\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        main{\n            width:94.5vw;\n            max-height: 690px;\n\n        }\n        h2{\n            padding-top:15%;\n            padding-bottom:2%;\n        }\n        .card{\n            margin-top: -15%;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        main{\n            width:95vw;\n            max-height: 780px;\n\n        }\n        h2{\n            padding-top:10%;\n            padding-bottom:2%;\n        }\n        .card{\n            margin-top:-10%;\n        }\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n@keyframes translate {\n  from {\n      right:0;\n  }\n\n  to {\n    right:5px;\n  }\n}\n    width:100vw;\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        background-size:cover;\n        background-position:center;\n        border-radius: 16px;\n        width:90vw;\n        height: 75vh;\n        margin:0 auto;\n        text-align:center;\n        display: flex;\n        flex-flow: column;\n        align-items: center;\n        /* margin-left: 6%; */\n    }\n    h2{\n        padding-top:20%;\n        padding-bottom:5%;\n    }\n    .card{\n        position:relative;\n        margin-top:-73%;\n    }\n    .icon{\n        margin: 0 auto;\n        display: flex;\n        justify-content: space-between;\n        z-index: 3;\n    }\n\n    .icon1, .icon3, .icon4, .icon5{\n        position: absolute;\n    }\n    .icon1{\n        width: 10%;\n        top: 70%;\n    }\n    .icon2, .icon5{\n        display:none;\n    }\n    .icon3{\n        top: 46%;\n        left: 63%;\n        width: 15%;\n        \n    }\n    .icon4{\n        top: 87%;\n        left: 88%;\n        width: 12%;\n    }\n    .cardContainer{\n        overflow-x: scroll;\n        display:flex;\n        padding-bottom: 2%;\n        position: relative;\n        margin-top:-73%;\n        /* animation-duration: 10s;\n        animation-name: translate; */\n        &::-webkit-scrollbar {\n            display: none;\n        }\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n\n    @media only screen and (max-width: 380px) {\n        .cardContainer{\n            position:relative;\n            margin-top:-40%;\n        }\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n        main{\n            height: 67vh;\n        }\n        .cardContainer{\n            margin-top:-35%;\n        }\n        .card{\n            margin-top: -35%;\n        }\n        .icon1{\n            width: 7%;\n            top: 53%;\n        }\n        .icon3{\n            top: 48%;\n            width: 7%;\n        }\n        .icon4{\n            top: 81%;\n            left: 94%;\n            width: 6%;\n       }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        main{\n            width:94.5vw;\n            max-height: 550px;\n\n        }\n        h2{\n            padding-top:10%;\n            padding-bottom:2%;\n        }\n        .card{\n            margin-top: -21%;\n        }\n        .icon2, .icon5{\n            display:block;\n            position: absolute;\n        }\n        .icon1{\n            width: 4%;\n            top: 54%;\n            left: 44%;\n        }\n        .icon2{\n            top: 67%;\n            2left: 4%;\n            width: 3%;\n        }\n        .icon3 {\n            top: 67%;\n            left: 22%;\n            width: 6%;\n        }\n        .icon4 {\n            top: 80%;\n            left: 68%;\n            width: 5%;\n        }\n        .icon5{\n            top: 56%;\n            left: 90%;\n            width: 5%;\n        }\n        .cardContainer{\n            position: relative;\n            min-height: 353px;\n            width:100%;\n            margin-top:-18%;\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        main{\n            width:94.5vw;\n            max-height: 690px;\n\n        }\n        h2{\n            padding-top:15%;\n            padding-bottom:2%;\n        }\n        .card{\n            margin-top: -15%;\n        }\n        .icon2, .icon5{\n            display:block;\n            position: absolute;\n        }\n        .icon1{\n            width: 3%;\n            top: 63%;\n            left: 49%;\n        }\n        .icon2{\n            top: 70%;\n            left: 5%;\n            width: 3%;\n        }\n        .icon3 {\n            top: 59%;\n            left: 25%;\n            width: 6%;\n        }\n        .icon4 {\n            top: 67%;\n            left: 70%;\n            width: 4%;\n        }\n        .icon5{\n            top: 58%;\n            left: 92%;\n            width: 3%;\n        }\n        .cardContainer{\n            position: relative;\n            min-height: 370px;\n            width:100%;\n            margin-top:-10%;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        main{\n            width:95vw;\n            max-height: 780px;\n\n        }\n        h2{\n            padding-top:10%;\n            padding-bottom:2%;\n        }\n        .card{\n            margin-top:-10%;\n        }\n        .icon2, .icon5{\n            display:block;\n            position: absolute;\n        }\n        .icon1{\n            width: 3%;\n            top: 63%;\n            left: 44%;\n        }\n        .icon2{\n            width: 2%;\n            top: 70%;\n            left: 5%;\n\n        }\n        .icon3 {\n            width: 4%;\n            top: 62%;\n            left: 25%;\n\n        }\n        .icon4 {\n            width: 3%;\n            top: 73%;\n            left: 71%;\n        }\n        .icon5{\n            width: 2%;\n            top: 66%;\n            left: 92%;\n\n        }\n        .cardContainer{\n            position: relative;\n            min-height: 380px;\n            width:100%;\n            margin-top:-11%;\n        }\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1090,7 +1258,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    overflow:hidden;\n    .desktop{\n        display:none;\n    }\n    header{\n        \n        display:flex;\n        justify-content: space-between;\n    }\n    .symbol{\n        width:90%;\n        margin:5% auto;\n        display:flex;\n        justify-content: space-between;\n    }\n    nav{\n        overflow: hidden;\n        position:absolute;\n        display:flex;\n        width:100vw;\n        height:100vh;\n        display: ", ";\n    }\n    .navColor{\n        position:absolute;\n        z-index: 1;\n        width:100vw;\n        height:100vh;\n        width:100vw;\n        background-color: #00000090;\n    }\n    .navMobile{\n        position:absolute;\n        left:15%;\n        z-index: 2;\n        padding-top: 6%;\n        padding-left:10%;\n        background-color:white;\n        border-top-left-radius: 40px;\n        border-bottom-left-radius: 40px;\n        width:80%;\n        height:95%;\n        display:flex;\n        justify-content:space-between;\n        align-items:flex-start;\n        /* display:none */\n    }\n    .navMenuMobile{\n        width:70%;\n        height: 90%;\n        display:flex;\n        flex-flow:column;\n        align-items:flex-end;\n        padding-right: 15%;\n        justify-content: space-between;\n    }\n    .navMenu1, .navMenu2{\n        display: flex;\n        flex-flow:column;\n        align-items:flex-end;\n        justify-content: space-between;\n        \n    }\n    .navMenu1{\n        height:10vh;\n        margin-top: 40%;\n    }\n    .navMenu2{\n        height:20vh;\n        div{\n            width:103%;\n            display:flex;\n            justify-content: space-between;\n            padding-top:10%;\n            padding-bottom: 40%;\n\n        }\n    }\n    button{\n        text-decoration:none;\n        cursor: pointer;\n        border: 0;\n        border-color:none;\n        padding: 10% 28%;\n        background-color:#76991E40;\n        color: #76991E;\n        border-radius:8px;\n        font-family: \"GT\u2013Medium\";\n        font-size:20px;\n    }\n    \n    \n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n    \n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width:38%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    overflow:hidden;\n    .desktop{\n        display:none;\n    }\n    @keyframes moveNav{\n        0%{transform: translate3d(319px, 0, 0)}\n        100%{transform: translate3d(0px, 0, 0)}\n    }\n    header{\n        \n        display:flex;\n        justify-content: space-between;\n    }\n    .symbol{\n        width:90%;\n        margin:5% auto;\n        display:flex;\n        justify-content: space-between;\n    }\n    nav{\n        overflow: hidden;\n        position:fixed;\n        z-index:3;\n        display:flex;\n        width:100vw;\n        height:100vh;\n        display: ", ";\n    }\n    .navColor{\n        position:absolute;\n        z-index: 1;\n        width:100vw;\n        height:100vh;\n        width:100vw;\n        background-color: #00000090;\n    }\n    .navMobile{\n        position:absolute;\n        left:15%;\n        z-index: 2;\n        padding-top: 6%;\n        padding-left:10%;\n        background-color:white;\n        border-top-left-radius: 40px;\n        border-bottom-left-radius: 40px;\n        width:80%;\n        height:95%;\n        display:flex;\n        justify-content:space-between;\n        align-items:flex-start;\n        animation: moveNav 2s;\n        /* display:none */\n    }\n    .navMenuMobile{\n        width:70%;\n        height: 90%;\n        display:flex;\n        flex-flow:column;\n        align-items:flex-end;\n        padding-right: 15%;\n        justify-content: space-between;\n        \n    }\n    .navMenu1, .navMenu2{\n        display: flex;\n        flex-flow:column;\n        align-items:flex-end;\n        justify-content: space-between;\n        \n    }\n    .navMenu1{\n        height:10vh;\n        margin-top: 40%;\n    }\n    .navMenu2{\n        div{\n            width:103%;\n            display:flex;\n            justify-content: space-between;\n            padding-top:10%;\n            padding-bottom: 40%;\n\n        }\n    }\n    button{\n        text-decoration:none;\n        cursor: pointer;\n        border: 0;\n        border-color:none;\n        padding: 18px 38px;\n        background-color:#76991E40;\n        color: #76991E;\n        border-radius:8px;\n        font-family: \"GT\u2013Medium\";\n        font-size:20px;\n    }\n    \n    \n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n    \n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width:38%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1157,7 +1325,8 @@ var Opportunity = function Opportunity(_ref) {
       var country = card.country,
           photo = card.photo;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: ""
+        href: "",
+        key: i
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardCountry_CardCountry__WEBPACK_IMPORTED_MODULE_7__["default"], {
         photo: photo,
         country: country
@@ -1178,7 +1347,9 @@ var Opportunity = function Opportunity(_ref) {
     className: "textAll"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_3__["default"], null, t("intro3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_4__["default"], null, t("description3"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_3__["default"], null, t("intro3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "ptext"
+  }, t("description3"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: "16px",
@@ -1225,7 +1396,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin:0 auto;\n    .textAll, .button{\n        width:90%;\n        margin:0 auto;\n    }\n    .card{\n        overflow-x: scroll;\n        display:flex;\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n    .button{\n        margin-bottom: 20%;\n    }\n    .text{\n        p{\n            margin-bottom: 4%;\n        }\n    }\n    .filter{\n        display:flex;\n        white-space:nowrap;\n    }\n    .dropDown{\n        padding-left:2%;\n        margin-bottom:6%;\n        width: 50%;\n        cursor: pointer;\n        p{\n            display: flex;\n            img{\n                margin-left:5%;\n            }\n        }\n    }\n    .dropDown{\n            margin-bottom: 7%;\n            width: 35%;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n    .Dropdown-menu{\n        background-color: white;\n        padding: 4% 2.5% 0% 2.5%;\n        box-shadow: 0px 2px 12px #00000020;\n        position: absolute;\n        padding-bottom:15px;\n        border-bottom-left-radius:16px;\n        border-bottom-right-radius:16px;\n        max-height:150px;\n        overflow-y:scroll;\n        white-space:nowrap;\n        div{\n            padding-bottom:18px;\n        }\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n        .text{\n            width:70%;\n        }\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .text{\n            width:50%;\n            p{\n                margin-bottom:0;\n            }\n        }\n        .card, .textAll, .button{\n            width: 94%; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-bottom:1%;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0%;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 74%;\n            white-space:nowrap;\n        }\n        .dropDown{\n            margin-bottom: 0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        .text{\n            width: 70%;\n            p{\n                margin-bottom: 0%;\n            }\n        }\n        .card, .textAll, .button{\n            width: 94%; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0;\n            display: flex;\n            justify-content: flex-end;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 81%;\n            white-space:nowrap;\n            padding: 1% 1.5% 0% 1.5%;\n        }\n        .dropDown{\n            margin-bottom:0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        \n    }\n      \n    @media only screen and (min-width:1441px){\n\n        .card, .textAll, .button{\n            width: 75%; \n        }\n        .card{\n            overflow-x: hidden;            \n            margin: 0 auto;\n            margin-bottom:1%;\n            display:flex;\n            justify-content:space-between;\n        }\n        .text{\n            width:70%;\n            p{\n                margin-bottom:0;\n            }\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:2.5%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0;\n            display: flex;\n            justify-content: flex-end;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 75%;\n            padding: 1% 1.5% 0% 1.5%;\n        }\n        .dropDown{\n            margin-bottom: 0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        .button{\n            margin-bottom:10%;\n        }\n        \n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin:0 auto;\n    .textAll, .button{\n        width:90%;\n        margin:0 auto;\n    }\n    .card{\n        overflow-x: scroll;\n        display:flex;\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n    .button{\n        margin-bottom: 20%;\n    }\n    .text{\n        p{\n            margin-bottom: 4%;\n        }\n    }\n    .filter{\n        display:flex;\n        white-space:nowrap;\n    }\n    .dropDown{\n        padding-left:2%;\n        margin-bottom:6%;\n        width: 50%;\n        cursor: pointer;\n        p{\n            display: flex;\n            img{\n                margin-left:5%;\n            }\n        }\n    }\n    .dropDown{\n            margin-bottom: 7%;\n            width: 35%;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n    .Dropdown-menu{\n        background-color: white;\n        padding: 4% 2.5% 0% 2.5%;\n        box-shadow: 0px 2px 12px #00000020;\n        position: absolute;\n        padding-bottom:15px;\n        border-bottom-left-radius:16px;\n        border-bottom-right-radius:16px;\n        max-height:150px;\n        overflow-y:scroll;\n        white-space:nowrap;\n        div{\n            padding-bottom:18px;\n        }\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n        .text{\n            width:70%;\n        }\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .text{\n            width:50%;\n            p{\n                margin-bottom:0;\n            }\n        }\n        .card, .textAll, .button{\n            width: 94%; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-bottom:1%;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .ptext{\n            font-size:20px;\n        }\n        .filter{\n            width: auto;\n            margin-right:0%;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 74%;\n            white-space:nowrap;\n        }\n        .dropDown{\n            margin-bottom: 0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        .text{\n            width: 70%;\n            p{\n                margin-bottom: 0%;\n            }\n        }\n        .card, .textAll, .button{\n            width: 94%; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .ptext{\n            font-size:20px;\n        }\n        .filter{\n            width: auto;\n            margin-right:0;\n            display: flex;\n            justify-content: flex-end;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 81%;\n            white-space:nowrap;\n            padding: 1% 1.5% 0% 1.5%;\n        }\n        .dropDown{\n            margin-bottom:0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        \n    }\n      \n    @media only screen and (min-width:1441px){\n\n        .card, .textAll, .button{\n            width: 75%; \n        }\n        .card{\n            overflow-x: hidden;            \n            margin: 0 auto;\n            margin-bottom:1%;\n            display:flex;\n            justify-content:space-between;\n        }\n        .text{\n            width:65%;\n            p{\n                margin-bottom:0;\n            }\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:2.5%;\n        }\n        .ptext{\n            font-size:20px;\n        }\n        .filter{\n            width: auto;\n            margin-right:0;\n            display: flex;\n            justify-content: flex-end;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 75%;\n            padding: 1% 1.5% 0% 1.5%;\n        }\n        .dropDown{\n            margin-bottom: 0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        .button{\n            margin-bottom:10%;\n        }\n        \n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1282,7 +1453,8 @@ var TypeVol = function TypeVol(_ref) {
       var type = card.type,
           photo = card.photo;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: ""
+        href: "",
+        key: i
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CardCountry_CardCountry__WEBPACK_IMPORTED_MODULE_7__["default"], {
         type: type,
         photo: photo
@@ -1294,7 +1466,9 @@ var TypeVol = function TypeVol(_ref) {
     className: "textAll"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_3__["default"], null, t("intro2")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_4__["default"], null, t("description3")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_3__["default"], null, t("intro2")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "ptext"
+  }, t("description3")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card"
   }, displayCardType()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "button"
@@ -1326,7 +1500,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin:0 auto;\n    .textAll, .button{\n        width:90%;\n        margin:0 auto;\n    }\n    .card{\n        overflow-x: scroll;\n        display:flex;\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n    .button{\n        margin-bottom: 20%;\n    }\n    .text{\n        p{\n            margin-bottom: 4%;\n        }\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        .text{\n            width:100%;\n        }\n        .button{\n            margin-bottom: 15%;\n        }       \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .text{\n            width:100%;\n            h2{\n                width:50%\n            }\n            p{\n                margin-bottom:0;\n            }\n        }\n        .card, .textAll, .button{\n            width: 94%; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-bottom:1%;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0%;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 74%;\n            white-space:nowrap;\n        }\n        .dropDown{\n            margin-bottom: 0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        .button{\n            margin-bottom: 11%;\n        }  \n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        .text{\n            width: 90%;\n            h2{\n                width:60%;\n            }\n            p{\n                margin-bottom: 0%;\n            }\n        }\n        .card, .textAll, .button{\n            width: 94%; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0;\n            display: flex;\n            justify-content: flex-end;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 81%;\n            white-space:nowrap;\n            padding: 1% 1.5% 0% 1.5%;\n        }\n        .dropDown{\n            margin-bottom:0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        .button{\n            margin-bottom: 14%;\n        }  \n        \n    }\n      \n    @media only screen and (min-width:1441px){\n\n        .card, .textAll, .button{\n            width: 75%; \n        }\n        .card{\n            overflow-x: hidden;            \n            margin: 0 auto;\n            margin-bottom:1%;\n            display:flex;\n            justify-content:space-between;\n        }\n        .text{\n            width:70%;\n            h2{\n                width:80%;\n            }\n            p{\n                margin-bottom:0;\n            }\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:2.5%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0;\n            display: flex;\n            justify-content: flex-end;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 75%;\n            padding: 1% 1.5% 0% 1.5%;\n        }\n        .dropDown{\n            margin-bottom: 0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        .button{\n            margin-bottom:10%;\n        }\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin:0 auto;\n    .textAll, .button{\n        width:90%;\n        margin:0 auto;\n    }\n    .card{\n        overflow-x: scroll;\n        display:flex;\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n    .button{\n        margin-bottom: 20%;\n    }\n    .text{\n        p{\n            margin-bottom: 4%;\n        }\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        .text{\n            width:100%;\n        }\n        .button{\n            margin-bottom: 15%;\n        }       \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .text{\n            width:100%;\n            h2{\n                width:50%\n            }\n            p{\n                margin-bottom:0;\n            }\n        }\n        .ptext{\n            font-size:20px;\n        }\n        .card, .textAll, .button{\n            width: 94%; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-bottom:1%;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0%;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 74%;\n            white-space:nowrap;\n        }\n        .dropDown{\n            margin-bottom: 0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        .button{\n            margin-bottom: 11%;\n        }  \n        \n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        .text{\n            width: 90%;\n            h2{\n                width:60%;\n            }\n            p{\n                margin-bottom: 0%;\n            }\n        }\n        .ptext{\n            font-size:20px;\n        }\n        .card, .textAll, .button{\n            width: 94%; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0;\n            display: flex;\n            justify-content: flex-end;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 81%;\n            white-space:nowrap;\n            padding: 1% 1.5% 0% 1.5%;\n        }\n        .dropDown{\n            margin-bottom:0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        .button{\n            margin-bottom: 14%;\n        }  \n        \n    }\n      \n    @media only screen and (min-width:1441px){\n\n        .card, .textAll, .button{\n            width: 75%; \n        }\n        .card{\n            overflow-x: hidden;            \n            margin: 0 auto;\n            margin-bottom:1%;\n            display:flex;\n            justify-content:space-between;\n        }\n        .text{\n            width:70%;\n            h2{\n                width:80%;\n            }\n            p{\n                margin-bottom:0;\n            \n            }\n        }\n        .ptext{\n            font-size:20px;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:2.5%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0;\n            display: flex;\n            justify-content: flex-end;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 75%;\n            padding: 1% 1.5% 0% 1.5%;\n        }\n        .dropDown{\n            margin-bottom: 0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        .button{\n            margin-bottom:10%;\n        }\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1429,7 +1603,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nwidth:90%;\nmargin: 35% auto;\ndisplay: flex;\nflex-flow:column;\nalign-items: center;\n\n    .img{\n        width:100%;\n        height: 20vh;\n        background-image: url(/static/svg/iconOlas.svg);\n        background-repeat: no-repeat;\n        position: relative;\n        margin-bottom:20%;\n        display:flex;\n        object-fit: cover;\n    }\n    .icon{\n        position: relative;\n        left: 37%;\n        top: 73%;\n    }\n    .iconWord{\n        position: relative;\n        width:50%;\n        left: 72%;\n        top: 80%;\n    }\n    .iconTicket{\n        position: absolute;\n        width: 30%;\n        top: -19%;\n        left: 42%;\n    }\n    .text{\n        width:100%;\n        text-align: left;\n\n    }\n    .title, .subTitle{\n        margin-bottom:4%;\n    }\n    .paragraph{\n        margin-bottom:10%;\n    }\n\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        margin: 20% auto;  \n        flex-flow:row;\n        .img{ \n            width:45%;\n            height: 50vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:45%;\n            margin: 0 auto;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        margin: 10% auto;  \n        flex-flow:row;\n        .img{ \n            width:45%;\n            height: 55vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:45%;\n            margin: 0 auto;\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        margin: 10% auto;  \n        width:80%;\n        flex-flow:row;\n        .img{ \n            width:50%;\n            height: 60vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:35%;\n            margin: 0 auto;\n        }\n        .icon{\n            left: 35%;\n            top: 33%;\n        }\n        .iconWord{\n            width:80%;\n        }\n        .iconTicket{\n            top: 21%;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        margin: 6% auto;  \n        width:60%;\n        flex-flow:row;\n        .img{ \n            width:50%;\n            height: 65vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:35%;\n            margin: 0 auto;\n        }\n        .icon{\n            left: 40%;\n            top: 33%;\n        }\n        .iconWord{\n            width:90%;\n        }\n        .iconTicket{\n            top: 18%;\n            left: 28%;\n            width:45%;\n        }\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nwidth:90%;\nmargin: 25% auto;\ndisplay: flex;\nflex-flow:column;\nalign-items: center;\n\n    .img{\n        width:100%;\n        height: 20vh;\n        background-image: url(/static/svg/iconOlas.svg);\n        background-repeat: no-repeat;\n        position: relative;\n        margin-bottom:20%;\n        display:flex;\n        object-fit: cover;\n    }\n    .icon{\n        position: relative;\n        left: 37%;\n        top: 73%;\n    }\n    .iconWord{\n        position: relative;\n        width:50%;\n        left: 72%;\n        top: 80%;\n    }\n    .iconTicket{\n        position: absolute;\n        width: 30%;\n        top: -19%;\n        left: 42%;\n    }\n    .text{\n        width:100%;\n        text-align: left;\n\n    }\n    .title, .subTitle{\n        margin-bottom:4%;\n    }\n    .paragraph{\n        margin-bottom:10%;\n    }\n\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        margin: 15% auto;  \n        flex-flow:row;\n        .img{ \n            width:45%;\n            height: 50vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:45%;\n            margin: 0 auto;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        margin: 0 auto; \n        flex-flow:row;\n        .img{ \n            width:45%;\n            height: 55vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:45%;\n            margin: 0 auto;\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        margin: 0 auto; \n        margin-bottom: 10%;  \n        width:80%;\n        flex-flow:row;\n        .img{ \n            width:50%;\n            height: 60vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:35%;\n            margin: 0 auto;\n        }\n        .icon{\n            left: 38%;\n            top: 33%;\n        }\n        .iconWord{\n            width:80%;\n        }\n        .iconTicket{\n            top: 21%;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        margin: 0 auto; \n        margin-bottom: 9.8%; \n        width:60%;\n        flex-flow:row;\n        .img{ \n            width:50%;\n            height: 65vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:35%;\n            margin: 0 auto;\n        }\n        .icon{\n            left: 35%;\n            top: 33%;\n        }\n        .iconWord{\n            width:90%;\n        }\n        .iconTicket{\n            top: 18%;\n            left: 28%;\n            width:45%;\n        }\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1484,7 +1658,7 @@ module.exports = [{"name":"España"},{"name":"Republica Dominicana"},{"name":"Fr
 /*! exports provided: 0, 1, 2, 3, default */
 /***/ (function(module) {
 
-module.exports = [{"photo":"/static/img/photo1.jpg","title":"Amazing Experience 1","description":"La maravillosa gente que conocí en Sidney"},{"photo":"/static/img/photo2.jpg","title":"Amazing Experience 2","description":"La maravillosa gente que conocí en Barcelona"},{"photo":"/static/img/photo3.jpg","title":"Amazing Experience 3","description":"La maravillosa gente que conocí en Madrid"},{"photo":"/static/img/photo3.jpg","title":"Amazing Experience 4","description":"La maravillosa gente que conocí en Sevilla"}];
+module.exports = [{"photo":"/static/img/photo2.jpg","title":"Enseñando a coser en El Salvador, ¡mi mejor aventura!","description":"Por Laura Serrano"},{"photo":"/static/img/photo1.jpg","title":"El camino, me cambio la vida.","description":"Por Laura Rodriguez"},{"photo":"/static/img/photo3.jpg","title":"Contruir sin recursos.","description":"Por Federica Sanchez"},{"photo":"/static/img/photo3.jpg","title":"Encontre el camino de mis estudios, gracias.","description":"Por Roma González"}];
 
 /***/ }),
 
@@ -1636,6 +1810,28 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "./node_modules/core-js/library/fn/object/freeze.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js");
 
 /***/ }),
 
@@ -2183,6 +2379,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableSpread; });
 function _nonIterableSpread() {
   throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+
+
+
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
+
+    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
+      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
+        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
+    });
+  }
+
+  return target;
 }
 
 /***/ }),
@@ -4588,6 +4827,35 @@ module.exports = function defineProperty(it, key, desc) {
 
 __webpack_require__(/*! ../../modules/es6.object.freeze */ "./node_modules/core-js/library/modules/es6.object.freeze.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.freeze;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.get-own-property-descriptor */ "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js");
+var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
+module.exports = function getOwnPropertyDescriptor(it, key) {
+  return $Object.getOwnPropertyDescriptor(it, key);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/get-own-property-symbols.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.symbol */ "./node_modules/core-js/library/modules/es6.symbol.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getOwnPropertySymbols;
 
 
 /***/ }),
@@ -7288,6 +7556,26 @@ var meta = __webpack_require__(/*! ./_meta */ "./node_modules/core-js/library/mo
 __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('freeze', function ($freeze) {
   return function freeze(it) {
     return $freeze && isObject(it) ? $freeze(meta(it)) : it;
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
+var $getOwnPropertyDescriptor = __webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/library/modules/_object-gopd.js").f;
+
+__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getOwnPropertyDescriptor', function () {
+  return function getOwnPropertyDescriptor(it, key) {
+    return $getOwnPropertyDescriptor(toIObject(it), key);
   };
 });
 
@@ -28900,22 +29188,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Footer/Footer */ "./components/Footer/Footer.js");
-/* harmony import */ var _components_Nav_Nav__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Nav/Nav */ "./components/Nav/Nav.js");
-/* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Header/Header */ "./components/Header/Header.js");
-/* harmony import */ var _components_We_We__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/We/We */ "./components/We/We.js");
-/* harmony import */ var _components_Content_Content__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/Content/Content */ "./components/Content/Content.js");
-/* harmony import */ var _components_Opportunity_Opportunity__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/Opportunity/Opportunity */ "./components/Opportunity/Opportunity.js");
-/* harmony import */ var _components_TypesVol_TypeVol__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/TypesVol/TypeVol */ "./components/TypesVol/TypeVol.js");
-/* harmony import */ var _components_Gallery_Gallery__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/Gallery/Gallery */ "./components/Gallery/Gallery.js");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
-/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../i18n */ "./i18n.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _components_Cookies_Cookies__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Cookies/Cookies */ "./components/Cookies/Cookies.js");
+/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Footer/Footer */ "./components/Footer/Footer.js");
+/* harmony import */ var _components_Nav_Nav__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Nav/Nav */ "./components/Nav/Nav.js");
+/* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/Header/Header */ "./components/Header/Header.js");
+/* harmony import */ var _components_We_We__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/We/We */ "./components/We/We.js");
+/* harmony import */ var _components_Content_Content__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/Content/Content */ "./components/Content/Content.js");
+/* harmony import */ var _components_Opportunity_Opportunity__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/Opportunity/Opportunity */ "./components/Opportunity/Opportunity.js");
+/* harmony import */ var _components_TypesVol_TypeVol__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/TypesVol/TypeVol */ "./components/TypesVol/TypeVol.js");
+/* harmony import */ var _components_Gallery_Gallery__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/Gallery/Gallery */ "./components/Gallery/Gallery.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../i18n */ "./i18n.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_24__);
+
 
 
 
@@ -28954,8 +29244,8 @@ function (_React$Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Home).call(this, props));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "runAOS", function () {
-      if (!aos__WEBPACK_IMPORTED_MODULE_20___default.a.refresh()) {
-        aos__WEBPACK_IMPORTED_MODULE_20___default.a.init({
+      if (!aos__WEBPACK_IMPORTED_MODULE_21___default.a.refresh()) {
+        aos__WEBPACK_IMPORTED_MODULE_21___default.a.init({
           disable: false,
           startEvent: "DOMContentLoaded",
           initClassName: "aos-init",
@@ -28994,7 +29284,7 @@ function (_React$Component) {
 
       this.runAOS();
 
-      if (next_router__WEBPACK_IMPORTED_MODULE_23___default.a.query && next_router__WEBPACK_IMPORTED_MODULE_23___default.a.query.scroll) {
+      if (next_router__WEBPACK_IMPORTED_MODULE_24___default.a.query && next_router__WEBPACK_IMPORTED_MODULE_24___default.a.query.scroll) {
         setTimeout(function () {
           _this2.handleScroll();
         }, 100);
@@ -29003,7 +29293,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_10___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Nav_Nav__WEBPACK_IMPORTED_MODULE_13__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_14__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_We_We__WEBPACK_IMPORTED_MODULE_15__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Gallery_Gallery__WEBPACK_IMPORTED_MODULE_19__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_TypesVol_TypeVol__WEBPACK_IMPORTED_MODULE_18__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Opportunity_Opportunity__WEBPACK_IMPORTED_MODULE_17__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Content_Content__WEBPACK_IMPORTED_MODULE_16__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_10___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Cookies_Cookies__WEBPACK_IMPORTED_MODULE_12__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Nav_Nav__WEBPACK_IMPORTED_MODULE_14__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_15__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_We_We__WEBPACK_IMPORTED_MODULE_16__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Gallery_Gallery__WEBPACK_IMPORTED_MODULE_20__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_TypesVol_TypeVol__WEBPACK_IMPORTED_MODULE_19__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Opportunity_Opportunity__WEBPACK_IMPORTED_MODULE_18__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Content_Content__WEBPACK_IMPORTED_MODULE_17__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_13__["default"], {
         display: "flex"
       }));
     }
@@ -29035,7 +29325,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 Home.propTypes = {
   t: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.func.isRequired
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_22__["withTranslation"])("home")(Home));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_23__["withTranslation"])("home")(Home));
 
 /***/ }),
 
@@ -29053,7 +29343,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 23px;\n    text-align: ", ";\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"PanaGT\u2013Regular\";\n    color: ", ";\n    font-style: normal;\n    font-size: ", ";\n    line-height: 24px;\n    letter-spacing:0.2px;\n    text-align: ", ";\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -29088,7 +29378,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"PanaGT\u2013Regular\";\n    color: ", ";\n    font-size: ", ";\n    line-height: 20px;\n    text-align: ", ";\n\n    \n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"PanaGT\u2013Regular\";\n    color: ", ";\n    font-size: ", ";\n    line-height: 24px;\n    text-align: ", ";\n    letter-spacing: 0.6px;\n    \n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -29123,7 +29413,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"PanaGT\u2013Regular\";\n    color: ", ";\n    font-size: ", ";\n    line-height: 12px;\n    text-align: ", ";\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"PanaGT\u2013Regular\";\n    color: ", ";\n    font-size: ", ";\n    line-height: ", ";\n    text-align: ", ";\n    letter-spacing:0.8px;\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -29136,7 +29426,9 @@ function _templateObject() {
 var ParagraphBodySmall = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(_templateObject(), function (props) {
   return props.color ? props.color : '#666666';
 }, function (props) {
-  return props.size ? props.size : '12px';
+  return props.size ? props.size : '16px';
+}, function (props) {
+  return props.height ? props.height : '18px';
 }, function (props) {
   return props.align === 'center' ? 'center' : 'left';
 });
@@ -29158,7 +29450,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 24px;\n    text-align: ", ";\n    letter-spacing: -0.01em;\n    \n    margin-bottom:15px;\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"PanaGT\u2013Regular\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 24px;\n    text-align: ", ";\n    letter-spacing: -0.01em;\n    margin-bottom:15px;\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        font-size: ", ";\n        line-height: 40px;\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        font-size: ", ";\n        line-height: 40px;\n\n    }\n    @media only screen and (min-width:1441px){\n        font-size: ", ";\n        line-height: 40px;\n\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -29174,6 +29466,12 @@ var paragraphHeader = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].
   return props.size ? props.size : '20px';
 }, function (props) {
   return props.align === 'center' ? 'center' : 'left';
+}, function (props) {
+  return props.size ? props.size : '32px';
+}, function (props) {
+  return props.size ? props.size : '32px';
+}, function (props) {
+  return props.size ? props.size : '32px';
 });
 /* harmony default export */ __webpack_exports__["default"] = (paragraphHeader);
 
@@ -29193,7 +29491,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 40px;\n    text-align: ", ";\n\n    margin-bottom:20px;\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        font-size: ", ";\n        line-height: 68px;\n        letter-spacing: -0.01em;\n    }\n    @media only screen and (min-width:1441px){\n        font-size: ", ";\n        line-height: 68px;\n        letter-spacing: -0.01em;\n\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 40px;\n    letter-spacing:0.8px;\n    text-align: ", ";\n\n    margin-bottom:20px;\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        font-size: ", ";\n        line-height: 68px;\n        letter-spacing: -0.01em;\n    }\n    @media only screen and (min-width:1441px){\n        font-size: ", ";\n        line-height: 68px;\n        letter-spacing: -0.01em;\n\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

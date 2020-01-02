@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 
 
@@ -14,7 +14,7 @@ import CardCountry from "../CardCountry/CardCountry";
 import cardCountry from "../../content/cardCountry.json";
 import countrys from "../../content/countrys.json"
 
-import { i18n, withTranslation } from '../../i18n'
+import {withTranslation } from '../../i18n'
 import Dropdown from 'react-dropdown'
 
 const Opportunity = ({ country, photo, t }) => {
@@ -23,7 +23,7 @@ const Opportunity = ({ country, photo, t }) => {
             cardCountry.map((card, i) => {
                 const { country, photo} = card;
                 return(
-                    <Link href=""><CardCountry photo={photo} country={country}/></Link>
+                    <Link href=""key={i}><CardCountry photo={photo} country={country} /></Link>
                 )
             })
         )
@@ -42,7 +42,7 @@ const Opportunity = ({ country, photo, t }) => {
             <div className="textAll">
                 <div className="text">
                     <ParagraphTitle>{t("intro3")}</ParagraphTitle>
-                    <ParagraphBodyRegular>{t("description3")}</ParagraphBodyRegular>
+                    <ParagraphBodyRegular className="ptext">{t("description3")}</ParagraphBodyRegular>
                 </div>
                 <div className="filter">
                     <ParagraphBodySmall size="16px" color="#999999">{t("desplegable")}</ParagraphBodySmall>

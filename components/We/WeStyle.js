@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const WeStyle = styled.div`
 width:90%;
-margin: 35% auto;
+margin: 25% auto;
 display: flex;
 flex-flow:column;
 align-items: center;
@@ -49,7 +49,7 @@ align-items: center;
 
 
     @media only screen and (min-width:415px) and (max-width:768px){
-        margin: 20% auto;  
+        margin: 15% auto;  
         flex-flow:row;
         .img{ 
             width:45%;
@@ -62,7 +62,7 @@ align-items: center;
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-        margin: 10% auto;  
+        margin: 0 auto; 
         flex-flow:row;
         .img{ 
             width:45%;
@@ -75,7 +75,8 @@ align-items: center;
         }
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
-        margin: 10% auto;  
+        margin: 0 auto; 
+        margin-bottom: 10%;  
         width:80%;
         flex-flow:row;
         .img{ 
@@ -88,7 +89,7 @@ align-items: center;
             margin: 0 auto;
         }
         .icon{
-            left: 35%;
+            left: 38%;
             top: 33%;
         }
         .iconWord{
@@ -99,7 +100,8 @@ align-items: center;
         }
     }
     @media only screen and (min-width:1441px){
-        margin: 6% auto;  
+        margin: 0 auto; 
+        margin-bottom: 9.8%; 
         width:60%;
         flex-flow:row;
         .img{ 
@@ -112,7 +114,7 @@ align-items: center;
             margin: 0 auto;
         }
         .icon{
-            left: 40%;
+            left: 35%;
             top: 33%;
         }
         .iconWord{

@@ -47,6 +47,9 @@ const TypeVolStyle = styled.div`
                 margin-bottom:0;
             }
         }
+        .ptext{
+            font-size:20px;
+        }
         .card, .textAll, .button{
             width: 94%; 
         }
@@ -95,6 +98,9 @@ const TypeVolStyle = styled.div`
             p{
                 margin-bottom: 0%;
             }
+        }
+        .ptext{
+            font-size:20px;
         }
         .card, .textAll, .button{
             width: 94%; 
@@ -157,7 +163,11 @@ const TypeVolStyle = styled.div`
             }
             p{
                 margin-bottom:0;
+            
             }
+        }
+        .ptext{
+            font-size:20px;
         }
         .textAll{
             display:flex;

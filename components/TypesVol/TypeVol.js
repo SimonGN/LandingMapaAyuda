@@ -21,7 +21,7 @@ const TypeVol = ({t}) => {
             typeVol.map((card, i) => {
                 const { type, photo} = card;
                 return(
-                    <Link href=""><CardCountry type={type} photo={photo}/></Link>
+                    <Link href=""key={i}><CardCountry type={type} photo={photo}/></Link>
                 )
             })
         )
@@ -33,7 +33,7 @@ const TypeVol = ({t}) => {
             <div className="textAll">
                 <div className="text">
                     <ParagraphTitle>{t("intro2")}</ParagraphTitle>
-                    <ParagraphBodyRegular>{t("description3")}</ParagraphBodyRegular>
+                    <ParagraphBodyRegular className="ptext">{t("description3")}</ParagraphBodyRegular>
                 </div>
             </div>
             <div className="card">

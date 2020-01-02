@@ -15,8 +15,11 @@ const CardCountryStyle = styled.div`
     .text{
         white-space: normal;
         width:100%;
-        padding-left:5%;
-        padding-top:1%;
+        padding-left:1%;
+        padding-top:2%;
+    }
+    .country{
+        margin-top:8px;
     }
 
     @media only screen and (min-width:415px) and (max-width:768px){
@@ -28,37 +31,15 @@ const CardCountryStyle = styled.div`
         margin-left:0%;
         margin-bottom:2.5%;
         margin-left:0%;
-        .text{
-            width:100%;
-            white-space: normal;
-            padding-left:5%;
-            padding-top:1%;
-        }
         .button{
             margin-bottom: 15%;
         }
     }
-    @media only screen and (min-width:1025px) and (max-width:1440px){
+    @media only screen and (min-width:1025px){
         width: 23%;
         margin-left:0%;
         margin-bottom:2%;
         margin-left:0%;
-        .text{
-            width:100%;
-            padding-left:5%;
-            padding-top:1%;
-        }
-    }
-    @media only screen and (min-width:1441px){
-        width: 23%;
-        margin-left:0%;
-        margin-bottom:2%;
-        margin-left:0%;
-        .text{
-            width:100%;
-            padding-left:5%;
-            padding-top:1%;
-        }
     }
 
 `;

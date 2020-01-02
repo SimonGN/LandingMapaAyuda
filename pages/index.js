@@ -3,7 +3,7 @@ import React, { createRef } from "react";
 import PropTypes from "prop-types";
 
 
-
+import Cookies from "../components/Cookies/Cookies"
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 import Header from "../components/Header/Header";
@@ -72,6 +72,7 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Cookies/>
         <Meta />
         <Nav />
         <Header />
