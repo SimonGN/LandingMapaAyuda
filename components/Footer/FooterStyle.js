@@ -138,11 +138,22 @@ padding-bottom:5%;
        .button{
             margin: 0 auto;
        }
+       .icon{
+            display: block;
+            position: relative;
+            width: 12%;
+            top: -23%;
+            left: 84%;
+            img{
+                width:100%;
+            }
+        }
        .iconWord{
-            top: -13%;
-            left: -40%;
-                img{
-                    width:10%;
+            width: 10%;
+            top: -14%;
+            left: 5%;
+            img{
+                width:100%;
             }
         }
         .textGreenOpacity{
@@ -183,7 +194,7 @@ padding-bottom:5%;
             display:flex;
             flex-direction:column;
             & >p{
-                margin-bottom: 15px;
+                margin-bottom: 0px;
             }
 
         }
@@ -198,26 +209,52 @@ padding-bottom:5%;
         }
     }
     
-    @media only screen and (min-width:1025px) and (max-width:1440px){
+    @media only screen and (min-width:1025px) {
+        width:95vw;
         padding-bottom: 2%;
+        .icon{
+            display: block;
+            position: absolute;
+            width: 150px;
+            top: -15%;
+            left: 84%;
+            img{
+                width:100%;
+            }
+        }
         .green{
             height: 480px;
+            position:relative;
         }
         .button{
             margin: 0 auto;
+            margin-bottom: 0%;
         }
-       .iconWord{
-            top: -19%;
-            left: -33%;
-                img{
-                    width:10%;
-                }
+        .iconWord{
+            width: 6%;
+            top: -15%;
+            left: 12%;
+            img{
+                width:100%;
+            }
+        }
+        .greenOpacity{
+            width:100%;
+        }
+        .textGreen{
+            & > p{
+                width: 50%;
+                margin: 0 auto;
+                margin-top:6%;
+                margin-bottom:6%;
+            }
         }
         .textGreenOpacity{
             width: 75%;
             padding-top: 100px;
             display: flex;
             flex-direction: row-reverse;
+            
         }
         .idiomsMovil{
             display:none;
@@ -233,9 +270,9 @@ padding-bottom:5%;
         }
         .idioms{
             display:flex;
-            width:70%;
+            width:150px;
             margin: 0;
-            margin-bottom: 24%;
+            margin-bottom: 12%;
             margin-top: 3%;
         }
         .legal{
@@ -249,7 +286,7 @@ padding-bottom:5%;
             display:flex;
             flex-direction:column;
             & >p{
-                margin-bottom: 15px;
+                margin-bottom: 0px;
             }
 
         }
@@ -264,77 +301,7 @@ padding-bottom:5%;
         }
     }
     
-    @media only screen and (min-width:1441px){
-        padding-bottom: 2%;
-        .green{
-            height: 480px;
-        }
-        .button{
-            margin: 0 auto;
-        }
-       .iconWord{
-            top: -16%;
-            left: -34%;
-                img{
-                    width:7%;
-                }
-        }
-        .textGreenOpacity{
-            width: 75%;
-            padding-top: 100px;
-            display: flex;
-            flex-direction: row-reverse;
-        }
-        .textGreen{
-            p{
-                margin-top: 5%;
-                margin-bottom: 5%;
-            }
-        }
-        .idiomsMovil{
-            display:none;
-        }
-        .navSeo{
-            display:flex;
-            justify-content:space-between;
-            width:75%; 
-        }
-        .nameText{
-            width:25%;
-            flex-direction: column;
-        }
-        .idioms{
-            display:flex;
-            width:40%;
-            margin: 0;
-            margin-bottom: 17%;
-            margin-top: 3%;
-        }
-        .legal{
-            margin:0;
-            & > p{
-                text-align:left;
-                margin-bottom: 12%;
-            }
-        }
-        .sectionLegal{
-            display:flex;
-            flex-direction:column;
-            & >p{
-                margin-bottom: 15px;
-            }
-
-        }
-        .navegation{
-            margin-bottom: 10%;
-            & >p{
-                margin-bottom: 12px;
-            }
-        }
-        .navegation, .voluntary, .moreInfo{
-            margin-bottom: 10%;
-        }
-    }
+    
     
 
 `;
