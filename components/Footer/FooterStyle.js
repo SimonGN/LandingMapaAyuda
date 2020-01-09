@@ -12,6 +12,7 @@ padding-bottom:5%;
         display:none;
     }
     .green{
+
         background-color:#8ED7BF;
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
@@ -24,8 +25,8 @@ padding-bottom:5%;
         margin:0 20%;
         text-align:center;
         p{
-            margin-top:8%;
-            margin-bottom:8%;
+            margin-top:5%;
+            margin-bottom:5%;
         }
     }
     .button{
@@ -38,7 +39,7 @@ padding-bottom:5%;
         background-color:#8ED7BF40;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
-        width:90vw;
+        width:100%;
         height:auto;
         margin: 0 auto;
         position:relative;
@@ -132,17 +133,43 @@ padding-bottom:5%;
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         padding-bottom: 3%;
+        width: 94vw;
         .green{
             height: 450px;
+            position:relative;
         }
        .button{
             margin: 0 auto;
        }
+       .icon{
+        display: block;
+        top: -15%;
+        position: absolute;
+        left: 84%;
+        width: 20%;
+       }
+       .icon{
+            width: 8%;
+            display: block;
+            top: -9%;
+            position: absolute;
+            left: 84%;
+            img{
+                width:100%;
+            }
+        }
+       .iconMap{
+           display:block;
+        img{
+                width:100%;
+            }
+       }
        .iconWord{
+            width: 10%;
             top: -13%;
-            left: -40%;
-                img{
-                    width:10%;
+            left: 4%;
+            img{
+                width:100%;
             }
         }
         .textGreenOpacity{
@@ -198,20 +225,36 @@ padding-bottom:5%;
         }
     }
     
-    @media only screen and (min-width:1025px) and (max-width:1440px){
+    @media only screen and (min-width:1025px) {
         padding-bottom: 2%;
+        width: 94vw;
+        .idiomsMovil{
+            display:none;
+        }
         .green{
             height: 480px;
+            position:relative;
         }
         .button{
             margin: 0 auto;
         }
-       .iconWord{
-            top: -19%;
-            left: -33%;
-                img{
-                    width:10%;
-                }
+        .icon{
+            width: 8%;
+            display: block;
+            top: -12%;
+            position: absolute;
+            left: 84%;
+            img{
+                width:100%;
+            }
+        }
+        .iconWord{
+            width: 7%;
+            top: -16%;
+            left: 12%;
+            img{
+                width:100%;
+            }
         }
         .textGreenOpacity{
             width: 75%;
@@ -219,16 +262,14 @@ padding-bottom:5%;
             display: flex;
             flex-direction: row-reverse;
         }
-        .idiomsMovil{
-            display:none;
-        }
+
         .navSeo{
             display:flex;
             justify-content:space-between;
             width:75%; 
         }
         .nameText{
-            width:25%;
+            width:20%;
             flex-direction: column;
         }
         .idioms{
@@ -242,7 +283,7 @@ padding-bottom:5%;
             margin:0;
             & > p{
                 text-align:left;
-                margin-bottom: 16%;
+                margin-bottom: 9%;
             }
         }
         .sectionLegal{
@@ -264,77 +305,7 @@ padding-bottom:5%;
         }
     }
     
-    @media only screen and (min-width:1441px){
-        padding-bottom: 2%;
-        .green{
-            height: 480px;
-        }
-        .button{
-            margin: 0 auto;
-        }
-       .iconWord{
-            top: -16%;
-            left: -34%;
-                img{
-                    width:7%;
-                }
-        }
-        .textGreenOpacity{
-            width: 75%;
-            padding-top: 100px;
-            display: flex;
-            flex-direction: row-reverse;
-        }
-        .textGreen{
-            p{
-                margin-top: 5%;
-                margin-bottom: 5%;
-            }
-        }
-        .idiomsMovil{
-            display:none;
-        }
-        .navSeo{
-            display:flex;
-            justify-content:space-between;
-            width:75%; 
-        }
-        .nameText{
-            width:25%;
-            flex-direction: column;
-        }
-        .idioms{
-            display:flex;
-            width:40%;
-            margin: 0;
-            margin-bottom: 17%;
-            margin-top: 3%;
-        }
-        .legal{
-            margin:0;
-            & > p{
-                text-align:left;
-                margin-bottom: 12%;
-            }
-        }
-        .sectionLegal{
-            display:flex;
-            flex-direction:column;
-            & >p{
-                margin-bottom: 15px;
-            }
-
-        }
-        .navegation{
-            margin-bottom: 10%;
-            & >p{
-                margin-bottom: 12px;
-            }
-        }
-        .navegation, .voluntary, .moreInfo{
-            margin-bottom: 10%;
-        }
-    }
+    
     
 
 `;

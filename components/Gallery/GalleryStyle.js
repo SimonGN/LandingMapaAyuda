@@ -84,6 +84,7 @@ const GalleryStyle = styled.div`
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         margin-bottom: 10%;
+        margin-top: 10%;
         h2{
             text-align:center;
         }
@@ -98,7 +99,7 @@ const GalleryStyle = styled.div`
             margin-bottom:0;
         }
         .nextBack{
-            margin-top:20%;
+            margin-top:10%;
         }
         .textImg{
             width: 40%;
@@ -110,6 +111,15 @@ const GalleryStyle = styled.div`
             }
         }
         .textImg{
+            width:50%;
+            height: 340px;
+            padding: 0 6%;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
             h2{
                 text-align:left;
                 line-height: 40px;
@@ -147,6 +157,14 @@ const GalleryStyle = styled.div`
             }
         }
         .textImg{
+            height: 370px;
+            padding: 0 8%;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
             h2{
                 text-align:left;
                 line-height: 40px;
@@ -176,7 +194,7 @@ const GalleryStyle = styled.div`
         }
         .textImg{
             width: 35%;
-            margin: 0 15%;
+            margin: 0;
         }
         .buttonDiv{
             div{
@@ -184,6 +202,12 @@ const GalleryStyle = styled.div`
             }
         }
         .textImg{
+            width: 40%;
+            height: 360px;
+            padding: 0 8%;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
             h2{
                 text-align:left;
                 line-height: 40px;

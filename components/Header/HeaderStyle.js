@@ -2,15 +2,7 @@ import styled from 'styled-components';
 
 
 const HeaderStyle = styled.div`
-@keyframes translate {
-  from {
-      right:0;
-  }
 
-  to {
-    right:5px;
-  }
-}
     width:100vw;
     main{
         background-image: url("/static/img/map.jpg");
@@ -68,8 +60,6 @@ const HeaderStyle = styled.div`
         padding-bottom: 2%;
         position: relative;
         margin-top:-73%;
-        /* animation-duration: 10s;
-        animation-name: translate; */
         &::-webkit-scrollbar {
             display: none;
         }
@@ -128,26 +118,26 @@ const HeaderStyle = styled.div`
         }
         .icon1{
             width: 4%;
-            top: 54%;
+            top: 30%;
             left: 44%;
         }
         .icon2{
-            top: 67%;
-            2left: 4%;
+            top: 33%;
+            left: 4%;
             width: 3%;
         }
         .icon3 {
-            top: 67%;
+            top: 37%;
             left: 22%;
             width: 6%;
         }
         .icon4 {
-            top: 80%;
+            top: 40%;
             left: 68%;
             width: 5%;
         }
         .icon5{
-            top: 56%;
+            top: 36%;
             left: 90%;
             width: 5%;
         }

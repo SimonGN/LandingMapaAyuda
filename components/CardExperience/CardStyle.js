@@ -8,7 +8,7 @@ const CardStyle = styled.div`
   }
 
   to {
-    right:30000px;
+    right:2100px;
   }
 }
 @keyframes opacityCard {
@@ -31,8 +31,9 @@ flex: none;
         background-color: white;
         border-radius: 16px;
         box-shadow: 0px 2px 12px #00000020;
-        animation-duration: 1000s;
-animation-name: translate;
+        animation-duration: 60s;
+        animation-name: translate;
+        animation-iteration-count: infinite; 
     }
     .readmore{
         width: 73%;
