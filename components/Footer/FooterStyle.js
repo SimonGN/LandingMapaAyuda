@@ -210,7 +210,7 @@ padding-bottom:5%;
             display:flex;
             flex-direction:column;
             & >p{
-                margin-bottom: 15px;
+                margin-bottom: 0px;
             }
 
         }
@@ -290,7 +290,7 @@ padding-bottom:5%;
             display:flex;
             flex-direction:column;
             & >p{
-                margin-bottom: 15px;
+                margin-bottom: 0px;
             }
 
         }
