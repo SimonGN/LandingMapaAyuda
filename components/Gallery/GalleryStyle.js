@@ -124,7 +124,7 @@ const GalleryStyle = styled.div`
             }
         }
         .textImg{
-            height: 370px;
+            height: 310px;
             padding: 0 8%;
             display: flex;
             flex-flow: column;
@@ -173,7 +173,7 @@ const GalleryStyle = styled.div`
         }
         .buttonDiv{
             div{
-                width: 95px;
+                width: 90px;
             }
         }
         .textImg{
