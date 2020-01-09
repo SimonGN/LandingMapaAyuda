@@ -52,7 +52,7 @@ const NavStyle = styled.div`
         display:flex;
         justify-content:space-between;
         align-items:flex-start;
-        animation: moveNav 2s;
+        animation: moveNav 1s;
         /* display:none */
     }
     .navMenuMobile{
