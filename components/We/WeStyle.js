@@ -12,7 +12,9 @@ align-items: center;
         width:100%;
         height: 20vh;
         background-image: url(/static/svg/iconOlas.svg);
+        background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         position: relative;
         margin-bottom:20%;
         display:flex;
@@ -51,45 +53,60 @@ align-items: center;
     @media only screen and (min-width:415px) and (max-width:768px){
         margin: 15% auto;  
         flex-flow:row;
+        justify-content: space-between;
         .img{ 
-            width:45%;
+            width:44%;
             height: 50vh;
             margin-bottom:0%;
         }
         .text{
             width:45%;
             margin: 0 auto;
+            
+        }
+        .icon{
+            left: 45%;
+            top: 65%;
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
         margin: 0 auto; 
         flex-flow:row;
+        justify-content: space-between;
         .img{ 
-            width:45%;
-            height: 55vh;
-            margin-bottom:0%;
-        }
-        .text{
-            width:45%;
-            margin: 0 auto;
-        }
-    }
-    @media only screen and (min-width:1025px) and (max-width:1440px){
-        margin: 0 auto; 
-        margin-bottom: 10%;  
-        width:80%;
-        flex-flow:row;
-        .img{ 
-            width:50%;
+            width:40%;
             height: 60vh;
             margin-bottom:0%;
         }
         .text{
-            width:35%;
+            width:45%;
             margin: 0 auto;
+            margin-right: 0px;
         }
         .icon{
-            left: 38%;
+            left: 42%;
+            top: 55%;
+            width: 60%;
+        }
+    }
+    @media only screen and (min-width:1025px) {
+        margin: 0 auto; 
+        margin-bottom: 145px;  
+        width:1200px;
+        flex-flow:row;
+        justify-content: space-between;
+        .img{ 
+            width:35%;
+            height: 65vh;
+            margin-bottom:0%;
+        }
+        .text{
+            width:30%;
+            margin: 0 auto;
+            
+        }
+        .icon{
+            left: 67%;
             top: 33%;
         }
         .iconWord{
@@ -99,33 +116,7 @@ align-items: center;
             top: 21%;
         }
     }
-    @media only screen and (min-width:1441px){
-        margin: 0 auto; 
-        margin-bottom: 9.8%; 
-        width:60%;
-        flex-flow:row;
-        .img{ 
-            width:50%;
-            height: 65vh;
-            margin-bottom:0%;
-        }
-        .text{
-            width:35%;
-            margin: 0 auto;
-        }
-        .icon{
-            left: 35%;
-            top: 33%;
-        }
-        .iconWord{
-            width:90%;
-        }
-        .iconTicket{
-            top: 18%;
-            left: 28%;
-            width:45%;
-        }
-    }
+    
 
 `;
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 
 import { OpportunityStyle } from "./OpportunityStyle";
-import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
+import ParagraphSubTitle from "../../styles/fontsStyles/ParagraphSubTitle";
 import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
 import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
 
@@ -41,7 +41,7 @@ const Opportunity = ({ country, photo, t }) => {
         <OpportunityStyle photo={photo} country={country}>
             <div className="textAll">
                 <div className="text">
-                    <ParagraphTitle>{t("intro3")}</ParagraphTitle>
+                    <ParagraphSubTitle>{t("intro3")}</ParagraphSubTitle>
                     <ParagraphBodyRegular className="ptext">{t("description3")}</ParagraphBodyRegular>
                 </div>
                 <div className="filter">

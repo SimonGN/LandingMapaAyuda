@@ -3,7 +3,7 @@ import Link from "next/link";
 
 
 import { TypeVolStyle } from "./TypeVolStyle";
-import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
+import ParagraphSubTitle from "../../styles/fontsStyles/paragraphSubTitle";
 import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
 import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
 
@@ -32,8 +32,7 @@ const TypeVol = ({t}) => {
         <TypeVolStyle >
             <div className="textAll">
                 <div className="text">
-                    <ParagraphTitle>{t("intro2")}</ParagraphTitle>
-                    <ParagraphBodyRegular className="ptext">{t("description3")}</ParagraphBodyRegular>
+                    <ParagraphSubTitle>{t("intro2")}</ParagraphSubTitle>
                 </div>
             </div>
             <div className="card">

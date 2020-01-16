@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const OpportunityStyle = styled.div`
     width:100%;
     margin:0 auto;
+    margin-bottom:120px;
     .textAll, .button{
         width:90%;
         margin:0 auto;
@@ -120,15 +121,20 @@ const OpportunityStyle = styled.div`
         }
         
     }
-    @media only screen and (min-width:1025px) and (max-width:1440px){
+    @media only screen and (min-width:1025px) {
+        margin-bottom:145px;
         .text{
-            width: 70%;
+            width: 100%;
+            h2{
+                width: 60%; 
+            }
             p{
                 margin-bottom: 0%;
+                width: 85%; 
             }
         }
         .card, .textAll, .button{
-            width: 94%; 
+            width: 1200px; 
         }
         .card{
             overflow-x: hidden;
@@ -168,59 +174,7 @@ const OpportunityStyle = styled.div`
         }
         
     }
-      
-    @media only screen and (min-width:1441px){
 
-        .card, .textAll, .button{
-            width: 75%; 
-        }
-        .card{
-            overflow-x: hidden;            
-            margin: 0 auto;
-            margin-bottom:1%;
-            display:flex;
-            justify-content:space-between;
-        }
-        .text{
-            width:65%;
-            p{
-                margin-bottom:0;
-            }
-        }
-        .textAll{
-            display:flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin-bottom:2.5%;
-        }
-        .ptext{
-            font-size:20px;
-        }
-        .filter{
-            width: auto;
-            margin-right:0;
-            display: flex;
-            justify-content: flex-end;
-        }
-        .Dropdown-menu{
-            position: absolute;
-            left: 75%;
-            padding: 1% 1.5% 0% 1.5%;
-        }
-        .dropDown{
-            margin-bottom: 0;
-            width: auto;
-            display:flex;
-            justify-content: space-between;
-            div{
-                width: max-content;
-            }
-        }
-        .button{
-            margin-bottom:10%;
-        }
-        
-    }
 
 `;
 

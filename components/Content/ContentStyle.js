@@ -133,9 +133,9 @@ const ContentStyle = styled.div`
             padding-right: 42%;
         }
     }
-    @media only screen and (min-width:1025px) and (max-width:1440px){
+    @media only screen and (min-width:1025px){
         display:flex;
-        width:80%;
+        width:1200px;
         margin-bottom:20%;
 
         .yellow{
@@ -209,82 +209,7 @@ const ContentStyle = styled.div`
             padding-left: 15%;
         }
     }
-    @media only screen and (min-width:1441px){
-        display:flex;
-        width:65%;
-        margin-bottom:20%;
-
-        .yellow{
-            width:48%;
-            height:500px;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-            text-align:left;
-            margin-bottom:0;
-            img{
-                display:block;
-                position:absolute;
-                top: -10%;
-            }
-            h2{
-                padding-top:13%;
-                font-size: 64px;
-                line-height: 68px;
-            }
-        }
-
-        h2{
-            width:60%;
-            margin: 0 auto;
-            padding:0;          
-        }
-        .opacityYellow{
-            position: absolute;
-            left: 25%;
-            top: 30%;
-            width:60%;
-            height: 450px;
-            margin-bottom:0;
-            padding-left: 14%;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-            text-align:left;
-            z-index:-1;
-
-            h2{
-                width: 60%;
-                padding:0;
-                
-                padding-left:20%;
-                padding-bottom:6%;
-                margin: 0 auto;
-                font-size:32px;
-                line-height: 40px;
-            }
-        }
-        .icons{
-            top:-16%;
-            left: 90%;
-            img{
-                width: 160%;
-            }
-        }
-        .iconPlant{
-            display:block;
-            width: 70%;
-            top: -35%;
-            left: -80%;
-        }
-        .button{
-            width:55%;
-            padding:0;
-            padding-left: 15%;
-        }
-    }
+    
 
 `;
 

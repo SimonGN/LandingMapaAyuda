@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const GalleryStyle = styled.div`
     margin: 0 auto;
     width:90vw;
-    margin-bottom:25%;
+    margin-bottom:120px;
     .galleryImg{
         position:relative;
         width:100%;
@@ -65,7 +65,6 @@ const GalleryStyle = styled.div`
 
 
     @media only screen and (min-width:415px) and (max-width:768px){
-        margin-bottom: 15%;
         h2{
             text-align:center;
         }
@@ -88,8 +87,6 @@ const GalleryStyle = styled.div`
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-        margin-bottom: 10%;
-        margin-top: 10%;
         h2{
             text-align:center;
         }
@@ -140,8 +137,8 @@ const GalleryStyle = styled.div`
         }
     }
     @media only screen and (min-width:1025px) {
-        width:75vw;
-        margin-bottom: 10%;
+        width:1200px;
+        margin-bottom: 145px;
         h2{
             text-align:center;
             margin-bottom: 2.5%;
@@ -152,9 +149,12 @@ const GalleryStyle = styled.div`
             align-items:center;
         }
         .galleryImg{
-            width:50%;
-            height: 400px;
+            width:55%;
+            height: 460px;
             margin-bottom:0;
+            img{
+                left:88%;
+            }
         }
         .nextBack{
             margin-top:20%;
@@ -173,7 +173,7 @@ const GalleryStyle = styled.div`
         }
         .buttonDiv{
             div{
-                width: 90px;
+                width:22%;
             }
         }
         .textImg{
@@ -188,6 +188,9 @@ const GalleryStyle = styled.div`
                 line-height: 40px;
                 font-size: 32px;
             }
+        }
+        .buttonNextBack{
+            width:130px;
         }
     }
     

@@ -7,10 +7,11 @@ import Button from "../Button/Button";
 
 
 import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
-import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
+import ParagraphSubTitle from "../../styles/fontsStyles/ParagraphSubTitle";
+import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
 import galleryItems from '../../content/gallery.json';
 
-import { i18n, withTranslation } from '../../i18n'
+import { withTranslation } from '../../i18n'
 
 const Gallery = props => {
     const { t } = props;
@@ -32,7 +33,7 @@ const Gallery = props => {
     const { photo, description, title } = galleryItem;
     return (
         <GalleryStyle photo={photo}>
-            <ParagraphTitle className="description">{t("galeryIntro")}</ParagraphTitle>
+            <ParagraphSubTitle className="description">{t("galeryIntro")}</ParagraphSubTitle>
             <div className="component">
                 <div className="galleryImg">
                    <img src={"/static/svg/iconFavo.svg"} />

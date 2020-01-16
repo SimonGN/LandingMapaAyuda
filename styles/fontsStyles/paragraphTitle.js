@@ -7,7 +7,7 @@ const ParagraphTitle = styled.h2`
     font-style: normal;
     font-weight: 500;
     font-size: ${props => (props.size ? props.size : '35px')};
-    line-height: 40px;
+    line-height: 35px;
     letter-spacing:0.8px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
 
@@ -19,12 +19,12 @@ const ParagraphTitle = styled.h2`
 
     }
     @media only screen and (min-width:1025px) and (max-width:1440px){
-        font-size: ${props => (props.size ? props.size : '64px')};
+        font-size: ${props => (props.size ? props.size : '68px')};
         line-height: 68px;
         letter-spacing: -0.01em;
     }
     @media only screen and (min-width:1441px){
-        font-size: ${props => (props.size ? props.size : '64px')};
+        font-size: ${props => (props.size ? props.size : '68px')};
         line-height: 68px;
         letter-spacing: -0.01em;
 

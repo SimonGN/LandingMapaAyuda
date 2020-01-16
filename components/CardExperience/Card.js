@@ -24,7 +24,9 @@ const Card = ({ country, description, photo, people, number, t }) => {
                 <div className="text">
                     <ParagraphBodySmall className="country" color="#999999">{country}</ParagraphBodySmall>
                     <ParagraphBody className="description">{description}</ParagraphBody>
-                    <Button className="readmore" content={t("button1")} color="#F1A409" backgroundColor="#FCEDCE" />
+                    <div className="button">
+                        <Button content={t("button1")} color="#F1A409" backgroundColor="#FCEDCE" />
+                    </div>
                 </div>
             </div>
         </CardStyle>

@@ -16,8 +16,8 @@ const NavStyle = styled.div`
         justify-content: space-between;
     }
     .symbol{
-        width:90%;
-        margin:5% auto;
+        width:95%;
+        margin:20px auto;
         display:flex;
         justify-content: space-between;
     }
@@ -98,11 +98,7 @@ const NavStyle = styled.div`
         font-family: "GT–Medium";
         font-size:20px;
     }
-    
-    
-    
-    @media only screen and (min-width:415px) and (max-width:768px){
-    }
+
     @media only screen and (min-width:769px) and (max-width:1024px){
         .mobile{
             display:none;
@@ -138,13 +134,13 @@ const NavStyle = styled.div`
     }
 
     
-    @media only screen and (min-width:1025px) and (max-width:1440px){
+    @media only screen and (min-width:1025px){
         .mobile{
             display:none;
         }
         .desktop{
-            width:95%;
-            margin:2% auto;
+            width:97%;
+            margin:1% auto;
             display:flex;
             justify-content:space-between;
 
@@ -156,8 +152,8 @@ const NavStyle = styled.div`
         nav{
             cursor: pointer;
             position:relative;
-            width: 57%;
-            height:15%;
+            width: 520px;
+            max-height:40px;
             display:flex;
             justify-content:space-between;
             align-items: center;
@@ -170,39 +166,7 @@ const NavStyle = styled.div`
             font-size:16px;
         }
     }
-    @media only screen and (min-width:1441px){
-        .mobile{
-            display:none;
-        }
-        .desktop{
-            width:95%;
-            margin:0 auto;
-            display:flex;
-            justify-content:space-between;
-            margin-top:1%;
-            margin-bottom:1%;
-            align-items: center;
-        }
-        logo{
-            width:20%;
-        }
-        nav{
-            cursor: pointer;
-            position:relative;
-            width:38%;
-            height:15%;
-            display:flex;
-            justify-content:space-between;
-            align-items: center;
-            Link:last-child{
-                width:20%;
-            }
-        }
-        button{
-            padding: 2.5% 4%;
-            font-size:16px;
-        }
-    }
+
 
 `;
 

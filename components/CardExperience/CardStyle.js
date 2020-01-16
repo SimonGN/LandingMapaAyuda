@@ -21,12 +21,11 @@ const CardStyle = styled.div`
 }
 
 margin-left: 5%;
-width: 230px;
+width: 300px;
 flex-grow:1;
 flex: none;
     .cardStyle{
         position: relative;
-        height: 322px;
         padding: 15px;
         background-color: white;
         border-radius: 16px;
@@ -35,8 +34,9 @@ flex: none;
         animation-name: translate;
         animation-iteration-count: infinite; 
     }
-    .readmore{
-        width: 73%;
+    .button{
+        display: flex;
+        justify-content: center;
         p{
             text-align:center;
         }
@@ -48,8 +48,11 @@ flex: none;
         margin-top: 2%;
         background-image:${props => props.photo ? `url(${props.photo})` : "photo"};
         background-color: ${props => (props.photo ? '' : '#fffff')};
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         width:100%;
-        height:170px;
+        height:190px;
         margin: 0 auto;
         border-radius: 12px;
     }
@@ -57,11 +60,14 @@ flex: none;
         position:absolute;
         background-image: url("${props => props.people ? props.people : "people"}");
         background-color: ${props => (props.photo ? '' : '#fffff')};
-        width:40px;
-        height:40px;
-        border-radius: 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:55px;
+        height:55px;
+        border-radius: 25px;
         border: 5px solid white;
-        left: 70%;
+        left: 73%;
         top: 85%;
     }
 
@@ -72,9 +78,13 @@ flex: none;
         display: flex;
         flex-flow: column;
         justify-content: center;
+        margin:0 auto;
     }
     .description{
         padding:3% 0 6%;
+    }
+    .readmore{
+        padding: 14px 80px;
     }
     @media only screen and (min-width:415px) and (max-width:768px){
         
@@ -86,6 +96,7 @@ flex: none;
     @media only screen and (min-width:769px) and (max-width:1024px){
         margin-top: ${props => props.number ? props.number : "4%"};
         margin-left: 2%;
+        width: 350px;
         height:100px;
         .cardStyle{
             padding:0;
@@ -99,11 +110,13 @@ flex: none;
         .imgPeople{
             display:none;
         }
+        .imgFondo{
+            height:226px;
+        }
 
         &:hover {
             
              .cardStyle{
-                height: 300px;
                 padding: 15px;
             }
             .text{
@@ -115,18 +128,22 @@ flex: none;
                 display:block;
             }
             .imgFondo{
-                height:150px;
+                height:200px;
 
             }
         }
         .description{
             padding: 3% 0 4%;
         }
+        .readmore{
+            padding: 14px 105px;
+        }
     }
-    @media only screen and (min-width:1025px) and (max-width:1440px){
+    @media only screen and (min-width:1025px) {
         margin-top: ${props => props.number ? props.number : "4%"};
         margin-left: 2.2%;
         height:100px;
+        width: 350px;
         .cardStyle{
             padding:0;
             height: auto;
@@ -137,10 +154,13 @@ flex: none;
         .imgPeople{
             display:none;
         }
+        .imgFondo{
+            height:226px;
+        }
 
         &:hover {
+           
              .cardStyle{
-                height: 300px;
                 padding: 15px;
             }
             .text{
@@ -152,49 +172,18 @@ flex: none;
                 display:block;
             }
             .imgFondo{
-                height:150px;
+                height:200px;
             }
         }
         .description{
             padding: 2% 0 6%;
         }
+        .readmore{
+            padding: 14px 105px;
+        }
+        
     }
-    @media only screen and (min-width:1441px){
-        margin-top: ${props => props.number ? props.number : "4%"};
-        margin-left: 1.25%;
-        height:100px;
-        .cardStyle{
-            padding:0;
-            height: auto;
-        }
-        .text{
-            display:none;
-        }
-        .imgPeople{
-            display:none;
-        }
-        .description{
-            padding: 6% 0 9%;
-        }
-
-        &:hover {
-             .cardStyle{
-                height:300px;
-                padding: 15px;
-            }
-            .text{
-                display:block;
-                opacity:1;
-                animation: opacityCard 1s;
-            }
-            .imgPeople{
-                display:block;
-            }
-            .imgFondo{
-                height:130px;
-            }
-        }
-    }
+    
 `;
 
 export { CardStyle };
