@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 
 const ParagraphBody = styled.p`
-    font-family: "PanaGT–Regular";
+    font-family: "GT–Medium";
     color: ${props => (props.color ? props.color : '#333333')};
     font-style: normal;
     font-size: ${props => (props.size ? props.size : '16px')};
-    line-height: 24px;
+    line-height: 20px;
     letter-spacing:0.2px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
 

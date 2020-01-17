@@ -3,26 +3,26 @@ import styled from 'styled-components';
 
 const GalleryStyle = styled.div`
     margin: 0 auto;
-    width:90vw;
+    width:89vw;
     margin-bottom:120px;
     .galleryImg{
         position:relative;
         width:100%;
-        height: 255px;
+        height: 225px;
         background-color: ${props => (props.photo ? '' : 'red')};
         background-image: ${props => (props.photo ? `url(${props.photo})` : '')};
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         border-radius:16px;
-        margin-bottom:10%;
+        margin-bottom:5%;
         img{
             position:absolute;
             left:80%;
         }
     }
     .nextBack{
-        margin-top:10%;
+        margin-top:2%;
     }
     .button{
         padding-top:5%;
@@ -50,15 +50,20 @@ const GalleryStyle = styled.div`
         }
     }
     .textImg{
-        height:260px;
+        height:230px;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
         h2{
             text-align:left;
             height:50px;
-            font-size: 20px;
+            font-size: 22px;
             line-height: 24px;
+            margin-bottom:0;
+        }
+        & > p{
+            font-size: 18px;
+            color:black;
         }
     }
 
@@ -188,6 +193,9 @@ const GalleryStyle = styled.div`
                 line-height: 40px;
                 font-size: 32px;
             }
+        }
+        .button{
+            width:150px;
         }
         .buttonNextBack{
             width:130px;

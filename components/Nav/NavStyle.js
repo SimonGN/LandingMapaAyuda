@@ -16,8 +16,8 @@ const NavStyle = styled.div`
         justify-content: space-between;
     }
     .symbol{
-        width:95%;
-        margin:20px auto;
+        width:90%;
+        margin:25px auto;
         display:flex;
         justify-content: space-between;
     }

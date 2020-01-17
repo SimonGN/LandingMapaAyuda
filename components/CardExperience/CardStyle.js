@@ -21,18 +21,22 @@ const CardStyle = styled.div`
 }
 
 margin-left: 5%;
-width: 300px;
+width: 222px;
 flex-grow:1;
 flex: none;
     .cardStyle{
         position: relative;
-        padding: 15px;
+        padding: 8px;
         background-color: white;
         border-radius: 16px;
         box-shadow: 0px 2px 12px #00000020;
         animation-duration: 60s;
         animation-name: translate;
         animation-iteration-count: infinite; 
+    }
+    .cardStyle:hover{
+        /* -webkit-animation: 0; */
+        -webkit-animation-play-state: paused;
     }
     .button{
         display: flex;
@@ -52,7 +56,7 @@ flex: none;
         background-repeat: no-repeat;
         background-size: cover;
         width:100%;
-        height:190px;
+        height:122px;
         margin: 0 auto;
         border-radius: 12px;
     }
@@ -63,28 +67,35 @@ flex: none;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width:55px;
-        height:55px;
-        border-radius: 25px;
-        border: 5px solid white;
-        left: 73%;
-        top: 85%;
+        width:40px;
+        height:40px;
+        border-radius: 18px;
+        border: 3px solid white;
+        left: 70%;
+        top: 80%;
     }
 
     .country{
         padding: 5% 10% 3% 0;
     }
     .text{
+        width: 90%;
         display: flex;
         flex-flow: column;
         justify-content: center;
         margin:0 auto;
+        text-overflow: clip ellipsis;
+        & p{
+            text-overflow: clip ellipsis;
+            margin-bottom:2%;
+        } 
+        
     }
     .description{
-        padding:3% 0 6%;
+        padding:3% 0 5%;
     }
     .readmore{
-        padding: 14px 80px;
+        width:100%;
     }
     @media only screen and (min-width:415px) and (max-width:768px){
         
@@ -126,6 +137,10 @@ flex: none;
             }
             .imgPeople{
                 display:block;
+                width: 60px;
+                height: 60px;
+                border: 5px solid white;
+                top: 83%;
             }
             .imgFondo{
                 height:200px;
@@ -170,6 +185,10 @@ flex: none;
             }
             .imgPeople{
                 display:block;
+                width: 60px;
+                height: 60px;
+                border: 5px solid white;
+                top: 83%;
             }
             .imgFondo{
                 height:200px;

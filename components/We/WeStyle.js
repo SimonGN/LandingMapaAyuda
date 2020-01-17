@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 const WeStyle = styled.div`
-width:90%;
+width:89%;
 margin: 25% auto;
 display: flex;
 flex-flow:column;
@@ -95,6 +95,9 @@ align-items: center;
         width:1200px;
         flex-flow:row;
         justify-content: space-between;
+        .button{
+            width:250px;
+        }
         .img{ 
             width:35%;
             height: 65vh;

@@ -18,10 +18,13 @@ const ContentStyle = styled.div`
     }
     .yellow{
         background-color:#F8DE6D;
-        margin-bottom:3%;
-
+        margin-bottom:2%;
         img{
             display:none;
+        }
+        h2{
+            margin-bottom: 12px;
+        
         }
     }
     .opacityYellow{
@@ -68,14 +71,14 @@ const ContentStyle = styled.div`
             width:45%;
         }
     }
-    @media only screen and (min-width:769px) and (max-width:1024px){
+    @media only screen and (min-width:769px){
         display:flex;
-        width:85%;
-        margin-bottom:28%;
+        width:950px;
+        margin-bottom:350px;
 
         .yellow{
-            width:43%;
-            height:350px;
+            width:490px;
+            height:449px;
             display:flex;
             flex-direction:column;
             justify-content:center;
@@ -85,24 +88,24 @@ const ContentStyle = styled.div`
             img{
                 display:block;
                 position:absolute;
-                top: -27%; 
+                top: -14%; 
             }
         }
 
         h2{
-            width:55%;
+            width:75%;
             margin: 0 auto;
             padding:0;
             
         }
         .opacityYellow{
             position: absolute;
-            left: 35%;
+            left: 230px;
             top: 30%;
-            width:50%;
+            width: 407px;
             height: 400px;
-            margin-bottom:0;
-            padding-left: 14%;
+            margin-bottom: 0;
+            padding-left: 31%;
             display:flex;
             flex-direction:column;
             justify-content:center;
@@ -121,6 +124,7 @@ const ContentStyle = styled.div`
         }
         .icons{
             top:-19%;
+            left:75%;
         }
         .iconPlant{
             display:block;
@@ -133,9 +137,9 @@ const ContentStyle = styled.div`
             padding-right: 42%;
         }
     }
-    @media only screen and (min-width:1025px){
+    /* @media only screen and (min-width:1025px){
         display:flex;
-        width:1200px;
+        width:1000px;
         margin-bottom:20%;
 
         .yellow{
@@ -208,7 +212,7 @@ const ContentStyle = styled.div`
             padding:0;
             padding-left: 15%;
         }
-    }
+    } */
     
 
 `;

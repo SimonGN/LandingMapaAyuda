@@ -82,6 +82,7 @@ const TypeVolStyle = styled.div`
     }
     @media only screen and (min-width:1025px){
         margin-bottom:145px;
+        width: 1200px; 
         .text{
             width: 90%;
 
@@ -133,7 +134,8 @@ const TypeVolStyle = styled.div`
             }
         }
         .button{
-            margin-bottom: 0;
+            width:250px;
+            margin: 0;
         }
         
     }

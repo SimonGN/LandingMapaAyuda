@@ -32,6 +32,7 @@ const OpportunityStyle = styled.div`
     .filter{
         display:flex;
         white-space:nowrap;
+        position: relative;
     }
     .dropDown{
         padding-left:2%;
@@ -56,17 +57,23 @@ const OpportunityStyle = styled.div`
         }
     .Dropdown-menu{
         background-color: white;
-        padding: 4% 2.5% 0% 2.5%;
+        padding: 30px 30px 0 20px;
         box-shadow: 0px 2px 12px #00000020;
         position: absolute;
+        left: -1%;
         padding-bottom:15px;
-        border-bottom-left-radius:16px;
-        border-bottom-right-radius:16px;
-        max-height:150px;
+        border-radius:16px;
+        width:190px;
+        max-height:250px;
         overflow-y:scroll;
         white-space:nowrap;
         div{
-            padding-bottom:18px;
+            padding:20px 15px;
+        }
+        div:hover{
+            background-color:#F5F5F5;
+            border-radius: 8px;
+            padding:20px 15px;
         }
     }
     @media only screen and (min-width:415px) and (max-width:768px){
@@ -122,11 +129,12 @@ const OpportunityStyle = styled.div`
         
     }
     @media only screen and (min-width:1025px) {
-        margin-bottom:145px;
+        margin-bottom:189px;
+        width: 1200px; 
         .text{
             width: 100%;
             h2{
-                width: 60%; 
+                width: 650px; 
             }
             p{
                 margin-bottom: 0%;
@@ -159,9 +167,8 @@ const OpportunityStyle = styled.div`
         }
         .Dropdown-menu{
             position: absolute;
-            left: 81%;
+            left:-10px;
             white-space:nowrap;
-            padding: 1% 1.5% 0% 1.5%;
         }
         .dropDown{
             margin-bottom:0;
@@ -171,6 +178,10 @@ const OpportunityStyle = styled.div`
             div{
                 width: max-content;
             }
+        }
+        .button{
+            width:250px;
+            margin:0;
         }
         
     }

@@ -12,7 +12,6 @@ padding-bottom:5%;
         display:none;
     }
     .green{
-
         background-color:#8ED7BF;
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
@@ -25,8 +24,10 @@ padding-bottom:5%;
         margin:0 20%;
         text-align:center;
         p{
-            margin-top:5%;
-            margin-bottom:5%;
+            margin: 0 auto;
+            margin-top:3%;
+            margin-bottom:3%;
+            width:50%;
         }
     }
     .button{
@@ -226,8 +227,8 @@ padding-bottom:5%;
     }
     
     @media only screen and (min-width:1025px) {
-        padding-bottom: 2%;
-        width: 94vw;
+        padding-bottom: 30px;
+        width: 97vw;
         .idiomsMovil{
             display:none;
         }
@@ -266,7 +267,8 @@ padding-bottom:5%;
         .navSeo{
             display:flex;
             justify-content:space-between;
-            width:75%; 
+            width:900px;
+            margin-left: 30%; 
         }
         .nameText{
             width:20%;

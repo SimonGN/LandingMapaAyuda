@@ -9,7 +9,7 @@ const HeaderStyle = styled.div`
         background-size:cover;
         background-position:center;
         border-radius: 16px;
-        width:93vw;
+        width:89vw;
         height: 75vh;
         margin:0 auto;
         text-align:center;
@@ -18,12 +18,13 @@ const HeaderStyle = styled.div`
         align-items: center;
     }
     h2{
+        width:80%;
         padding-top:20%;
         padding-bottom:5%;
     }
     .card{
         position:relative;
-        margin-top:-73%;
+        margin-top:-85%;
     }
     .icon{
         margin: 0 auto;
@@ -44,7 +45,7 @@ const HeaderStyle = styled.div`
     }
     .icon3{
         width: 50px;
-        top: 46%;
+        top: 55%;
         left: 63%;
     }
     .icon4{
@@ -235,7 +236,7 @@ const HeaderStyle = styled.div`
         }
         .cardContainer{
             position: relative;
-            min-height: 420px;
+            min-height: 435px;
             width:100%;
             margin-top:-14%;
         }
