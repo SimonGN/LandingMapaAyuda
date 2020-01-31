@@ -2,7 +2,7 @@ import Meta from "../components/Meta";
 import React, { createRef } from "react";
 import PropTypes from "prop-types";
 
-
+import ComingSoon from "../components/ComingSoon/ComingSoon"
 import Cookies from "../components/Cookies/Cookies"
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
@@ -72,8 +72,9 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Cookies/>
         <Meta />
+        <ComingSoon/>
+        {/* <Cookies/>
         <Nav />
         <Header />
         <We />
@@ -81,7 +82,7 @@ class Home extends React.Component {
         <TypeVol />
         <Opportunity />
         <Content />
-        <Footer display="flex"/>
+        <Footer display="flex"/> */}
         
       </React.Fragment>
     );
