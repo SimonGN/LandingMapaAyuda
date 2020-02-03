@@ -45,22 +45,12 @@ var Button = function Button(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ButtonStyle", function() { return ButtonStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding:15px 20px;\n    display: inline-block;    \n    background-color: ", ";\n    border-radius: 8px;\n    display:flex;\n    justify-content: center;\n    cursor:pointer;\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        display:inline-block;\n        padding:14px 35px;\n    }\n\n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var ButtonStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), function (props) {
+var ButtonStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "ButtonStyle",
+  componentId: "sc-1a67yx8-0"
+})(["padding:15px 20px;display:inline-block;background-color:", ";border-radius:8px;display:flex;justify-content:center;cursor:pointer;@media only screen and (min-width:415px) and (max-width:768px){}@media only screen and (min-width:769px) and (max-width:1024px){display:inline-block;padding:14px 35px;}"], function (props) {
   return props.backgroundColor ? props.backgroundColor : "#1C76E3";
 });
 
@@ -129,22 +119,12 @@ var CardCountry = function CardCountry(_ref) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardCountryStyle", function() { return CardCountryStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-bottom:5%;\n    flex: none;\n    width:62%;\n    margin-left:5%;\n    cursor: pointer;\n\n    img{\n        background-color: ", ";\n        background-size: cover;\n        background-repeat: no-repeat;\n        border-radius:16px;\n        width: 100%;\n        \n        transition: transform 2s;\n    }\n    .text{\n        width:90%;\n        margin:0 auto;\n        white-space: normal;\n        padding-top:3.5%;\n        p{\n            font-size:17px;\n        }\n    }\n    .country{\n        margin-top:8px;\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        width: 33%;\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        width: 22.5%;\n        margin-left:0%;\n        margin-bottom:2.5%;\n        margin-left:0%;\n        .button{\n            margin-bottom: 15%;\n        }\n    }\n    @media only screen and (min-width:1025px){\n        width: 23%;\n        margin-left:0%;\n        margin-bottom:2%;\n        margin-left:0%;\n        img{\n            -webkit-transition: all .5s;\n            -moz-transition: all .5s;\n            -o-transition: all .5s;\n            transition: all .5s;\n        }\n        img:hover, .imgs:focus {\n            -ms-transform: scale(1.01);\n            -moz-transform: scale(1.01);\n            -webkit-transform: scale(1.01);\n            -o-transform: scale(1.01);\n            transform: scale(1.01);\n        }\n    }\n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var CardCountryStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), function (props) {
+var CardCountryStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "CardCountryStyle",
+  componentId: "ui3bk0-0"
+})(["margin-bottom:5%;flex:none;width:62%;margin-left:5%;cursor:pointer;img{background-color:", ";background-size:cover;background-repeat:no-repeat;border-radius:16px;width:100%;transition:transform 2s;}.text{width:90%;margin:0 auto;white-space:normal;padding-top:3.5%;p{font-size:17px;}}.country{margin-top:8px;}@media only screen and (min-width:415px) and (max-width:768px){width:33%;}@media only screen and (min-width:769px) and (max-width:1024px){width:22.5%;margin-left:0%;margin-bottom:2.5%;margin-left:0%;.button{margin-bottom:15%;}}@media only screen and (min-width:1025px){width:23%;margin-left:0%;margin-bottom:2%;margin-left:0%;img{-webkit-transition:all .5s;-moz-transition:all .5s;-o-transition:all .5s;transition:all .5s;}img:hover,.imgs:focus{-ms-transform:scale(1.01);-moz-transform:scale(1.01);-webkit-transform:scale(1.01);-o-transform:scale(1.01);transform:scale(1.01);}}"], function (props) {
   return props.photo ? '' : '#fffff';
 });
 
@@ -227,22 +207,12 @@ var Card = function Card(_ref) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardStyle", function() { return CardStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n@keyframes translate {\n  from {\n      right:0;\n  }\n\n  to {\n    right:2100px;\n  }\n}\n@keyframes opacityCard {\n    0%{\n        opacity:0;\n    }\n    100%{\n        opacity:1;\n    }\n}\n\nmargin-left: 5%;\nwidth: 222px;\nflex-grow:1;\nflex: none;\n    .cardStyle{\n        position: relative;\n        padding: 8px;\n        background-color: white;\n        border-radius: 16px;\n        box-shadow: 0px 2px 12px #00000020;\n        animation-duration: 60s;\n        animation-name: translate;\n        animation-iteration-count: infinite; \n    }\n    .cardStyle:hover{\n        /* -webkit-animation: 0; */\n        -webkit-animation-play-state: paused;\n    }\n    .button{\n        display: flex;\n        justify-content: center;\n        p{\n            text-align:center;\n        }\n    }\n    .img{\n        position:relative;\n    }\n    .imgFondo{\n        margin-top: 2%;\n        background-image:", ";\n        background-color: ", ";\n        background-position: center;\n        background-repeat: no-repeat;\n        background-size: cover;\n        width:100%;\n        height:122px;\n        margin: 0 auto;\n        border-radius: 12px;\n    }\n    .imgPeople{\n        position:absolute;\n        background-image: url(\"", "\");\n        background-color: ", ";\n        background-position: center;\n        background-repeat: no-repeat;\n        background-size: cover;\n        width:40px;\n        height:40px;\n        border-radius: 18px;\n        border: 3px solid white;\n        left: 70%;\n        top: 80%;\n    }\n\n    .country{\n        padding: 5% 10% 3% 0;\n    }\n    .text{\n        width: 90%;\n        display: flex;\n        flex-flow: column;\n        justify-content: center;\n        margin:0 auto;\n        text-overflow: clip ellipsis;\n        & p{\n            text-overflow: clip ellipsis;\n            margin-bottom:2%;\n        } \n        \n    }\n    .description{\n        padding:3% 0 5%;\n    }\n    .readmore{\n        width:100%;\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n        \n        margin-left: 3%;\n        .description{\n            padding:4% 0 7%;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        margin-top: ", ";\n        margin-left: 2%;\n        width: 350px;\n        height:100px;\n        .cardStyle{\n            padding:0;\n            height: auto;\n            \n        }\n        .text{\n            display:none;\n            opacity:0;\n        }\n        .imgPeople{\n            display:none;\n        }\n        .imgFondo{\n            height:226px;\n        }\n\n        &:hover {\n            \n             .cardStyle{\n                padding: 15px;\n            }\n            .text{\n                display:block;\n                opacity:1;\n                animation: opacityCard 1s;\n            }\n            .imgPeople{\n                display:block;\n                width: 60px;\n                height: 60px;\n                border: 5px solid white;\n                top: 83%;\n            }\n            .imgFondo{\n                height:200px;\n\n            }\n        }\n        .description{\n            padding: 3% 0 4%;\n        }\n        .readmore{\n            padding: 14px 105px;\n        }\n    }\n    @media only screen and (min-width:1025px) {\n        margin-top: ", ";\n        margin-left: 2.2%;\n        height:100px;\n        width: 350px;\n        .cardStyle{\n            padding:0;\n            height: auto;\n        }\n        .text{\n            display:none;\n        }\n        .imgPeople{\n            display:none;\n        }\n        .imgFondo{\n            height:226px;\n        }\n\n        &:hover {\n           \n             .cardStyle{\n                padding: 15px;\n            }\n            .text{\n                display:block;\n                opacity:1;\n                animation: opacityCard 1s;\n            }\n            .imgPeople{\n                display:block;\n                width: 60px;\n                height: 60px;\n                border: 5px solid white;\n                top: 83%;\n            }\n            .imgFondo{\n                height:200px;\n            }\n        }\n        .description{\n            padding: 2% 0 6%;\n        }\n        .readmore{\n            padding: 14px 105px;\n        }\n        \n    }\n    \n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var CardStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), function (props) {
+var CardStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "CardStyle",
+  componentId: "q6pe5x-0"
+})(["@keyframes translate{from{right:0;}to{right:2100px;}}@keyframes opacityCard{0%{opacity:0;}100%{opacity:1;}}margin-left:5%;width:222px;flex-grow:1;flex:none;.cardStyle{position:relative;padding:8px;background-color:white;border-radius:16px;box-shadow:0px 2px 12px #00000020;animation-duration:60s;animation-name:translate;animation-iteration-count:infinite;}.cardStyle:hover{-webkit-animation-play-state:paused;}.button{display:flex;justify-content:center;p{text-align:center;}}.img{position:relative;}.imgFondo{margin-top:2%;background-image:", ";background-color:", ";background-position:center;background-repeat:no-repeat;background-size:cover;width:100%;height:122px;margin:0 auto;border-radius:12px;}.imgPeople{position:absolute;background-image:url(\"", "\");background-color:", ";background-position:center;background-repeat:no-repeat;background-size:cover;width:40px;height:40px;border-radius:18px;border:3px solid white;left:70%;top:80%;}.country{padding:5% 10% 3% 0;}.text{width:90%;display:flex;flex-flow:column;justify-content:center;margin:0 auto;text-overflow:clip ellipsis;& p{text-overflow:clip ellipsis;margin-bottom:2%;}}.description{padding:3% 0 5%;}.readmore{width:100%;}@media only screen and (min-width:415px) and (max-width:768px){margin-left:3%;.description{padding:4% 0 7%;}}@media only screen and (min-width:769px) and (max-width:1024px){margin-top:", ";margin-left:2%;width:350px;height:100px;.cardStyle{padding:0;height:auto;}.text{display:none;opacity:0;}.imgPeople{display:none;}.imgFondo{height:226px;}&:hover{.cardStyle{padding:15px;}.text{display:block;opacity:1;animation:opacityCard 1s;}.imgPeople{display:block;width:60px;height:60px;border:5px solid white;top:83%;}.imgFondo{height:200px;}}.description{padding:3% 0 4%;}.readmore{padding:14px 105px;}}@media only screen and (min-width:1025px){margin-top:", ";margin-left:2.2%;height:100px;width:350px;.cardStyle{padding:0;height:auto;}.text{display:none;}.imgPeople{display:none;}.imgFondo{height:226px;}&:hover{.cardStyle{padding:15px;}.text{display:block;opacity:1;animation:opacityCard 1s;}.imgPeople{display:block;width:60px;height:60px;border:5px solid white;top:83%;}.imgFondo{height:200px;}}.description{padding:2% 0 6%;}.readmore{padding:14px 105px;}}"], function (props) {
   return props.photo ? "url(".concat(props.photo, ")") : "photo";
 }, function (props) {
   return props.photo ? '' : '#fffff';
@@ -354,22 +324,12 @@ var CommingSoon = function CommingSoon(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommingSoonStyle", function() { return CommingSoonStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin: 0 auto;\nwidth:90vw;\nheight:95vh;\npadding-top:20px;\noverflow-x:scroll;\noverflow-y:hidden;\n\n    .green{\n        background-color:#8ED7BF;\n        border-top-left-radius: 16px;\n        border-top-right-radius: 16px;\n        height:70vh;\n        display: flex;\n        flex-flow:column;\n        justify-content:center;\n        align-items:center;\n    }\n\n    .greenOpacity{\n        background-color:#8ED7BF40;\n        border-bottom-left-radius: 16px;\n        border-bottom-right-radius: 16px;\n        width:100%;\n        height:100%;\n        margin: 0 auto;\n        position:relative;\n    }\n    .logo, .iconWord{\n        margin: 0 auto;\n        img{\n            width:100%;\n            margin: 0 auto; \n        }\n    }\n    .logo{\n        width:230px;\n    }\n    .links{\n        margin: 0 auto;\n        width:200px;\n        margin-top: 30px;\n        display: flex;\n        justify-content: space-between;\n    }\n    .iconRrss{\n        width:30px;\n        height:30px;\n    }\n\n    .iconWord{\n        position: absolute;\n        width: 30%;\n        text-align: center;\n        top: -7%;\n        left: calc(50% - 15%);\n    }\n    .textGreen{\n        margin-top:30px;\n        margin-bottom:30px;\n    }\n    .textGreenOpacity{\n        width:90%;\n        padding-top: 35%;\n        margin: 0 auto;\n        display:flex;\n        flex-flow:column;\n        justify-content: space-evenly;\n    }\n    \n\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        .greenOpacity{\n            height:27%;\n        }\n        .iconWord{\n            width: 20%;\n            top:-29%;\n            left:calc(50% - 10%);\n        }\n        .textGreen{\n            width: 400px;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        width:95vw;\n        padding-top:20px;\n        padding-bottom:20px;\n        .greenOpacity{\n            height: 26%;\n        }\n        .iconWord{\n            width: 100px;\n            top: -23%;\n            left: calc(50% - 50px);\n        }\n        .textGreen{\n            width: 310px;\n        }\n        \n    }\n    @media only screen and (min-width:1025px) {\n        width:97vw;\n        height:98vh;\n        padding-top:20px;\n        .greenOpacity{\n            height: 26%;\n        }\n        .iconWord{\n            width: 120px;\n            top: -21%;\n            left: calc(50% - 60px);\n        }\n        .textGreen{\n            width: 500px;\n            margin-top:50px;\n        }\n        .subTitle{\n            margin-top:20px;\n            width: 350px;\n            margin: 0 auto;\n        }\n    }\n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var CommingSoonStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var CommingSoonStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "CommingSoonStyle",
+  componentId: "oit2q8-0"
+})(["margin:0 auto;width:90vw;height:95vh;padding-top:20px;overflow-x:scroll;overflow-y:hidden;.green{background-color:#8ED7BF;border-top-left-radius:16px;border-top-right-radius:16px;height:70vh;display:flex;flex-flow:column;justify-content:center;align-items:center;}.greenOpacity{background-color:#8ED7BF40;border-bottom-left-radius:16px;border-bottom-right-radius:16px;width:100%;height:100%;margin:0 auto;position:relative;}.logo,.iconWord{margin:0 auto;img{width:100%;margin:0 auto;}}.logo{width:230px;}.links{margin:0 auto;width:200px;margin-top:30px;display:flex;justify-content:space-between;}.iconRrss{width:30px;height:30px;}.iconWord{position:absolute;width:30%;text-align:center;top:-7%;left:calc(50% - 15%);}.textGreen{margin-top:30px;margin-bottom:30px;}.textGreenOpacity{width:90%;padding-top:35%;margin:0 auto;display:flex;flex-flow:column;justify-content:space-evenly;}@media only screen and (min-width:415px) and (max-width:768px){.greenOpacity{height:27%;}.iconWord{width:20%;top:-29%;left:calc(50% - 10%);}.textGreen{width:400px;}}@media only screen and (min-width:769px) and (max-width:1024px){width:95vw;padding-top:20px;padding-bottom:20px;.greenOpacity{height:26%;}.iconWord{width:100px;top:-23%;left:calc(50% - 50px);}.textGreen{width:310px;}}@media only screen and (min-width:1025px){width:97vw;height:98vh;padding-top:20px;.greenOpacity{height:26%;}.iconWord{width:120px;top:-21%;left:calc(50% - 60px);}.textGreen{width:500px;margin-top:50px;}.subTitle{margin-top:20px;width:350px;margin:0 auto;}}"]);
 
 
 /***/ }),
@@ -456,22 +416,12 @@ var Content = function Content(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentStyle", function() { return ContentStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:90%;\n    margin:0 auto;\n    margin-bottom:135%;\n    position: relative;\n    h2{\n        width:70%;\n        padding-left:10%;\n        padding-top: 15%;\n        padding-bottom: 10%;\n    }\n    .yellow, .opacityYellow{\n        width:100%;\n        border-radius: 16px;\n    }\n    .yellow{\n        background-color:#F8DE6D;\n        margin-bottom:2%;\n        img{\n            display:none;\n        }\n        h2{\n            margin-bottom: 12px;\n        \n        }\n    }\n    .opacityYellow{\n        background-color:#FDF6D7;\n        position:absolute;\n        margin-bottom:20%;\n        z-index:1;\n    }\n    .icons{\n        position: absolute;\n        top: -14%;\n        left: 70%;\n        img{\n            width:80%;\n        }\n    }\n    .iconPlant{\n        position: absolute;\n        display:none;\n    }\n    .button{\n        padding-left:10%;\n        padding-bottom: 10%;\n        width:70%;\n    }\n    \n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        margin-bottom: 70%;\n        h2{\n            width:55%;\n        }\n        .opacityYellow{\n            z-index:3;\n            h2{\n                padding-bottom:6%;\n            }\n        }\n        .icons{\n            top:-19%;\n           \n        }\n        .button{\n            width:45%;\n        }\n    }\n    @media only screen and (min-width:769px){\n        display:flex;\n        width:950px;\n        margin-bottom:350px;\n\n        .yellow{\n            width:490px;\n            height:449px;\n            display:flex;\n            flex-direction:column;\n            justify-content:center;\n            align-items:center;\n            text-align:left;\n            margin-bottom:0;\n            img{\n                display:block;\n                position:absolute;\n                top: -14%; \n            }\n        }\n\n        h2{\n            width:75%;\n            margin: 0 auto;\n            padding:0;\n            \n        }\n        .opacityYellow{\n            position: absolute;\n            left: 230px;\n            top: 30%;\n            width: 407px;\n            height: 400px;\n            margin-bottom: 0;\n            padding-left: 31%;\n            display:flex;\n            flex-direction:column;\n            justify-content:center;\n            align-items:center;\n            text-align:left;\n            z-index:-1;\n            h2{\n                width: 85%;\n                padding:0;\n                padding-right: 12%;\n                padding-bottom:6%;\n                margin: 0 auto;\n                font-size:32px;\n                line-height: 40px;\n            }\n        }\n        .icons{\n            top:-19%;\n            left:75%;\n        }\n        .iconPlant{\n            display:block;\n            top: -10%;\n            left: -31%;\n        }\n        .button{\n            width:55%;\n            padding:0;\n            padding-right: 42%;\n        }\n    }\n    /* @media only screen and (min-width:1025px){\n        display:flex;\n        width:1000px;\n        margin-bottom:20%;\n\n        .yellow{\n            width:48%;\n            height:500px;\n            display:flex;\n            flex-direction:column;\n            justify-content:center;\n            align-items:center;\n            text-align:left;\n            margin-bottom:0;\n            img{\n                display:block;\n                position:absolute;\n                top: -10%;\n        left: 30%;\n            }\n            h2{\n                padding-top:13%;\n            }\n        }\n\n        h2{\n            width:60%;\n            margin: 0 auto;\n            padding:0;\n            \n        }\n        .opacityYellow{\n            position: absolute;\n            left: 25%;\n            top: 30%;\n            width:60%;\n            height: 450px;\n            margin-bottom:0;\n            padding-left: 14%;\n            display:flex;\n            flex-direction:column;\n            justify-content:center;\n            align-items:center;\n            text-align:left;\n            z-index:-1;\n\n            h2{\n                width: 60%;\n                padding:0;\n                \n                padding-left:20%;\n                padding-bottom:6%;\n                margin: 0 auto;\n                font-size:32px;\n                line-height: 40px;\n            }\n        }\n        .icons{\n            top:-16%;\n            left: 90%;\n            img{\n                width: 160%;\n            }\n        }\n        .iconPlant{\n            display:block;\n            width: 70%;\n            top: -35%;\n            left: -80%;\n        }\n        .button{\n            width:55%;\n            padding:0;\n            padding-left: 15%;\n        }\n    } */\n    \n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var ContentStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var ContentStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "ContentStyle",
+  componentId: "sc-10a8rq7-0"
+})(["width:90%;margin:0 auto;margin-bottom:135%;position:relative;h2{width:70%;padding-left:10%;padding-top:15%;padding-bottom:10%;}.yellow,.opacityYellow{width:100%;border-radius:16px;}.yellow{background-color:#F8DE6D;margin-bottom:2%;img{display:none;}h2{margin-bottom:12px;}}.opacityYellow{background-color:#FDF6D7;position:absolute;margin-bottom:20%;z-index:1;}.icons{position:absolute;top:-14%;left:70%;img{width:80%;}}.iconPlant{position:absolute;display:none;}.button{padding-left:10%;padding-bottom:10%;width:70%;}@media only screen and (min-width:415px) and (max-width:768px){margin-bottom:70%;h2{width:55%;}.opacityYellow{z-index:3;h2{padding-bottom:6%;}}.icons{top:-19%;}.button{width:45%;}}@media only screen and (min-width:769px){display:flex;width:950px;margin-bottom:350px;.yellow{width:490px;height:449px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:left;margin-bottom:0;img{display:block;position:absolute;top:-14%;}}h2{width:75%;margin:0 auto;padding:0;}.opacityYellow{position:absolute;left:230px;top:30%;width:407px;height:400px;margin-bottom:0;padding-left:31%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:left;z-index:-1;h2{width:85%;padding:0;padding-right:12%;padding-bottom:6%;margin:0 auto;font-size:32px;line-height:40px;}}.icons{top:-19%;left:75%;}.iconPlant{display:block;top:-10%;left:-31%;}.button{width:55%;padding:0;padding-right:42%;}}"]);
 
 
 /***/ }),
@@ -613,22 +563,12 @@ function (_React$Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CookieWrapper", function() { return CookieWrapper; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: fixed;\n  width: 330px;\n  height: 290px;\n  left: 2%;\n  bottom: 2%;\n  background-color: ", ";\n  color: ", ";\n  display: ", ";\n\n  border-radius:18px;\n  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);\n  transition: all 1s ease 0s;\n  z-index: 3;\n  .text{\n    margin: 0 auto;\n    width:80%;\n  }\n  .title{\n    display:flex;\n    margin:12% 0 7%;\n    p:first-child{\n      margin-right:5%;\n    }\n  }\n  .paragraph{\n    margin-bottom:7%;\n  }\n  a {\n    color: ", ";\n  }\n  a:visited {\n    color: ", ";\n  }\n  .cookies-content {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    width: 80%;\n  }\n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var CookieWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), function (props) {
+var CookieWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "CookiesStyle__CookieWrapper",
+  componentId: "rpt457-0"
+})(["position:fixed;width:330px;height:290px;left:2%;bottom:2%;background-color:", ";color:", ";display:", ";border-radius:18px;box-shadow:0px 4px 12px rgba(0,0,0,0.1);transition:all 1s ease 0s;z-index:3;.text{margin:0 auto;width:80%;}.title{display:flex;margin:12% 0 7%;p:first-child{margin-right:5%;}}.paragraph{margin-bottom:7%;}a{color:", ";}a:visited{color:", ";}.cookies-content{display:flex;flex-direction:column;justify-content:flex-start;width:80%;}"], function (props) {
   return props.backgroundColor ? props.backgroundColor : "white";
 }, function (props) {
   return props.color ? props.color : "black";
@@ -821,22 +761,12 @@ var Footer = function Footer(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterStyle", function() { return FooterStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin: 0 auto;\nwidth:90vw;\npadding-bottom:5%;\n    nav{\n        display:none;\n    }\n    .icon{\n        display:none;\n    }\n    .green{\n        background-color:#8ED7BF;\n        border-top-left-radius: 16px;\n        border-top-right-radius: 16px;\n        height:370px;\n        flex-flow:column;\n        justify-content:center;\n        display: ", ";\n    }\n    .textGreen{\n        margin:0 20%;\n        text-align:center;\n        p{\n            margin: 0 auto;\n            margin-top:3%;\n            margin-bottom:3%;\n            width:50%;\n        }\n    }\n    .button{\n        margin: 0 auto;\n        margin-left: 7%;\n        margin-right: 7%;\n       \n    }\n    .greenOpacity{\n        background-color:#8ED7BF40;\n        border-bottom-left-radius: 16px;\n        border-bottom-right-radius: 16px;\n        width:100%;\n        height:auto;\n        margin: 0 auto;\n        position:relative;\n    }\n    .iconWord{\n        position: absolute;\n        width: 30%;\n        margin: 0 auto;\n        text-align: center;\n        top: -3%;\n        left: 35%;\n        img{\n            width:100%;\n            margin: 0 auto; \n        }\n    }\n    .textGreenOpacity{\n        width:90%;\n        padding-top: 35%;\n        margin: 0 auto;\n        display:flex;\n        flex-flow:column;\n        justify-content: space-evenly;\n\n    }\n    .nameText{\n        width: 100%;\n    }\n    .navSeo{\n        width:80%;\n        margin:0 auto;\n    }\n    .idioms, .idiomsMovil{\n        order: 1;\n        display:flex;\n        width:50%;\n        margin: 0 auto;\n        justify-content: space-between; \n        margin-bottom:20%;\n    }\n    .idioms{\n        display:none;\n    }\n    Link{\n        text-align:center;\n    }\n    .legal{\n        width:95%;\n        margin:0 auto;\n        margin-bottom:10%;\n        & > p{\n            text-align:center;\n            margin-bottom:5%;\n        }\n    }\n    .sectionLegal{\n        width:100%;\n        display:flex;\n        justify-content: space-between; \n    }\n    \n    .navegation, .voluntary, .moreInfo{\n        margin-bottom:20%;\n        & > p{\n            margin-bottom: 12px;\n        } \n    }\n\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        .green{\n            height:460px;\n        }\n        .iconWord{\n            top: -4%;\n            left: 41%;\n            width: 18%;\n        }\n        .navSeo{\n            width:85%;\n        }\n        .idiomsMovil{\n            width:30%;\n        }\n        .textGreenOpacity{\n            padding-top: 18%;\n        }\n        .legal{\n            margin-bottom:5%;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        padding-bottom: 3%;\n        width: 94vw;\n        .green{\n            height: 450px;\n            position:relative;\n        }\n       .button{\n            margin: 0 auto;\n       }\n       .icon{\n        display: block;\n        top: -15%;\n        position: absolute;\n        left: 84%;\n        width: 20%;\n       }\n       .icon{\n            width: 8%;\n            display: block;\n            top: -9%;\n            position: absolute;\n            left: 84%;\n            img{\n                width:100%;\n            }\n        }\n       .iconMap{\n           display:block;\n        img{\n                width:100%;\n            }\n       }\n       .iconWord{\n            width: 10%;\n            top: -13%;\n            left: 4%;\n            img{\n                width:100%;\n            }\n        }\n        .textGreenOpacity{\n            padding-top: 100px;\n            display: flex;\n            flex-direction: row-reverse;\n        }\n        .idiomsMovil{\n            display:none;\n        }\n        .idioms{\n            display:block;\n        }\n        .navSeo{\n            display:flex;\n            justify-content:space-between;\n            width:75%; \n        }\n        .nameText{\n            width:25%;\n            flex-direction: column;\n        }\n        .idioms{\n            display:flex;\n            width:70%;\n            margin: 0;\n            margin-bottom: 28%;\n            margin-top: 3%;\n        }\n        .legal{\n            margin:0;\n            & > p{\n                text-align:left;\n                margin-bottom: 16%;\n            }\n        }\n        .sectionLegal{\n            display:flex;\n            flex-direction:column;\n            & >p{\n                margin-bottom: 0px;\n            }\n\n        }\n        .navegation{\n            margin-bottom: 10%;\n            & >p{\n                margin-bottom: 12px;\n            }\n        }\n        .navegation, .voluntary, .moreInfo{\n            margin-bottom: 10%;\n        }\n    }\n    \n    @media only screen and (min-width:1025px) {\n        padding-bottom: 30px;\n        width: 97vw;\n        .idiomsMovil{\n            display:none;\n        }\n        .green{\n            height: 480px;\n            position:relative;\n        }\n        .button{\n            margin: 0 auto;\n        }\n        .icon{\n            width: 8%;\n            display: block;\n            top: -12%;\n            position: absolute;\n            left: 84%;\n            img{\n                width:100%;\n            }\n        }\n        .iconWord{\n            width: 7%;\n            top: -16%;\n            left: 12%;\n            img{\n                width:100%;\n            }\n        }\n        .textGreenOpacity{\n            width: 75%;\n            padding-top: 100px;\n            display: flex;\n            flex-direction: row-reverse;\n        }\n\n        .navSeo{\n            display:flex;\n            justify-content:space-between;\n            width:900px;\n            margin-left: 30%; \n        }\n        .nameText{\n            width:20%;\n            flex-direction: column;\n        }\n        .idioms{\n            display:flex;\n            width:70%;\n            margin: 0;\n            margin-bottom: 24%;\n            margin-top: 3%;\n        }\n        .legal{\n            margin:0;\n            & > p{\n                text-align:left;\n                margin-bottom: 9%;\n            }\n        }\n        .sectionLegal{\n            display:flex;\n            flex-direction:column;\n            & >p{\n                margin-bottom: 0px;\n            }\n\n        }\n        .navegation{\n            margin-bottom: 10%;\n            & >p{\n                margin-bottom: 12px;\n            }\n        }\n        .navegation, .voluntary, .moreInfo{\n            margin-bottom: 10%;\n        }\n    }\n    \n    \n    \n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var FooterStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), function (props) {
+var FooterStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "FooterStyle",
+  componentId: "sc-81zmpn-0"
+})(["margin:0 auto;width:90vw;padding-bottom:5%;nav{display:none;}.icon{display:none;}.green{background-color:#8ED7BF;border-top-left-radius:16px;border-top-right-radius:16px;height:370px;flex-flow:column;justify-content:center;display:", ";}.textGreen{margin:0 20%;text-align:center;p{margin:0 auto;margin-top:3%;margin-bottom:3%;width:50%;}}.button{margin:0 auto;margin-left:7%;margin-right:7%;}.greenOpacity{background-color:#8ED7BF40;border-bottom-left-radius:16px;border-bottom-right-radius:16px;width:100%;height:auto;margin:0 auto;position:relative;}.iconWord{position:absolute;width:30%;margin:0 auto;text-align:center;top:-3%;left:35%;img{width:100%;margin:0 auto;}}.textGreenOpacity{width:90%;padding-top:35%;margin:0 auto;display:flex;flex-flow:column;justify-content:space-evenly;}.nameText{width:100%;}.navSeo{width:80%;margin:0 auto;}.idioms,.idiomsMovil{order:1;display:flex;width:50%;margin:0 auto;justify-content:space-between;margin-bottom:20%;}.idioms{display:none;}Link{text-align:center;}.legal{width:95%;margin:0 auto;margin-bottom:10%;& > p{text-align:center;margin-bottom:5%;}}.sectionLegal{width:100%;display:flex;justify-content:space-between;}.navegation,.voluntary,.moreInfo{margin-bottom:20%;& > p{margin-bottom:12px;}}@media only screen and (min-width:415px) and (max-width:768px){.green{height:460px;}.iconWord{top:-4%;left:41%;width:18%;}.navSeo{width:85%;}.idiomsMovil{width:30%;}.textGreenOpacity{padding-top:18%;}.legal{margin-bottom:5%;}}@media only screen and (min-width:769px) and (max-width:1024px){padding-bottom:3%;width:94vw;.green{height:450px;position:relative;}.button{margin:0 auto;}.icon{display:block;top:-15%;position:absolute;left:84%;width:20%;}.icon{width:8%;display:block;top:-9%;position:absolute;left:84%;img{width:100%;}}.iconMap{display:block;img{width:100%;}}.iconWord{width:10%;top:-13%;left:4%;img{width:100%;}}.textGreenOpacity{padding-top:100px;display:flex;flex-direction:row-reverse;}.idiomsMovil{display:none;}.idioms{display:block;}.navSeo{display:flex;justify-content:space-between;width:75%;}.nameText{width:25%;flex-direction:column;}.idioms{display:flex;width:70%;margin:0;margin-bottom:28%;margin-top:3%;}.legal{margin:0;& > p{text-align:left;margin-bottom:16%;}}.sectionLegal{display:flex;flex-direction:column;& >p{margin-bottom:0px;}}.navegation{margin-bottom:10%;& >p{margin-bottom:12px;}}.navegation,.voluntary,.moreInfo{margin-bottom:10%;}}@media only screen and (min-width:1025px){padding-bottom:30px;width:97vw;.idiomsMovil{display:none;}.green{height:480px;position:relative;}.button{margin:0 auto;}.icon{width:8%;display:block;top:-12%;position:absolute;left:84%;img{width:100%;}}.iconWord{width:7%;top:-16%;left:12%;img{width:100%;}}.textGreenOpacity{width:75%;padding-top:100px;display:flex;flex-direction:row-reverse;}.navSeo{display:flex;justify-content:space-between;width:900px;margin-left:30%;}.nameText{width:20%;flex-direction:column;}.idioms{display:flex;width:70%;margin:0;margin-bottom:24%;margin-top:3%;}.legal{margin:0;& > p{text-align:left;margin-bottom:9%;}}.sectionLegal{display:flex;flex-direction:column;& >p{margin-bottom:0px;}}.navegation{margin-bottom:10%;& >p{margin-bottom:12px;}}.navegation,.voluntary,.moreInfo{margin-bottom:10%;}}"], function (props) {
   return props.display ? props.display : 'none';
 });
 
@@ -981,22 +911,12 @@ var Gallery = function Gallery(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GalleryStyle", function() { return GalleryStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin: 0 auto;\n    width:89vw;\n    margin-bottom:120px;\n    .galleryImg{\n        position:relative;\n        width:100%;\n        height: 225px;\n        background-color: ", ";\n        background-image: ", ";\n        background-repeat: no-repeat;\n        background-size: cover;\n        background-position: center;\n        border-radius:16px;\n        margin-bottom:5%;\n        img{\n            position:absolute;\n            left:80%;\n        }\n    }\n    .nextBack{\n        margin-top:2%;\n    }\n    .button{\n        padding-top:5%;\n    }\n    .buttonNextBack{\n        display:flex;\n        justify-content: space-between;\n        width:40%;\n        margin-top:10px;\n        margin-bottom:10px;\n        cursor:pointer;\n    }\n    .buttonDiv{\n        display:flex;\n        justify-content: space-between;\n        div{\n            width: 75px;\n            height: 4px;\n            background-color:#F2F2F2;\n            border-radius:50px;\n            cursor:pointer;\n        }\n        div.active {\n            background-color:#F1A409;\n        }\n    }\n    .textImg{\n        height:230px;\n        display: flex;\n        flex-flow: column;\n        justify-content: space-between;\n        h2{\n            text-align:left;\n            height:50px;\n            font-size: 22px;\n            line-height: 24px;\n            margin-bottom:0;\n        }\n        & > p{\n            font-size: 18px;\n            color:black;\n        }\n    }\n\n\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        h2{\n            text-align:center;\n        }\n        .component{\n            display:flex;\n            justify-content: space-between;\n            align-items:center;\n        }\n        .galleryImg{\n            width:50%;\n            margin-bottom:0;\n        }\n        .textImg{\n            width: 40%;\n        }\n        .buttonDiv{\n            div{\n                width: 60px;\n            }\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        h2{\n            text-align:center;\n        }\n        .component{\n            display:flex;\n            justify-content: space-between;\n            align-items:center;\n        }\n        .galleryImg{\n            width:50%;\n            height: 340px;\n            margin-bottom:0;\n        }\n        .nextBack{\n            margin-top:10%;\n        }\n        .textImg{\n            width: 45%;\n            height:330px;\n            padding-left: 5%;\n            padding-right: 10%;\n            h2{\n                text-align:left;\n                height:115px;\n                font-size: 20px;\n                line-height: 24px;\n            }\n        }\n        .buttonDiv{\n            div{\n                width: 75px;\n            }\n        }\n        .textImg{\n            height: 310px;\n            padding: 0 8%;\n            display: flex;\n            flex-flow: column;\n            justify-content: flex-end;\n            display: flex;\n            flex-flow: column;\n            justify-content: flex-end;\n            h2{\n                text-align:left;\n                line-height: 40px;\n                font-size: 32px;\n            }\n        }\n    }\n    @media only screen and (min-width:1025px) {\n        width:1200px;\n        margin-bottom: 145px;\n        h2{\n            text-align:center;\n            margin-bottom: 2.5%;\n        }\n        .component{\n            display:flex;\n            justify-content: space-between;\n            align-items:center;\n        }\n        .galleryImg{\n            width:55%;\n            height: 460px;\n            margin-bottom:0;\n            img{\n                left:88%;\n            }\n        }\n        .nextBack{\n            margin-top:20%;\n        }\n        .textImg{\n            width: 45%;\n            height:340px;\n            padding-left: 10%;\n            padding-right: 10%;\n            h2{\n                text-align:left;\n                height:115px;\n                font-size: 20px;\n                line-height: 24px;\n            }\n        }\n        .buttonDiv{\n            div{\n                width:22%;\n            }\n        }\n        .textImg{\n            width: 40%;\n            height: 360px;\n            padding: 0 8%;\n            display: flex;\n            flex-flow: column;\n            justify-content: flex-end;\n            h2{\n                text-align:left;\n                line-height: 40px;\n                font-size: 32px;\n            }\n        }\n        .button{\n            width:150px;\n        }\n        .buttonNextBack{\n            width:130px;\n        }\n    }\n    \n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var GalleryStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), function (props) {
+var GalleryStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "GalleryStyle",
+  componentId: "sc-3b31nm-0"
+})(["margin:0 auto;width:89vw;margin-bottom:120px;.galleryImg{position:relative;width:100%;height:225px;background-color:", ";background-image:", ";background-repeat:no-repeat;background-size:cover;background-position:center;border-radius:16px;margin-bottom:5%;img{position:absolute;left:80%;}}.nextBack{margin-top:2%;}.button{padding-top:5%;}.buttonNextBack{display:flex;justify-content:space-between;width:40%;margin-top:10px;margin-bottom:10px;cursor:pointer;}.buttonDiv{display:flex;justify-content:space-between;div{width:75px;height:4px;background-color:#F2F2F2;border-radius:50px;cursor:pointer;}div.active{background-color:#F1A409;}}.textImg{height:230px;display:flex;flex-flow:column;justify-content:space-between;h2{text-align:left;height:50px;font-size:22px;line-height:24px;margin-bottom:0;}& > p{font-size:18px;color:black;}}@media only screen and (min-width:415px) and (max-width:768px){h2{text-align:center;}.component{display:flex;justify-content:space-between;align-items:center;}.galleryImg{width:50%;margin-bottom:0;}.textImg{width:40%;}.buttonDiv{div{width:60px;}}}@media only screen and (min-width:769px) and (max-width:1024px){h2{text-align:center;}.component{display:flex;justify-content:space-between;align-items:center;}.galleryImg{width:50%;height:340px;margin-bottom:0;}.nextBack{margin-top:10%;}.textImg{width:45%;height:330px;padding-left:5%;padding-right:10%;h2{text-align:left;height:115px;font-size:20px;line-height:24px;}}.buttonDiv{div{width:75px;}}.textImg{height:310px;padding:0 8%;display:flex;flex-flow:column;justify-content:flex-end;display:flex;flex-flow:column;justify-content:flex-end;h2{text-align:left;line-height:40px;font-size:32px;}}}@media only screen and (min-width:1025px){width:1200px;margin-bottom:145px;h2{text-align:center;margin-bottom:2.5%;}.component{display:flex;justify-content:space-between;align-items:center;}.galleryImg{width:55%;height:460px;margin-bottom:0;img{left:88%;}}.nextBack{margin-top:20%;}.textImg{width:45%;height:340px;padding-left:10%;padding-right:10%;h2{text-align:left;height:115px;font-size:20px;line-height:24px;}}.buttonDiv{div{width:22%;}}.textImg{width:40%;height:360px;padding:0 8%;display:flex;flex-flow:column;justify-content:flex-end;h2{text-align:left;line-height:40px;font-size:32px;}}.button{width:150px;}.buttonNextBack{width:130px;}}"], function (props) {
   return props.photo ? '' : 'red';
 }, function (props) {
   return props.photo ? "url(".concat(props.photo, ")") : '';
@@ -1105,22 +1025,12 @@ var Header = function Header(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderStyle", function() { return HeaderStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n    width:100vw;\n    main{\n        background-image: url(\"/static/img/map.jpg\");\n        background-size:cover;\n        background-position:center;\n        border-radius: 16px;\n        width:89vw;\n        height: 75vh;\n        margin:0 auto;\n        text-align:center;\n        display: flex;\n        flex-flow: column;\n        align-items: center;\n    }\n    h2{\n        width:80%;\n        padding-top:20%;\n        padding-bottom:5%;\n    }\n    .card{\n        position:relative;\n        margin-top:-85%;\n    }\n    .icon{\n        margin: 0 auto;\n        display: flex;\n        justify-content: space-between;\n        z-index: 3;\n    }\n\n    .icon1, .icon3, .icon4, .icon5{\n        position: absolute;\n    }\n    .icon1{\n        width: 45px;\n        top: 70%;\n    }\n    .icon2, .icon5{\n        display:none;\n    }\n    .icon3{\n        width: 50px;\n        top: 55%;\n        left: 63%;\n    }\n    .icon4{\n        width: 45px;\n        top: 87%;\n        left: 88%;\n        \n    }\n    .cardContainer{\n        overflow-x: scroll;\n        display:flex;\n        padding-bottom: 2%;\n        position: relative;\n        margin-top:-70%;\n        &::-webkit-scrollbar {\n            display: none;\n        }\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        main{\n            width:95vw;\n            height: 67vh;\n        }\n        .cardContainer{\n            margin-top:-35%;\n        }\n        .card{\n            margin-top: -35%;\n        }\n        .icon1{\n            top: 53%;\n        }\n        .icon3{\n            top: 48%;\n        }\n        .icon4{\n            top: 81%;\n            left: 94%;\n       }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        main{\n            width:94.5vw;\n            max-height: 550px;\n\n        }\n        h2{\n            padding-top:10%;\n            padding-bottom:2%;\n        }\n        .card{\n            margin-top: -21%;\n        }\n        .icon2, .icon5{\n            display:block;\n            position: absolute;\n        }\n        .icon1{\n            width: 70px;\n            top: 30%;\n            left: 45%;\n        }\n        .icon2{\n            width:60px;\n            top: 33%;\n            left: 4%;\n        }\n        .icon3 {\n            width: 80px;\n            top: 37%;\n            left: 22%;\n           \n        }\n        .icon4 {\n            width: 70px;\n            top: 48%;\n            left: 68%;\n        }\n        .icon5{\n            width: 65px;\n            top: 36%;\n            left: 90%;\n        }\n        .cardContainer{\n            position: relative;\n            min-height: 420px;\n            width:100%;\n            margin-top:-18%;\n        }\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        main{\n            width:96vw;\n            height: 80vh;\n\n        }\n        h2{\n            padding-top:15%;\n            padding-bottom:2%;\n        }\n        .card{\n            margin-top: -15%;\n        }\n        .icon2, .icon5{\n            display:block;\n            position: absolute;\n        }\n        .icon1{\n            width: 70px;\n            top: 63%;\n            left: 45%;\n        }\n        .icon2{\n            width:60px;\n            top: 75%;\n            left: 4%;\n        }\n        .icon3 {\n            width: 80px;\n            top:60%;\n            left: 22%;\n           \n        }\n        .icon4 {\n            width: 70px;\n            top: 70%;\n            left: 68%;\n        }\n        .icon5{\n            width: 65px;\n            top: 70%;\n            left: 95%;\n        }\n        .cardContainer{\n            position: relative;\n            min-height: 420px;\n            width:100%;\n            margin-top:-18%;\n        }\n    }\n    @media only screen and (min-width:1441px){\n        main{\n            width:97vw;\n            height: 80vh;\n\n        }\n        h2{\n            padding-top:15%;\n            padding-bottom:2%;\n        }\n        .card{\n            margin-top: -15%;\n        }\n        .icon2, .icon5{\n            display:block;\n            position: absolute;\n        }\n        .icon1{\n            width: 70px;\n            top: 63%;\n            left: 45%;\n        }\n        .icon2{\n            width:60px;\n            top: 75%;\n            left: 4%;\n        }\n        .icon3 {\n            width: 80px;\n            top:60%;\n            left: 22%;\n           \n        }\n        .icon4 {\n            width: 70px;\n            top: 70%;\n            left: 68%;\n        }\n        .icon5{\n            width: 65px;\n            top: 70%;\n            left: 95%;\n        }\n        .cardContainer{\n            position: relative;\n            min-height: 435px;\n            width:100%;\n            margin-top:-14%;\n        }\n    }\n    \n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var HeaderStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var HeaderStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "HeaderStyle",
+  componentId: "iallbm-0"
+})(["width:100vw;main{background-image:url(\"/static/img/map.jpg\");background-size:cover;background-position:center;border-radius:16px;width:89vw;height:75vh;margin:0 auto;text-align:center;display:flex;flex-flow:column;align-items:center;}h2{width:80%;padding-top:20%;padding-bottom:5%;}.card{position:relative;margin-top:-85%;}.icon{margin:0 auto;display:flex;justify-content:space-between;z-index:3;}.icon1,.icon3,.icon4,.icon5{position:absolute;}.icon1{width:45px;top:70%;}.icon2,.icon5{display:none;}.icon3{width:50px;top:55%;left:63%;}.icon4{width:45px;top:87%;left:88%;}.cardContainer{overflow-x:scroll;display:flex;padding-bottom:2%;position:relative;margin-top:-70%;&::-webkit-scrollbar{display:none;}&::-webkit-scrollbar{display:none;}}@media only screen and (min-width:415px) and (max-width:768px){main{width:95vw;height:67vh;}.cardContainer{margin-top:-35%;}.card{margin-top:-35%;}.icon1{top:53%;}.icon3{top:48%;}.icon4{top:81%;left:94%;}}@media only screen and (min-width:769px) and (max-width:1024px){main{width:94.5vw;max-height:550px;}h2{padding-top:10%;padding-bottom:2%;}.card{margin-top:-21%;}.icon2,.icon5{display:block;position:absolute;}.icon1{width:70px;top:30%;left:45%;}.icon2{width:60px;top:33%;left:4%;}.icon3{width:80px;top:37%;left:22%;}.icon4{width:70px;top:48%;left:68%;}.icon5{width:65px;top:36%;left:90%;}.cardContainer{position:relative;min-height:420px;width:100%;margin-top:-18%;}}@media only screen and (min-width:1025px) and (max-width:1440px){main{width:96vw;height:80vh;}h2{padding-top:15%;padding-bottom:2%;}.card{margin-top:-15%;}.icon2,.icon5{display:block;position:absolute;}.icon1{width:70px;top:63%;left:45%;}.icon2{width:60px;top:75%;left:4%;}.icon3{width:80px;top:60%;left:22%;}.icon4{width:70px;top:70%;left:68%;}.icon5{width:65px;top:70%;left:95%;}.cardContainer{position:relative;min-height:420px;width:100%;margin-top:-18%;}}@media only screen and (min-width:1441px){main{width:97vw;height:80vh;}h2{padding-top:15%;padding-bottom:2%;}.card{margin-top:-15%;}.icon2,.icon5{display:block;position:absolute;}.icon1{width:70px;top:63%;left:45%;}.icon2{width:60px;top:75%;left:4%;}.icon3{width:80px;top:60%;left:22%;}.icon4{width:70px;top:70%;left:68%;}.icon5{width:65px;top:70%;left:95%;}.cardContainer{position:relative;min-height:435px;width:100%;margin-top:-14%;}}"]);
 
 
 /***/ }),
@@ -1369,22 +1279,12 @@ var Nav = function Nav(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavStyle", function() { return NavStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    overflow:hidden;\n    .desktop{\n        display:none;\n    }\n    @keyframes moveNav{\n        0%{transform: translate3d(319px, 0, 0)}\n        100%{transform: translate3d(0px, 0, 0)}\n    }\n    header{\n        \n        display:flex;\n        justify-content: space-between;\n    }\n    .symbol{\n        width:90%;\n        margin:25px auto;\n        display:flex;\n        justify-content: space-between;\n    }\n    nav{\n        overflow: hidden;\n        position:fixed;\n        z-index:3;\n        display:flex;\n        width:100vw;\n        height:100vh;\n        display: ", ";\n    }\n    .navColor{\n        position:absolute;\n        z-index: 1;\n        width:100vw;\n        height:100vh;\n        width:100vw;\n        background-color: #00000090;\n    }\n    .navMobile{\n        position:absolute;\n        left:15%;\n        z-index: 2;\n        padding-top: 6%;\n        padding-left:10%;\n        background-color:white;\n        border-top-left-radius: 40px;\n        border-bottom-left-radius: 40px;\n        width:80%;\n        height:95%;\n        display:flex;\n        justify-content:space-between;\n        align-items:flex-start;\n        animation: moveNav 1s;\n        /* display:none */\n    }\n    .navMenuMobile{\n        width:70%;\n        height: 90%;\n        display:flex;\n        flex-flow:column;\n        align-items:flex-end;\n        padding-right: 15%;\n        justify-content: space-between;\n        \n    }\n    .navMenu1, .navMenu2{\n        display: flex;\n        flex-flow:column;\n        align-items:flex-end;\n        justify-content: space-between;\n        \n    }\n    .navMenu1{\n        height:10vh;\n        margin-top: 40%;\n    }\n    .navMenu2{\n        div{\n            width:103%;\n            display:flex;\n            justify-content: space-between;\n            padding-top:10%;\n            padding-bottom: 40%;\n\n        }\n    }\n    button{\n        text-decoration:none;\n        cursor: pointer;\n        border: 0;\n        border-color:none;\n        padding: 18px 38px;\n        background-color:#76991E40;\n        color: #76991E;\n        border-radius:8px;\n        font-family: \"GT\u2013Medium\";\n        font-size:20px;\n    }\n\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:95%;\n            margin:2% auto;\n            display:flex;\n            justify-content:space-between;\n            margin-top:1%;\n            margin-bottom:1%;\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 57%;\n            height:15%;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n    \n    @media only screen and (min-width:1025px){\n        .mobile{\n            display:none;\n        }\n        .desktop{\n            width:97%;\n            margin:1% auto;\n            display:flex;\n            justify-content:space-between;\n\n            align-items: center;\n        }\n        logo{\n            width:20%;\n        }\n        nav{\n            cursor: pointer;\n            position:relative;\n            width: 520px;\n            max-height:40px;\n            display:flex;\n            justify-content:space-between;\n            align-items: center;\n            Link:last-child{\n                width:20%;\n            }\n        }\n        button{\n            padding: 2.5% 4%;\n            font-size:16px;\n        }\n    }\n\n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var NavStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), function (props) {
+var NavStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "NavStyle",
+  componentId: "fkhsxa-0"
+})(["overflow:hidden;.desktop{display:none;}@keyframes moveNav{0%{transform:translate3d(319px,0,0)}100%{transform:translate3d(0px,0,0)}}header{display:flex;justify-content:space-between;}.symbol{width:90%;margin:25px auto;display:flex;justify-content:space-between;}nav{overflow:hidden;position:fixed;z-index:3;display:flex;width:100vw;height:100vh;display:", ";}.navColor{position:absolute;z-index:1;width:100vw;height:100vh;width:100vw;background-color:#00000090;}.navMobile{position:absolute;left:15%;z-index:2;padding-top:6%;padding-left:10%;background-color:white;border-top-left-radius:40px;border-bottom-left-radius:40px;width:80%;height:95%;display:flex;justify-content:space-between;align-items:flex-start;animation:moveNav 1s;}.navMenuMobile{width:70%;height:90%;display:flex;flex-flow:column;align-items:flex-end;padding-right:15%;justify-content:space-between;}.navMenu1,.navMenu2{display:flex;flex-flow:column;align-items:flex-end;justify-content:space-between;}.navMenu1{height:10vh;margin-top:40%;}.navMenu2{div{width:103%;display:flex;justify-content:space-between;padding-top:10%;padding-bottom:40%;}}button{text-decoration:none;cursor:pointer;border:0;border-color:none;padding:18px 38px;background-color:#76991E40;color:#76991E;border-radius:8px;font-family:\"GT\u2013Medium\";font-size:20px;}@media only screen and (min-width:769px) and (max-width:1024px){.mobile{display:none;}.desktop{width:95%;margin:2% auto;display:flex;justify-content:space-between;margin-top:1%;margin-bottom:1%;align-items:center;}logo{width:20%;}nav{cursor:pointer;position:relative;width:57%;height:15%;display:flex;justify-content:space-between;align-items:center;Link:last-child{width:20%;}}button{padding:2.5% 4%;font-size:16px;}}@media only screen and (min-width:1025px){.mobile{display:none;}.desktop{width:97%;margin:1% auto;display:flex;justify-content:space-between;align-items:center;}logo{width:20%;}nav{cursor:pointer;position:relative;width:520px;max-height:40px;display:flex;justify-content:space-between;align-items:center;Link:last-child{width:20%;}}button{padding:2.5% 4%;font-size:16px;}}"], function (props) {
   return props.view ? 'block' : 'none';
 });
 
@@ -1507,22 +1407,12 @@ var Opportunity = function Opportunity(_ref) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OpportunityStyle", function() { return OpportunityStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin:0 auto;\n    margin-bottom:120px;\n    .textAll, .button{\n        width:90%;\n        margin:0 auto;\n    }\n    .card{\n        overflow-x: scroll;\n        display:flex;\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n    .button{\n        margin-bottom: 20%;\n    }\n    .text{\n        p{\n            margin-bottom: 4%;\n        }\n    }\n    .filter{\n        display:flex;\n        white-space:nowrap;\n        position: relative;\n    }\n    .dropDown{\n        padding-left:2%;\n        margin-bottom:6%;\n        width: 50%;\n        cursor: pointer;\n        p{\n            display: flex;\n            img{\n                margin-left:5%;\n            }\n        }\n    }\n    .dropDown{\n            margin-bottom: 7%;\n            width: 35%;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n    .Dropdown-menu{\n        background-color: white;\n        padding: 30px 30px 0 20px;\n        box-shadow: 0px 2px 12px #00000020;\n        position: absolute;\n        left: -1%;\n        padding-bottom:15px;\n        border-radius:16px;\n        width:190px;\n        max-height:250px;\n        overflow-y:scroll;\n        white-space:nowrap;\n        div{\n            padding:20px 15px;\n        }\n        div:hover{\n            background-color:#F5F5F5;\n            border-radius: 8px;\n            padding:20px 15px;\n        }\n    }\n    @media only screen and (min-width:415px) and (max-width:768px){\n        .text{\n            width:70%;\n        }\n        \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .text{\n            width:50%;\n            p{\n                margin-bottom:0;\n            }\n        }\n        .card, .textAll, .button{\n            width: 94%; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-bottom:1%;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .ptext{\n            font-size:20px;\n        }\n        .filter{\n            width: auto;\n            margin-right:0%;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 74%;\n            white-space:nowrap;\n        }\n        .dropDown{\n            margin-bottom: 0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        \n    }\n    @media only screen and (min-width:1025px) {\n        margin-bottom:189px;\n        width: 1200px; \n        .text{\n            width: 100%;\n            h2{\n                width: 650px; \n            }\n            p{\n                margin-bottom: 0%;\n                width: 85%; \n            }\n        }\n        .card, .textAll, .button{\n            width: 1200px; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .ptext{\n            font-size:20px;\n        }\n        .filter{\n            width: auto;\n            margin-right:0;\n            display: flex;\n            justify-content: flex-end;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left:-10px;\n            white-space:nowrap;\n        }\n        .dropDown{\n            margin-bottom:0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        .button{\n            width:250px;\n            margin:0;\n        }\n        \n    }\n\n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var OpportunityStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var OpportunityStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "OpportunityStyle",
+  componentId: "sc-1okfzrb-0"
+})(["width:100%;margin:0 auto;margin-bottom:120px;.textAll,.button{width:90%;margin:0 auto;}.card{overflow-x:scroll;display:flex;&::-webkit-scrollbar{display:none;}&::-webkit-scrollbar{display:none;}}.button{margin-bottom:20%;}.text{p{margin-bottom:4%;}}.filter{display:flex;white-space:nowrap;position:relative;}.dropDown{padding-left:2%;margin-bottom:6%;width:50%;cursor:pointer;p{display:flex;img{margin-left:5%;}}}.dropDown{margin-bottom:7%;width:35%;display:flex;justify-content:space-between;div{width:max-content;}}.Dropdown-menu{background-color:white;padding:30px 30px 0 20px;box-shadow:0px 2px 12px #00000020;position:absolute;left:-1%;padding-bottom:15px;border-radius:16px;width:190px;max-height:250px;overflow-y:scroll;white-space:nowrap;div{padding:20px 15px;}div:hover{background-color:#F5F5F5;border-radius:8px;padding:20px 15px;}}@media only screen and (min-width:415px) and (max-width:768px){.text{width:70%;}}@media only screen and (min-width:769px) and (max-width:1024px){.text{width:50%;p{margin-bottom:0;}}.card,.textAll,.button{width:94%;}.card{overflow-x:hidden;margin:0 auto;display:flex;justify-content:space-between;margin-bottom:1%;}.textAll{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3%;}.ptext{font-size:20px;}.filter{width:auto;margin-right:0%;}.Dropdown-menu{position:absolute;left:74%;white-space:nowrap;}.dropDown{margin-bottom:0;width:auto;display:flex;justify-content:space-between;div{width:max-content;}}}@media only screen and (min-width:1025px){margin-bottom:189px;width:1200px;.text{width:100%;h2{width:650px;}p{margin-bottom:0%;width:85%;}}.card,.textAll,.button{width:1200px;}.card{overflow-x:hidden;margin:0 auto;display:flex;justify-content:space-between;}.textAll{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3%;}.ptext{font-size:20px;}.filter{width:auto;margin-right:0;display:flex;justify-content:flex-end;}.Dropdown-menu{position:absolute;left:-10px;white-space:nowrap;}.dropDown{margin-bottom:0;width:auto;display:flex;justify-content:space-between;div{width:max-content;}}.button{width:250px;margin:0;}}"]);
 
 
 /***/ }),
@@ -1609,22 +1499,12 @@ var TypeVol = function TypeVol(_ref) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TypeVolStyle", function() { return TypeVolStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin:0 auto;\n    margin-bottom: 120px;\n    .textAll, .button{\n        width:90%;\n        margin:0 auto;\n    }\n    .card{\n        overflow-x: scroll;\n        display:flex;\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n    .text{\n        p{\n            margin-bottom: 4%;\n        }\n    }\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        .text{\n            width:100%;\n        }     \n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        .text{\n            width:100%;\n            h2{\n                width:50%\n            }\n            p{\n                margin-bottom:0;\n            }\n        }\n        .ptext{\n            font-size:20px;\n        }\n        .card, .textAll, .button{\n            width: 94%; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n            margin-bottom:1%;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0%;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 74%;\n            white-space:nowrap;\n        }\n        .dropDown{\n            margin-bottom: 0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }       \n    }\n    @media only screen and (min-width:1025px){\n        margin-bottom:145px;\n        width: 1200px; \n        .text{\n            width: 90%;\n\n            h2{\n                width:60%;\n                margin-bottom: 0;\n            }\n            p{\n                margin-bottom: 0%;\n            }\n        }\n        .ptext{\n            font-size:20px;\n        }\n        .card, .textAll, .button{\n            width: 1200px; \n        }\n        .card{\n            overflow-x: hidden;\n            margin: 0 auto;\n            display:flex;\n            justify-content:space-between;\n        }\n        .textAll{\n            display:flex;\n            justify-content: space-between;\n            align-items: flex-end;\n            margin-bottom:3%;\n        }\n        .filter{\n            width: auto;\n            margin-right:0;\n            display: flex;\n            justify-content: flex-end;\n        }\n        .Dropdown-menu{\n            position: absolute;\n            left: 81%;\n            white-space:nowrap;\n            padding: 1% 1.5% 0% 1.5%;\n        }\n        .dropDown{\n            margin-bottom:0;\n            width: auto;\n            display:flex;\n            justify-content: space-between;\n            div{\n                width: max-content;\n            }\n        }\n        .button{\n            width:250px;\n            margin: 0;\n        }\n        \n    }\n      \n    \n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var TypeVolStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var TypeVolStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "TypeVolStyle",
+  componentId: "ry06s8-0"
+})(["width:100%;margin:0 auto;margin-bottom:120px;.textAll,.button{width:90%;margin:0 auto;}.card{overflow-x:scroll;display:flex;&::-webkit-scrollbar{display:none;}&::-webkit-scrollbar{display:none;}}.text{p{margin-bottom:4%;}}@media only screen and (min-width:415px) and (max-width:768px){.text{width:100%;}}@media only screen and (min-width:769px) and (max-width:1024px){.text{width:100%;h2{width:50%}p{margin-bottom:0;}}.ptext{font-size:20px;}.card,.textAll,.button{width:94%;}.card{overflow-x:hidden;margin:0 auto;display:flex;justify-content:space-between;margin-bottom:1%;}.textAll{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3%;}.filter{width:auto;margin-right:0%;}.Dropdown-menu{position:absolute;left:74%;white-space:nowrap;}.dropDown{margin-bottom:0;width:auto;display:flex;justify-content:space-between;div{width:max-content;}}}@media only screen and (min-width:1025px){margin-bottom:145px;width:1200px;.text{width:90%;h2{width:60%;margin-bottom:0;}p{margin-bottom:0%;}}.ptext{font-size:20px;}.card,.textAll,.button{width:1200px;}.card{overflow-x:hidden;margin:0 auto;display:flex;justify-content:space-between;}.textAll{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3%;}.filter{width:auto;margin-right:0;display:flex;justify-content:flex-end;}.Dropdown-menu{position:absolute;left:81%;white-space:nowrap;padding:1% 1.5% 0% 1.5%;}.dropDown{margin-bottom:0;width:auto;display:flex;justify-content:space-between;div{width:max-content;}}.button{width:250px;margin:0;}}"]);
 
 
 /***/ }),
@@ -1714,22 +1594,12 @@ var We = function We(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WeStyle", function() { return WeStyle; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nwidth:89%;\nmargin: 25% auto;\ndisplay: flex;\nflex-flow:column;\nalign-items: center;\n\n    .img{\n        width:100%;\n        height: 20vh;\n        background-image: url(/static/svg/iconOlas.svg);\n        background-position: center;\n        background-repeat: no-repeat;\n        background-size: cover;\n        position: relative;\n        margin-bottom:20%;\n        display:flex;\n        object-fit: cover;\n    }\n    .icon{\n        position: relative;\n        left: 37%;\n        top: 73%;\n    }\n    .iconWord{\n        position: relative;\n        width:50%;\n        left: 72%;\n        top: 80%;\n    }\n    .iconTicket{\n        position: absolute;\n        width: 30%;\n        top: -19%;\n        left: 42%;\n    }\n    .text{\n        width:100%;\n        text-align: left;\n\n    }\n    .title, .subTitle{\n        margin-bottom:4%;\n    }\n    .paragraph{\n        margin-bottom:10%;\n    }\n\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n        margin: 15% auto;  \n        flex-flow:row;\n        justify-content: space-between;\n        .img{ \n            width:44%;\n            height: 50vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:45%;\n            margin: 0 auto;\n            \n        }\n        .icon{\n            left: 45%;\n            top: 65%;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        margin: 0 auto; \n        flex-flow:row;\n        justify-content: space-between;\n        .img{ \n            width:40%;\n            height: 60vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:45%;\n            margin: 0 auto;\n            margin-right: 0px;\n        }\n        .icon{\n            left: 42%;\n            top: 55%;\n            width: 60%;\n        }\n    }\n    @media only screen and (min-width:1025px) {\n        margin: 0 auto; \n        margin-bottom: 145px;  \n        width:1200px;\n        flex-flow:row;\n        justify-content: space-between;\n        .button{\n            width:250px;\n        }\n        .img{ \n            width:35%;\n            height: 65vh;\n            margin-bottom:0%;\n        }\n        .text{\n            width:30%;\n            margin: 0 auto;\n            \n        }\n        .icon{\n            left: 67%;\n            top: 33%;\n        }\n        .iconWord{\n            width:80%;\n        }\n        .iconTicket{\n            top: 21%;\n        }\n    }\n    \n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var WeStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var WeStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "WeStyle",
+  componentId: "xq55j1-0"
+})(["width:89%;margin:25% auto;display:flex;flex-flow:column;align-items:center;.img{width:100%;height:20vh;background-image:url(/static/svg/iconOlas.svg);background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;margin-bottom:20%;display:flex;object-fit:cover;}.icon{position:relative;left:37%;top:73%;}.iconWord{position:relative;width:50%;left:72%;top:80%;}.iconTicket{position:absolute;width:30%;top:-19%;left:42%;}.text{width:100%;text-align:left;}.title,.subTitle{margin-bottom:4%;}.paragraph{margin-bottom:10%;}@media only screen and (min-width:415px) and (max-width:768px){margin:15% auto;flex-flow:row;justify-content:space-between;.img{width:44%;height:50vh;margin-bottom:0%;}.text{width:45%;margin:0 auto;}.icon{left:45%;top:65%;}}@media only screen and (min-width:769px) and (max-width:1024px){margin:0 auto;flex-flow:row;justify-content:space-between;.img{width:40%;height:60vh;margin-bottom:0%;}.text{width:45%;margin:0 auto;margin-right:0px;}.icon{left:42%;top:55%;width:60%;}}@media only screen and (min-width:1025px){margin:0 auto;margin-bottom:145px;width:1200px;flex-flow:row;justify-content:space-between;.button{width:250px;}.img{width:35%;height:65vh;margin-bottom:0%;}.text{width:30%;margin:0 auto;}.icon{left:67%;top:33%;}.iconWord{width:80%;}.iconTicket{top:21%;}}"]);
 
 
 /***/ }),
@@ -1896,17 +1766,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "./
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/define-properties */ "./node_modules/core-js/library/fn/object/define-properties.js");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -1915,17 +1774,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "./node_modules/core-js/library/fn/object/define-property.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "./node_modules/core-js/library/fn/object/freeze.js");
 
 /***/ }),
 
@@ -2608,36 +2456,6 @@ __webpack_require__.r(__webpack_exports__);
 
 function _slicedToArray(arr, i) {
   return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js ***!
-  \**********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _taggedTemplateLiteral; });
-/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
-/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/freeze */ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js");
-/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-
-  return _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default()(strings, {
-    raw: {
-      value: _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(raw)
-    }
-  }));
 }
 
 /***/ }),
@@ -4863,22 +4681,6 @@ module.exports = function create(P, D) {
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/fn/object/define-properties.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/define-properties.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.define-properties */ "./node_modules/core-js/library/modules/es6.object.define-properties.js");
-var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
-module.exports = function defineProperties(T, D) {
-  return $Object.defineProperties(T, D);
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/fn/object/define-property.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/define-property.js ***!
@@ -4891,19 +4693,6 @@ var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/cor
 module.exports = function defineProperty(it, key, desc) {
   return $Object.defineProperty(it, key, desc);
 };
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/freeze.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/freeze.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.freeze */ "./node_modules/core-js/library/modules/es6.object.freeze.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.freeze;
 
 
 /***/ }),
@@ -7591,20 +7380,6 @@ $export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create 
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/es6.object.define-properties.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.define-properties.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
-$export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperties: __webpack_require__(/*! ./_object-dps */ "./node_modules/core-js/library/modules/_object-dps.js") });
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/es6.object.define-property.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.define-property.js ***!
@@ -7615,26 +7390,6 @@ $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./no
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
 $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperty: __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.freeze.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.freeze.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.5 Object.freeze(O)
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var meta = __webpack_require__(/*! ./_meta */ "./node_modules/core-js/library/modules/_meta.js").onFreeze;
-
-__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('freeze', function ($freeze) {
-  return function freeze(it) {
-    return $freeze && isObject(it) ? $freeze(meta(it)) : it;
-  };
-});
 
 
 /***/ }),
@@ -30491,22 +30246,12 @@ Home.propTypes = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 38px;\n    letter-spacing:0.8px;\n    text-align: ", ";\n\n    margin-bottom:20px;\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) {\n        font-size: ", ";\n        line-height: 60px;\n        letter-spacing: -0.01em;\n    }\n\n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var paragraphSubTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2(_templateObject(), function (props) {
+var paragraphSubTitle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h2.withConfig({
+  displayName: "ParagraphSubTitle__paragraphSubTitle",
+  componentId: "sc-5y19xf-0"
+})(["font-family:\"GT\u2013Medium\";color:", ";font-style:normal;font-weight:500;font-size:", ";line-height:38px;letter-spacing:0.8px;text-align:", ";margin-bottom:20px;@media only screen and (min-width:415px) and (max-width:768px){}@media only screen and (min-width:769px){font-size:", ";line-height:60px;letter-spacing:-0.01em;}"], function (props) {
   return props.color ? props.color : 'black';
 }, function (props) {
   return props.size ? props.size : '33px';
@@ -30528,22 +30273,12 @@ var paragraphSubTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 35px;\n    letter-spacing:0.8px;\n    text-align: ", ";\n\n    margin-bottom:20px;\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        font-size: ", ";\n        line-height: 68px;\n        letter-spacing: -0.01em;\n    }\n    @media only screen and (min-width:1441px){\n        font-size: ", ";\n        line-height: 68px;\n        letter-spacing: -0.01em;\n\n    }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var ParagraphTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2(_templateObject(), function (props) {
+var ParagraphTitle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h2.withConfig({
+  displayName: "ParagraphTitle",
+  componentId: "sc-1xgnchd-0"
+})(["font-family:\"GT\u2013Medium\";color:", ";font-style:normal;font-weight:500;font-size:", ";line-height:35px;letter-spacing:0.8px;text-align:", ";margin-bottom:20px;@media only screen and (min-width:415px) and (max-width:768px){}@media only screen and (min-width:769px) and (max-width:1024px){}@media only screen and (min-width:1025px) and (max-width:1440px){font-size:", ";line-height:68px;letter-spacing:-0.01em;}@media only screen and (min-width:1441px){font-size:", ";line-height:68px;letter-spacing:-0.01em;}"], function (props) {
   return props.color ? props.color : 'black';
 }, function (props) {
   return props.size ? props.size : '37px';
@@ -30567,22 +30302,12 @@ var ParagraphTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-size: ", ";\n    line-height: 20px;\n    letter-spacing:0.2px;\n    text-align: ", ";\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var ParagraphBody = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(_templateObject(), function (props) {
+var ParagraphBody = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].p.withConfig({
+  displayName: "paragraphBody__ParagraphBody",
+  componentId: "sc-11588ia-0"
+})(["font-family:\"GT\u2013Medium\";color:", ";font-style:normal;font-size:", ";line-height:20px;letter-spacing:0.2px;text-align:", ";@media only screen and (min-width:415px) and (max-width:768px){}@media only screen and (min-width:769px) and (max-width:1024px){}@media only screen and (min-width:1025px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"], function (props) {
   return props.color ? props.color : '#333333';
 }, function (props) {
   return props.size ? props.size : '16px';
@@ -30602,22 +30327,12 @@ var ParagraphBody = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"PanaGT\u2013Regular\";\n    color: ", ";\n    font-size: ", ";\n    line-height: 24px;\n    text-align: ", ";\n    letter-spacing: 0.6px;\n    \n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var ParagraphBodyRegular = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(_templateObject(), function (props) {
+var ParagraphBodyRegular = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].p.withConfig({
+  displayName: "paragraphBodyRegular__ParagraphBodyRegular",
+  componentId: "mzl3w7-0"
+})(["font-family:\"PanaGT\u2013Regular\";color:", ";font-size:", ";line-height:24px;text-align:", ";letter-spacing:0.6px;@media only screen and (min-width:415px) and (max-width:768px){}@media only screen and (min-width:769px) and (max-width:1024px){}@media only screen and (min-width:1025px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"], function (props) {
   return props.color ? props.color : '#999999';
 }, function (props) {
   return props.size ? props.size : '16px';
@@ -30637,22 +30352,12 @@ var ParagraphBodyRegular = styled_components__WEBPACK_IMPORTED_MODULE_1__["defau
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"PanaGT\u2013Regular\";\n    color: ", ";\n    font-size: ", ";\n    line-height: ", ";\n    text-align: ", ";\n    letter-spacing:0.8px;\n\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n\n    }\n    @media only screen and (min-width:1441px){\n\n    }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var ParagraphBodySmall = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(_templateObject(), function (props) {
+var ParagraphBodySmall = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].p.withConfig({
+  displayName: "paragraphBodySmall__ParagraphBodySmall",
+  componentId: "sc-14soavm-0"
+})(["font-family:\"PanaGT\u2013Regular\";color:", ";font-size:", ";line-height:", ";text-align:", ";letter-spacing:0.8px;@media only screen and (min-width:415px) and (max-width:768px){}@media only screen and (min-width:769px) and (max-width:1024px){}@media only screen and (min-width:1025px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"], function (props) {
   return props.color ? props.color : '#666666';
 }, function (props) {
   return props.size ? props.size : '16px';
@@ -30674,22 +30379,12 @@ var ParagraphBodySmall = styled_components__WEBPACK_IMPORTED_MODULE_1__["default
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"PanaGT\u2013Regular\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 24px;\n    text-align: ", ";\n    letter-spacing: -0.01em;\n    margin-bottom:15px;\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        font-size: ", ";\n        line-height: 40px;\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        font-size: ", ";\n        line-height: 40px;\n\n    }\n    @media only screen and (min-width:1441px){\n        font-size: ", ";\n        line-height: 40px;\n\n    }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var paragraphHeader = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(_templateObject(), function (props) {
+var paragraphHeader = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].p.withConfig({
+  displayName: "paragraphHeader",
+  componentId: "sc-1f7fydk-0"
+})(["font-family:\"PanaGT\u2013Regular\";color:", ";font-style:normal;font-weight:500;font-size:", ";line-height:24px;text-align:", ";letter-spacing:-0.01em;margin-bottom:15px;@media only screen and (min-width:415px) and (max-width:768px){}@media only screen and (min-width:769px) and (max-width:1024px){font-size:", ";line-height:40px;}@media only screen and (min-width:1025px) and (max-width:1440px){font-size:", ";line-height:40px;}@media only screen and (min-width:1441px){font-size:", ";line-height:40px;}"], function (props) {
   return props.color ? props.color : '#000000';
 }, function (props) {
   return props.size ? props.size : '20px';
@@ -30715,22 +30410,12 @@ var paragraphHeader = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 38px;\n    letter-spacing:0.8px;\n    text-align: ", ";\n\n    margin-bottom:20px;\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) {\n        font-size: ", ";\n        line-height: 60px;\n        letter-spacing: -0.01em;\n    }\n\n\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var paragraphSubTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2(_templateObject(), function (props) {
+var paragraphSubTitle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h2.withConfig({
+  displayName: "paragraphSubTitle",
+  componentId: "q5hlvr-0"
+})(["font-family:\"GT\u2013Medium\";color:", ";font-style:normal;font-weight:500;font-size:", ";line-height:38px;letter-spacing:0.8px;text-align:", ";margin-bottom:20px;@media only screen and (min-width:415px) and (max-width:768px){}@media only screen and (min-width:769px){font-size:", ";line-height:60px;letter-spacing:-0.01em;}"], function (props) {
   return props.color ? props.color : 'black';
 }, function (props) {
   return props.size ? props.size : '33px';
@@ -30752,22 +30437,12 @@ var paragraphSubTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: \"GT\u2013Medium\";\n    color: ", ";\n    font-style: normal;\n    font-weight: 500;\n    font-size: ", ";\n    line-height: 35px;\n    letter-spacing:0.8px;\n    text-align: ", ";\n\n    margin-bottom:20px;\n    @media only screen and (min-width:415px) and (max-width:768px){\n\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n\n    }\n    @media only screen and (min-width:1025px) and (max-width:1440px){\n        font-size: ", ";\n        line-height: 68px;\n        letter-spacing: -0.01em;\n    }\n    @media only screen and (min-width:1441px){\n        font-size: ", ";\n        line-height: 68px;\n        letter-spacing: -0.01em;\n\n    }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-var ParagraphTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2(_templateObject(), function (props) {
+var ParagraphTitle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h2.withConfig({
+  displayName: "paragraphTitle__ParagraphTitle",
+  componentId: "ascypd-0"
+})(["font-family:\"GT\u2013Medium\";color:", ";font-style:normal;font-weight:500;font-size:", ";line-height:35px;letter-spacing:0.8px;text-align:", ";margin-bottom:20px;@media only screen and (min-width:415px) and (max-width:768px){}@media only screen and (min-width:769px) and (max-width:1024px){}@media only screen and (min-width:1025px) and (max-width:1440px){font-size:", ";line-height:68px;letter-spacing:-0.01em;}@media only screen and (min-width:1441px){font-size:", ";line-height:68px;letter-spacing:-0.01em;}"], function (props) {
   return props.color ? props.color : 'black';
 }, function (props) {
   return props.size ? props.size : '37px';
