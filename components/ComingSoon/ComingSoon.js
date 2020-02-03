@@ -2,10 +2,10 @@ import React from "react";
 
 import { CommingSoonStyle } from "./CommingSoonStyle";
 
-import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
+
 import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
 import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
-import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
+
 
 
 

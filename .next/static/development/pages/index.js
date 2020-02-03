@@ -271,14 +271,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _CommingSoonStyle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CommingSoonStyle */ "./components/ComingSoon/CommingSoonStyle.js");
-/* harmony import */ var _styles_fontsStyles_paragraphBody__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBody */ "./styles/fontsStyles/paragraphBody.js");
-/* harmony import */ var _styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphTitle */ "./styles/fontsStyles/paragraphTitle.js");
-/* harmony import */ var _styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBodyRegular */ "./styles/fontsStyles/paragraphBodyRegular.js");
-/* harmony import */ var _styles_fontsStyles_paragraphBodySmall__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBodySmall */ "./styles/fontsStyles/paragraphBodySmall.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_6__);
-
-
+/* harmony import */ var _styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphTitle */ "./styles/fontsStyles/paragraphTitle.js");
+/* harmony import */ var _styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/fontsStyles/paragraphBodyRegular */ "./styles/fontsStyles/paragraphBodyRegular.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../i18n */ "./i18n.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -298,11 +294,11 @@ var CommingSoon = function CommingSoon(props) {
     src: "/static/svg/logoMapaAyuda.svg"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "textGreen"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
     align: "center"
   }, t("csTitle")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "subTitle"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_fontsStyles_paragraphBodyRegular__WEBPACK_IMPORTED_MODULE_3__["default"], {
     color: "#000000",
     align: "center"
   }, t("csSubTitle")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -340,7 +336,7 @@ var CommingSoon = function CommingSoon(props) {
   }))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_6__["withTranslation"])("footer")(CommingSoon));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_4__["withTranslation"])("footer")(CommingSoon));
 
 /***/ }),
 
@@ -359,7 +355,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin: 0 auto;\nwidth:90vw;\nheight:95vh;\npadding-top:20px;\noverflow-x:scroll;\noverflow-y:hidden;\n\n    .green{\n        background-color:#8ED7BF;\n        border-top-left-radius: 16px;\n        border-top-right-radius: 16px;\n        height:70vh;\n        display: flex;\n        flex-flow:column;\n        justify-content:center;\n        align-items:center;\n    }\n\n    .greenOpacity{\n        background-color:#8ED7BF40;\n        border-bottom-left-radius: 16px;\n        border-bottom-right-radius: 16px;\n        width:100%;\n        height:100%;\n        margin: 0 auto;\n        position:relative;\n    }\n    .logo, .iconWord{\n        margin: 0 auto;\n        img{\n            width:100%;\n            margin: 0 auto; \n        }\n    }\n    .logo{\n        width:230px;\n    }\n    .links{\n        margin: 0 auto;\n        width:200px;\n        margin-top: 30px;\n        display: flex;\n        justify-content: space-between;\n    }\n    .iconRrss{\n        width:30px;\n        height:30px;\n    }\n\n    .iconWord{\n        position: absolute;\n        width: 30%;\n        text-align: center;\n        top: -7%;\n        left: 36%;\n    }\n    .textGreen{\n        margin-top:30px;\n        margin-bottom:30px;\n    }\n    .textGreenOpacity{\n        width:90%;\n        padding-top: 35%;\n        margin: 0 auto;\n        display:flex;\n        flex-flow:column;\n        justify-content: space-evenly;\n    }\n    \n\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        .greenOpacity{\n            height:27%;\n        }\n        .iconWord{\n            width: 20%;\n            top:-29%;\n            left: 40%;\n        }\n        .textGreen{\n            width: 400px;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        width:95vw;\n        padding-top:20px;\n        padding-bottom:20px;\n        .greenOpacity{\n            height: 26%;\n        }\n        .iconWord{\n            width: 100px;\n            top: -23%;\n            left: 45%;\n        }\n        .textGreen{\n            width: 310px;\n        }\n        \n    }\n    @media only screen and (min-width:1025px) {\n        width:97vw;\n        height:98vh;\n        padding-top:20px;\n        .greenOpacity{\n            height: 26%;\n        }\n        .iconWord{\n            width: 120px;\n            top: -21%;\n            left: 46%;\n        }\n        .textGreen{\n            width: 500px;\n            margin-top:50px;\n        }\n        .subTitle{\n            margin-top:20px;\n            width: 350px;\n            margin: 0 auto;\n        }\n    }\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin: 0 auto;\nwidth:90vw;\nheight:95vh;\npadding-top:20px;\noverflow-x:scroll;\noverflow-y:hidden;\n\n    .green{\n        background-color:#8ED7BF;\n        border-top-left-radius: 16px;\n        border-top-right-radius: 16px;\n        height:70vh;\n        display: flex;\n        flex-flow:column;\n        justify-content:center;\n        align-items:center;\n    }\n\n    .greenOpacity{\n        background-color:#8ED7BF40;\n        border-bottom-left-radius: 16px;\n        border-bottom-right-radius: 16px;\n        width:100%;\n        height:100%;\n        margin: 0 auto;\n        position:relative;\n    }\n    .logo, .iconWord{\n        margin: 0 auto;\n        img{\n            width:100%;\n            margin: 0 auto; \n        }\n    }\n    .logo{\n        width:230px;\n    }\n    .links{\n        margin: 0 auto;\n        width:200px;\n        margin-top: 30px;\n        display: flex;\n        justify-content: space-between;\n    }\n    .iconRrss{\n        width:30px;\n        height:30px;\n    }\n\n    .iconWord{\n        position: absolute;\n        width: 30%;\n        text-align: center;\n        top: calc(0% - 60px);\n        left: 36%;\n    }\n    .textGreen{\n        margin-top:30px;\n        margin-bottom:30px;\n    }\n    .textGreenOpacity{\n        width:90%;\n        padding-top: 35%;\n        margin: 0 auto;\n        display:flex;\n        flex-flow:column;\n        justify-content: space-evenly;\n    }\n    \n\n    \n    @media only screen and (min-width:415px) and (max-width:768px){\n        .greenOpacity{\n            height:27%;\n        }\n        .iconWord{\n            width: 20%;\n            left: 40%;\n        }\n        .textGreen{\n            width: 400px;\n        }\n    }\n    @media only screen and (min-width:769px) and (max-width:1024px){\n        width:95vw;\n        padding-top:20px;\n        padding-bottom:20px;\n        .greenOpacity{\n            height: 26%;\n        }\n        .iconWord{\n            width: 100px;\n            left: 45%;\n        }\n        .textGreen{\n            width: 310px;\n        }\n        \n    }\n    @media only screen and (min-width:1025px) {\n        width:97vw;\n        height:98vh;\n        padding-top:20px;\n        .greenOpacity{\n            height: 26%;\n        }\n        .iconWord{\n            width: 120px;\n            left: calc(50% - 60px);\n        }\n        .textGreen{\n            width: 500px;\n            margin-top:50px;\n        }\n        .subTitle{\n            margin-top:20px;\n            width: 350px;\n            margin: 0 auto;\n        }\n    }\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;

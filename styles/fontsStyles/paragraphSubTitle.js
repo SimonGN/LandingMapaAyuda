@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const paragraphSubTitle = styled.h2`
+const ParagraphSubTitle = styled.h2`
     font-family: "GT–Medium";
     color: ${props => (props.color ? props.color : 'black')};
     font-style: normal;
@@ -24,4 +24,4 @@ const paragraphSubTitle = styled.h2`
 
 `;
 
-export default paragraphSubTitle;
+export default ParagraphSubTitle;

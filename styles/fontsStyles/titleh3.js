@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const titleh3 = styled.h3`
+const Titleh3 = styled.h3`
     font-family: "Panama";
     color: black;
     font-size: 18px;
@@ -23,4 +23,4 @@ const titleh3 = styled.h3`
     }
 `;
 
-export default titleh3;
+export default Titleh3;

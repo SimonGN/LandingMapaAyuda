@@ -6,7 +6,6 @@ import Button from "../Button/Button";
 
 
 import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
-import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
 
 
 import { i18n, withTranslation } from '../../i18n'

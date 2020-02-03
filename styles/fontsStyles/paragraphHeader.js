@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const paragraphHeader = styled.p`
+const ParagraphHeader = styled.p`
     font-family: "PanaGT–Regular";
     color: ${props => (props.color ? props.color : '#000000')};
     font-style: normal;
@@ -31,4 +31,4 @@ const paragraphHeader = styled.p`
     }
 `;
 
-export default paragraphHeader;
+export default ParagraphHeader;
