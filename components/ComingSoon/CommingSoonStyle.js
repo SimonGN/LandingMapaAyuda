@@ -56,7 +56,7 @@ overflow-y:hidden;
         width: 30%;
         text-align: center;
         top: -7%;
-        left: 36%;
+        left: calc(50% - 15%);
     }
     .textGreen{
         margin-top:30px;
@@ -80,7 +80,7 @@ overflow-y:hidden;
         .iconWord{
             width: 20%;
             top:-29%;
-            left: 40%;
+            left:calc(50% - 10%);
         }
         .textGreen{
             width: 400px;
@@ -96,7 +96,7 @@ overflow-y:hidden;
         .iconWord{
             width: 100px;
             top: -23%;
-            left: 45%;
+            left: calc(50% - 50px);
         }
         .textGreen{
             width: 310px;
@@ -113,7 +113,7 @@ overflow-y:hidden;
         .iconWord{
             width: 120px;
             top: -21%;
-            left: 46%;
+            left: calc(50% - 60px);
         }
         .textGreen{
             width: 500px;
