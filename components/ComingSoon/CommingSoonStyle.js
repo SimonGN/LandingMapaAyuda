@@ -55,8 +55,13 @@ overflow-y:hidden;
         position: absolute;
         width: 30%;
         text-align: center;
+<<<<<<< HEAD
         top: calc(0% - 60px);
         left: 36%;
+=======
+        top: -7%;
+        left: calc(50% - 15%);
+>>>>>>> dbcaa0492109b3684291ad57b9784d20f97758c9
     }
     .textGreen{
         margin-top:30px;
@@ -79,7 +84,12 @@ overflow-y:hidden;
         }
         .iconWord{
             width: 20%;
+<<<<<<< HEAD
             left: 40%;
+=======
+            top:-29%;
+            left:calc(50% - 10%);
+>>>>>>> dbcaa0492109b3684291ad57b9784d20f97758c9
         }
         .textGreen{
             width: 400px;
@@ -94,7 +104,12 @@ overflow-y:hidden;
         }
         .iconWord{
             width: 100px;
+<<<<<<< HEAD
             left: 45%;
+=======
+            top: -23%;
+            left: calc(50% - 50px);
+>>>>>>> dbcaa0492109b3684291ad57b9784d20f97758c9
         }
         .textGreen{
             width: 310px;
@@ -110,6 +125,10 @@ overflow-y:hidden;
         }
         .iconWord{
             width: 120px;
+<<<<<<< HEAD
+=======
+            top: -21%;
+>>>>>>> dbcaa0492109b3684291ad57b9784d20f97758c9
             left: calc(50% - 60px);
         }
         .textGreen{
