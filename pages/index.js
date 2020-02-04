@@ -73,8 +73,8 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <Meta />
-        <ComingSoon/>
-        {/* <Cookies/>
+        {/* <ComingSoon/> */}
+        <Cookies/>
         <Nav />
         <Header />
         <We />
@@ -82,7 +82,7 @@ class Home extends React.Component {
         <TypeVol />
         <Opportunity />
         <Content />
-        <Footer display="flex"/> */}
+        <Footer display="flex"/>
         
       </React.Fragment>
     );
