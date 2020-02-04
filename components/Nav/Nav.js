@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { withSize } from 'react-sizeme'
 
 import { NavStyle } from "./NavStyle";
 
@@ -64,7 +65,7 @@ const Nav = props => {
                     <Link href="/"><ParagraphBody >{t("nav1")}</ParagraphBody></Link>
                     <Link href="/"><ParagraphBody >{t("nav2")}</ParagraphBody></Link>
                     <Link href="/"><ParagraphBody color="#F1A409" >{t("nav3")}</ParagraphBody></Link>
-                    <Link href="/"><ParagraphBody color="#76991E">{t("nav4")}</ParagraphBody></Link>
+                    <Link href="/login"><ParagraphBody color="#76991E">{t("nav4")}</ParagraphBody></Link>
                     <Link href="/"><button>{t("nav5")}</button></Link>
                 </nav>
             </header>
@@ -73,4 +74,4 @@ const Nav = props => {
     );
 };
 
-export default withTranslation("nav")(Nav);
+export default withTranslation("nav")(withSize()(Nav));

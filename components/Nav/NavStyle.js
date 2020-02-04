@@ -5,6 +5,10 @@ const NavStyle = styled.div`
     overflow:hidden;
     .desktop{
         display:none;
+        .logo{
+            width: 160px;
+            cursor: pointer;
+        }
     }
     @keyframes moveNav{
         0%{transform: translate3d(319px, 0, 0)}
