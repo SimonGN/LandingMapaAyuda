@@ -25,8 +25,8 @@ export const reducer = (state = exampleInitialState, action) => {
 };
 
 // ACTIONS
-export const updateNavHeight = () => {
-  return { type: actionTypes.NAV_HEIGHT };
+export const updateNavHeight = (height) => {
+  return { type: actionTypes.NAV_HEIGHT, payload: height };
 };
 
 export function initializeStore(initialState = exampleInitialState) {
