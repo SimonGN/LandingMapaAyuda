@@ -4,8 +4,8 @@ import Link from "next/link";
 
 import { OpportunityStyle } from "./OpportunityStyle";
 import ParagraphSubTitle from "../../styles/fontsStyles/ParagraphSubTitle";
-import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
-import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
+import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular";
+import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";
 
 
 import Button from "../Button/Button";

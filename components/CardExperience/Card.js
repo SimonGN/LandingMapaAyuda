@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 import { CardStyle } from "./CardStyle";
-import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
-import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
+import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
+import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";
 
 import Button from "../Button/Button";
 

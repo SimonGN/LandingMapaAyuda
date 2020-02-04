@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 import { CardCountryStyle } from "./CardCountryStyle";
-import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
-import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
+import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
+import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";
 
 import { i18n, withTranslation } from '../../i18n'
 

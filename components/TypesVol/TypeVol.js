@@ -3,9 +3,9 @@ import Link from "next/link";
 
 
 import { TypeVolStyle } from "./TypeVolStyle";
-import ParagraphSubTitle from "../../styles/fontsStyles/paragraphSubTitle";
-import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
-import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
+import ParagraphSubTitle from "../../styles/fontsStyles/ParagraphSubTitle";
+import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular";
+import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";
 
 
 import Button from "../Button/Button";

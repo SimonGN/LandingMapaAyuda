@@ -3,8 +3,8 @@ import Link from "next/link";
 
 import { NavStyle } from "./NavStyle";
 
-import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
-import ParagraphHeader from "../../styles/fontsStyles/paragraphHeader";
+import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
+import ParagraphHeader from "../../styles/fontsStyles/ParagraphHeader";
 
 
 

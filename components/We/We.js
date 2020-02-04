@@ -6,9 +6,9 @@ import Button from "../Button/Button";
 
 
 
-import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
-import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
-import ParagraphHeader from "../../styles/fontsStyles/paragraphHeader"
+import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular";
+import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
+import ParagraphHeader from "../../styles/fontsStyles/ParagraphHeader"
 
 
 import { i18n, withTranslation } from '../../i18n'
