@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { FooterStyle } from "./FooterStyle";
 
-import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
 import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
 import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular";
 import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";

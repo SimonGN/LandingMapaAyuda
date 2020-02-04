@@ -6,7 +6,7 @@ const Meta = () => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <meta name="description" content="MapaAyuda"/>
+        <meta name="description" content="MapAyuda"/>
         
         <link rel="apple-touch-icon" sizes="57x57" href="./static/img/favicon/apple-icon-57x57.png"/>
         <link rel="apple-touch-icon" sizes="60x60" href="./static/img/favicon/apple-icon-60x60.png"/>
