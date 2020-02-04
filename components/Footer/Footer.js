@@ -3,10 +3,10 @@ import Link from "next/link";
 
 import { FooterStyle } from "./FooterStyle";
 
-import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
-import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
-import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
-import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
+import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
+import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
+import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular";
+import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";
 
 
 

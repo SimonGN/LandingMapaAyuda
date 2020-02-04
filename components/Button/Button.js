@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 import { ButtonStyle } from "./ButtonStyle";
-import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
+import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
 
 const Button = props => {
 

@@ -3,8 +3,8 @@ import React from "react";
 import Button from "../Button/Button";
 import { CookieWrapper } from "./CookiesStyle";
 
-import ParagraphBodySmall from "../../styles/fontsStyles/paragraphBodySmall";
-import ParagraphBody from "../../styles/fontsStyles/paragraphBody";
+import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";
+import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
 
 
 

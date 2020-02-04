@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 
 
 
-import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
+import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular";
 import ParagraphSubTitle from "../../styles/fontsStyles/ParagraphSubTitle";
 import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
 import galleryItems from '../../content/gallery.json';

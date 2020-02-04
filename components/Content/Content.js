@@ -5,7 +5,7 @@ import { ContentStyle } from "./ContentStyle";
 import Button from "../Button/Button";
 
 
-import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
+import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
 
 
 import { i18n, withTranslation } from '../../i18n'

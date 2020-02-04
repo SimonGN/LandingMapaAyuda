@@ -3,8 +3,8 @@ import React from "react";
 import { CommingSoonStyle } from "./CommingSoonStyle";
 
 
-import ParagraphTitle from "../../styles/fontsStyles/paragraphTitle";
-import ParagraphBodyRegular from "../../styles/fontsStyles/paragraphBodyRegular";
+import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
+import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular";
 
 
 
