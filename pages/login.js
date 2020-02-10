@@ -10,9 +10,9 @@ export default function Login() {
     <Nav/>
     <FullScreenContainer>
       <Card>
-        <Button
-          content="HULIO"
-        />
+        <Button>
+          Google
+        </Button>
       </Card>
     </FullScreenContainer>
     </React.Fragment>

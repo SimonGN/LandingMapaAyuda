@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React from "react";
 
 import { CardStyle } from "./CardStyle";
 import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
@@ -7,7 +6,7 @@ import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";
 
 import Button from "../Button/Button";
 
-import { i18n, withTranslation } from '../../i18n'
+import { withTranslation } from '../../i18n'
 
 
 
@@ -25,7 +24,9 @@ const Card = ({ country, description, photo, people, number, t }) => {
                     <ParagraphBodySmall className="country" color="#999999">{country}</ParagraphBodySmall>
                     <ParagraphBody className="description">{description}</ParagraphBody>
                     <div className="button">
-                        <Button content={t("button1")} color="#F1A409" backgroundColor="#FCEDCE" />
+                        <Button color="#F1A409" backgroundColor="#FCEDCE">
+                        {t("button1")}
+                        </Button>
                     </div>
                 </div>
             </div>

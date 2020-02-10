@@ -6,9 +6,16 @@ const ButtonStyle = styled.div`
     display: inline-block;    
     background-color: ${props => props.backgroundColor ? props.backgroundColor : "#1C76E3"};
     border-radius: 8px;
-    display:flex;
+    display: flex;
     justify-content: center;
-    cursor:pointer;
+    cursor: pointer;
+    font-family: "GT–Medium";
+    color: ${props => (props.color ? props.color : '#333333')};
+    font-style: normal;
+    font-size: ${props => (props.size ? props.size : '16px')};
+    line-height: 20px;
+    letter-spacing:0.2px;
+    text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
     
     @media only screen and (min-width:415px) and (max-width:768px){
         

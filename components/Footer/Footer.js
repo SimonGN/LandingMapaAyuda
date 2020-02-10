@@ -33,7 +33,9 @@ const Footer = props => {
                     <ParagraphBodyRegular color="#000000" align="center">{t("subTitle")}</ParagraphBodyRegular>
                 </div>
                 <div className="button">
-                    <Button content={t("button1")} backgroundColor="#E4EBD2" color="#76991E" />
+                    <Button backgroundColor="#E4EBD2" color="#76991E">
+                        {t("button1")}
+                    </Button>
                 </div>
 
             </div>
