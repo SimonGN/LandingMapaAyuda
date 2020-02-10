@@ -11,6 +11,7 @@ const Button = props => {
             backgroundColor={props.backgroundColor}
             color={props.color} 
             size={props.size}
+            light={props.light}
             onClick={props.method ? props.method : undefined}
         >
             {props.children}

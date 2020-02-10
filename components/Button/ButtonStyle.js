@@ -9,7 +9,7 @@ const ButtonStyle = styled.div`
     display: flex;
     justify-content: center;
     cursor: pointer;
-    font-family: "GT–Medium";
+    font-family: ${props => props.light ? "PanaGT–Regular": "GT–Medium"};
     color: ${props => (props.color ? props.color : '#333333')};
     font-style: normal;
     font-size: ${props => (props.size ? props.size : '16px')};
