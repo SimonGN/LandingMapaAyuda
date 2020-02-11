@@ -2,7 +2,7 @@ import React from "react";
 import Meta from "../components/Meta";
 import Nav from "../components/Nav/Nav";
 import styled from 'styled-components'
-import { FullScreenContainer, Card, Button, Input } from '../components'
+import { FullScreenContainer, Card, Button, Input, Checkbox } from '../components'
 import googleLogo from '../static/svg/icon-google-login.svg'
 import facebookLogo from '../static/img/icon-facebook.png'
 import { Formik, Form, Field } from 'formik'
@@ -62,7 +62,7 @@ export default function Login() {
               (<Form className="login-form">
                 <Input name="email" placeholder="Correo electrónico"/>
                 <Input type="password" name="password" placeholder="Contraseña"/>
-                <Field type ="checkbox" checked={false}/>
+                <Checkbox name="rememberMe" label="Recuérdame"/>
                 <span>¿Contraseña olvidada?</span>
                 <Button
                   backgroundColor="#E4EBD2"
