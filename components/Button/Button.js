@@ -12,7 +12,9 @@ const Button = props => {
             color={props.color} 
             size={props.size}
             light={props.light}
+            width = {props.width}
             onClick={props.method ? props.method : undefined}
+            type={props.type? props.type : "button"}
         >
             {props.children}
         </ButtonStyle>

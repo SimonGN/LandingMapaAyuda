@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 
-const ButtonStyle = styled.div`
+const ButtonStyle = styled.button`
+    border: none;
     padding:15px 20px;
-    display: inline-block;    
+    display: inline-block; 
+    width: ${props => props.width ? props.width : "auto"};   
     background-color: ${props => props.backgroundColor ? props.backgroundColor : "#1C76E3"};
     border-radius: 8px;
     display: flex;
@@ -16,6 +18,9 @@ const ButtonStyle = styled.div`
     line-height: 20px;
     letter-spacing:0.2px;
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
+    &:focus{
+        outline: none;
+    }
     
     @media only screen and (min-width:415px) and (max-width:768px){
         
