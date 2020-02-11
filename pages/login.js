@@ -2,11 +2,16 @@ import React from "react";
 import Meta from "../components/Meta";
 import Nav from "../components/Nav/Nav";
 import styled from 'styled-components'
-import { FullScreenContainer, Card, Button } from '../components'
+import { FullScreenContainer, Card, Button, Input } from '../components'
 import googleLogo from '../static/svg/icon-google-login.svg'
 import facebookLogo from '../static/img/icon-facebook.png'
+import { Formik, Form, Field } from 'formik'
+import * as Yup from 'yup';
 
 export default function Login() {
+
+  const handleSubmit = values => console.log(values)
+
   return (
     <React.Fragment>
     <Meta/>
@@ -35,6 +40,44 @@ export default function Login() {
           <div className="separator">
             <div>or</div>
           </div>
+          <Formik
+            initialValues={{
+              email: "",
+              password: "",
+              rememberMe: false
+            }}
+            validationSchema = {
+              Yup.object().shape({
+                email: Yup.string()
+                  .required("Escribe un correo electrónico")
+                  .email("Correo electrónico no válido"),
+                password: Yup.string()
+                  .required("Escribe la contraseña"),
+                rememberMe: Yup.boolean()
+              })
+            }
+            onSubmit={handleSubmit}
+          >
+            {() => 
+              (<Form className="login-form">
+                <Input name="email" placeholder="Correo electrónico"/>
+                <Input type="password" name="password" placeholder="Contraseña"/>
+                <Field type ="checkbox" checked={false}/>
+                <span>¿Contraseña olvidada?</span>
+                <Button
+                  backgroundColor="#E4EBD2"
+                  color="#76991E"
+                  type="submit"
+                  width="100%"
+                >
+                  Entrar
+                </Button>
+              </Form>)
+            }
+          </Formik>
+          <div>
+            ¿No tienes una cuenta? <span>¡Regístrate!</span>
+          </div>
         </Card>
       </FullScreenContainer>
     </LoginStyle>
@@ -46,7 +89,7 @@ export default function Login() {
 const LoginStyle = styled.div`
   .social-buttons{
     display: flex;
-    & div{
+    & button{
       display: flex;
       align-items: center;
       min-width: 175px;
@@ -73,5 +116,9 @@ const LoginStyle = styled.div`
       left: calc(50% - 1.5rem);
       top: -10px;
     }
+  }
+
+  .login-form {
+    margin-top: 1rem;
   }
 `
