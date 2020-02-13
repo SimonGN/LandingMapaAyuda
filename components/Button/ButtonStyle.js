@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 const ButtonStyle = styled.button`
     border: none;
     padding:15px 20px;
@@ -14,10 +13,10 @@ const ButtonStyle = styled.button`
     font-family: ${props => props.light ? "PanaGT–Regular": "GT–Medium"};
     color: ${props => (props.color ? props.color : '#333333')};
     font-style: normal;
-    font-size: ${props => (props.size ? props.size : '16px')};
+    font-size: ${props => (props.size ? props.size : '14px')};
     line-height: 20px;
     letter-spacing:0.2px;
-    text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
+    text-align: center;
     &:focus{
         outline: none;
     }
@@ -29,8 +28,6 @@ const ButtonStyle = styled.button`
         display:inline-block;
         padding:14px 35px;
     }
-
-
 `;
 
 export { ButtonStyle };

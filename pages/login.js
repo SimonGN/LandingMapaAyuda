@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { FullScreenContainer, Card, Button, Input, Checkbox } from '../components'
 import googleLogo from '../static/svg/icon-google-login.svg'
 import facebookLogo from '../static/img/icon-facebook.png'
-import { Formik, Form, Field } from 'formik'
+import { Formik, Form } from 'formik'
 import * as Yup from 'yup';
 
 export default function Login() {
@@ -32,7 +32,7 @@ export default function Login() {
       </Button>
     </div>
     <div className="separator">
-      <div>or</div>
+      <div>o</div>
     </div>
     <Formik
       initialValues={{
@@ -122,10 +122,8 @@ export default function Login() {
       <LoginStyle>
         <h1 className="title">{forgottenPassword? "Recupera tu contraseña" : "¡Hola otra vez!"}</h1>
         <Card>
-          {forgottenPassword?
-            showSendPasswordForm() :
-            showLoginForm()
-          }
+          { !forgottenPassword && showLoginForm() }
+          { forgottenPassword && showSendPasswordForm() }
         </Card>
       </LoginStyle>
     </FullScreenContainer>
@@ -135,19 +133,24 @@ export default function Login() {
 
 
 const LoginStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 384px;
+  width: 384px;
   & .title{
       text-align: center;
       margin-bottom: 2rem;
       font-size: 32px;
       color: #54C39F;
-      font-family: "GT–Medium";
+      font-family: "PanaGT–Regular";
     }
   .social-buttons{
     display: flex;
+    justify-content: space-between;
     & button{
       display: flex;
       align-items: center;
-      min-width: 175px;
+      width: calc(50% - 0.25rem);
       & img {
         margin-right: 0.5rem;
       }
@@ -161,6 +164,7 @@ const LoginStyle = styled.div`
     margin-top: 2rem;
     border-top: 1px solid #f2f2f2;
     div{
+      font-size: 12px;
       font-family: "PanaGT–Regular";
       color: #666666;
       background-color: #fff;

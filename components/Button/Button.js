@@ -1,11 +1,8 @@
 import React from "react";
 
 import { ButtonStyle } from "./ButtonStyle";
-import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
 
 const Button = props => {
-
-
     return (
         <ButtonStyle 
             backgroundColor={props.backgroundColor}
