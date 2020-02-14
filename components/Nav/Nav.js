@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useDispatch } from 'react-redux';
-import { updateNavHeight } from '../../store'
+import { updateNavHeight } from '../../redux/actions/general'
 import { withContentRect } from 'react-measure'
 
 import { NavStyle } from "./NavStyle";

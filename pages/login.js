@@ -7,8 +7,11 @@ import googleLogo from '../static/svg/icon-google-login.svg'
 import facebookLogo from '../static/img/icon-facebook.png'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup';
+import AuthService from '../services/auth.service'
 
 export default function Login() {
+  const authService = new AuthService()
+
   const [forgottenPassword, setForgottenPassword] = useState(false)
   const handleSubmit = values => console.log(values)
 

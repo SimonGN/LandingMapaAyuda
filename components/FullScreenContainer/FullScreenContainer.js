@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import StyledFullScreenContainer from './styled'
 
 const FullScreenContainer = props => {
-  const navHeight = useSelector(state => state.navHeight)
+  const navHeight = useSelector(state => state.general.navHeight)
   return (
     <StyledFullScreenContainer navHeight={navHeight} color={props.color}>
       <div className="content">
