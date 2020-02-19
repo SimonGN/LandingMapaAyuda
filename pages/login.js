@@ -7,13 +7,17 @@ import googleLogo from '../static/svg/icon-google-login.svg'
 import facebookLogo from '../static/img/icon-facebook.png'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup';
-import AuthService from '../services/auth.service'
 
 export default function Login() {
-  const authService = new AuthService()
 
   const [forgottenPassword, setForgottenPassword] = useState(false)
   const handleSubmit = values => console.log(values)
+  const handleFacebookLogin = () => {
+    console.log("Logged in via Facebook!")
+  }
+  const handleGoogleLogin = () => {
+    console.log("Logged in via Google!")
+  }
 
   const showLoginForm = () =>  (<React.Fragment>
     <div className="social-buttons">
@@ -21,6 +25,7 @@ export default function Login() {
         backgroundColor="rgba(234, 67, 53, 0.2)"
         color="#EA4335"
         light
+        method={handleGoogleLogin}
       >
         <img src={googleLogo}/>
         Google
@@ -29,6 +34,7 @@ export default function Login() {
         backgroundColor="rgba(71, 89, 147, 0.2)"
         color="#475993"
         light
+        method={handleFacebookLogin}
       >
         <img src={facebookLogo}/>
         Facebook
