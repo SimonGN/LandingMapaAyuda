@@ -1,10 +1,30 @@
 import axios from "axios";
 
+var MockAdapter = require('axios-mock-adapter');
+
+
 const instance = axios.create({
   baseURL: `${process.env.REACT_APP_API_URL}/auth`,
   withCredentials: true
 });
 
+var mock = new MockAdapter(instance, { delayResponse: 10000 });
+
+mock.onPost('/login').reply(config => {
+  const data = JSON.parse(config.data)
+  if(data.email !== 'pepe@pepe.es'){
+    return [ 401, { message: 'wrong username'}, {} ]
+  }else if(data.password !== "1234"){
+    return [ 401, { message: 'wrong password'}, {} ]
+  }
+  return [
+    200,
+    {
+      name: 'pepe'
+    },
+    {}
+  ]
+})
 class AuthService {
   
   errorHandler = async (e) => {
@@ -14,8 +34,10 @@ class AuthService {
  }
 
   login = async user => {
-   return await instance.post("/login", user).then(response => response.data)
-   .catch(AuthService.errorHandler)
+    return await instance.post("/login", user).then(response => {
+      return response.data
+    })
+    .catch(AuthService.errorHandler)
  };
 
   logout = async () => {

@@ -2,12 +2,12 @@ import React from 'react'
 import InputStyle from './InputStyle'
 import { Field } from "formik";
 
-const Input = ({name, disabled, placeholder, type}) => {
+const Input = ({name, disabled, placeholder, type, customError, isDisabled}) => {
   return (
     <Field name={name}>
       {({field: {value}, form: {setFieldValue, submitCount}, meta}) => 
         (<InputStyle
-          error={submitCount > 0 && meta.error}
+          error={customError || (submitCount > 0 && meta.error)}
         >
           <input
             type={type? type : "text"}
@@ -15,9 +15,10 @@ const Input = ({name, disabled, placeholder, type}) => {
             onChange={e => setFieldValue(name, e.target.value)}
             disabled = { disabled ? true: false}
             placeholder= {placeholder}
+            disabled={isDisabled}
           >
           </input>
-          <p>{submitCount > 0 && meta.error}</p>
+          <p>{customError || (submitCount > 0 && meta.error)}</p>
         </InputStyle>
       )}
     </Field>

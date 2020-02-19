@@ -36,6 +36,7 @@
     "yup": "^0.28.1"
   },
   "devDependencies": {
+    "axios-mock-adapter": "^1.17.0",
     "babel-plugin-styled-components": "^1.10.7"
   }
 }

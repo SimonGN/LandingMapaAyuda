@@ -4,6 +4,9 @@ import Nav from "../components/Nav/Nav";
 import styled from 'styled-components'
 import { FullScreenContainer, Card, Button, Input, Checkbox } from '../components'
 import googleLogo from '../static/svg/icon-google-login.svg'
+import { login } from '../redux/actions/auth'
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import facebookLogo from '../static/img/icon-facebook.png'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup';
@@ -11,10 +14,17 @@ import * as Yup from 'yup';
 export default function Login() {
 
   const [forgottenPassword, setForgottenPassword] = useState(false)
-  const handleSubmit = values => console.log(values)
+  const { isFetching, error, user } = useSelector(state => state.auth)
+  const dispatch = useDispatch();
+
+  const handleSubmit = values => {
+    dispatch(login(values))
+  }
+
   const handleFacebookLogin = () => {
     console.log("Logged in via Facebook!")
   }
+
   const handleGoogleLogin = () => {
     console.log("Logged in via Google!")
   }
@@ -63,8 +73,19 @@ export default function Login() {
     >
       {() => 
         (<Form className="login-form">
-          <Input name="email" placeholder="Correo electrónico"/>
-          <Input type="password" name="password" placeholder="Contraseña"/>
+          <Input 
+            name="email" 
+            placeholder="Correo electrónico" 
+            customError={error==='wrong username' && 'Correo electrónico incorrecto'}
+            isDisabled={isFetching}
+          />
+          <Input 
+            type="password" 
+            name="password" 
+            placeholder="Contraseña" 
+            customError={error==='wrong password' && 'Contraseña incorrecta'}
+            isDisabled={isFetching}
+          />
           <div className="bottom-section">
             <Checkbox name="rememberMe" label="Recuérdame"/>
             <span
@@ -78,7 +99,7 @@ export default function Login() {
             width="100%"
             light
           >
-            Entrar
+            {isFetching? 'Cargando...':'Entrar'}
           </Button>
         </Form>)
       }
