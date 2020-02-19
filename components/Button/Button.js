@@ -10,6 +10,7 @@ const Button = props => {
             size={props.size}
             light={props.light}
             width = {props.width}
+            disabled={props.disabled}
             onClick={props.method ? props.method : undefined}
             type={props.type? props.type : "button"}
         >

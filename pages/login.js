@@ -97,9 +97,10 @@ export default function Login() {
             color="#76991E"
             type="submit"
             width="100%"
+            disabled={isFetching}
             light
           >
-            {isFetching? 'Cargando...':'Entrar'}
+            {isFetching? 'Enviando...':'Entrar'}
           </Button>
         </Form>)
       }

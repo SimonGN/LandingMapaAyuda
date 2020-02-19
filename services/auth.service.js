@@ -8,7 +8,7 @@ const instance = axios.create({
   withCredentials: true
 });
 
-var mock = new MockAdapter(instance, { delayResponse: 10000 });
+var mock = new MockAdapter(instance, { delayResponse: 2000 });
 
 mock.onPost('/login').reply(config => {
   const data = JSON.parse(config.data)

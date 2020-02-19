@@ -9,7 +9,7 @@ const ButtonStyle = styled.button`
     border-radius: 8px;
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    cursor: ${props => props.disabled? "auto": "pointer"};
     font-family: ${props => props.light ? "PanaGT–Regular": "GT–Medium"};
     color: ${props => (props.color ? props.color : '#333333')};
     font-style: normal;
