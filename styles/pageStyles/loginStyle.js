@@ -10,7 +10,7 @@ const LoginStyle = styled.div`
       margin-bottom: 2rem;
       font-size: 32px;
       color: ${({theme}) => theme.colors.turquoise};
-      font-family: "PanaGT–Regular";
+      font-family: "GT-Regular";
     }
   .social-buttons{
     display: flex;
@@ -33,7 +33,7 @@ const LoginStyle = styled.div`
     border-top: 1px solid ${({theme}) => theme.colors.dark05};
     div{
       font-size: 12px;
-      font-family: "PanaGT–Regular";
+      font-family: "GT-Regular";
       color: ${({theme}) => theme.colors.dark60};
       background-color: #fff;
       margin: auto;
@@ -54,7 +54,7 @@ const LoginStyle = styled.div`
       & span {
         color:  ${({theme}) => theme.colors.dark40};
         font-size: 12px;
-        font-family: "PanaGT–Regular";
+        font-family: "GT-Regular";
         cursor: pointer;
         &:hover{
           color: ${({theme}) => theme.colors.green};
@@ -68,7 +68,7 @@ const LoginStyle = styled.div`
     margin-top: 1rem;
     text-align: center;
     color: ${({theme}) => theme.colors.dark60};
-    font-family: "PanaGT–Regular";
+    font-family: "GT-Regular";
     font-size: 12px;
     & .recover-password-message{
       margin-bottom: 1rem;

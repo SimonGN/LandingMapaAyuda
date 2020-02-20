@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 const ParagraphBodyRegular = styled.p`
-    font-family: "PanaGT–Regular";
+    font-family: "GT-Regular";
     color: ${props => (props.color ? props.color : props.theme.colors.dark40)};
     font-size: ${props => (props.size ? props.size : '16px')};
     line-height: 24px;

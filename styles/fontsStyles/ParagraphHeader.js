@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 const ParagraphHeader = styled.p`
-    font-family: "PanaGT–Regular";
+    font-family: "GT-Regular";
     color: ${props => (props.color ? props.color : props.theme.colors.dark100)};
     font-style: normal;
     font-weight: 500;

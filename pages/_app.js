@@ -4,6 +4,7 @@ import { appWithTranslation, i18n } from "../i18n";
 import withReduxStore from '../redux/with-redux-store';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
+import GlobalStyle from '../styles/GlobalStyle'
 import theme from '../styles/theme'
 
 
@@ -14,6 +15,7 @@ class MyApp extends App {
     return (
       <Provider store={reduxStore}>
         <ThemeProvider theme={theme}>
+          <GlobalStyle />
           <Component {...pageProps} />
         </ThemeProvider>
       </Provider>

@@ -21,7 +21,7 @@ const CheckboxStyle = styled.div`
   & .label{
     font-size: 12px;
     color: ${({theme}) => theme.colors.dark60};
-    font-family: "PanaGT–Regular";
+    font-family: "GT-Regular";
   }
 `
 

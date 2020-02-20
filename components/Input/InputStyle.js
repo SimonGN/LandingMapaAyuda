@@ -7,7 +7,7 @@ const InputStyle = styled.div`
     border-radius: 8px;
     border: ${props => props.error? `2px solid ${props.theme.colors.red}`: "none"};
     padding: 1rem;
-    font-family: "PanaGT–Regular";
+    font-family: "GT-Regular";
     width: 100%;
     caret-color: ${({theme}) => theme.colors.blue};
     color: ${({theme}) => theme.colors.dark80};
@@ -26,7 +26,7 @@ const InputStyle = styled.div`
     transition: transform 0.25s ease-in, max-height 0.5s ease-in;
     margin-top: 0.5rem;
     text-align: center;
-    font-family: "PanaGT–Regular";
+    font-family: "GT-Regular";
     color: ${({theme}) => theme.colors.red};
     font-size: 12px;
   }
