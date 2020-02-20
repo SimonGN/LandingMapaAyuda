@@ -13,17 +13,12 @@ import Opportunity from "../components/Opportunity/Opportunity";
 import TypeVol from "../components/TypesVol/TypeVol";
 import Gallery from "../components/Gallery/Gallery";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { withTranslation } from "../i18n";
 
 import router from 'next/router';
-
-
-
-
 
 class Home extends React.Component {
   constructor(props) {

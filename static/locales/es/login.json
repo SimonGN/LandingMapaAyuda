@@ -1,0 +1,23 @@
+{
+  "separator": "o",
+  "Google": "Google",
+  "Facebook": "Facebook",
+  "noEmail": "Escribe un correo electrónico",
+  "invalidEmail": "Correo electrónico no válido",
+  "noPassword": "Escribe la contraseña",
+  "email": "Correo electrónico",
+  "wrongEmail": "Correo electrónico incorrecto",
+  "password": "Contraseña",
+  "wrongPassword": "Contraseña incorrecta",
+  "rememberMe": "Recuérdame",
+  "forgottenPassword": "¿Contraseña olvidada?",
+  "sending": "Enviando...",
+  "enter": "Entrar",
+  "notAccount": "¿No tienes una cuenta? ",
+  "register": "¡Regístrate!",
+  "sentMailTo": "Hemos enviado un correo electrónico a ",
+  "withInstructions": " con instrucciones para restablecer tu contraseña.",
+  "goBack": "Volver atras",
+  "recoverPassword": "Recupera tu contraseña",
+  "hello": "¡Hola otra vez!"
+}

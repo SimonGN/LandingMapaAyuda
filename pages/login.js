@@ -14,8 +14,9 @@ import * as Yup from 'yup';
 import AuthService from '../services/auth.service' 
 import ParagraphBodyRegular from '../styles/fontsStyles/ParagraphBodyRegular'
 import _ from 'lodash';
+import { withTranslation } from '../i18n'
 
-export default function Login() {
+function Login({t}) {
   
   const [forgottenPassword, setForgottenPassword] = useState(false)
   const [forgottenPasswordEmail, setForgottenPasswordEmail] = useState(undefined)
@@ -53,7 +54,7 @@ export default function Login() {
         method={handleGoogleLogin}
       >
         <img src={googleLogo}/>
-        Google
+        {t("Google")}
       </Button>
       <Button
         backgroundColor="rgba(71, 89, 147, 0.2)"
@@ -62,11 +63,11 @@ export default function Login() {
         method={handleFacebookLogin}
       >
         <img src={facebookLogo}/>
-        Facebook
+        {t("Facebook")}
       </Button>
     </div>
     <div className="separator">
-      <div>o</div>
+      <div>{t('separator')}</div>
     </div>
     <Formik
       initialValues={{
@@ -77,10 +78,10 @@ export default function Login() {
       validationSchema = {
         Yup.object().shape({
           email: Yup.string()
-            .required("Escribe un correo electrónico")
-            .email("Correo electrónico no válido"),
+            .required(t("noEmail"))
+            .email(t("invalidEmail")),
           password: Yup.string()
-            .required("Escribe la contraseña"),
+            .required(t("noPassword")),
           rememberMe: Yup.boolean()
         })
       }
@@ -90,25 +91,25 @@ export default function Login() {
         (<Form className="login-form">
           <Input 
             name="email" 
-            placeholder="Correo electrónico" 
-            customError={error==='wrong username' && 'Correo electrónico incorrecto'}
+            placeholder={t("email")}
+            customError={error==='wrong username' && t('wrongEmail')}
             isDisabled={isFetching}
           />
           <Input 
             type="password" 
             name="password" 
-            placeholder="Contraseña" 
-            customError={error==='wrong password' && 'Contraseña incorrecta'}
+            placeholder={t("password")} 
+            customError={error==='wrong password' && t('wrongPassword')}
             isDisabled={isFetching}
           />
           <div className="bottom-section">
-            <Checkbox name="rememberMe" label="Recuérdame"/>
+            <Checkbox name="rememberMe" label={t('rememberMe')}/>
             <span
               onClick={()=>{
                 setForgottenPassword(true)
                 setForgottenPasswordEmail(undefined)
               }}
-            >¿Contraseña olvidada?</span>
+            >{t('forgottenPassword')}</span>
           </div>
           <Button
             backgroundColor="#E4EBD2"
@@ -118,13 +119,13 @@ export default function Login() {
             disabled={isFetching}
             light
           >
-            {isFetching? 'Enviando...':'Entrar'}
+            {isFetching? t('sending') : t('enter')}
           </Button>
         </Form>)
       }
     </Formik>
     <div className="form-bottom">
-      ¿No tienes una cuenta? <span>¡Regístrate!</span>
+    {t('notAccount')}<span>{t('register')}</span>
     </div>
   </React.Fragment>)
 
@@ -136,8 +137,8 @@ export default function Login() {
       validationSchema = {
         Yup.object().shape({
           email: Yup.string()
-            .required("Escribe un correo electrónico")
-            .email("Correo electrónico no válido")
+            .required(t('noEmail'))
+            .email(t('invalidEmail'))
         })
       }
       onSubmit={(values, {resetForm})=> {
@@ -147,7 +148,7 @@ export default function Login() {
     >
       {() => 
         (<Form>
-          <Input name="email" placeholder="Correo electrónico"/>
+          <Input name="email" placeholder={t('email')}/>
           <Button
             backgroundColor="#E4EBD2"
             color="#76991E"
@@ -156,7 +157,7 @@ export default function Login() {
             disabled={isFetching}
             light
           >
-            {isFetching? 'Enviando...':'Entrar'}
+            {isFetching? t('sending'):t('enter')}
           </Button>
         </Form>)}
     </Formik>
@@ -165,11 +166,11 @@ export default function Login() {
         align='center' 
         className='recover-password-message'
       >
-        Hemos enviado un correo electrónico a {forgottenPasswordEmail} con instrucciones para restablecer tu contraseña.
+        {t('sentMailTo')}{forgottenPasswordEmail}{t('withInstructions')}
       </ParagraphBodyRegular>}
       <span
         onClick={()=>setForgottenPassword(false)}
-      >Volver atras</span>
+      >{t('goBack')}</span>
     </div>
   </React.Fragment>)
 
@@ -183,7 +184,7 @@ export default function Login() {
     <Nav/>
     <FullScreenContainer>
       <LoginStyle>
-        <h1 className="title">{forgottenPassword? "Recupera tu contraseña" : "¡Hola otra vez!"}</h1>
+        <h1 className="title">{forgottenPassword? t('recoverPassword') : t('hello')}</h1>
         <Card>
           { !forgottenPassword && showLoginForm() }
           { forgottenPassword && showSendPasswordForm() }
@@ -275,3 +276,9 @@ const LoginStyle = styled.div`
     }
   }
 `
+
+Login.getInitialProps = async () => ({
+  namespacesRequired: ["login"]
+});
+
+export default withTranslation('login')(Login)
