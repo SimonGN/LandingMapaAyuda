@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Router from 'next/router'
 import Meta from "../components/Meta";
 import Nav from "../components/Nav/Nav";
 import styled from 'styled-components'
@@ -12,7 +13,7 @@ import { Formik, Form } from 'formik'
 import * as Yup from 'yup';
 import AuthService from '../services/auth.service' 
 import ParagraphBodyRegular from '../styles/fontsStyles/ParagraphBodyRegular'
-
+import _ from 'lodash';
 
 export default function Login() {
   
@@ -171,6 +172,10 @@ export default function Login() {
       >Volver atras</span>
     </div>
   </React.Fragment>)
+
+  if(!_.isEmpty(user)){
+    Router.push('/')
+  }
 
   return (
     <React.Fragment>
