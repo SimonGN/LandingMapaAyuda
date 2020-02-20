@@ -3,6 +3,8 @@ import App from "next/app";
 import { appWithTranslation, i18n } from "../i18n";
 import withReduxStore from '../redux/with-redux-store';
 import { Provider } from 'react-redux';
+import { ThemeProvider } from 'styled-components';
+import theme from '../styles/theme'
 
 
 class MyApp extends App {
@@ -11,7 +13,9 @@ class MyApp extends App {
     const { Component, pageProps, reduxStore } = this.props;
     return (
       <Provider store={reduxStore}>
-        <Component {...pageProps} />
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
       </Provider>
     );
   }
