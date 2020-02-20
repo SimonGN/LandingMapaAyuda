@@ -39,6 +39,14 @@ const theme = {
     xl: '2.5rem',
     xxl: '3rem',
     xxxl: '4rem'
+  },
+  lines: {
+    s: '1.5rem',
+    m: '1.75rem',
+    l: '2.5rem',
+    xl: '3rem',
+    xxl: '3.5rem',
+    xxxl: '4.25rem'
   }
 }
 
