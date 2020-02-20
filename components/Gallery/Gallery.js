@@ -42,7 +42,11 @@ const Gallery = props => {
                     <ParagraphTitle color="#F1A409">{title}</ParagraphTitle>
                     <ParagraphBodyRegular >{description}</ParagraphBodyRegular>
                     <div className="button">
-                        <Link href="/"><Button content={t("button1")} backgroundColor="#FCEDCE" color="#F1A409" /></Link>
+                        <Link href="/">
+                            <Button backgroundColor="#FCEDCE" color="#F1A409">
+                                {t("button1")}
+                            </Button>
+                        </Link>
                     </div>
                     <div className="nextBack">
                         <div className="buttonNextBack">

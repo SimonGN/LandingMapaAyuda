@@ -40,7 +40,13 @@ class Cookies extends React.Component {
           <div className="paragraph">
             <ParagraphBodySmall size="16px" height="24px" color="#999999">Este sitio utiliza cookies técnicas y de rendimiento. Pulse el enlace <a href="" target="_blank">Preferencias de privacidad</a> para acceder a información detallada  sobre nuestras cookies.{" "}</ParagraphBodySmall>
           </div>
-          <Button className="readmore" content="¡Estoy de acuerdo!" color="#46BDD2" backgroundColor="#D6F0F5" method={() => this.changeDisplay()} />
+          <Button 
+            className="readmore" 
+            color="#46BDD2" backgroundColor="#D6F0F5" 
+            method={() => this.changeDisplay()} 
+          >
+            ¡Estoy de acuerdo!
+          </Button>
 
         </div>
       </CookieWrapper>

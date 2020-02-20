@@ -39,7 +39,11 @@ const TypeVol = ({t}) => {
                 {displayCardType()}
             </div>
             <div className="button">
-                <Link href=""><Button content={t("button4")} backgroundColor="#D2E4F9" color="#1C76E3" /></Link>
+                <Link href="">
+                    <Button backgroundColor="#D2E4F9" color="#1C76E3">
+                        {t("button4")}
+                    </Button>
+                </Link>
             </div>
 
 

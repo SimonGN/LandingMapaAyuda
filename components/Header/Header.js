@@ -31,7 +31,9 @@ const Header = props => {
         <HeaderStyle>
             <main>
                 <ParagraphTitle align="center">{t("intro")}</ParagraphTitle>
-                <Button content={t("button")} color="white" />
+                <Button color="white">
+                {t("button")}
+                </Button>
             </main>
             <div className="cardContainer">
                 {displayCards()}

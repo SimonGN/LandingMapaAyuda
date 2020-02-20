@@ -45,7 +45,7 @@ const Meta = () => {
           max-width: 100%;
         }
 
-        .* {
+        * {
           box-sizing: border-box;
         }
 

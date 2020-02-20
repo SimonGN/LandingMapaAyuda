@@ -33,7 +33,9 @@ const We = props => {
                 <ParagraphHeader className="subTitle"align="left" color="#80A8E5">{t("subTitle1")}</ParagraphHeader>
                 <ParagraphBodyRegular className="paragraph"align="left" color="#999999">{t("description1")}</ParagraphBodyRegular>
                 <div className="button"> 
-                    <Button content={t("button2")} backgroundColor="#D2E4F9" color="#1C76E3"/>
+                    <Button backgroundColor="#D2E4F9" color="#1C76E3">
+                        {t("button2")}
+                    </Button>
                 </div>
             </div>
 

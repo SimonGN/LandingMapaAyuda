@@ -35,7 +35,9 @@ const Content = props => {
                 </div>
                 <ParagraphTitle align="left"color="#ED5C18">{t("description4")}</ParagraphTitle>
                 <div className="button">
-                    <Button content={t("button5")} backgroundColor="#ED5C1850" color="#ED5C18" />
+                    <Button backgroundColor="#ED5C1850" color="#ED5C18">
+                        {t("button5")}
+                    </Button>
 
                 </div>
             </div>

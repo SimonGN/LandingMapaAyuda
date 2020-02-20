@@ -1,7 +1,7 @@
 import React from "react";
 import App from "next/app";
 import { appWithTranslation, i18n } from "../i18n";
-import withReduxStore from '../lib/with-redux-store';
+import withReduxStore from '../redux/with-redux-store';
 import { Provider } from 'react-redux';
 
 

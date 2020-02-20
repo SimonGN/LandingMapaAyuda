@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { withSize } from 'react-sizeme'
+import { useDispatch } from 'react-redux';
+import { updateNavHeight } from '../../redux/actions/general'
+import { withContentRect } from 'react-measure'
 
 import { NavStyle } from "./NavStyle";
 
@@ -17,17 +19,19 @@ const changeLanguage = (language, setLangauge) => {
     setLangauge(language)
 }
 
-
 const Nav = props => {
-    const { t } = props;
+    const { t, measureRef, contentRect } = props;
+    const dispatch = useDispatch();
     const [language, setLangauge] = useState(i18n.language)
     const [ view, setView ] = useState(false);
+    dispatch(updateNavHeight(contentRect.client.height))
     const handleOpen = () => {
         const value = !view;
         setView(value);
       };
+
     return (
-        <NavStyle view={view}>
+        <NavStyle view={view} ref={measureRef}>
             <header className="mobile">
                 <div className="symbol">
                     <Link href="/index"><img src="/static/svg/symbolMapaAyuda.svg" /></Link>
@@ -71,7 +75,8 @@ const Nav = props => {
             </header>
 
         </NavStyle>
+
     );
 };
 
-export default withTranslation("nav")(withSize()(Nav));
+export default withTranslation("nav")(withContentRect("client")(Nav));
