@@ -3,18 +3,18 @@ import styled from 'styled-components'
 const InputStyle = styled.div`
     margin-bottom: 0.5rem;
   & input {
-    background: #f5f5f5;
+    background: ${({theme}) => theme.colors.lightGray};
     border-radius: 8px;
-    border: ${props => props.error? "2px solid #ED5C18": "none"};
+    border: ${props => props.error? `2px solid ${props.theme.colors.red}`: "none"};
     padding: 1rem;
     font-family: "PanaGT–Regular";
     width: 100%;
-    caret-color: #46BDD2;
-    color: #333333;
+    caret-color: ${({theme}) => theme.colors.blue};
+    color: ${({theme}) => theme.colors.dark80};
     line-height: 20px;
     font-size: 14px;
     &::placeholder{
-      color: #999999;
+      color: ${({theme}) => theme.colors.dark40};
     }
     &:focus {
       outline: none;
@@ -27,7 +27,7 @@ const InputStyle = styled.div`
     margin-top: 0.5rem;
     text-align: center;
     font-family: "PanaGT–Regular";
-    color: #ED5C18;
+    color: ${({theme}) => theme.colors.red};
     font-size: 12px;
   }
 `

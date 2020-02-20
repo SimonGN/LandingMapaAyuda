@@ -58,7 +58,7 @@ const OpportunityStyle = styled.div`
     .Dropdown-menu{
         background-color: white;
         padding: 30px 30px 0 20px;
-        box-shadow: 0px 2px 12px #00000020;
+        box-shadow: 0px 2px 12px ${({theme}) => theme.colors.dark20};
         position: absolute;
         left: -1%;
         padding-bottom:15px;
@@ -71,7 +71,7 @@ const OpportunityStyle = styled.div`
             padding:20px 15px;
         }
         div:hover{
-            background-color:#F5F5F5;
+            background-color: ${({theme}) => theme.colors.lightGray};
             border-radius: 8px;
             padding:20px 15px;
         }

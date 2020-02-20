@@ -12,10 +12,10 @@ import Button from "../Button/Button";
 import CardCountry from "../CardCountry/CardCountry";
 
 import typeVol from "../../content/typeVol.json";
-
+import { withTheme } from 'styled-components'
 import { withTranslation } from '../../i18n'
 
-const TypeVol = ({t}) => {
+const TypeVol = ({t, theme}) => {
     const displayCardType =() => {
         return(
             typeVol.map((card, i) => {
@@ -40,7 +40,7 @@ const TypeVol = ({t}) => {
             </div>
             <div className="button">
                 <Link href="">
-                    <Button backgroundColor="#D2E4F9" color="#1C76E3">
+                    <Button backgroundColor="#D2E4F9" color={theme.colors.indigo}>
                         {t("button4")}
                     </Button>
                 </Link>
@@ -51,4 +51,4 @@ const TypeVol = ({t}) => {
     );
 };
 
-export default withTranslation("home")(TypeVol);
+export default withTranslation("home")(withTheme(TypeVol));

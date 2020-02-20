@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ParagraphBodySmall = styled.p`
     font-family: "PanaGT–Regular";
-    color: ${props => (props.color ? props.color : '#666666')};
+    color: ${props => (props.color ? props.color : props.theme.colors.dark60)};
     font-size: ${props => (props.size ? props.size : '16px')};
     line-height: ${props => (props.height ? props.height : '18px')};
     text-align: ${props => (props.align === 'center' ? 'center' : 'left')};

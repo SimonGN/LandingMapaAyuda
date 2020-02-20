@@ -5,13 +5,13 @@ const ButtonStyle = styled.button`
     padding:15px 20px;
     display: inline-block; 
     width: ${props => props.width ? props.width : "auto"};   
-    background-color: ${props => props.backgroundColor ? props.backgroundColor : "#1C76E3"};
+    background-color: ${props => props.backgroundColor ? props.backgroundColor : props.theme.colors.indigo};
     border-radius: 8px;
     display: flex;
     justify-content: center;
     cursor: ${props => props.disabled? "auto": "pointer"};
     font-family: ${props => props.light ? "PanaGT–Regular": "GT–Medium"};
-    color: ${props => (props.color ? props.color : '#333333')};
+    color: ${props => (props.color ? props.color : props.theme.colors.dark80)};
     font-style: normal;
     font-size: ${props => (props.size ? props.size : '14px')};
     line-height: 20px;

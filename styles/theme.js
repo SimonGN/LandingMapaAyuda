@@ -14,7 +14,7 @@ const theme = {
     lightTurquoise: '#8ED7BF',
     lightBlue: '#84D3E1',
     extraBlue: '#B5E5ED',
-    lightIndigo: '#B5E5ED',
+    lightIndigo: '#80A8E5',
     washedRed: '#FBDED1',
     washedOrange:'#FCEDCE',
     washedYellow: '#FDF6D7',

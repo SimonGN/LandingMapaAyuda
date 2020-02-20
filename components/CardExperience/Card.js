@@ -7,10 +7,10 @@ import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";
 import Button from "../Button/Button";
 
 import { withTranslation } from '../../i18n'
+import { withTheme } from 'styled-components'
 
 
-
-const Card = ({ country, description, photo, people, number, t }) => {
+const Card = ({ country, description, photo, people, number, t, theme }) => {
 
     return (
         <CardStyle photo={photo} people={people} number={number%2}>
@@ -21,10 +21,10 @@ const Card = ({ country, description, photo, people, number, t }) => {
                     <div className="imgPeople" ></div>
                 </div>
                 <div className="text">
-                    <ParagraphBodySmall className="country" color="#999999">{country}</ParagraphBodySmall>
+                    <ParagraphBodySmall className="country" color={theme.colors.dark40}>{country}</ParagraphBodySmall>
                     <ParagraphBody className="description">{description}</ParagraphBody>
                     <div className="button">
-                        <Button color="#F1A409" backgroundColor="#FCEDCE">
+                        <Button color={theme.colors.orange} backgroundColor={theme.colors.washedOrange}>
                         {t("button1")}
                         </Button>
                     </div>
@@ -34,4 +34,4 @@ const Card = ({ country, description, photo, people, number, t }) => {
     );
 };
 
-export default withTranslation("home")(Card);
+export default withTranslation("home")(withTheme(Card));

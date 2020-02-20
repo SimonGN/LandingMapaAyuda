@@ -17,7 +17,7 @@ const ContentStyle = styled.div`
         border-radius: 16px;
     }
     .yellow{
-        background-color:#F8DE6D;
+        background-color:${({theme}) => theme.colors.lightYellow};
         margin-bottom:2%;
         img{
             display:none;
@@ -28,7 +28,7 @@ const ContentStyle = styled.div`
         }
     }
     .opacityYellow{
-        background-color:#FDF6D7;
+        background-color:${({theme}) => theme.colors.washedYellow};
         position:absolute;
         margin-bottom:20%;
         z-index:1;

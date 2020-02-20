@@ -7,9 +7,7 @@ import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
 import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular";
 import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";
 
-
-
-
+import { withTheme } from 'styled-components'
 import { i18n, withTranslation } from '../../i18n'
 import Button from "../Button/Button";
 
@@ -20,7 +18,7 @@ const changeLanguage = (language, setLangauge) => {
 
 
 const Footer = props => {
-    const { t } = props;
+    const { t, theme } = props;
     const [language, setLangauge] = useState(i18n.language)
     return (
         <FooterStyle display={props.display}>
@@ -30,10 +28,10 @@ const Footer = props => {
                 </div>
                 <div className="textGreen">
                     <ParagraphTitle align="center">{t("title")}</ParagraphTitle>
-                    <ParagraphBodyRegular color="#000000" align="center">{t("subTitle")}</ParagraphBodyRegular>
+                    <ParagraphBodyRegular color={theme.colors.dark100} align="center">{t("subTitle")}</ParagraphBodyRegular>
                 </div>
                 <div className="button">
-                    <Button backgroundColor="#E4EBD2" color="#76991E">
+                    <Button backgroundColor={theme.colors.washedGreen} color={theme.colors.green}>
                         {t("button1")}
                     </Button>
                 </div>
@@ -51,25 +49,25 @@ const Footer = props => {
                             <ParagraphBodySmall className="animate" decoration={language === 'en' ? "underline" : ""} cursor onClick={() => changeLanguage('en', setLangauge)}>English</ParagraphBodySmall>
                         </div>
                         <div className="navegation">
-                            <ParagraphBodyRegular color="#000000">{t("nav1")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#666666">{t("nav1info1")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#666666">{t("nav1info2")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#F1A409">{t("nav1info3")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#76991E">{t("nav1info4")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark100}>{t("nav1")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>{t("nav1info1")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>{t("nav1info2")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.orange}>{t("nav1info3")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.green}>{t("nav1info4")}</ParagraphBodyRegular>
                         </div>
                         <div className="voluntary">
-                            <ParagraphBodyRegular color="#000000">{t("nav2")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#666666">{t("nav2info1")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#666666">{t("nav2info2")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#666666">{t("nav2info3")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#666666">{t("nav2info4")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark100}>{t("nav2")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>{t("nav2info1")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>{t("nav2info2")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>{t("nav2info3")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>{t("nav2info4")}</ParagraphBodyRegular>
                         </div>
                         <div className="moreInfo">
-                            <ParagraphBodyRegular color="#000000">{t("nav3")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#666666">{t("nav3info1")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#666666">{t("nav3info2")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#666666">{t("nav3info3")}</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#666666">{t("nav3info4")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark100}>{t("nav3")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>{t("nav3info1")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>{t("nav3info2")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>{t("nav3info3")}</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>{t("nav3info4")}</ParagraphBodyRegular>
                         </div>
                     </div>
                      
@@ -95,4 +93,4 @@ const Footer = props => {
     );
 };
 
-export default withTranslation("footer")(Footer);
+export default withTranslation("footer")(withTheme(Footer));

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ParagraphBody = styled.p`
     font-family: "GT–Medium";
-    color: ${props => (props.color ? props.color : '#333333')};
+    color: ${props => (props.color ? props.color : props.theme.colors.dark80)};
     font-style: normal;
     font-size: ${props => (props.size ? props.size : '16px')};
     line-height: 20px;

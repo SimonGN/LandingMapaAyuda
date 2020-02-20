@@ -15,9 +15,10 @@ import cardCountry from "../../content/cardCountry.json";
 import countrys from "../../content/countrys.json"
 
 import {withTranslation } from '../../i18n'
+import { withTheme } from 'styled-components'
 import Dropdown from 'react-dropdown'
 
-const Opportunity = ({ country, photo, t }) => {
+const Opportunity = ({ country, photo, t, theme }) => {
     const displayCardCountry =() => {
         return(
             cardCountry.map((card, i) => {
@@ -45,9 +46,9 @@ const Opportunity = ({ country, photo, t }) => {
                     <ParagraphBodyRegular className="ptext">{t("description3")}</ParagraphBodyRegular>
                 </div>
                 <div className="filter">
-                    <ParagraphBodySmall size="16px" color="#999999">{t("desplegable")}</ParagraphBodySmall>
+                    <ParagraphBodySmall size="16px" color={theme.colors.dark40}>{t("desplegable")}</ParagraphBodySmall>
                     <div className="dropDown">
-                        <ParagraphBodySmall size="16px"color="#54C39F"><Dropdown options={optionCountry()}  placeholder={t("desplegable2")} /> <img src="/static/svg/iconDropDown.svg" /></ParagraphBodySmall>
+                        <ParagraphBodySmall size="16px"color={theme.colors.turquoise}><Dropdown options={optionCountry()}  placeholder={t("desplegable2")} /> <img src="/static/svg/iconDropDown.svg" /></ParagraphBodySmall>
                     </div> 
                 </div>
             </div>
@@ -56,7 +57,7 @@ const Opportunity = ({ country, photo, t }) => {
             </div>
             <div className="button">
                 <Link href="">
-                    <Button backgroundColor="#D2E4F9" color="#1C76E3">
+                    <Button backgroundColor="#D2E4F9" color={theme.colors.indigo}>
                         {t("button4")}
                     </Button>
                 </Link>
@@ -67,4 +68,4 @@ const Opportunity = ({ country, photo, t }) => {
     );
 };
 
-export default withTranslation("home")(Opportunity);
+export default withTranslation("home")(withTheme(Opportunity));

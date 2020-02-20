@@ -2,20 +2,14 @@ import React from "react";
 
 import { CommingSoonStyle } from "./CommingSoonStyle";
 
-
 import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
 import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular";
 
-
-
-
-
+import { withTheme } from 'styled-components'
 import {withTranslation } from '../../i18n'
 
-
-
-const CommingSoon = props => {
-    const { t } = props;
+const ComingSoon = props => {
+    const { t, theme } = props;
     return (
         <CommingSoonStyle display={props.display}>
             <div className="green">
@@ -25,7 +19,7 @@ const CommingSoon = props => {
                 <div className="textGreen">
                     <ParagraphTitle align="center">{t("csTitle")}</ParagraphTitle>
                     <div className="subTitle">
-                    <ParagraphBodyRegular color="#000000" align="center">{t("csSubTitle")}</ParagraphBodyRegular>
+                    <ParagraphBodyRegular color={theme.color.back100} align="center">{t("csSubTitle")}</ParagraphBodyRegular>
                     </div>
                 </div>
                 <div className="links">
@@ -46,4 +40,4 @@ const CommingSoon = props => {
     );
 };
 
-export default withTranslation("footer")(CommingSoon);
+export default withTranslation("footer")(withTheme(ComingSoon));

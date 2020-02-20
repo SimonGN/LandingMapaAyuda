@@ -10,7 +10,7 @@ overflow-x:scroll;
 overflow-y:hidden;
 
     .green{
-        background-color:#8ED7BF;
+        background-color:${({theme}) => theme.colors.lightTurquoise};
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
         height:70vh;
@@ -21,7 +21,7 @@ overflow-y:hidden;
     }
 
     .greenOpacity{
-        background-color:#8ED7BF40;
+        background-color:${({theme}) => theme.colors.lightTurquoise}40;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
         width:100%;

@@ -6,8 +6,8 @@ export const CookieWrapper = styled.div`
   height: 290px;
   left: 2%;
   bottom: 2%;
-  background-color: ${props =>props.backgroundColor ? props.backgroundColor : "white"};
-  color: ${props => (props.color ? props.color : "black")};
+  background-color: ${props =>props.backgroundColor ? props.backgroundColor : props.theme.colors.white};
+  color: ${props => (props.color ? props.color : props.theme.colors.dark100)};
   display: ${props => (props.display ? props.display : "flex")};
 
   border-radius:18px;
@@ -29,10 +29,10 @@ export const CookieWrapper = styled.div`
     margin-bottom:7%;
   }
   a {
-    color: ${props => (props.color ? props.color : "#46BDD2")};
+    color: ${props => (props.color ? props.color : props.theme.colors.blue)};
   }
   a:visited {
-    color: ${props => (props.color ? props.color : "#46BDD2")};
+    color: ${props => (props.color ? props.color : props.theme.colors.blue)};
   }
   .cookies-content {
     display: flex;

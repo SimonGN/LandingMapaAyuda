@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ParagraphSubTitle = styled.h2`
     font-family: "GT–Medium";
-    color: ${props => (props.color ? props.color : 'black')};
+    color: ${props => (props.color ? props.color : props.theme.colors.dark100)};
     font-style: normal;
     font-weight: 500;
     font-size: ${props => (props.size ? props.size : '33px')};

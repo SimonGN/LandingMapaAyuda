@@ -41,12 +41,12 @@ const GalleryStyle = styled.div`
         div{
             width: 75px;
             height: 4px;
-            background-color:#F2F2F2;
+            background-color:${({theme}) => theme.colors.dark05};
             border-radius:50px;
             cursor:pointer;
         }
         div.active {
-            background-color:#F1A409;
+            background-color:${({theme}) => theme.colors.orange};
         }
     }
     .textImg{
@@ -63,7 +63,7 @@ const GalleryStyle = styled.div`
         }
         & > p{
             font-size: 18px;
-            color:black;
+            color: ${({theme}) => theme.colors.dark100};
         }
     }
 

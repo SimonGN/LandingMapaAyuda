@@ -15,8 +15,9 @@ import AuthService from '../services/auth.service'
 import ParagraphBodyRegular from '../styles/fontsStyles/ParagraphBodyRegular'
 import _ from 'lodash';
 import { withTranslation } from '../i18n'
+import { withTheme } from 'styled-components'
 
-function Login({t}) {
+function Login({t, theme}) {
   
   const [forgottenPassword, setForgottenPassword] = useState(false)
   const [forgottenPasswordEmail, setForgottenPasswordEmail] = useState(undefined)
@@ -112,8 +113,8 @@ function Login({t}) {
             >{t('forgottenPassword')}</span>
           </div>
           <Button
-            backgroundColor="#E4EBD2"
-            color="#76991E"
+            backgroundColor={theme.colors.washedGreen}
+            color={theme.colors.green}
             type="submit"
             width="100%"
             disabled={isFetching}
@@ -150,8 +151,8 @@ function Login({t}) {
         (<Form>
           <Input name="email" placeholder={t('email')}/>
           <Button
-            backgroundColor="#E4EBD2"
-            color="#76991E"
+            backgroundColor={theme.colors.washedGreen}
+            color={theme.colors.green}
             type="submit"
             width="100%"
             disabled={isFetching}
@@ -205,7 +206,7 @@ const LoginStyle = styled.div`
       text-align: center;
       margin-bottom: 2rem;
       font-size: 32px;
-      color: #54C39F;
+      color: ${({theme}) => theme.colors.turquoise};
       font-family: "PanaGT–Regular";
     }
   .social-buttons{
@@ -226,11 +227,11 @@ const LoginStyle = styled.div`
   .separator {
     position: relative;
     margin-top: 2rem;
-    border-top: 1px solid #f2f2f2;
+    border-top: 1px solid ${({theme}) => theme.colors.dark05};
     div{
       font-size: 12px;
       font-family: "PanaGT–Regular";
-      color: #666666;
+      color: ${({theme}) => theme.colors.dark60};
       background-color: #fff;
       margin: auto;
       width: 3rem;
@@ -248,12 +249,12 @@ const LoginStyle = styled.div`
       justify-content: space-between;
       margin: 1rem 1rem 1.5rem 1rem;
       & span {
-        color: #999999;
+        color:  ${({theme}) => theme.colors.dark40};
         font-size: 12px;
         font-family: "PanaGT–Regular";
         cursor: pointer;
         &:hover{
-          color: #76991E;
+          color: ${({theme}) => theme.colors.green};
           text-decoration: underline;
         }
       }
@@ -263,14 +264,14 @@ const LoginStyle = styled.div`
   .form-bottom{
     margin-top: 1rem;
     text-align: center;
-    color: #666666;
+    color: ${({theme}) => theme.colors.dark60};
     font-family: "PanaGT–Regular";
     font-size: 12px;
     & .recover-password-message{
       margin-bottom: 1rem;
     }
     & span {
-      color: #76991E;
+      color: ${({theme}) => theme.colors.green};
       text-decoration: underline;
       cursor: pointer;
     }
@@ -281,4 +282,4 @@ Login.getInitialProps = async () => ({
   namespacesRequired: ["login"]
 });
 
-export default withTranslation('login')(Login)
+export default withTranslation('login')(withTheme(Login))
