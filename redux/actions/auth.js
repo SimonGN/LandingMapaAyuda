@@ -1,7 +1,7 @@
 import * as authTypes from '../types/auth'
-import AuthServide from '../../services/auth.service'
+import AuthService from '../../services/auth.service'
 
-const authService = new AuthServide();
+const authService = new AuthService();
 
 export const login = (payload) => {
   return async (dispatch) => {
@@ -25,7 +25,7 @@ const loginFail = (payload) => {
   }
 }
 
-const setFetching = payload => {
+export const setFetching = payload => {
   return {
     type: authTypes.IS_FETCHING,
     payload

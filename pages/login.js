@@ -4,21 +4,35 @@ import Nav from "../components/Nav/Nav";
 import styled from 'styled-components'
 import { FullScreenContainer, Card, Button, Input, Checkbox } from '../components'
 import googleLogo from '../static/svg/icon-google-login.svg'
-import { login } from '../redux/actions/auth'
+import { login, setFetching } from '../redux/actions/auth'
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import facebookLogo from '../static/img/icon-facebook.png'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup';
+import AuthService from '../services/auth.service' 
+import ParagraphBodyRegular from '../styles/fontsStyles/ParagraphBodyRegular'
+
 
 export default function Login() {
-
+  
   const [forgottenPassword, setForgottenPassword] = useState(false)
+  const [forgottenPasswordEmail, setForgottenPasswordEmail] = useState(undefined)
   const { isFetching, error, user } = useSelector(state => state.auth)
   const dispatch = useDispatch();
+  const authService = new AuthService()
 
-  const handleSubmit = values => {
+  const handleLoginSubmit = values => {
     dispatch(login(values))
+  }
+  
+  const handleRecoverPasswordSubmit = values => {
+    dispatch(setFetching(true))
+    authService.recoverPassword(values)
+      .then(() => {
+        dispatch(setFetching(false))
+        setForgottenPasswordEmail(values.email)
+      })
   }
 
   const handleFacebookLogin = () => {
@@ -69,7 +83,7 @@ export default function Login() {
           rememberMe: Yup.boolean()
         })
       }
-      onSubmit={handleSubmit}
+      onSubmit={handleLoginSubmit}
     >
       {() => 
         (<Form className="login-form">
@@ -89,7 +103,10 @@ export default function Login() {
           <div className="bottom-section">
             <Checkbox name="rememberMe" label="Recuérdame"/>
             <span
-              onClick={()=>setForgottenPassword(true)}
+              onClick={()=>{
+                setForgottenPassword(true)
+                setForgottenPasswordEmail(undefined)
+              }}
             >¿Contraseña olvidada?</span>
           </div>
           <Button
@@ -113,7 +130,7 @@ export default function Login() {
   const showSendPasswordForm = () => (<React.Fragment>
     <Formik
       initialValues={{
-        password: ""
+        email: ""
       }}
       validationSchema = {
         Yup.object().shape({
@@ -122,7 +139,10 @@ export default function Login() {
             .email("Correo electrónico no válido")
         })
       }
-      onSubmit={handleSubmit}
+      onSubmit={(values, {resetForm})=> {
+        handleRecoverPasswordSubmit(values)
+        resetForm({email: ""})
+      }}
     >
       {() => 
         (<Form>
@@ -132,13 +152,20 @@ export default function Login() {
             color="#76991E"
             type="submit"
             width="100%"
+            disabled={isFetching}
             light
           >
-            Entrar
+            {isFetching? 'Enviando...':'Entrar'}
           </Button>
         </Form>)}
     </Formik>
     <div className="form-bottom">
+      {forgottenPasswordEmail && <ParagraphBodyRegular 
+        align='center' 
+        className='recover-password-message'
+      >
+        Hemos enviado un correo electrónico a {forgottenPasswordEmail} con instrucciones para restablecer tu contraseña.
+      </ParagraphBodyRegular>}
       <span
         onClick={()=>setForgottenPassword(false)}
       >Volver atras</span>
@@ -233,6 +260,9 @@ const LoginStyle = styled.div`
     color: #666666;
     font-family: "PanaGT–Regular";
     font-size: 12px;
+    & .recover-password-message{
+      margin-bottom: 1rem;
+    }
     & span {
       color: #76991E;
       text-decoration: underline;
