@@ -29,6 +29,11 @@ const GlobalStyle = createGlobalStyle`
   body, html {
     max-width: 100vw;
   }
+
+  html {
+    font-family: "GT-Regular";
+  }
+
 `
 
 export default GlobalStyle;

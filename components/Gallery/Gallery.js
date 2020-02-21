@@ -43,11 +43,9 @@ const Gallery = props => {
                     <ParagraphTitle color={theme.colors.orange}>{title}</ParagraphTitle>
                     <ParagraphBodyRegular >{description}</ParagraphBodyRegular>
                     <div className="button">
-                        <Link href="/">
-                            <Button backgroundColor={theme.colors.washedOrange} color={theme.colors.orange}>
-                                {t("button1")}
-                            </Button>
-                        </Link>
+                        <Button backgroundColor={theme.colors.washedOrange} color={theme.colors.orange}>
+                            {t("button1")}
+                        </Button>
                     </div>
                     <div className="nextBack">
                         <div className="buttonNextBack">

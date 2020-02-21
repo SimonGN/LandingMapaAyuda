@@ -44,9 +44,9 @@ const Footer = props => {
                     </div>
                     <div className="navSeo">
                         <div className="idiomsMovil">
-                            <ParagraphBodySmall className="animate" decoration={language === 'es' ? "underline" : ""} cursor onClick={() => changeLanguage('es', setLangauge)}>Español</ParagraphBodySmall>
+                            <ParagraphBodySmall className="animate" decoration={language === 'es' ? "underline" : ""} showCursor onClick={() => changeLanguage('es', setLangauge)}>Español</ParagraphBodySmall>
                             <ParagraphBodySmall> / </ParagraphBodySmall>
-                            <ParagraphBodySmall className="animate" decoration={language === 'en' ? "underline" : ""} cursor onClick={() => changeLanguage('en', setLangauge)}>English</ParagraphBodySmall>
+                            <ParagraphBodySmall className="animate" decoration={language === 'en' ? "underline" : ""} showCursor onClick={() => changeLanguage('en', setLangauge)}>English</ParagraphBodySmall>
                         </div>
                         <div className="navegation">
                             <ParagraphBodyRegular color={theme.colors.dark100}>{t("nav1")}</ParagraphBodyRegular>
@@ -73,9 +73,9 @@ const Footer = props => {
                      
                     <div className="nameText">
                         <div className="idioms">
-                            <ParagraphBodySmall className="animate" decoration={language === 'es' ? "underline" : ""} cursor onClick={() => changeLanguage('es', setLangauge)}>Español</ParagraphBodySmall>
+                            <ParagraphBodySmall className="animate" decoration={language === 'es' ? "underline" : ""} showCursor onClick={() => changeLanguage('es', setLangauge)}>Español</ParagraphBodySmall>
                             <ParagraphBodySmall> / </ParagraphBodySmall>
-                            <ParagraphBodySmall className="animate" decoration={language === 'en' ? "underline" : ""} cursor onClick={() => changeLanguage('en', setLangauge)}>English</ParagraphBodySmall>
+                            <ParagraphBodySmall className="animate" decoration={language === 'en' ? "underline" : ""} showCursor onClick={() => changeLanguage('en', setLangauge)}>English</ParagraphBodySmall>
                         </div>
                         <div className="legal">
                             <ParagraphBodySmall size="12px">{t("cc")}</ParagraphBodySmall>

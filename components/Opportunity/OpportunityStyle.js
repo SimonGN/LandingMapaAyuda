@@ -38,13 +38,13 @@ const OpportunityStyle = styled.div`
         padding-left:2%;
         margin-bottom:6%;
         width: 50%;
+        font-size: 1rem;
+        color: ${props => props.theme.colors.turquoise};
         cursor: pointer;
-        p{
-            display: flex;
-            img{
-                margin-left:5%;
-            }
-        }
+        display: flex;
+        img{
+            margin-left: 0.5rem;
+        }   
     }
     .dropDown{
             margin-bottom: 7%;

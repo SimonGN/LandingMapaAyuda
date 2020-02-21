@@ -8,14 +8,13 @@ import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
 import { withTheme } from 'styled-components'
 
 class Cookies extends React.Component {
-  constructor({ backgroundColor, color }) {
-    super({ backgroundColor, color });
+  constructor(props) {
+    super(props);
     this.state = { display: "flex" };
   }
 
   componentDidMount() {
     const display = localStorage.getItem('displayMapaAyuda')
-    console.log(display)
     this.setState({ ... this.state, display })
   }
   changeDisplay = () => {

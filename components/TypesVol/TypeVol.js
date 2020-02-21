@@ -1,12 +1,6 @@
-import React, { useState } from "react";
-import Link from "next/link";
-
-
+import React from "react";
 import { TypeVolStyle } from "./TypeVolStyle";
 import ParagraphSubTitle from "../../styles/fontsStyles/ParagraphSubTitle";
-import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular";
-import ParagraphBodySmall from "../../styles/fontsStyles/ParagraphBodySmall";
-
 
 import Button from "../Button/Button";
 import CardCountry from "../CardCountry/CardCountry";
@@ -21,13 +15,12 @@ const TypeVol = ({t, theme}) => {
             typeVol.map((card, i) => {
                 const { type, photo} = card;
                 return(
-                    <Link href=""key={i}><CardCountry type={type} photo={photo}/></Link>
+                    <CardCountry key={i} type={type} photo={photo}/>
                 )
             })
         )
     }
-
-    
+  
     return (
         <TypeVolStyle >
             <div className="textAll">
@@ -39,13 +32,10 @@ const TypeVol = ({t, theme}) => {
                 {displayCardType()}
             </div>
             <div className="button">
-                <Link href="">
-                    <Button backgroundColor="#D2E4F9" color={theme.colors.indigo}>
-                        {t("button4")}
-                    </Button>
-                </Link>
+                <Button backgroundColor="#D2E4F9" color={theme.colors.indigo}>
+                    {t("button4")}
+                </Button>
             </div>
-
 
         </TypeVolStyle>
     );
