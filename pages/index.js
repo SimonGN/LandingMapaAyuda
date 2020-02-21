@@ -2,7 +2,7 @@ import Meta from '../components/Meta';
 import React, { createRef } from 'react';
 import PropTypes from 'prop-types';
 
-import ComingSoon from '../components/ComingSoon/ComingSoon';
+// import ComingSoon from '../components/ComingSoon/ComingSoon';
 import Cookies from '../components/Cookies/Cookies';
 import Footer from '../components/Footer/Footer';
 import Nav from '../components/Nav/Nav';

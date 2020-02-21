@@ -2,7 +2,7 @@ import React from 'react';
 import InputStyle from './InputStyle';
 import { Field } from 'formik';
 
-const Input = ({ name, disabled, placeholder, type, customError, isDisabled }) => {
+const Input = ({ name, placeholder, type, customError, isDisabled }) => {
 	return (
 		<Field name={name}>
 			{({ field: { value }, form: { setFieldValue, submitCount }, meta }) => (
@@ -11,7 +11,6 @@ const Input = ({ name, disabled, placeholder, type, customError, isDisabled }) =
 						type={type ? type : 'text'}
 						value={value}
 						onChange={e => setFieldValue(name, e.target.value)}
-						disabled={disabled ? true : false}
 						placeholder={placeholder}
 						disabled={isDisabled}
 					></input>

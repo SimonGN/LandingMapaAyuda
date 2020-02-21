@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React from 'react';
 
 import { CardCountryStyle } from './CardCountryStyle';
 import ParagraphBody from '../../styles/fontsStyles/ParagraphBody';
 import ParagraphBodySmall from '../../styles/fontsStyles/ParagraphBodySmall';
 import { withTheme } from 'styled-components';
-import { i18n, withTranslation } from '../../i18n';
+import { withTranslation } from '../../i18n';
 
 const CardCountry = ({ country, photo, type, t, theme }) => {
 	return (

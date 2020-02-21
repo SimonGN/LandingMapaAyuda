@@ -9,7 +9,7 @@ import theme from '../styles/theme';
 
 class MyApp extends App {
 	render() {
-		i18n.language ? (i18n.language = i18n.language) : 'es';
+		i18n.language ? (i18n.language = i18n.language) : 'es'; // eslint-disable-line no-self-assign
 		const { Component, pageProps, reduxStore } = this.props;
 		return (
 			<Provider store={reduxStore}>

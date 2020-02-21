@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React from 'react';
 
 import { ContentStyle } from './ContentStyle';
 import Button from '../Button/Button';
@@ -8,11 +7,10 @@ import { withTheme } from 'styled-components';
 
 import ParagraphTitle from '../../styles/fontsStyles/ParagraphTitle';
 
-import { i18n, withTranslation } from '../../i18n';
+import { withTranslation } from '../../i18n';
 
 const Content = props => {
 	const { t, theme } = props;
-	const [language, setLangauge] = useState(i18n.language);
 
 	return (
 		<ContentStyle>

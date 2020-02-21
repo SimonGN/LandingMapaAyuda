@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React from 'react';
 
 import { WeStyle } from './WeStyle';
 import Button from '../Button/Button';
@@ -9,11 +8,10 @@ import ParagraphTitle from '../../styles/fontsStyles/ParagraphTitle';
 import ParagraphHeader from '../../styles/fontsStyles/ParagraphHeader';
 
 import { withTheme } from 'styled-components';
-import { i18n, withTranslation } from '../../i18n';
+import { withTranslation } from '../../i18n';
 
 const We = props => {
 	const { t, theme } = props;
-	const [language, setLangauge] = useState(i18n.language);
 
 	return (
 		<WeStyle>

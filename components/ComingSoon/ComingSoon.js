@@ -25,16 +25,20 @@ const ComingSoon = props => {
 					</div>
 				</div>
 				<div className='links'>
-					<a href='https://twitter.com/mapayuda' target='_blank'>
+					<a href='https://twitter.com/mapayuda' target='_blank' rel='noopener noreferrer'>
 						<img className='iconRrss' src='/static/svg/iconTw.svg' />
 					</a>
-					<a href='https://www.facebook.com/mapayudaorg/' target='_blank'>
+					<a href='https://www.facebook.com/mapayudaorg/' target='_blank' rel='noopener noreferrer'>
 						<img className='iconRrss' src='/static/svg/iconFb.svg' />
 					</a>
-					<a href='https://www.linkedin.com/company/mapayuda.org/?originalSubdomain=cl' target='_blank'>
+					<a
+						href='https://www.linkedin.com/company/mapayuda.org/?originalSubdomain=cl'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						<img className='iconRrss' src='/static/svg/iconIn.svg' />
 					</a>
-					<a href='https://www.instagram.com/mapayudaorg/' target='_blank'>
+					<a href='https://www.instagram.com/mapayudaorg/' target='_blank' rel='noopener noreferrer'>
 						<img className='iconRrss' src='/static/svg/iconIg.svg' />
 					</a>
 				</div>

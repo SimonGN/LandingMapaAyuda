@@ -13,7 +13,7 @@ const handle = app.getRequestHandler();
 	const server = express();
 
 	nextI18next.i18n.languages = ['es', 'en'];
-	nextI18next.i18n.language ? (nextI18next.i18n.language = nextI18next.i18n.language) : 'es';
+	nextI18next.i18n.language ? (nextI18next.i18n.language = nextI18next.i18n.language) : 'es'; // eslint-disable-line no-self-assign
 	server.use(nextI18NextMiddleware(nextI18next));
 
 	server.get('*', (req, res) => handle(req, res));

@@ -10,17 +10,11 @@ import ParagraphBody from '../../styles/fontsStyles/ParagraphBody';
 import ParagraphHeader from '../../styles/fontsStyles/ParagraphHeader';
 
 import { withTheme } from 'styled-components';
-import { i18n, withTranslation } from '../../i18n';
-
-const changeLanguage = (language, setLangauge) => {
-	i18n.changeLanguage(language);
-	setLangauge(language);
-};
+import { withTranslation } from '../../i18n';
 
 const Nav = props => {
 	const { t, measureRef, contentRect, theme } = props;
 	const dispatch = useDispatch();
-	const [language, setLangauge] = useState(i18n.language);
 	const [view, setView] = useState(false);
 	dispatch(updateNavHeight(contentRect.client.height));
 	const handleOpen = () => {

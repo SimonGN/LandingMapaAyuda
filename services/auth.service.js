@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-var MockAdapter = require('axios-mock-adapter');
+const MockAdapter = require('axios-mock-adapter');
 
 const instance = axios.create({
 	baseURL: `${process.env.REACT_APP_API_URL}/auth`,
@@ -25,7 +25,7 @@ mock.onPost('/login').reply(config => {
 	];
 });
 
-mock.onPost('/recoverPassword').reply(config => {
+mock.onPost('/recoverPassword').reply(() => {
 	return [200];
 });
 class AuthService {

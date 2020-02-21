@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import { OpportunityStyle } from './OpportunityStyle';
 import ParagraphSubTitle from '../../styles/fontsStyles/ParagraphSubTitle';

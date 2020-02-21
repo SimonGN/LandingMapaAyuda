@@ -1,18 +1,15 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
-
+import React from 'react';
 import { HeaderStyle } from './HeaderStyle';
 import Button from '../Button/Button';
 
 import ParagraphTitle from '../../styles/fontsStyles/ParagraphTitle';
 
-import { i18n, withTranslation } from '../../i18n';
+import { withTranslation } from '../../i18n';
 import Card from '../CardExperience/Card';
 import cardExperience from '../../content/card.json';
 
 const Header = props => {
 	const { t } = props;
-	const [language, setLangauge] = useState(i18n.language);
 	const displayCards = () => {
 		return cardExperience.map((card, i) => {
 			const { description, country, photo, people, buttonContent } = card;
