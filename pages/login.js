@@ -22,7 +22,7 @@ function Login({ t, theme }) {
 	const { isFetching, error, user } = useSelector(state => state.auth);
 	const dispatch = useDispatch();
 	const authService = new AuthService();
-	const pepe = 2;
+
 	const handleLoginSubmit = values => {
 		dispatch(login(values));
 	};
