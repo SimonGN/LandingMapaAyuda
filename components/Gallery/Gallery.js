@@ -12,9 +12,10 @@ import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
 import galleryItems from '../../content/gallery.json';
 
 import { withTranslation } from '../../i18n'
+import { withTheme } from 'styled-components'
 
 const Gallery = props => {
-    const { t } = props;
+    const { t, theme } = props;
     const [ tab, setTab ] = useState(0);
     const [ galleryItem, setGalleryItem ] = useState(galleryItems[0]);
 
@@ -39,20 +40,18 @@ const Gallery = props => {
                    <img src={"/static/svg/iconFavo.svg"} />
                 </div>
                 <div className="textImg"> 
-                    <ParagraphTitle color="#F1A409">{title}</ParagraphTitle>
+                    <ParagraphTitle color={theme.colors.orange}>{title}</ParagraphTitle>
                     <ParagraphBodyRegular >{description}</ParagraphBodyRegular>
                     <div className="button">
-                        <Link href="/">
-                            <Button backgroundColor="#FCEDCE" color="#F1A409">
-                                {t("button1")}
-                            </Button>
-                        </Link>
+                        <Button backgroundColor={theme.colors.washedOrange} color={theme.colors.orange}>
+                            {t("button1")}
+                        </Button>
                     </div>
                     <div className="nextBack">
                         <div className="buttonNextBack">
-                            <ParagraphBodyRegular color="#00000050" onClick={() => changeTab(tab-1)}>Atrás</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#00000050">·</ParagraphBodyRegular>
-                            <ParagraphBodyRegular color="#00000050" onClick={() => changeTab(tab+1)}>Siguiente</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60} onClick={() => changeTab(tab-1)}>Atrás</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60}>·</ParagraphBodyRegular>
+                            <ParagraphBodyRegular color={theme.colors.dark60} onClick={() => changeTab(tab+1)}>Siguiente</ParagraphBodyRegular>
                         </div>
                         <div className="buttonDiv">
                             <div className={`${tab===0 && 'active' }`} onClick={() => changeTab(0)}></div>
@@ -68,4 +67,4 @@ const Gallery = props => {
     );
 };
 
-export default withTranslation("home")(Gallery);
+export default withTranslation("home")(withTheme(Gallery));

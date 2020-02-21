@@ -10,11 +10,11 @@ import ParagraphBodyRegular from "../../styles/fontsStyles/ParagraphBodyRegular"
 import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
 import ParagraphHeader from "../../styles/fontsStyles/ParagraphHeader"
 
-
+import { withTheme } from 'styled-components'
 import { i18n, withTranslation } from '../../i18n'
 
 const We = props => {
-    const { t } = props;
+    const { t, theme } = props;
     const [language, setLangauge] = useState(i18n.language)
 
     return (
@@ -30,10 +30,10 @@ const We = props => {
 
             <div className="text">
                 <ParagraphTitle className="title" align="left" >{t("intro1")}</ParagraphTitle>
-                <ParagraphHeader className="subTitle"align="left" color="#80A8E5">{t("subTitle1")}</ParagraphHeader>
-                <ParagraphBodyRegular className="paragraph"align="left" color="#999999">{t("description1")}</ParagraphBodyRegular>
+                <ParagraphHeader className="subTitle"align="left" color={theme.colors.lightIndigo}>{t("subTitle1")}</ParagraphHeader>
+                <ParagraphBodyRegular className="paragraph"align="left" color={theme.colors.dark40}>{t("description1")}</ParagraphBodyRegular>
                 <div className="button"> 
-                    <Button backgroundColor="#D2E4F9" color="#1C76E3">
+                    <Button backgroundColor="#D2E4F9" color={theme.colors.indigo}>
                         {t("button2")}
                     </Button>
                 </div>
@@ -43,4 +43,4 @@ const We = props => {
     );
 };
 
-export default withTranslation("home")(We);
+export default withTranslation("home")(withTheme(We));

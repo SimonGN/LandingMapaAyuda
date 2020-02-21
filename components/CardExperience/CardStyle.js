@@ -29,7 +29,7 @@ flex: none;
         padding: 8px;
         background-color: white;
         border-radius: 16px;
-        box-shadow: 0px 2px 12px #00000020;
+        box-shadow: 0px 2px 12px ${({theme}) => theme.colors.dark10};
         animation-duration: 60s;
         animation-name: translate;
         animation-iteration-count: infinite; 

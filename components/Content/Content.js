@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ContentStyle } from "./ContentStyle";
 import Button from "../Button/Button";
 
+import { withTheme } from 'styled-components'
 
 import ParagraphTitle from "../../styles/fontsStyles/ParagraphTitle";
 
@@ -14,13 +15,13 @@ import { i18n, withTranslation } from '../../i18n'
 
 
 const Content = props => {
-    const { t } = props;
+    const { t, theme } = props;
     const [language, setLangauge] = useState(i18n.language)
 
     return (
         <ContentStyle>
             <div className="yellow">
-                <ParagraphTitle align="left" color="#ED5C18">{t("intro4")}</ParagraphTitle>
+                <ParagraphTitle align="left" color={theme.colors.red}>{t("intro4")}</ParagraphTitle>
                 <div className="iconOlas">
                     <img src="/static/svg/iconOlasOrange.svg" />
                 </div>
@@ -33,9 +34,9 @@ const Content = props => {
                         <img src="/static/svg/iconPlant.svg" />
                     </div>
                 </div>
-                <ParagraphTitle align="left"color="#ED5C18">{t("description4")}</ParagraphTitle>
+                <ParagraphTitle align="left"color={theme.colors.red}>{t("description4")}</ParagraphTitle>
                 <div className="button">
-                    <Button backgroundColor="#ED5C1850" color="#ED5C18">
+                    <Button backgroundColor="#ED5C1850" color={theme.colors.red}>
                         {t("button5")}
                     </Button>
 
@@ -46,4 +47,4 @@ const Content = props => {
     );
 };
 
-export default withTranslation("home")(Content);
+export default withTranslation("home")(withTheme(Content));

@@ -40,7 +40,7 @@ const NavStyle = styled.div`
         width:100vw;
         height:100vh;
         width:100vw;
-        background-color: #00000090;
+        background-color: ${({theme}) => theme.colors.dark80};
     }
     .navMobile{
         position:absolute;
@@ -96,8 +96,8 @@ const NavStyle = styled.div`
         border: 0;
         border-color:none;
         padding: 18px 38px;
-        background-color:#76991E40;
-        color: #76991E;
+        background-color:${({theme}) => theme.colors.washedGreen};
+        color: ${({theme}) => theme.colors.green};
         border-radius:8px;
         font-family: "GT–Medium";
         font-size:20px;

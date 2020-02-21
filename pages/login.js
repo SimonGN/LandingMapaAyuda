@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Router from 'next/router'
 import Meta from "../components/Meta";
 import Nav from "../components/Nav/Nav";
-import styled from 'styled-components'
 import { FullScreenContainer, Card, Button, Input, Checkbox } from '../components'
 import googleLogo from '../static/svg/icon-google-login.svg'
 import { login, setFetching } from '../redux/actions/auth'
@@ -15,8 +14,9 @@ import AuthService from '../services/auth.service'
 import ParagraphBodyRegular from '../styles/fontsStyles/ParagraphBodyRegular'
 import _ from 'lodash';
 import { withTranslation } from '../i18n'
-
-function Login({t}) {
+import { withTheme } from 'styled-components'
+import LoginStyle from '../styles/pageStyles/loginStyle'
+function Login({t, theme}) {
   
   const [forgottenPassword, setForgottenPassword] = useState(false)
   const [forgottenPasswordEmail, setForgottenPasswordEmail] = useState(undefined)
@@ -112,8 +112,8 @@ function Login({t}) {
             >{t('forgottenPassword')}</span>
           </div>
           <Button
-            backgroundColor="#E4EBD2"
-            color="#76991E"
+            backgroundColor={theme.colors.washedGreen}
+            color={theme.colors.green}
             type="submit"
             width="100%"
             disabled={isFetching}
@@ -150,8 +150,8 @@ function Login({t}) {
         (<Form>
           <Input name="email" placeholder={t('email')}/>
           <Button
-            backgroundColor="#E4EBD2"
-            color="#76991E"
+            backgroundColor={theme.colors.washedGreen}
+            color={theme.colors.green}
             type="submit"
             width="100%"
             disabled={isFetching}
@@ -195,90 +195,8 @@ function Login({t}) {
   );
 }
 
-
-const LoginStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 384px;
-  width: 384px;
-  & .title{
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 32px;
-      color: #54C39F;
-      font-family: "PanaGT–Regular";
-    }
-  .social-buttons{
-    display: flex;
-    justify-content: space-between;
-    & button{
-      display: flex;
-      align-items: center;
-      width: calc(50% - 0.25rem);
-      & img {
-        margin-right: 0.5rem;
-      }
-      &:first-child{
-        margin-right: 0.5rem;
-      }
-    }
-  }
-  .separator {
-    position: relative;
-    margin-top: 2rem;
-    border-top: 1px solid #f2f2f2;
-    div{
-      font-size: 12px;
-      font-family: "PanaGT–Regular";
-      color: #666666;
-      background-color: #fff;
-      margin: auto;
-      width: 3rem;
-      text-align: center;
-      position: absolute;
-      left: calc(50% - 1.5rem);
-      top: -10px;
-    }
-  }
-
-  .login-form {
-    margin-top: 1rem;
-    & .bottom-section {
-      display: flex;
-      justify-content: space-between;
-      margin: 1rem 1rem 1.5rem 1rem;
-      & span {
-        color: #999999;
-        font-size: 12px;
-        font-family: "PanaGT–Regular";
-        cursor: pointer;
-        &:hover{
-          color: #76991E;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  .form-bottom{
-    margin-top: 1rem;
-    text-align: center;
-    color: #666666;
-    font-family: "PanaGT–Regular";
-    font-size: 12px;
-    & .recover-password-message{
-      margin-bottom: 1rem;
-    }
-    & span {
-      color: #76991E;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-  }
-`
-
 Login.getInitialProps = async () => ({
   namespacesRequired: ["login"]
 });
 
-export default withTranslation('login')(Login)
+export default withTranslation('login')(withTheme(Login))

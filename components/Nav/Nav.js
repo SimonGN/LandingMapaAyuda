@@ -10,7 +10,7 @@ import ParagraphBody from "../../styles/fontsStyles/ParagraphBody";
 import ParagraphHeader from "../../styles/fontsStyles/ParagraphHeader";
 
 
-
+import { withTheme } from 'styled-components'
 import { i18n, withTranslation } from '../../i18n'
 
 
@@ -20,7 +20,7 @@ const changeLanguage = (language, setLangauge) => {
 }
 
 const Nav = props => {
-    const { t, measureRef, contentRect } = props;
+    const { t, measureRef, contentRect, theme } = props;
     const dispatch = useDispatch();
     const [language, setLangauge] = useState(i18n.language)
     const [ view, setView ] = useState(false);
@@ -51,8 +51,8 @@ const Nav = props => {
                             <div className="navMenu2">
                                 <Link href=""><button>{t("nav5")}</button></Link>
                                 <div>
-                                    <ParagraphHeader size="16px"color="#76991E">{t("text")}</ParagraphHeader>
-                                    <Link href=""><ParagraphHeader size="16px" color="#76991E" >{t("nav6")}</ParagraphHeader></Link>
+                                    <ParagraphHeader size="16px"color={theme.colors.green}>{t("text")}</ParagraphHeader>
+                                    <Link href=""><ParagraphHeader size="16px" color={theme.colors.green} >{t("nav6")}</ParagraphHeader></Link>
                                 </div>
                                 <img src="/static/svg/logoMapaAyuda.svg" />
                             </div>
@@ -68,8 +68,8 @@ const Nav = props => {
                 <nav>
                     <Link href="/"><ParagraphBody >{t("nav1")}</ParagraphBody></Link>
                     <Link href="/"><ParagraphBody >{t("nav2")}</ParagraphBody></Link>
-                    <Link href="/"><ParagraphBody color="#F1A409" >{t("nav3")}</ParagraphBody></Link>
-                    <Link href="/login"><ParagraphBody color="#76991E">{t("nav4")}</ParagraphBody></Link>
+                    <Link href="/"><ParagraphBody color={theme.colors.orange} >{t("nav3")}</ParagraphBody></Link>
+                    <Link href="/login"><ParagraphBody color={theme.colors.green}>{t("nav4")}</ParagraphBody></Link>
                     <Link href="/"><button>{t("nav5")}</button></Link>
                 </nav>
             </header>
@@ -79,4 +79,4 @@ const Nav = props => {
     );
 };
 
-export default withTranslation("nav")(withContentRect("client")(Nav));
+export default withTranslation("nav")(withContentRect("client")(withTheme(Nav)));

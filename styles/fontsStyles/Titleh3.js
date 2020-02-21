@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 
 const Titleh3 = styled.h3`
-    font-family: "PanaGT–Regular";
-    color: black;
+    font-family: "GT-Regular";
+    color: ${({theme}) => theme.colors.dark100};
     font-size: 18px;
     letter-spacing: 0.07rem;
     line-height:1.4rem;
