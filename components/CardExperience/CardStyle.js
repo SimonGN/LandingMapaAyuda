@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 const CardStyle = styled.div`
 @keyframes translate {
   from {
@@ -29,7 +28,7 @@ flex: none;
         padding: 8px;
         background-color: white;
         border-radius: 16px;
-        box-shadow: 0px 2px 12px ${({theme}) => theme.colors.dark10};
+        box-shadow: 0px 2px 12px ${({ theme }) => theme.colors.dark10};
         animation-duration: 60s;
         animation-name: translate;
         animation-iteration-count: infinite; 
@@ -50,7 +49,7 @@ flex: none;
     }
     .imgFondo{
         margin-top: 2%;
-        background-image:${props => props.photo ? `url(${props.photo})` : "photo"};
+        background-image:${props => (props.photo ? `url(${props.photo})` : 'photo')};
         background-color: ${props => (props.photo ? '' : '#fffff')};
         background-position: center;
         background-repeat: no-repeat;
@@ -62,7 +61,7 @@ flex: none;
     }
     .imgPeople{
         position:absolute;
-        background-image: url("${props => props.people ? props.people : "people"}");
+        background-image: url("${props => (props.people ? props.people : 'people')}");
         background-color: ${props => (props.photo ? '' : '#fffff')};
         background-position: center;
         background-repeat: no-repeat;
@@ -105,7 +104,7 @@ flex: none;
         }
     }
     @media only screen and (min-width:769px) and (max-width:1024px){
-        margin-top: ${props => props.number ? props.number : "4%"};
+        margin-top: ${props => (props.number ? props.number : '4%')};
         margin-left: 2%;
         width: 350px;
         height:100px;
@@ -155,7 +154,7 @@ flex: none;
         }
     }
     @media only screen and (min-width:1025px) {
-        margin-top: ${props => props.number ? props.number : "4%"};
+        margin-top: ${props => (props.number ? props.number : '4%')};
         margin-left: 2.2%;
         height:100px;
         width: 350px;

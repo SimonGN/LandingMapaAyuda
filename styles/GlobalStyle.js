@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import GTMedium from '../static/fonts/GT-Walsheim-Pro-Medium.woff2'
-import GTRegular from '../static/fonts/GT-Walsheim-Pro-Regular.woff2'
+import GTMedium from '../static/fonts/GT-Walsheim-Pro-Medium.woff2';
+import GTRegular from '../static/fonts/GT-Walsheim-Pro-Regular.woff2';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -34,6 +34,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: "GT-Regular";
   }
 
-`
+`;
 
 export default GlobalStyle;
