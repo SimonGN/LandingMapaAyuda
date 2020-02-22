@@ -77,17 +77,17 @@ function Register({ t, theme }) {
 								password: '',
 							}}
 							validationSchema={Yup.object().shape({
-								name: Yup.string().required('Escribe un nombre'),
+								name: Yup.string().required(t('nameRequired')),
 								email: Yup.string()
-									.required('Escribe una dirección de correo electrónico')
-									.email('Correo electrónico no válido'),
+									.required(t('emailRequired'))
+									.email(t('emailInvalid')),
 								password: Yup.string()
-									.required('Escribe una contraseña')
-									.min(6, 'La contraseña debe tener al menos 6 caracteres'),
+									.required(t('passwordRequired'))
+									.min(6, t('passwordLength')),
 								repeatPassword: Yup.string()
-									.required('Vuelve a escribir una contraseña')
-									.min(6, 'La contraseña debe tener al menos 6 caracteres')
-									.oneOf([Yup.ref('password'), null], 'Las contraseñas no coinciden'),
+									.required(t('repeatPasswordRequired'))
+									.min(6, t('passwordLength'))
+									.oneOf([Yup.ref('password'), null], t('passwordsMatch')),
 							})}
 							onSubmit={handleRegisterSubmit}
 						>
@@ -96,13 +96,9 @@ function Register({ t, theme }) {
 									{step === 1 && (
 										<React.Fragment>
 											<div className='top-section'>
-												¿Cómo te llamas? <span>1/3</span>
+												{t('nameTitle')} <span>1/3</span>
 											</div>
-											<Input
-												name='name'
-												placeholder='Por ejemplo: Javier Fernández'
-												customError={pushed && errors.name}
-											/>
+											<Input name='name' placeholder={t('namePlaceholder')} customError={pushed && errors.name} />
 											<Button
 												backgroundColor={theme.colors.washedGreen}
 												color={theme.colors.green}
@@ -119,20 +115,16 @@ function Register({ t, theme }) {
 													});
 												}}
 											>
-												Continuar
+												{t('continue')}
 											</Button>
 										</React.Fragment>
 									)}
 									{step === 2 && (
 										<React.Fragment>
 											<div className='top-section'>
-												¿Cuál es tu mail? <span>2/3</span>
+												{t('emailTitle')} <span>2/3</span>
 											</div>
-											<Input
-												name='email'
-												placeholder='Por ejemplo: paco@mapayuda.org'
-												customError={pushed && errors.email}
-											/>
+											<Input name='email' placeholder={t('emailPlaceholder')} customError={pushed && errors.email} />
 											<Button
 												backgroundColor={theme.colors.washedGreen}
 												color={theme.colors.green}
@@ -149,17 +141,17 @@ function Register({ t, theme }) {
 													});
 												}}
 											>
-												Continuar
+												{t('continue')}
 											</Button>
 										</React.Fragment>
 									)}
 									{step === 3 && (
 										<React.Fragment>
 											<div className='top-section'>
-												Crea una contraseña <span>3/3</span>
+												{t('passwordTitle')} <span>3/3</span>
 											</div>
-											<Input name='password' type='password' placeholder='Contraseña' />
-											<Input name='repeatPassword' type='password' placeholder='Confirmar contraseña' />
+											<Input name='password' type='password' placeholder={t('passwordPlaceholder')} />
+											<Input name='repeatPassword' type='password' placeholder={t('repeatPasswordPlaceholder')} />
 											<Button
 												backgroundColor={theme.colors.washedGreen}
 												color={theme.colors.green}
@@ -168,7 +160,7 @@ function Register({ t, theme }) {
 												light
 												type='submit'
 											>
-												Continuar
+												{t('register')}
 											</Button>
 										</React.Fragment>
 									)}
@@ -177,9 +169,9 @@ function Register({ t, theme }) {
 						</Formik>
 						{step !== 0 && (
 							<div className='form-bottom'>
-								¿Ya tienes una cuenta?
+								{t('alreadyAccount')}
 								<Link href='/login'>
-									<span>¡Entra!</span>
+									<span>{t('enter')}</span>
 								</Link>
 							</div>
 						)}
