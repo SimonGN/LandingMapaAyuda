@@ -45,6 +45,21 @@ const LoginStyle = styled.div`
 		}
 	}
 
+	.top-section {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 1.5rem;
+		align-items: baseline;
+		font-size: ${props => props.theme.fonts.s};
+		color: ${props => props.theme.colors.dark80};
+		font-family: 'GT–Medium';
+		& span {
+			color: ${props => props.theme.colors.dark40};
+			font-family: 'GT-Regular';
+			font-size: 1rem;
+		}
+	}
+
 	.login-form {
 		margin-top: 1rem;
 		& .bottom-section {
@@ -77,6 +92,7 @@ const LoginStyle = styled.div`
 			color: ${({ theme }) => theme.colors.green};
 			text-decoration: underline;
 			cursor: pointer;
+			margin-left: 0.5rem;
 		}
 	}
 `;
