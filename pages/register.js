@@ -4,14 +4,12 @@ import Meta from '../components/Meta';
 import Nav from '../components/Nav/Nav';
 import { FullScreenContainer, Card, Button, Input } from '../components';
 import googleLogo from '../static/svg/icon-google-login.svg';
-import { login, setFetching } from '../redux/actions/auth';
+import { register } from '../redux/actions/auth';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import facebookLogo from '../static/img/icon-facebook.png';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
-import AuthService from '../services/auth.service';
-import ParagraphBodyRegular from '../styles/fontsStyles/ParagraphBodyRegular';
 import _ from 'lodash';
 import { withTranslation } from '../i18n';
 import { withTheme } from 'styled-components';
@@ -21,7 +19,8 @@ import Link from 'next/link';
 function Register({ t, theme }) {
 	const [step, setStep] = useState(0);
 	const [pushed, setPushed] = useState(false);
-	const { isFetching, error, user } = useSelector(state => state.auth);
+	const { isFetching, user } = useSelector(state => state.auth);
+	const dispatch = useDispatch();
 
 	const handleFacebookRegister = () => {
 		console.log('Registered via Facebook!');
@@ -32,7 +31,7 @@ function Register({ t, theme }) {
 	};
 
 	const handleRegisterSubmit = values => {
-		console.log(values);
+		dispatch(register(values));
 	};
 
 	const showWelcomeScreen = () => (
@@ -160,7 +159,7 @@ function Register({ t, theme }) {
 												light
 												type='submit'
 											>
-												{t('register')}
+												{isFetching ? t('loading') : t('register')}
 											</Button>
 										</React.Fragment>
 									)}

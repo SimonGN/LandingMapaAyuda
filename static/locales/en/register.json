@@ -18,6 +18,7 @@
 	"passwordPlaceholder": "Password",
 	"repeatPasswordPlaceholder": "Confirm password",
 	"register": "Register",
+	"sending": "Sending...",
 	"alreadyAccount": "Alredy have an account",
 	"enter": "Enter!"
 }

@@ -18,6 +18,7 @@
 	"passwordPlaceholder": "Contraseña",
 	"repeatPasswordPlaceholder": "Confirmar contraseña",
 	"register": "Registrarse",
+	"sending": "Enviando...",
 	"alreadyAccount": "¿Ya tienes una cuenta?",
 	"enter": "¡Entra!"
 }
