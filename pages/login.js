@@ -16,6 +16,8 @@ import _ from 'lodash';
 import { withTranslation } from '../i18n';
 import { withTheme } from 'styled-components';
 import LoginStyle from '../styles/pageStyles/loginStyle';
+import Link from 'next/link';
+
 function Login({ t, theme }) {
 	const [forgottenPassword, setForgottenPassword] = useState(false);
 	const [forgottenPasswordEmail, setForgottenPasswordEmail] = useState(undefined);
@@ -114,7 +116,9 @@ function Login({ t, theme }) {
 			</Formik>
 			<div className='form-bottom'>
 				{t('notAccount')}
-				<span>{t('register')}</span>
+				<Link href='/register'>
+					<span>{t('register')}</span>
+				</Link>
 			</div>
 		</React.Fragment>
 	);

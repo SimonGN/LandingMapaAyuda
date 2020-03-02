@@ -85,7 +85,7 @@ const Nav = props => {
 					<Link href='/login'>
 						<ParagraphBody color={theme.colors.green}>{t('nav4')}</ParagraphBody>
 					</Link>
-					<Link href='/'>
+					<Link href='/register'>
 						<button>{t('nav5')}</button>
 					</Link>
 				</nav>

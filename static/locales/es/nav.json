@@ -1,9 +1,9 @@
 {
-    "nav1": "Experiencias",
-    "nav2": "Noticias",
-    "nav3": "Agregar historia",
-    "nav4": "Entrar",
-    "nav5": "Regístrate",
-    "text":"¿Ya tienes cuenta?",
-    "nav6":"Entra"
-   }
+	"nav1": "Historias",
+	"nav2": "Noticias",
+	"nav3": "Agregar historia",
+	"nav4": "Entrar",
+	"nav5": "Regístrate",
+	"text": "¿Ya tienes cuenta?",
+	"nav6": "Entra"
+}

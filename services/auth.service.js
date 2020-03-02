@@ -13,7 +13,7 @@ mock.onPost('/login').reply(config => {
 	const data = JSON.parse(config.data);
 	if (data.email !== 'pepe@pepe.es') {
 		return [401, { message: 'wrong username' }, {}];
-	} else if (data.password !== '1234') {
+	} else if (data.password !== '123456') {
 		return [401, { message: 'wrong password' }, {}];
 	}
 	return [
@@ -28,6 +28,11 @@ mock.onPost('/login').reply(config => {
 mock.onPost('/recoverPassword').reply(() => {
 	return [200];
 });
+
+mock.onPost('/register').reply(config => {
+	const data = JSON.parse(config.data);
+	return [200, data, {}];
+});
 class AuthService {
 	errorHandler = async e => {
 		console.error('AUTH API ERROR');
@@ -41,6 +46,13 @@ class AuthService {
 			.then(response => {
 				return response.data;
 			})
+			.catch(AuthService.errorHandler);
+	};
+
+	register = async user => {
+		return await instance
+			.post('/register', user)
+			.then(response => response.data)
 			.catch(AuthService.errorHandler);
 	};
 
